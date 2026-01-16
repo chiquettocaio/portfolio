@@ -1,0 +1,8 @@
+<button
+  [class.secondary]="variant() === 'secondary'"
+  [title]="title()"
+  (click)="clicked.emit()"
+  [aria-label]="ariaLabel()"
+>
+  {{ content() }}
+</button>

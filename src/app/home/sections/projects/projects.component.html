@@ -1,0 +1,35 @@
+<section
+  id="projects-section"
+  [aria-label]="'home.projects.meta.ariaLabel' | translate"
+>
+  <h2 class="title">
+    {{ 'home.projects.title' | translate }}
+  </h2>
+
+  <h3 class="subtitle">
+    {{ 'home.projects.subtitle' | translate }}
+  </h3>
+
+  <div class="projects">
+    @for (project of projects(); track $index) {
+      <app-project [data]="project"/>
+    }
+  </div>
+
+  <div class="projects-footer">
+    <p class="projects-footer__know-more">
+      <strong>
+        {{ 'home.projects.footer.knowMore.doYou' | translate }}
+      </strong>
+
+      {{ 'home.projects.footer.knowMore.about' | translate }}
+    </p>
+
+    <app-button
+      [title]="'home.projects.footer.sendMessageCTA.title' | translate"
+      [ariaLabel]="'home.projects.footer.sendMessageCTA.ariaLabel' | translate"
+      [content]="'home.projects.footer.sendMessageCTA.content' | translate"
+      variant="secondary"
+    />
+  </div>
+</section>

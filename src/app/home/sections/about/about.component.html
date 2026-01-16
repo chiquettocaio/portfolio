@@ -1,0 +1,78 @@
+<section
+  id="about-section"
+  [aria-label]="'home.about.meta.ariaLabel' | translate"
+>
+  <h2 class="title">
+    {{ 'home.about.title' | translate }}
+  </h2>
+
+  <p class="paragraph">
+    {{ 'home.about.summary.withMoreThan' | translate }}
+    <strong> {{ 'home.about.summary.yearsIn' | translate }} </strong>
+    {{ 'home.about.summary.and' | translate }}
+    <strong> {{ 'home.about.summary.strongSkills' | translate }} </strong>
+    {{ 'home.about.summary.beenAble' | translate }}
+    <strong> {{ 'home.about.summary.contribute' | translate }} </strong>
+    {{ 'home.about.summary.using' | translate }}
+    <strong> {{ 'home.about.summary.variety' | translate }} </strong>
+    {{ 'home.about.summary.techs' | translate }}
+  </p>
+
+  <div class="badges">
+    @for (badge of badges; track $index) {
+      <div
+        class="badge"
+        [class]="badge"
+      >
+        <strong>
+          {{ `home.about.badges.${badge}.title` | translate }}
+        </strong>
+
+        {{ `home.about.badges.${badge}.description` | translate }}
+      </div>
+    }
+  </div>
+
+  <div class="introduction">
+    <div class="introduction__image"></div>
+
+    <h2 class="introduction__title">
+      <span class="block"> {{ 'home.about.introduction.title.passionate' | translate }} </span>
+      <strong> {{ 'home.about.introduction.title.engineer' | translate }} </strong>
+
+      <span class="block">
+        {{ 'home.about.introduction.title.turning' | translate }}
+
+        <strong>
+          {{ 'home.about.introduction.title.ideas' | translate }}
+        </strong>
+      </span>
+
+      {{ 'home.about.introduction.title.into' | translate }}
+      <strong> {{ 'home.about.introduction.title.stunning' | translate }} </strong>
+    </h2>
+
+    <div class="introduction__paragraph">
+      {{ 'home.about.introduction.paragraph1.asAnEngineer' | translate }}
+      <strong> {{ 'home.about.introduction.paragraph1.passionate' | translate }} </strong>
+      {{ 'home.about.introduction.paragraph1.impact' | translate }}
+    </div>
+
+    <div class="introduction__paragraph">
+      {{ 'home.about.introduction.paragraph2.dontLimit' | translate }}
+      <strong> {{ 'home.about.introduction.paragraph2.strive' | translate }} </strong>
+      {{ 'home.about.introduction.paragraph2.toDo' | translate }}
+      <strong> {{ 'home.about.introduction.paragraph2.practices' | translate }} </strong>
+    </div>
+
+    <div class="introduction__paragraph">
+      {{ 'home.about.introduction.paragraph3.collaboration' | translate }}
+      <strong> {{ 'home.about.introduction.paragraph3.strive' | translate }} </strong>
+      {{ 'home.about.introduction.paragraph3.responsive' | translate }}
+      <strong> {{ 'home.about.introduction.paragraph3.inOrder' | translate }} </strong>
+      {{ 'home.about.introduction.paragraph3.deliver' | translate }}
+      <strong> {{ 'home.about.introduction.paragraph3.achieve' | translate }} </strong>
+      {{ 'home.about.introduction.paragraph3.goals' | translate }}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,357 @@
+{
+  "home": {
+    "hero": {
+      "title": {
+        "hello": "Hello, I'm a",
+        "engineer": "Front-end Engineer"
+      },
+
+      "presentation": {
+        "iAmCaio": "Hey, I'm Caio Chiquetto and",
+        "passionate": "I'm passionate about creating digital experiences",
+        "impactUsers": "that can impact users in a",
+        "positive": "positive way."
+      },
+
+      "resumeCTA": {
+        "title": "Check resume",
+        "content": "Check resume",
+        "ariaLabel": "Download resume button"
+      },
+
+      "meta": {
+        "ariaLabel": "Home section"
+      }
+    },
+
+    "about": {
+      "title": "About me",
+
+      "summary": {
+        "withMoreThan": "With more than",
+        "yearsIn": "8 years in the industry",
+        "and": "and",
+        "strongSkills": "strong development skills",
+        "beenAble": "I've been able to",
+        "contribute": "contribute in lots of projects all over the world",
+        "using": "using a",
+        "variety": "wide variety of technologies",
+        "techs": " like Angular, React.js, Vue.js, Nuxt.js TypeScript, JavaScript (ES5, ES6, ESNext), among others."
+      },
+
+      "badges": {
+        "experience": {
+          "title": "8+",
+          "description": "Years of experience"
+        },
+
+        "projects": {
+          "title": "19+",
+          "description": "Projects delivered"
+        },
+
+        "technologies": {
+          "title": "20+",
+          "description": "Known technologies"
+        },
+
+        "coffee": {
+          "title": "1M+",
+          "description": "Consumed cups of coffee"
+        }
+      },
+
+      "introduction": {
+        "title": {
+          "passionate": "A passionate",
+          "engineer": "Front-end Engineer",
+          "turning": "turning",
+          "ideas": "ideas",
+          "into": "into visually",
+          "stunning": "stunning, user-friendly websites."
+        },
+
+        "paragraph1": {
+          "asAnEngineer": "As a front-end engineer",
+          "passionate": "I'm passionate about creating digital experiences",
+          "impact": "that can impact the users in a positive way."
+        },
+
+        "paragraph2": {
+          "dontLimit": "I don't limit myself just to deliver something visually incredible,",
+          "strive": "I strive to deliver good quality, easy-to-read and easy-to-maintain code",
+          "toDo": "and to achieve that I follow the",
+          "practices": "development best practices."
+        },
+
+        "paragraph3": {
+          "collaboration": "In collaboration with product and design teams",
+          "strive": "I strive to create",
+          "responsive": "responsive, intuitive and smooth interfaces,",
+          "inOrder": "in order to",
+          "deliver": "deliver a high-value result",
+          "achieve": "and achieve the",
+          "goals": "client's goals."
+        }
+      },
+
+      "meta": {
+        "ariaLabel": "About section"
+      }
+    },
+
+    "resume": {
+      "title": "Resume",
+      "paragraph": "My technical skills encompasses lots of technologies and tools like Angular, RxJS, NgRx, NgRx effects, React.js, Redux, Vue.js, Vuex, Nuxt, JavaScript (ES5, ES6), TypeScript, Sass, HTML5, CSS3, ElectronJS, Node.js, Ajax, Git, Jest, Jasmine and others.",
+
+      "capIcon": {
+        "ariaLabel": "Graduation cap icon"
+      },
+
+      "education": {
+        "title": "Education",
+        "universityName": "UNIP — Universidade Paulista",
+        "degree": "Bachelor of Science in Computer Science (B.Sc. CS)",
+        "period": "2016 — 2020",
+        "location": "São Paulo — Brazil",
+
+        "icons": {
+          "diplomaIconAriaLabel": "Certificate icon"
+        }
+      },
+
+      "career": {
+        "title": "Career experience",
+
+        "icons": {
+          "desktopIconAriaLabel": "Computer icon",
+          "buildingIconAriaLabel": "Building office icon",
+          "blankCalendarAriaLabel": "Blank calendar icon",
+          "mapLocationAriaLabel": "Map location icon"
+        },
+
+        "technologies": {
+          "spartacus": "SAP Spartacus",
+          "cdc": "CDC (formerly Gigya) for CIAM",
+          "angular": "Angular",
+          "typescript": "TypeScript",
+          "rxjs": "RxJS",
+          "ngrx": "NgRx",
+          "sass": "Sass",
+          "html": "HTML5",
+          "css": "CSS3",
+          "javascript": "JavaScript",
+          "nodejs": "Node.js",
+          "jasmine": "Jasmine",
+          "nuxt": "Nuxt.js",
+          "vue": "Vue.js",
+          "vuex": "VueX",
+          "jest": "Jest",
+          "electron": "Electron.js",
+          "adonis": "Adonis.js",
+          "react": "React",
+          "postgre": "PostgreSQL",
+          "webpack": "Webpack",
+          "docker": "Docker",
+          "redux": "Redux",
+          "java": "Java",
+          "mongo": "MongoDB",
+          "redis": "Redis",
+          "websocket": "WebSocket"
+        },
+
+        "concepts": {
+          "oop": "OOP",
+          "commerce": "E-commerce",
+          "sapCX": "SAP CX"
+        },
+
+        "k2": {
+          "role": "SAP Commerce CX | Composable Storefront (Spartacus) Specialist",
+          "companyName": "K2 Partnering Solutions",
+          "period": "Nov, 2025 — Present",
+          "location": "Brazil — Remote",
+
+          "responsibilities": {
+            "development": "Development and maintenance of SAP Commerce Composable Storefront (aka Spartacus) applications.",
+            "creation": "Creation of new SAP Composable Storefront (aka Spartacus) projects.",
+            "architecture": "Architecture design elaboration, productivity tooling configuration (ESlint, Stylelint, others).",
+            "scalable": "Implementation of scalable solutions.",
+            "implementation": "Implementation of easy-to-read and easy-to-maintain code, relying on the market best practices.",
+            "optimization": "Code optimization.",
+            "performative": "Creation of highly performative and reusable components.",
+            "documentation": "Development and maintenance of FED documentation for completeness (Style guide, Technical debits).",
+            "codeReview": "Code review and enforcement of a style guide.",
+            "englishOnly": "English-only communication."
+          }
+        },
+
+        "wam": {
+          "role": "SAP Commerce CX | Composable Storefront (Spartacus) Specialist",
+          "companyName": "WAM Digital",
+          "period": "Jun, 2024 — Oct, 2025",
+          "location": "Costa Rica, USA — Remote",
+
+          "responsibilities": {
+            "development": "Development and maintenance of SAP Commerce Composable Storefront (aka Spartacus) applications for US-based clients.",
+            "creation": "Creation of new SAP Composable Storefront (aka Spartacus) projects (B2B, B2C, D2C).",
+            "cdc": " SAP CDC (Customer Data Cloud, formerly Gigya) usage for Customer Identity and Access Management (CIAM) and UI manipulation.",
+            "architecture": "Architecture design elaboration, productivity tooling configuration (ESlint, Stylelint, others).",
+            "scalable": "Implementation of scalable solutions.",
+            "communication": "Communication with design and product teams, to assist in the product shaping and better understand the entire solution.",
+            "implementation": "Implementation of easy-to-read and easy-to-maintain code, relying on the market best practices.",
+            "optimization": "Code optimization.",
+            "performative": "Creation of highly performative and reusable components.",
+            "documentation": "Development and maintenance of FED documentation for completeness (Style guide, Technical debits).",
+            "codeReview": "Code review and enforcement of a style guide.",
+            "englishOnly": "English-only communication."
+          }
+        },
+
+        "discover": {
+          "role": "SAP Commerce CX | Composable Storefront (Spartacus) Developer",
+          "companyName": "Discover",
+          "period": "Jan, 2023 — Jun, 2024",
+          "location": "Brazil — Remote",
+
+          "responsibilities": {
+            "development": "Development and maintenance of SAP Commerce Composable storefront (aka Spartacus) applications.",
+            "communication": "Communication with the design and product teams in order to properly deliver something that can actually attend the client's needs.",
+            "collaboration": "Collaboration with the design team in order to provide the FED POV and help in the shaping of a great solution from all the perspectives.",
+            "assist": "Assist abroad teams on their SAP Composable Storefront solutions, helping them solve specific issues so they could be unblocked (communication in English)."
+          }
+        },
+
+        "accenture-lead": {
+          "role": "Application Development Team Lead",
+          "companyName": "Accenture",
+          "period": "Oct, 2021 — Jan, 2023",
+          "location": "Brazil — Remote",
+
+          "responsibilities": {
+            "implementation": "Implementation of the first SAP Spartacus & Telco Utilities application of the world, for a big client from the Telecom segment. Techs: Angular, TypeScript, RxJS, NgRx, SAP Spartacus.",
+            "communication": "Communication with the design and product teams in order to provide meaningful and scalable FE solutions.",
+            "creation": "Creation of reusable and responsive FE components.",
+            "delivery": "Delivery of high quality and easy to maintain code.",
+            "testing": "Unit testing with Jasmine and Karma, with a minimum code coverage of 80%.",
+            "guide": "Help and guide less experienced developers.",
+            "studyProgram": "Creation of an Angular internal study program to help other developers improve their skills.",
+            "presentations": "Creation of multiple presentations about tech tendencies, best practices, code tooling, Angular, and SAP Spartacus."
+          }
+        },
+
+        "accenture-senior": {
+          "role": "Application Development Senior Analyst",
+          "companyName": "Accenture",
+          "period": "Nov, 2020 — Oct, 2021",
+          "location": "Brazil — Remote",
+
+          "responsibilities": {
+            "architect": "Architect, implement and maintain web applications for a big client from the Telecom segment using the Vue.js stack (Nuxt, VueX).",
+            "communication": "Communication with the design and product teams in order to provide meaningful and scalable FE solutions.",
+            "creation": "Creation of reusable and responsive FE components.",
+            "delivery": "Delivery of high quality and easy to maintain code.",
+            "testing": "Unit testing with Jest, with a minimum code coverage of 80%.",
+            "guide": "Help and guide less experienced developers."
+          }
+        },
+
+        "amadre": {
+          "role": "Full Stack Developer",
+          "companyName": "A Madre Estúdio Digital",
+          "period": "Aug, 2017 — Aug, 2020",
+          "location": "Brazil — On site",
+
+          "responsibilities": {
+            "development": "Development of an animation software focused on the creation of digital campaigns, using Vue.js, VueX and Electron.js.",
+            "full-stack": "Full-stack developer responsible for the development of a sales web application, meant to sell and manage licenses of the mentioned animation software. Techs: React.js, Node.js, AdonisJS, redux, styled-components, Docker.",
+            "landing": "Development of landing pages for various clients, using HTML5, CSS3 and Vanilla JavaScript.",
+            "communication": "Communication with the design team in order to properly attend the UI/UX requirements."
+          }
+        }
+      },
+
+      "meta": {
+        "ariaLabel": "Resume section"
+      }
+    },
+
+    "projects": {
+      "title": "Projects",
+      "subtitle": "Some relevant projects that I've worked on in the last years",
+      "role": "Role:",
+
+      "meta": {
+        "ariaLabel": "Projects section"
+      },
+
+      "projects": {
+        "carhartt": {
+          "title": "Carhartt Company Gear",
+          "role": "SAP Commerce CX | Composable Storefront (Spartacus) Specialist",
+          "description": "E-commerce created for Carhartt, a U.S. heritage workwear brand. Carhartt's B2B branch is called CCG (Carhartt Company Gear), and I've been involved in the creation from the ground up of their new generation of CCG. There I was responsible for defining the project architecture, enforcing a coding style, doing code reviews, guiding and helping other developers and coding like there was no tomorrow!",
+          "thumbAlt": "Carhartt Company Gear homepage"
+        },
+
+        "vivo": {
+          "title": "Vivo Store",
+          "role": "Application Development Team Lead",
+          "description": "E-commerce created for Vivo (Telefonica), one of the biggest telecom companies of Brazil. The e-commerce has been developed using the (at the moment) new SAP Spartacus technology, which is a modern way of building a SAP commerces.",
+          "thumbAlt": "Vivo store homepage"
+        },
+
+        "ml": {
+          "title": "Mercado Livre - SAP Spartacus",
+          "role": "Side project",
+          "description": "Personal project created to improve my SAP Composable Storefront (Spartacus) abilities. This project is a copy of the \"Mercado Libre\" E-commerce (\"Mercado Livre\" in Brazil), made with SAP Spartacus/Angular. Unfortunately, to dedicate myself to client projects, I’ve never finished it. Who knows I do that someday.",
+          "thumbAlt": "Mercado livre in Spartacus homepage"
+        },
+
+        "teams": {
+          "title": "Microsoft Teams Copy made with Angular",
+          "role": "Side project",
+          "description": "Personal project created when I was learning Angular. Nothing better than a project to teach us things that goes beyond the docs, right? My first project made with Angular was nothing but a Microsoft Teams copy, completely interactive. You could send messages, react to messages, and other cool stuff  messaging apps usually allows us to do.",
+          "thumbAlt": "Microsoft Teams Copy"
+        },
+
+        "finances": {
+          "title": "Monopoly Banker",
+          "role": "Side project",
+          "description": "Personal project created during one of my job vacations. At some point I saw myself playing Monopoly with my niece and caught myself thinking about how those physical bills were annoying, and that's the story behind the app. Monopoly Banker is an app for making money transfers between the players in real time, relying on the power of React, NodeJS, Mongo and Websockets. If you're interested about knowing more about it, there's a post on my LinkedIn profile.",
+          "thumbAlt": "Monopoly Banker room"
+        },
+
+        "elderly": {
+          "title": "Aprenda Elderly — Learning plataform",
+          "role": "Capstone Project",
+          "description": "Created to be presented as my Capstone Project, Aprenda Elderly is a learning platform focused on older adults that want to learn more about modern devices like computers and smartphones.",
+          "thumbAlt": "Aprenda Elderly platform"
+        }
+      },
+
+      "footer": {
+        "knowMore": {
+          "doYou": "Do you want to know more",
+          "about": "about me and all the amazing projects I've worked so far?"
+        },
+
+        "sendMessageCTA": {
+          "title": "Send me a message",
+          "content": "Send me a message",
+          "ariaLabel": "Send me a message button"
+        }
+      }
+    },
+
+    "contact": {
+      "title": {
+        "hello": "Hello, I'm a",
+        "engineer": "Front-end Engineer"
+      },
+
+      "meta": {
+        "ariaLabel": "Contact section"
+      }
+    }
+  }
+}

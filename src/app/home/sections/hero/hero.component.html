@@ -1,0 +1,24 @@
+<section
+  id="hero-section"
+  [aria-label]="'home.hero.meta.ariaLabel' | translate"
+>
+  <div class="image"></div>
+
+  <h1 class="title">
+    <strong> {{ 'home.hero.title.hello' | translate }} </strong>
+    {{ 'home.hero.title.engineer' | translate }}
+  </h1>
+
+  <p class="paragraph">
+    {{ 'home.hero.presentation.iAmCaio' | translate }}
+    <strong> {{ 'home.hero.presentation.passionate' | translate }} </strong>
+    {{ 'home.hero.presentation.impactUsers' | translate }}
+    <strong> {{ 'home.hero.presentation.positive' | translate }} </strong>
+  </p>
+
+  <app-button
+    [title]="'home.hero.resumeCTA.title' | translate"
+    [content]="'home.hero.resumeCTA.content' | translate"
+    [ariaLabel]="'home.hero.resumeCTA.ariaLabel' | translate"
+  ></app-button>
+</section>

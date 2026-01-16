@@ -1,0 +1,87 @@
+<div class="resume-section">
+  <div class="resume-section__heading">
+    <app-icon
+      class="resume-section__icon"
+      [name]="sectionIcon().name"
+      [ariaLabel]="sectionIcon().ariaLabel"
+    ></app-icon>
+
+    <h3 class="resume-section__title">
+      {{ sectionTitle() }}
+    </h3>
+  </div>
+
+  <div class="resume-section__content">
+    <div class="path"></div>
+
+    <div class="items">
+      @for (item of items(); track $index) {
+        <div class="item">
+          <strong class="item__title">
+            {{ item.title }}
+          </strong>
+
+          <div class="item__content">
+            <div class="item-row">
+              <app-icon
+                class="item-row__icon"
+                [name]="item.isEducation
+                  ? 'phosphorCertificate'
+                  : 'phosphorBuildingOffice'"
+                [ariaLabel]="(item.isEducation
+                  ? 'home.resume.education.icons.diplomaIconAriaLabel'
+                  : 'home.resume.career.icons.buildingIconAriaLabel') | translate"
+              ></app-icon>
+
+              <p class="item-row__content">
+                {{ item.isEducation
+                    ? item.degree
+                    : item.company }}
+              </p>
+            </div>
+
+            <div class="item-row">
+              <app-icon
+                class="item-row__icon"
+                name="phosphorCalendarBlank"
+                [ariaLabel]="'home.resume.career.icons.blankCalendarAriaLabel' | translate"
+              ></app-icon>
+
+              <p class="item-row__content">
+                {{ item.period }}
+              </p>
+            </div>
+
+            <div class="item-row">
+              <app-icon
+                class="item-row__icon"
+                name="phosphorMapPinLine"
+                [ariaLabel]="'home.resume.career.icons.mapLocationAriaLabel' | translate"
+              ></app-icon>
+
+              <p class="item-row__content">
+                {{ item.location }}
+              </p>
+            </div>
+          </div>
+
+          @if (!item.isEducation) {
+            <div class="technologies">
+              @for (tech of item.technologies; track $index) {
+                <div class="technologies__tech"> {{ tech }} </div>
+              }
+            </div>
+          }
+
+          @if (!item.isEducation) {
+            <ul class="item__responsibilities">
+              @for (responsibility of item.responsibilities; track $index) {
+                <li> {{ responsibility }} </li>
+              }
+            </ul>
+          }
+        </div>
+      }
+    </div>
+  </div>
+</div>

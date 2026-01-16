@@ -1,0 +1,29 @@
+<section
+  id="resume-section"
+  [aria-label]="'home.resume.meta.ariaLabel' | translate"
+>
+  <h2 class="title">
+    {{ 'home.resume.title' | translate }}
+  </h2>
+
+  <p class="paragraph">
+    {{ 'home.resume.paragraph' | translate }}
+  </p>
+
+  @if (educationTranslationsHaveBeenLoaded()) {
+    <app-resume-section
+      isEducation
+      [sectionIcon]="educationSectionIcon()!"
+      [items]="educationSectionContent()!"
+      [sectionTitle]="'home.resume.education.title' | translate"
+    />
+  }
+
+  @if (careerTranslationsHaveBeenLoaded()) {
+    <app-resume-section
+      [sectionIcon]="careerSectionIcon()!"
+      [items]="careerSectionContent()!"
+      [sectionTitle]="'home.resume.career.title' | translate"
+    />
+  }
+</section>

@@ -1,0 +1,122 @@
+.resume-section {
+  width: 100%;
+  margin-top: 30px;
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    gap: 0 14px;
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    gap: 0 32px;
+    padding-left: 20px;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-resume-icon-bg);
+    color: var(--color-resume-icon);
+    border-radius: var(--border-radius);
+    box-shadow: -4px 4px 4px rgba(0 0 0 / 0.20);
+
+    ::ng-deep {
+      ng-icon {
+        width: 26px;
+        height: 26px;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 2.2rem;
+  }
+}
+
+.item {
+  margin-top: 20px;
+
+  &__title {
+    font-size: var(--font-size-paragraph);
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 10px;
+      margin-top: -2px;
+      display: block;
+      width: 10px;
+      height: 10px;
+      background: var(--color-resume-icon-bg);
+      border-radius: 50%;
+      border: 6px solid rgba(229 245 255 / 0.75);
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 6px 0;
+    margin: 12px 0;
+  }
+
+  &__responsibilities {
+    display: flex;
+    flex-direction: column;
+    gap: 8px 0;
+    padding-left: 18px;
+
+    li {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.item-row {
+  display: flex;
+  gap: 0 10px;
+  font-size: 1.4rem;
+
+  &__icon {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+
+    ::ng-deep {
+      ng-icon {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  &__content {
+    align-self: flex-end;
+  }
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 12px;
+
+  &__tech {
+    padding: 4px 8px;
+    background-color: var(--color-resume-icon-bg);
+    color: var(--color-text-light);
+    border-radius: 8px;
+    font-size: 1.4rem;
+  }
+}
+
+.path {
+  flex-shrink: 0;
+  border-right: 2px dashed var(--color-gray-medium);
+}

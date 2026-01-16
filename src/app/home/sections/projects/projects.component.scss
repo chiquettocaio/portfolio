@@ -1,0 +1,42 @@
+section {
+  padding: var(--space-section-sm);
+  background-color: var(--color-section-secondary);
+  color: var(--color-text-light);
+}
+
+.title {
+  font-size: var(--font-size-title);
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  margin-top: 8px;
+  font-size: var(--font-size-paragraph);
+  font-weight: 400;
+  margin-bottom: 48px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 32px 0;
+  margin-bottom: 32px;
+
+  &::ng-deep {
+    app-project:last-child .project {
+    }
+  }
+}
+
+.projects-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+
+  &__know-more {
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 32px;
+  }
+}
