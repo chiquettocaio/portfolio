@@ -1,0 +1,11 @@
+<button
+  class="clickable-icon"
+  [title]="data().button.title"
+  [aria-label]="data().button.ariaLabel"
+  (click)="clicked.emit()"
+>
+  <app-icon
+    [name]="data().icon.name"
+    [ariaLabel]="data().icon.ariaLabel"
+  />
+</button>
