@@ -29,6 +29,7 @@ export class ProjectsComponent implements OnInit {
           title: translations[`${projectsBasePath}.carhartt`].title,
           description: translations[`${projectsBasePath}.carhartt`].description,
           role: translations[`${projectsBasePath}.carhartt`].role,
+          techs: translations[`${projectsBasePath}.carhartt`].techs,
           thumb: {
             src: 'images/carhartt.png',
             alt: translations[`${projectsBasePath}.carhartt`].thumbAlt
@@ -37,6 +38,7 @@ export class ProjectsComponent implements OnInit {
           title: translations[`${projectsBasePath}.vivo`].title,
           description: translations[`${projectsBasePath}.vivo`].description,
           role: translations[`${projectsBasePath}.vivo`].role,
+          techs: translations[`${projectsBasePath}.vivo`].techs,
           thumb: {
             src: 'images/vivo.png',
             alt: translations[`${projectsBasePath}.vivo`].thumbAlt
@@ -45,6 +47,7 @@ export class ProjectsComponent implements OnInit {
           title: translations[`${projectsBasePath}.ml`].title,
           description: translations[`${projectsBasePath}.ml`].description,
           role: translations[`${projectsBasePath}.ml`].role,
+          techs: translations[`${projectsBasePath}.ml`].techs,
           thumb: {
             src: 'images/mercadolivre.png',
             alt: translations[`${projectsBasePath}.ml`].thumbAlt
@@ -53,6 +56,7 @@ export class ProjectsComponent implements OnInit {
           title: translations[`${projectsBasePath}.teams`].title,
           description: translations[`${projectsBasePath}.teams`].description,
           role: translations[`${projectsBasePath}.teams`].role,
+          techs: translations[`${projectsBasePath}.teams`].techs,
           thumb: {
             src: 'images/teams.png',
             alt: translations[`${projectsBasePath}.teams`].thumbAlt
@@ -61,6 +65,7 @@ export class ProjectsComponent implements OnInit {
           title: translations[`${projectsBasePath}.finances`].title,
           description: translations[`${projectsBasePath}.finances`].description,
           role: translations[`${projectsBasePath}.finances`].role,
+          techs: translations[`${projectsBasePath}.finances`].techs,
           thumb: {
             src: 'images/finances-room.png',
             alt: translations[`${projectsBasePath}.finances`].thumbAlt
@@ -69,6 +74,7 @@ export class ProjectsComponent implements OnInit {
           title: translations[`${projectsBasePath}.elderly`].title,
           description: translations[`${projectsBasePath}.elderly`].description,
           role: translations[`${projectsBasePath}.elderly`].role,
+          techs: translations[`${projectsBasePath}.elderly`].techs,
           thumb: {
             src: 'images/aprenda-elderly.png',
             alt: translations[`${projectsBasePath}.elderly`].thumbAlt

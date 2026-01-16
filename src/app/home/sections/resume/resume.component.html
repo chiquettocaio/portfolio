@@ -2,24 +2,32 @@
   id="resume-section"
   [aria-label]="'home.resume.meta.ariaLabel' | translate"
 >
-  <h2 class="title">
-    {{ 'home.resume.title' | translate }}
-  </h2>
+  <div class="resume-header">
+    <h2 class="resume-header__title">
+      {{ 'home.resume.title' | translate }}
+    </h2>
+
+
+    @if (haveTranslationsBeenLoaded()) {
+      <app-clickable-icon
+        class="resume-header__cta"
+        [data]="downloadResumeIconData()!"
+      />
+    }
+  </div>
 
   <p class="paragraph">
     {{ 'home.resume.paragraph' | translate }}
   </p>
 
-  @if (educationTranslationsHaveBeenLoaded()) {
+  @if (haveTranslationsBeenLoaded()) {
     <app-resume-section
       isEducation
       [sectionIcon]="educationSectionIcon()!"
       [items]="educationSectionContent()!"
       [sectionTitle]="'home.resume.education.title' | translate"
     />
-  }
 
-  @if (careerTranslationsHaveBeenLoaded()) {
     <app-resume-section
       [sectionIcon]="careerSectionIcon()!"
       [items]="careerSectionContent()!"

@@ -5,6 +5,7 @@ section {
   padding: var(--space-section-sm);
   background: var(--color-section-secondary);
   color: var(--color-text-light);
+  padding-bottom: 60px;
 }
 
 .title {
@@ -15,57 +16,26 @@ section {
 .paragraph {
   font-size: var(--font-size-paragraph);
   line-height: 26px;
+  margin-bottom: 20px;
 }
 
-.badges {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 20px 0;
-  margin-top: 60px;
+.h2 {
+  margin: 20px 0 30px;
+  font-size: var(--font-size-title);
+  text-align: center;
 
-  .badge {
-    display: flex;
-    flex-direction: column;
-    width: 100px;
-    font-size: 1.4rem;
-    text-align: center;
-
-    strong {
-      font-size: 4.8rem;
-    }
+  span {
+    text-decoration: underline;
   }
 }
 
-.introduction {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 90px;
-  gap: 30px 0;
+.not-convinced {
+  font-size: 18px;
+  text-align: center;
+  line-height: 26px;
+}
 
-  &__image {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    background-color: #FFFFFF;
-  }
-
-  &__title {
-    font-size: var(--font-size-title);
-    font-weight: 400;
-    text-align: center;
-
-    .block {
-      display: block;
-    }
-  }
-
-  &__paragraph {
-    font-size: 1.6rem;
-    text-align: center;
-    line-height: 20px;
-  }
+.check-resume-cta {
+  align-self: center;
+  margin-top: 30px;
 }

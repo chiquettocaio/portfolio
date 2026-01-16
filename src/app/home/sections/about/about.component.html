@@ -7,72 +7,76 @@
   </h2>
 
   <p class="paragraph">
-    {{ 'home.about.summary.withMoreThan' | translate }}
-    <strong> {{ 'home.about.summary.yearsIn' | translate }} </strong>
-    {{ 'home.about.summary.and' | translate }}
-    <strong> {{ 'home.about.summary.strongSkills' | translate }} </strong>
-    {{ 'home.about.summary.beenAble' | translate }}
-    <strong> {{ 'home.about.summary.contribute' | translate }} </strong>
-    {{ 'home.about.summary.using' | translate }}
-    <strong> {{ 'home.about.summary.variety' | translate }} </strong>
-    {{ 'home.about.summary.techs' | translate }}
+    {{ 'home.about.summary.p1.hey' | translate }}
+    <strong> {{ 'home.about.summary.p1.caio' | translate }} </strong>
+    {{ 'home.about.summary.p1.and' | translate }}
+    <strong> {{ 'home.about.summary.p1.front' | translate }} </strong>
+    {{ 'home.about.summary.p1.passionate' | translate }}
+    <strong> {{ 'home.about.summary.p1.clean' | translate }} </strong>
   </p>
 
-  <div class="badges">
-    @for (badge of badges; track $index) {
-      <div
-        class="badge"
-        [class]="badge"
-      >
-        <strong>
-          {{ `home.about.badges.${badge}.title` | translate }}
-        </strong>
+  <p class="paragraph">
+    {{ 'home.about.summary.p2.asA' | translate }}
+    <strong> {{ 'home.about.summary.p2.engineer' | translate }} </strong>
+    {{ 'home.about.summary.p2.iCan' | translate }}
+  </p>
 
-        {{ `home.about.badges.${badge}.description` | translate }}
-      </div>
-    }
-  </div>
+  <p class="paragraph">
+    {{ 'home.about.summary.p3.jokes' | translate }}
+    <strong> {{ 'home.about.summary.p3.8Years' | translate }} </strong>
+    {{ 'home.about.summary.p3.strong' | translate }}
+    <strong> {{ 'home.about.summary.p3.proven' | translate }} </strong>
+    {{ 'home.about.summary.p3.respecting' | translate }}
+  </p>
 
-  <div class="introduction">
-    <div class="introduction__image"></div>
+  <p class="paragraph">
+    {{ 'home.about.summary.p4.weAll' | translate }}
+    <strong> {{ 'home.about.summary.p4.delightful' | translate }} </strong>
+    {{ 'home.about.summary.p4.causes' | translate }}
+    <strong> {{ 'home.about.summary.p4.tip' | translate }} </strong>
+    {{ 'home.about.summary.p4.under' | translate }}
+    <strong> {{ 'home.about.summary.p4.happening' | translate }} </strong>
+    {{ 'home.about.summary.p4.toProvide' | translate }}
+    <strong> {{ 'home.about.summary.p4.worryAbout' | translate }} </strong>
+    {{ 'home.about.summary.p4.upToYou' | translate }}
+  </p>
 
-    <h2 class="introduction__title">
-      <span class="block"> {{ 'home.about.introduction.title.passionate' | translate }} </span>
-      <strong> {{ 'home.about.introduction.title.engineer' | translate }} </strong>
+  <p class="paragraph">
+    {{ 'home.about.summary.p5.ifYouAre' | translate }}
+    <strong> {{ 'home.about.summary.p5.weAreGoingTo' | translate }} </strong>
+    {{ 'home.about.summary.p5.andKeep' | translate }}
+    <strong> {{ 'home.about.summary.p5.reliable' | translate }} </strong>
+  </p>
 
-      <span class="block">
-        {{ 'home.about.introduction.title.turning' | translate }}
+  <p class="paragraph">
+    {{ 'home.about.summary.p6.consequence' | translate }}
+    <strong> {{ 'home.about.summary.p6.maintainability' | translate }} </strong>
+    {{ 'home.about.summary.p6.whichMeans' | translate }}
+    <strong> {{ 'home.about.summary.p6.lessChances' | translate }} </strong>
+  </p>
 
-        <strong>
-          {{ 'home.about.introduction.title.ideas' | translate }}
-        </strong>
-      </span>
+  <p class="h2">
+    {{ 'home.about.summary.tellMeNow.tellMe' | translate }}
 
-      {{ 'home.about.introduction.title.into' | translate }}
-      <strong> {{ 'home.about.introduction.title.stunning' | translate }} </strong>
-    </h2>
+    <strong>
+      {{ 'home.about.summary.tellMeNow.haveYou' | translate }}
 
-    <div class="introduction__paragraph">
-      {{ 'home.about.introduction.paragraph1.asAnEngineer' | translate }}
-      <strong> {{ 'home.about.introduction.paragraph1.passionate' | translate }} </strong>
-      {{ 'home.about.introduction.paragraph1.impact' | translate }}
-    </div>
+      <span>{{ 'home.about.summary.tellMeNow.engineer' | translate }}</span>
+    </strong>
 
-    <div class="introduction__paragraph">
-      {{ 'home.about.introduction.paragraph2.dontLimit' | translate }}
-      <strong> {{ 'home.about.introduction.paragraph2.strive' | translate }} </strong>
-      {{ 'home.about.introduction.paragraph2.toDo' | translate }}
-      <strong> {{ 'home.about.introduction.paragraph2.practices' | translate }} </strong>
-    </div>
+    {{ 'home.about.summary.tellMeNow.now' | translate }}
+  </p>
 
-    <div class="introduction__paragraph">
-      {{ 'home.about.introduction.paragraph3.collaboration' | translate }}
-      <strong> {{ 'home.about.introduction.paragraph3.strive' | translate }} </strong>
-      {{ 'home.about.introduction.paragraph3.responsive' | translate }}
-      <strong> {{ 'home.about.introduction.paragraph3.inOrder' | translate }} </strong>
-      {{ 'home.about.introduction.paragraph3.deliver' | translate }}
-      <strong> {{ 'home.about.introduction.paragraph3.achieve' | translate }} </strong>
-      {{ 'home.about.introduction.paragraph3.goals' | translate }}
-    </div>
-  </div>
+  <p class="not-convinced">
+    {{ 'home.about.summary.notConvinced.still' | translate }} <br>
+    {{ 'home.about.summary.notConvinced.tough' | translate }} <br>
+  </p>
+
+  <app-button
+    class="check-resume-cta"
+    [ariaLabel]="'home.about.summary.resumeCTA.ariaLabel' | translate"
+    [content]="'home.about.summary.resumeCTA.content' | translate"
+    [title]="'home.about.summary.resumeCTA.title' | translate"
+    [variant]="'secondary'"
+  />
 </section>

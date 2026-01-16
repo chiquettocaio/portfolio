@@ -5,20 +5,28 @@
   <div class="image"></div>
 
   <h1 class="title">
-    <strong> {{ 'home.hero.title.hello' | translate }} </strong>
-    {{ 'home.hero.title.engineer' | translate }}
+    {{ 'home.hero.title.hello' | translate }}
+
+    <strong>
+      {{ 'home.hero.title.front' | translate }}
+      <span> {{ 'home.hero.title.engineer' | translate }} </span>
+    </strong>
+
+    {{ 'home.hero.title.before' | translate }}
   </h1>
 
   <p class="paragraph">
-    {{ 'home.hero.presentation.iAmCaio' | translate }}
-    <strong> {{ 'home.hero.presentation.passionate' | translate }} </strong>
-    {{ 'home.hero.presentation.impactUsers' | translate }}
-    <strong> {{ 'home.hero.presentation.positive' | translate }} </strong>
+    {{ 'home.hero.presentation.hey' | translate }}
+    <strong> {{ 'home.hero.presentation.caio' | translate }} </strong>
+    {{ 'home.hero.presentation.and' | translate }}
+    <strong> {{ 'home.hero.presentation.front' | translate }} </strong>
+    {{ 'home.hero.presentation.passionate' | translate }}
+    <strong> {{ 'home.hero.presentation.clean' | translate }} </strong>
   </p>
 
   <app-button
     [title]="'home.hero.resumeCTA.title' | translate"
     [content]="'home.hero.resumeCTA.content' | translate"
     [ariaLabel]="'home.hero.resumeCTA.ariaLabel' | translate"
-  ></app-button>
+  />
 </section>

@@ -2,15 +2,19 @@
   "home": {
     "hero": {
       "title": {
-        "hello": "Hello, I'm a",
-        "engineer": "Front-end Engineer"
+        "hello": "Never heard of a",
+        "front": "Front-end",
+        "engineer": "Engineer",
+        "before": "before? Come with me."
       },
 
       "presentation": {
-        "iAmCaio": "Hey, I'm Caio Chiquetto and",
-        "passionate": "I'm passionate about creating digital experiences",
-        "impactUsers": "that can impact users in a",
-        "positive": "positive way."
+        "hey": "Hey, I'm",
+        "caio": "Caio Chiquetto",
+        "and": "and I'm a",
+        "front": "Front-end Engineer",
+        "passionate": "passionate about crafting",
+        "clean": "clean, responsive, scalable and performative digital experiences."
       },
 
       "resumeCTA": {
@@ -28,70 +32,71 @@
       "title": "About me",
 
       "summary": {
-        "withMoreThan": "With more than",
-        "yearsIn": "8 years in the industry",
-        "and": "and",
-        "strongSkills": "strong development skills",
-        "beenAble": "I've been able to",
-        "contribute": "contribute in lots of projects all over the world",
-        "using": "using a",
-        "variety": "wide variety of technologies",
-        "techs": " like Angular, React.js, Vue.js, Nuxt.js TypeScript, JavaScript (ES5, ES6, ESNext), among others."
-      },
-
-      "badges": {
-        "experience": {
-          "title": "8+",
-          "description": "Years of experience"
+        "p1": {
+          "hey": "Hey, I'm",
+          "caio": "Caio Chiquetto",
+          "and": "and I'm a",
+          "front": "Front-end Engineer",
+          "passionate": "passionate about crafting",
+          "clean": "clean, responsive, scalable and performative digital experiences."
         },
 
-        "projects": {
-          "title": "19+",
-          "description": "Projects delivered"
-        },
-
-        "technologies": {
-          "title": "20+",
-          "description": "Known technologies"
-        },
-
-        "coffee": {
-          "title": "1M+",
-          "description": "Consumed cups of coffee"
-        }
-      },
-
-      "introduction": {
-        "title": {
-          "passionate": "A passionate",
+        "p2": {
+          "asA": "As a",
           "engineer": "Front-end Engineer",
-          "turning": "turning",
-          "ideas": "ideas",
-          "into": "into visually",
-          "stunning": "stunning, user-friendly websites."
+          "iCan": "I can do way more than just update your CTA's background color, I can also update it's font color and size (got you, didn't I?)."
         },
 
-        "paragraph1": {
-          "asAnEngineer": "As a front-end engineer",
-          "passionate": "I'm passionate about creating digital experiences",
-          "impact": "that can impact the users in a positive way."
+        "p3": {
+          "jokes": "Jokes aside, with",
+          "8Years": "more than 8 years of professional experience",
+          "strong": "and strong development skills,",
+          "proven": "I have a proven track of high performative, responsive, scalable and clean deliveries,",
+          "respecting": "respecting deadlines and meeting customer needs."
         },
 
-        "paragraph2": {
-          "dontLimit": "I don't limit myself just to deliver something visually incredible,",
-          "strive": "I strive to deliver good quality, easy-to-read and easy-to-maintain code",
-          "toDo": "and to achieve that I follow the",
-          "practices": "development best practices."
+        "p4": {
+          "weAll": "We all love to see",
+          "delightful": "delightful and animated websites",
+          "causes": "that causes us to be impressed, but that's",
+          "tip": "only the tip of the iceberg.",
+          "under": "Under the hoods there are a lot of things",
+          "happening": "happening in a strictly defined order",
+          "toProvide": "to provide you that feeling, and that's where I enter in scene,",
+          "worryAbout": "to worry about things you don't need to, and give you what really matters: a functional application that can improve your business profit or promote the incredible person you are,",
+          "upToYou": "it's up to you."
         },
 
-        "paragraph3": {
-          "collaboration": "In collaboration with product and design teams",
-          "strive": "I strive to create",
-          "responsive": "responsive, intuitive and smooth interfaces,",
-          "inOrder": "in order to",
-          "deliver": "deliver a high-value result",
-          "achieve": "and achieve the",
-          "goals": "client's goals."
+        "p5": {
+          "ifYouAre": "If you're that kind of client that cares about clean code and maintainability,",
+          "weAreGoingTo": "we're going to like each other even more. I stick to the market's best practices",
+          "andKeep": "and keep myself always alert about the quality and organization of the code, because I don't build something that's only visually incredible,",
+          "reliable": "I build reliable solutions, and for me that's the only possible way to work."
+        },
+
+        "p6": {
+          "consequence": "As a consequence,",
+          "maintainability": "the maintainability of the project is considerably improved,",
+          "whichMeans": "which means",
+          "lessChances": "less chances of your users facing bugs, less money spent with maintenance, more convertion and a happier audience."
+        },
+
+        "tellMeNow": {
+          "tellMe": "So tell me, have you ever heard of a",
+          "haveYou": "Front-end",
+          "engineer": "Engineer",
+          "now": "now?"
+        },
+
+        "notConvinced": {
+          "still": "Still not convinced?",
+          "tough": "You're tough to please."
+        },
+
+        "resumeCTA": {
+          "title": "Let's check my resume then",
+          "content": "Let's check my resume then",
+          "ariaLabel": "Check resume button"
         }
       },
 
@@ -103,6 +108,12 @@
     "resume": {
       "title": "Resume",
       "paragraph": "My technical skills encompasses lots of technologies and tools like Angular, RxJS, NgRx, NgRx effects, React.js, Redux, Vue.js, Vuex, Nuxt, JavaScript (ES5, ES6), TypeScript, Sass, HTML5, CSS3, ElectronJS, Node.js, Ajax, Git, Jest, Jasmine and others.",
+
+      "downloadResumeCta": {
+        "buttonTitle": "Download resume",
+        "buttonAriaLabel": "Download resume",
+        "iconAriaLabel": "Download resume icon"
+      },
 
       "capIcon": {
         "ariaLabel": "Graduation cap icon"
@@ -280,6 +291,7 @@
       "title": "Projects",
       "subtitle": "Some relevant projects that I've worked on in the last years",
       "role": "Role:",
+      "topTechs": "Main techs:",
 
       "meta": {
         "ariaLabel": "Projects section"
@@ -290,6 +302,7 @@
           "title": "Carhartt Company Gear",
           "role": "SAP Commerce CX | Composable Storefront (Spartacus) Specialist",
           "description": "E-commerce created for Carhartt, a U.S. heritage workwear brand. Carhartt's B2B branch is called CCG (Carhartt Company Gear), and I've been involved in the creation from the ground up of their new generation of CCG. There I was responsible for defining the project architecture, enforcing a coding style, doing code reviews, guiding and helping other developers and coding like there was no tomorrow!",
+          "techs": "SAP Spartacus, Angular, CDC (formerly Gygia), RxJs and TypeScript",
           "thumbAlt": "Carhartt Company Gear homepage"
         },
 
@@ -297,6 +310,7 @@
           "title": "Vivo Store",
           "role": "Application Development Team Lead",
           "description": "E-commerce created for Vivo (Telefonica), one of the biggest telecom companies of Brazil. The e-commerce has been developed using the (at the moment) new SAP Spartacus technology, which is a modern way of building a SAP commerces.",
+          "techs": "SAP Spartacus, Angular, RxJs, NgRx and TypeScript",
           "thumbAlt": "Vivo store homepage"
         },
 
@@ -304,13 +318,15 @@
           "title": "Mercado Livre - SAP Spartacus",
           "role": "Side project",
           "description": "Personal project created to improve my SAP Composable Storefront (Spartacus) abilities. This project is a copy of the \"Mercado Libre\" E-commerce (\"Mercado Livre\" in Brazil), made with SAP Spartacus/Angular. Unfortunately, to dedicate myself to client projects, I’ve never finished it. Who knows I do that someday.",
+          "techs": "SAP Spartacus, Angular, RxJs, NgRx and TypeScript",
           "thumbAlt": "Mercado livre in Spartacus homepage"
         },
 
         "teams": {
-          "title": "Microsoft Teams Copy made with Angular",
+          "title": "Microsoft Teams Copy",
           "role": "Side project",
           "description": "Personal project created when I was learning Angular. Nothing better than a project to teach us things that goes beyond the docs, right? My first project made with Angular was nothing but a Microsoft Teams copy, completely interactive. You could send messages, react to messages, and other cool stuff  messaging apps usually allows us to do.",
+          "techs": "Angular, RxJs, NgRx and Sass",
           "thumbAlt": "Microsoft Teams Copy"
         },
 
@@ -318,6 +334,7 @@
           "title": "Monopoly Banker",
           "role": "Side project",
           "description": "Personal project created during one of my job vacations. At some point I saw myself playing Monopoly with my niece and caught myself thinking about how those physical bills were annoying, and that's the story behind the app. Monopoly Banker is an app for making money transfers between the players in real time, relying on the power of React, NodeJS, Mongo and Websockets. If you're interested about knowing more about it, there's a post on my LinkedIn profile.",
+          "techs": "React, Node.js, Docker, MongoDB and Websockets",
           "thumbAlt": "Monopoly Banker room"
         },
 
@@ -325,6 +342,7 @@
           "title": "Aprenda Elderly — Learning plataform",
           "role": "Capstone Project",
           "description": "Created to be presented as my Capstone Project, Aprenda Elderly is a learning platform focused on older adults that want to learn more about modern devices like computers and smartphones.",
+          "techs": "React, HTML5, CSS3 and JavaScript",
           "thumbAlt": "Aprenda Elderly platform"
         }
       },
