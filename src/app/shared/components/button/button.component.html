@@ -1,5 +1,6 @@
 <button
-  [class.secondary]="variant() === 'secondary'"
+  class="app-button"
+  [class.app-button--secondary]="variant() === 'secondary'"
   [title]="title()"
   (click)="clicked.emit()"
   [aria-label]="ariaLabel()"

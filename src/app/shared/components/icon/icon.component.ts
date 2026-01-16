@@ -1,6 +1,15 @@
 import { Component, input } from '@angular/core'
 import { NgIcon, provideIcons } from '@ng-icons/core'
-import { phosphorBuildingOffice, phosphorCalendarBlank, phosphorCertificate, phosphorDesktop, phosphorGraduationCap, phosphorMapPinLine } from '@ng-icons/phosphor-icons/regular'
+import {
+  phosphorArrowDown,
+  phosphorBuildingOffice,
+  phosphorCalendarBlank,
+  phosphorCertificate,
+  phosphorDesktop,
+  phosphorFileArrowDown,
+  phosphorGraduationCap,
+  phosphorMapPinLine
+} from '@ng-icons/phosphor-icons/regular'
 
 @Component({
   selector: 'app-icon',
@@ -12,7 +21,9 @@ import { phosphorBuildingOffice, phosphorCalendarBlank, phosphorCertificate, pho
       phosphorBuildingOffice,
       phosphorCalendarBlank,
       phosphorMapPinLine,
-      phosphorDesktop
+      phosphorDesktop,
+      phosphorArrowDown,
+      phosphorFileArrowDown
     })
   ],
   templateUrl: './icon.component.html',
