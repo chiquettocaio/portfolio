@@ -72,11 +72,12 @@
     {{ 'home.about.summary.notConvinced.tough' | translate }} <br>
   </p>
 
-  <app-button
+  <app-anchor
     class="check-resume-cta"
-    [ariaLabel]="'home.about.summary.resumeCTA.ariaLabel' | translate"
-    [content]="'home.about.summary.resumeCTA.content' | translate"
-    [title]="'home.about.summary.resumeCTA.title' | translate"
-    [variant]="'secondary'"
+    [ariaLabel]="'home.about.summary.resumeCta.ariaLabel' | translate"
+    [content]="'home.about.summary.resumeCta.content' | translate"
+    href="#resume-section"
+    [title]="'home.about.summary.resumeCta.title' | translate"
+    variant="button-secondary"
   />
 </section>
