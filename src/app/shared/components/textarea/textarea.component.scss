@@ -57,7 +57,15 @@
     border-color: var(--color-input-success);
   }
 
-  &.ng-touched.ng-invalid .form-control__textarea {
-    border-color: var(--color-danger);
+  &.ng-touched.ng-invalid {
+    .form-control {
+      &__textarea {
+        border-color: var(--color-danger);
+      }
+
+      &__label {
+        color: var(--color-danger);
+      }
+    }
   }
 }

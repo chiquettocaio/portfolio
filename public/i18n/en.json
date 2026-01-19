@@ -309,15 +309,15 @@
         "vivo": {
           "title": "Vivo Store",
           "role": "Application Development Team Lead",
-          "description": "E-commerce created for Vivo (Telefonica), one of the biggest telecom companies of Brazil. The e-commerce has been developed using the (at the moment) new SAP Spartacus technology, which is a modern way of building a SAP commerces.",
+          "description": "E-commerce created for Vivo (Telefonica), the biggest telecom company of Brazil. The e-commerce has been developed using the (at the moment) new SAP Spartacus technology, which is a modern way of building SAP commerces.",
           "techs": "SAP Spartacus, Angular, RxJs, NgRx and TypeScript",
           "thumbAlt": "Vivo store homepage"
         },
 
         "ml": {
-          "title": "Mercado Livre - SAP Spartacus",
+          "title": "Mercado Livre Copy — SAP Spartacus",
           "role": "Side project",
-          "description": "Personal project created to improve my SAP Composable Storefront (Spartacus) abilities. This project is a copy of the \"Mercado Libre\" E-commerce (\"Mercado Livre\" in Brazil), made with SAP Spartacus/Angular. Unfortunately, to dedicate myself to client projects, I’ve never finished it. Who knows I do that someday.",
+          "description": "Personal project created to improve my SAP Composable Storefront (Spartacus) abilities. This project is a copy of the \"Mercado Libre\" E-commerce (\"Mercado Livre\" in Brazil), made with SAP Spartacus/Angular. To dedicate myself to client projects, I've never finished it, but who knows I do that someday.",
           "techs": "SAP Spartacus, Angular, RxJs, NgRx and TypeScript",
           "thumbAlt": "Mercado livre in Spartacus homepage"
         },
@@ -333,7 +333,7 @@
         "finances": {
           "title": "Monopoly Banker",
           "role": "Side project",
-          "description": "Personal project created during one of my job vacations. At some point I saw myself playing Monopoly with my niece and caught myself thinking about how those physical bills were annoying, and that's the story behind the app. Monopoly Banker is an app for making money transfers between the players in real time, relying on the power of React, NodeJS, Mongo and Websockets. If you're interested about knowing more about it, there's a post on my LinkedIn profile.",
+          "description": "Personal project created during one of my job vacations. At some point I saw myself playing Monopoly with my niece and noticed how those physical bills were annoying, and that's the story behind the app. Monopoly Banker is an app for making money transfers between the players in real time, relying on the power of React, NodeJS, Mongo and Websockets. If you're interested about knowing more about it, there's a publication on my LinkedIn profile.",
           "techs": "React, Node.js, Docker, MongoDB and Websockets",
           "thumbAlt": "Monopoly Banker room"
         },
@@ -353,11 +353,6 @@
           "noWay": "No way, it's personal now. We need to get in touch."
         },
 
-        "knowMore": {
-          "doYou": "Do you want to know more",
-          "about": "about me and all the amazing projects I've worked so far?"
-        },
-
         "sendMessageCTA": {
           "title": "Send me a message",
           "content": "Send me a message",
@@ -373,16 +368,15 @@
       },
 
       "wantBringToLife": {
-        "doYou": "Do you want to know more about me,",
-        "bring": "bring to life that unique project",
-        "youHad": "you idealized years ago or just",
-        "giveThat": "give that crazy idea you had last night a chance?"
+        "doYou": "Want to know more about me,",
+        "bring": "bring to life that unique project you've been dreaming about for years",
+        "youHad": "or give that",
+        "giveThat": "crazy idea you had last night a chance?"
       },
 
       "workTogether": {
         "lets": "Let's work together",
-        "andTurn": "and turn all of that into",
-        "real": "reality!"
+        "andTurn": "and turn all of that into reality!"
       },
 
       "form": {

@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, forwardRef, inject, Injector, input, OnInit, signal } from '@angular/core'
-import { AbstractControlOptions, ControlValueAccessor, NG_VALUE_ACCESSOR, NgControl } from '@angular/forms'
+import { AbstractControlOptions, ControlValueAccessor, NG_VALUE_ACCESSOR, NgControl, TouchedChangeEvent } from '@angular/forms'
+import { filter, take, tap } from 'rxjs'
 import { KeyString } from '../../models/generic-types.model'
 
 @Component({
@@ -22,11 +23,11 @@ export class InputComponent implements ControlValueAccessor, OnInit, AfterViewIn
 
   control !: NgControl
   private updateOn: AbstractControlOptions['updateOn'] = 'change'
-  value = signal<string>('')
-  errorKey = signal<string>('')
-
   onChange!: (value: string) => void
   onTouched!: () => void
+
+  value = signal<string>('')
+  errorKey = signal<string>('')
 
   ngOnInit (): void {
     this.control = this.injector.get(NgControl)
@@ -34,6 +35,7 @@ export class InputComponent implements ControlValueAccessor, OnInit, AfterViewIn
 
   ngAfterViewInit (): void {
     this.updateOn = this.control.control?.updateOn ?? 'change'
+    this.listenToControlEvents()
   }
 
   setValue (value: string): void {
@@ -63,6 +65,7 @@ export class InputComponent implements ControlValueAccessor, OnInit, AfterViewIn
     }
   }
 
+  /* ControlValueAcessor methods */
   writeValue (value: string): void {
     this.value.set(value)
   }
@@ -81,5 +84,13 @@ export class InputComponent implements ControlValueAccessor, OnInit, AfterViewIn
     if (errorsAsArray.length) {
       this.errorKey.set(errorsAsArray[0])
     }
+  }
+
+  private listenToControlEvents (): void {
+    this.control.control?.events.pipe(
+      filter(event => event instanceof TouchedChangeEvent),
+      take(1),
+      tap(() => this.checkForError())
+    ).subscribe()
   }
 }

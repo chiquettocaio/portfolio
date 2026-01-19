@@ -1,6 +1,7 @@
 <form
   class="contact-form"
   [formGroup]="contactForm"
+  (ngSubmit)="submit()"
 >
   @let firstNameLabel = 'home.contact.form.fields.firstName.label' | translate;
 
@@ -53,6 +54,7 @@
   />
 
   <app-button
+    class="contact-form__submit"
     [ariaLabel]="'home.contact.form.submitCta.ariaLabel' | translate"
     [content]="'home.contact.form.submitCta.content' | translate"
     [title]="'home.contact.form.submitCta.title' | translate"

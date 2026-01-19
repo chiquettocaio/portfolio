@@ -51,4 +51,22 @@ export class ContactFormComponent {
       Validators.minLength(this.MESSAGE_MIN_LENGTH)
     ]]
   }, { updateOn: 'blur' })
+
+  submit (): void {
+    const isFormValid = this.validateForm()
+
+    if (!isFormValid) return
+
+    console.log('Submitting form', this.contactForm.value)
+  }
+
+  private validateForm (): boolean {
+    if (!this.contactForm.valid) {
+      this.contactForm.markAllAsTouched()
+      this.contactForm.updateValueAndValidity()
+      return false
+    }
+
+    return true
+  }
 }
