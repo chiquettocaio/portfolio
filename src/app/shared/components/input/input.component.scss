@@ -28,7 +28,7 @@
     border: 1px solid var(--color-gray-medium);
     border-radius: var(--border-radius);
 
-    &:focus-visible {
+    &:focus {
       outline-color: var(--color-input-focused);
     }
   }
@@ -58,12 +58,14 @@
 
   &.ng-touched.ng-invalid {
     .form-control {
-      &__input {
-        border-color: var(--color-danger);
+      &:not(:has(:focus)) {
+        label {
+          color: var(--color-danger);
+        }
       }
 
-      &__label {
-        color: var(--color-danger);
+      &__input {
+        border-color: var(--color-danger);
       }
     }
   }

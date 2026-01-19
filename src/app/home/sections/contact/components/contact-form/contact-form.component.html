@@ -33,7 +33,7 @@
   @let subjectLabel = 'home.contact.form.fields.subject.label' | translate;
   <app-input
     formControlName="subject"
-    id="subject-name"
+    id="subject"
     [label]="'home.contact.form.fields.subject.label' | translate"
     [errorMessages]="{
       required: 'home.contact.form.errors.required' | translate: { field: subjectLabel },
@@ -45,7 +45,7 @@
   @let messageLabel = 'home.contact.form.fields.message.label' | translate;
   <app-textarea
     formControlName="message"
-    id="contact-message"
+    id="message"
     [label]="'home.contact.form.fields.message.label' | translate"
     [errorMessages]="{
       required: 'home.contact.form.errors.required' | translate: { field: messageLabel },
