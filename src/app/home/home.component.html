@@ -1,7 +1,8 @@
 <main>
   <app-hero />
   <app-about />
-  <app-resume />
-  <app-projects />
-  <app-contact />
+
+  @defer { <app-resume /> }
+  @defer { <app-projects /> }
+  @defer { <app-contact /> }
 </main>
