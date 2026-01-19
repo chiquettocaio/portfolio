@@ -1,0 +1,22 @@
+<div class="form-control">
+  <label
+    class="form-control__label"
+    [for]="id()"
+  > {{ label() }} </label>
+
+  <textarea
+    class="form-control__textarea"
+    [id]="id()"
+    placeholder=""
+    [value]="value()"
+    (input)="setValue($event)"
+    (blur)="blurField()"
+    autocomplete="off"
+  ></textarea>
+
+  <span class="form-control__error">
+    @if (control.errors && errorKey()) {
+      {{ errorMessages()[errorKey() ]}}
+    }
+  </span>
+</div>
