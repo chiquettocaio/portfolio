@@ -1,0 +1,41 @@
+.app-anchor {
+  color: var(--color-black);
+
+  &--button-primary,
+  &--button-secondary {
+    background: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    max-height: 50px;
+    width: 100%;
+    font-weight: bold;
+    font-size: var(--font-size-button);
+    box-shadow: 4px 6px 4px rgba(0 0 0 / .25);
+    border: none;
+    border-radius: var(--border-radius);
+    transition: all .2s;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  &--button-primary {
+    background: var(--color-button);
+    color: var(--color-text-light);
+
+    &:hover {
+      background-color: var(--color-button-hover);
+    }
+  }
+
+
+  &--button-secondary {
+    background-color: var(--color-button-secondary);
+    color: var(--color-button);
+
+    &:hover {
+      background-color: var(--color-button-secondary-hover);
+    }
+  }
+}

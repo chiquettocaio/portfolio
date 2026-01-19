@@ -1,0 +1,10 @@
+<a
+  class="app-anchor"
+  [class.app-anchor--button-primary]="variant() === 'button-primary'"
+  [class.app-anchor--button-secondary]="variant() === 'button-secondary'"
+  [title]="title()"
+  [href]="href()"
+  [aria-label]="ariaLabel()"
+>
+  {{ content() }}
+</a>
