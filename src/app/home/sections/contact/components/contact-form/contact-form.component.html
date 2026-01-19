@@ -1,0 +1,60 @@
+<form
+  class="contact-form"
+  [formGroup]="contactForm"
+>
+  @let firstNameLabel = 'home.contact.form.fields.firstName.label' | translate;
+
+  <app-input
+    formControlName="firstName"
+    id="first-name"
+    [label]="'home.contact.form.fields.firstName.label' | translate"
+    [errorMessages]="{
+      required: 'home.contact.form.errors.required' | translate: { field: firstNameLabel },
+      pattern: 'home.contact.form.errors.pattern' | translate: { field: firstNameLabel },
+      minlength: 'home.contact.form.errors.minlength' | translate: { field: firstNameLabel, length: NAME_MIN_LENGTH },
+      maxlength: 'home.contact.form.errors.maxlength' | translate: { field: firstNameLabel, length: NAME_MAX_LENGTH },
+    }"
+  />
+
+  @let lastNameLabel = 'home.contact.form.fields.lastName.label' | translate;
+  <app-input
+    formControlName="lastName"
+    id="last-name"
+    [label]="'home.contact.form.fields.lastName.label' | translate"
+    [errorMessages]="{
+      required: 'home.contact.form.errors.required' | translate: { field: lastNameLabel },
+      pattern: 'home.contact.form.errors.pattern' | translate: { field: lastNameLabel },
+      minlength: 'home.contact.form.errors.minlength' | translate: { field: lastNameLabel, length: NAME_MIN_LENGTH },
+      maxlength: 'home.contact.form.errors.maxlength' | translate: { field: lastNameLabel, length: NAME_MAX_LENGTH },
+    }"
+  />
+
+  @let subjectLabel = 'home.contact.form.fields.subject.label' | translate;
+  <app-input
+    formControlName="subject"
+    id="subject-name"
+    [label]="'home.contact.form.fields.subject.label' | translate"
+    [errorMessages]="{
+      required: 'home.contact.form.errors.required' | translate: { field: subjectLabel },
+      minlength: 'home.contact.form.errors.minlength' | translate: { field: subjectLabel, length: SUBJECT_MIN_LENGTH },
+      maxlength: 'home.contact.form.errors.maxlength' | translate: { field: subjectLabel, length: SUBJECT_MAX_LENGTH },
+    }"
+  />
+
+  @let messageLabel = 'home.contact.form.fields.message.label' | translate;
+  <app-textarea
+    formControlName="message"
+    id="contact-message"
+    [label]="'home.contact.form.fields.message.label' | translate"
+    [errorMessages]="{
+      required: 'home.contact.form.errors.required' | translate: { field: messageLabel },
+      minlength: 'home.contact.form.errors.minlength' | translate: { field: messageLabel, length: MESSAGE_MIN_LENGTH }
+    }"
+  />
+
+  <app-button
+    [ariaLabel]="'home.contact.form.submitCta.ariaLabel' | translate"
+    [content]="'home.contact.form.submitCta.content' | translate"
+    [title]="'home.contact.form.submitCta.title' | translate"
+  />
+</form>

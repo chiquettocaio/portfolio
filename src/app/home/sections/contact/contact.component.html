@@ -1,1 +1,24 @@
-<p>contact works!</p>
+<section
+  id="contact-section"
+  [aria-label]="'home.contact.meta.ariaLabel' | translate"
+>
+  <h2 class="title">
+    {{ 'home.contact.title.lets' | translate }}
+    <strong> {{ 'home.contact.title.together' | translate }} </strong>
+  </h2>
+
+  <p class="paragraph">
+    {{ 'home.contact.wantBringToLife.doYou' | translate }}
+    <strong> {{ 'home.contact.wantBringToLife.bring' | translate }} </strong>
+    {{ 'home.contact.wantBringToLife.youHad' | translate }}
+    <strong> {{ 'home.contact.wantBringToLife.giveThat' | translate }} </strong>
+  </p>
+
+  <p class="paragraph">
+    {{ 'home.contact.workTogether.lets' | translate }}
+    <strong> {{ 'home.contact.workTogether.andTurn' | translate }} </strong>
+    {{ 'home.contact.workTogether.real' | translate }}
+  </p>
+
+  <app-contact-form />
+</section>
