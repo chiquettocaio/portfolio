@@ -2,17 +2,19 @@
   <app-hero />
   <app-about />
 
-  @defer {
+  @defer (on viewport({ rootMargin: '600px' }); prefetch on idle) {
     <app-resume />
+  } @placeholder {
+    <p> Loading resume </p>
   }
 
-  @defer (on viewport({ rootMargin: '200px' })) {
+  @defer (on viewport({ rootMargin: '600px' })) {
     <app-projects />
   } @placeholder {
     <p> Loading projects </p>
   }
 
-  @defer (on viewport({ rootMargin: '200px' })) {
+  @defer (on viewport({ rootMargin: '600px' })) {
     <app-contact />
   } @placeholder {
     <p> Loading contact form </p>
