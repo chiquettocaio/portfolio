@@ -2,7 +2,21 @@
   <app-hero />
   <app-about />
 
-  @defer { <app-resume /> }
-  @defer { <app-projects /> }
-  @defer { <app-contact /> }
+  @defer (on viewport) {
+    <app-resume />
+  } @placeholder {
+    <p> Loading resume </p>
+  }
+
+  @defer (on viewport) {
+    <app-projects />
+  } @placeholder {
+    <p> Loading projects </p>
+  }
+
+  @defer (on viewport) {
+    <app-contact />
+  } @placeholder {
+    <p> Loading contact form </p>
+  }
 </main>
