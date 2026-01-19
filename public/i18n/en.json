@@ -17,7 +17,7 @@
         "clean": "clean, responsive, scalable and performative digital experiences."
       },
 
-      "resumeCTA": {
+      "resumeCta": {
         "title": "Check resume",
         "content": "Check resume",
         "ariaLabel": "Download resume button"
@@ -93,7 +93,7 @@
           "tough": "You're tough to please."
         },
 
-        "resumeCTA": {
+        "resumeCta": {
           "title": "Let's check my resume then",
           "content": "Let's check my resume then",
           "ariaLabel": "Check resume button"
@@ -348,6 +348,11 @@
       },
 
       "footer": {
+        "convince": {
+          "arent": "Aren't you convinced yet?",
+          "noWay": "No way, it's personal now. We need to get in touch."
+        },
+
         "knowMore": {
           "doYou": "Do you want to know more",
           "about": "about me and all the amazing projects I've worked so far?"
@@ -363,8 +368,54 @@
 
     "contact": {
       "title": {
-        "hello": "Hello, I'm a",
-        "engineer": "Front-end Engineer"
+        "lets": "Let's work",
+        "together": "together!"
+      },
+
+      "wantBringToLife": {
+        "doYou": "Do you want to know more about me,",
+        "bring": "bring to life that unique project",
+        "youHad": "you idealized years ago or just",
+        "giveThat": "give that crazy idea you had last night a chance?"
+      },
+
+      "workTogether": {
+        "lets": "Let's work together",
+        "andTurn": "and turn all of that into",
+        "real": "reality!"
+      },
+
+      "form": {
+        "fields": {
+          "firstName": {
+            "label": "First name"
+          },
+
+          "lastName": {
+            "label": "Last name"
+          },
+
+          "subject": {
+            "label": "Subject"
+          },
+
+          "message": {
+            "label": "Message"
+          }
+        },
+
+        "submitCta": {
+          "title": "Submit form",
+          "content": "Submit",
+          "ariaLabel": "Submit form CTA"
+        },
+
+        "errors": {
+          "required": "{{field}} is required.",
+          "pattern": "{{field}} can only contain letters.",
+          "minlength": "{{field}} must be at least {{length}} characters long.",
+          "maxlength": "{{field}} can't be longer than {{length}} characters."
+        }
       },
 
       "meta": {

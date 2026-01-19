@@ -6,4 +6,5 @@ html, body, main {
   overflow-x: hidden;
   font-family: var(--font-family);
   color: var(--color-text-dark);
+  scroll-behavior: smooth;
 }
