@@ -8,8 +8,8 @@ import { ButtonVariant } from './button.model'
 })
 export class ButtonComponent {
   content = input.required<string>()
-  title = input<string>('Button title')
   ariaLabel = input.required<string>()
+  title = input<string>('Button')
   variant = input<ButtonVariant>('primary')
 
   clicked = output()

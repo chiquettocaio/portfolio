@@ -4,6 +4,7 @@
   justify-content: center;
   padding: 25px;
   max-height: 50px;
+  width: 100%;
   font-weight: bold;
   font-size: var(--font-size-button);
   color: var(--color-text-light);
@@ -12,6 +13,7 @@
   border: none;
   border-radius: var(--border-radius);
   transition: all .2s;
+  cursor: pointer;
 
   &:hover {
     background-color: var(--color-button-hover);
