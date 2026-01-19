@@ -1,13 +1,13 @@
 import { Component, inject, OnInit, signal } from '@angular/core'
 import { InterpolationParameters, TranslatePipe, TranslateService } from '@ngx-translate/core'
 import { Observable, take, tap } from 'rxjs'
-import { ButtonComponent } from '../../../shared/components/button/button.component'
+import { AnchorComponent } from '../../../shared/components/anchor/anchor.component'
 import { ProjectComponent } from './components/project/project.component'
 import { CareerProject } from './components/project/project.model'
 
 @Component({
   selector: 'app-projects',
-  imports: [TranslatePipe, ProjectComponent, ButtonComponent],
+  imports: [TranslatePipe, ProjectComponent, AnchorComponent],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })

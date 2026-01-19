@@ -18,18 +18,16 @@
 
   <div class="projects-footer">
     <p class="projects-footer__know-more">
-      <strong>
-        {{ 'home.projects.footer.knowMore.doYou' | translate }}
-      </strong>
-
-      {{ 'home.projects.footer.knowMore.about' | translate }}
+      <strong> {{ 'home.projects.footer.convince.arent' | translate }} </strong> <br>
+      {{ 'home.projects.footer.convince.noWay' | translate }} <br>
     </p>
 
-    <app-button
-      [title]="'home.projects.footer.sendMessageCTA.title' | translate"
+    <app-anchor
       [ariaLabel]="'home.projects.footer.sendMessageCTA.ariaLabel' | translate"
       [content]="'home.projects.footer.sendMessageCTA.content' | translate"
-      variant="secondary"
+      [title]="'home.projects.footer.sendMessageCTA.title' | translate"
+      href="#contact-section"
+      variant="button-secondary"
     />
   </div>
 </section>
