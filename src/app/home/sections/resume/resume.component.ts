@@ -1,7 +1,7 @@
-import { Component, effect, inject, OnInit, signal } from '@angular/core'
+import { Component, effect, inject, signal } from '@angular/core'
 import { InterpolationParameters, TranslatePipe, TranslateService } from '@ngx-translate/core'
 import { BehaviorSubject, filter, shareReplay, take, tap } from 'rxjs'
-import { TranslationConfigService } from '../../../services/translation/translation.service'
+import { TranslationConfigService } from '../../../services/translation-config/translation-config.service'
 import { ClickableIconComponent } from '../../../shared/components/clickable-icon/clickable-icon.component'
 import { ClickableIconData } from '../../../shared/components/clickable-icon/clickable-icon.model'
 import { ResumeSectionComponent } from './components/resume-section/resume-section.component'
@@ -13,7 +13,7 @@ import { ResumeSectionCareerExperience, ResumeSectionEducationExperience, Resume
   templateUrl: './resume.component.html',
   styleUrl: './resume.component.scss'
 })
-export class ResumeComponent implements OnInit {
+export class ResumeComponent {
   private translationConfigService = inject(TranslationConfigService)
   private translateService = inject(TranslateService)
 
@@ -41,10 +41,6 @@ export class ResumeComponent implements OnInit {
       this.translationConfigService.currentLanguage()
       this.translateResume()
     })
-  }
-
-  ngOnInit (): void {
-    this.translateResume()
   }
 
   private translateResume (): void {

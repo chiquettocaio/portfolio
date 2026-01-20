@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core'
 import { RouterOutlet } from '@angular/router'
-import { TranslationConfigService } from './services/translation/translation.service'
+import { TranslationConfigService } from './services/translation-config/translation-config.service'
 
 @Component({
   selector: 'app-root',

@@ -1,6 +1,7 @@
-import { Component, inject, OnInit, signal } from '@angular/core'
+import { Component, effect, inject, signal } from '@angular/core'
 import { InterpolationParameters, TranslatePipe, TranslateService } from '@ngx-translate/core'
 import { Observable, take, tap } from 'rxjs'
+import { TranslationConfigService } from '../../../services/translation-config/translation-config.service'
 import { AnchorComponent } from '../../../shared/components/anchor/anchor.component'
 import { ProjectComponent } from './components/project/project.component'
 import { CareerProject } from './components/project/project.model'
@@ -11,13 +12,17 @@ import { CareerProject } from './components/project/project.model'
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
-export class ProjectsComponent implements OnInit {
+export class ProjectsComponent {
+  private translationConfigService = inject(TranslationConfigService)
   private translateService = inject(TranslateService)
 
   projects = signal<CareerProject[]>([])
 
-  ngOnInit (): void {
-    this.getProjectsTranslation()
+  constructor () {
+    effect(() => {
+      this.translationConfigService.currentLanguage()
+      this.getProjectsTranslation()
+    })
   }
 
   private getProjectsTranslation (): void {

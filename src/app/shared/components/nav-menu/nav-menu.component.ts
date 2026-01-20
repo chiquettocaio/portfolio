@@ -2,7 +2,7 @@ import { AsyncPipe } from '@angular/common'
 import { Component, DOCUMENT, inject, signal } from '@angular/core'
 import { TranslatePipe } from '@ngx-translate/core'
 import { fromEvent, tap, throttleTime } from 'rxjs'
-import { TranslationConfigService } from '../../../services/translation/translation.service'
+import { TranslationConfigService } from '../../../services/translation-config/translation-config.service'
 import { IconComponent } from '../icon/icon.component'
 
 @Component({
@@ -18,7 +18,7 @@ export class NavMenuComponent {
   TOP_DISTANCE_TO_MOVE_DOWN: number = 200
 
   activeLink = signal<string>('hero')
-  navBottomPosition = signal<number>(0)
+  navBottom = signal<boolean>(false)
   windowHeight = signal<number>(0)
 
   scroller$ = fromEvent(window, 'scroll').pipe(
@@ -45,12 +45,7 @@ export class NavMenuComponent {
 
   private handleScroll (): void {
     const scrollTop = this.document.documentElement?.scrollTop ?? 0
-    this.windowHeight.set(window.innerHeight ?? 0)
 
-    this.navBottomPosition.set(
-      scrollTop >= this.TOP_DISTANCE_TO_MOVE_DOWN
-        ? this.windowHeight() - 100
-        : 0
-    )
+    this.navBottom.set(scrollTop > this.TOP_DISTANCE_TO_MOVE_DOWN)
   }
 }
