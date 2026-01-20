@@ -2,7 +2,7 @@
 
 <nav
   class="nav-menu"
-  [class.nav-menu--bottom]="navAtBottom()"
+  [style.transform]="`translateY(${navBottomPosition()}px)`"
 >
   <ul class="nav-menu-links">
     <li
