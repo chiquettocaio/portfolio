@@ -1,0 +1,97 @@
+@if (scroller$ | async) {}
+
+<nav
+  class="nav-menu"
+  [class.nav-menu--bottom]="navAtBottom()"
+>
+  <ul class="nav-menu-links">
+    <li
+      class="nav-menu-links__link"
+      [class.nav-menu-links__link--active]="activeLink() === 'hero'"
+    >
+      <a
+        href="#hero-section"
+        (click)="activateLink('hero')"
+      >
+        <app-icon
+          name="phosphorHouse"
+          [ariaLabel]="'navMenu.linksAria.hero' | translate"
+        />
+      </a>
+    </li>
+
+    <li
+      class="nav-menu-links__link"
+      [class.nav-menu-links__link--active]="activeLink() === 'about'"
+    >
+      <a
+        href="#about-section"
+        (click)="activateLink('about')"
+      >
+        <app-icon
+          name="phosphorUser"
+          [ariaLabel]="'navMenu.linksAria.about' | translate"
+        />
+      </a>
+    </li>
+
+    <li
+      class="nav-menu-links__link"
+      [class.nav-menu-links__link--active]="activeLink() === 'resume'"
+    >
+      <a
+        href="#resume-section"
+        (click)="activateLink('resume')"
+      >
+        <app-icon
+          name="phosphorScroll"
+          [ariaLabel]="'navMenu.linksAria.resume' | translate"
+        />
+      </a>
+    </li>
+
+    <li
+      class="nav-menu-links__link"
+      [class.nav-menu-links__link--active]="activeLink() === 'projects'"
+    >
+      <a
+        href="#projects-section"
+        (click)="activateLink('projects')"
+      >
+        <app-icon
+          name="phosphorCode"
+          [ariaLabel]="'navMenu.linksAria.projects' | translate"
+        />
+      </a>
+    </li>
+
+    <li
+      class="nav-menu-links__link"
+      [class.nav-menu-links__link--active]="activeLink() === 'contact'"
+    >
+      <a
+        href="#contact-section"
+        (click)="activateLink('contact')"
+      >
+        <app-icon
+          name="phosphorEnvelopeSimple"
+          [ariaLabel]="'navMenu.linksAria.contact' | translate"
+        />
+      </a>
+    </li>
+
+    <li class="nav-menu-links__button">
+      <button
+        (click)="switchLanguage()"
+      >
+        <app-icon
+          [name]="
+            currentLanguage() === 'pt-br'
+              ? 'flagBr'
+              : 'flagUs'"
+          [ariaLabel]="'navMenu.linksAria.contact' | translate"
+        />
+    </button>
+    </li>
+  </ul>
+</nav>
