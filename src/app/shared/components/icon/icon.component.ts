@@ -5,11 +5,18 @@ import {
   phosphorBuildingOffice,
   phosphorCalendarBlank,
   phosphorCertificate,
+  phosphorCode,
   phosphorDesktop,
+  phosphorEnvelopeSimple,
   phosphorFileArrowDown,
   phosphorGraduationCap,
-  phosphorMapPinLine
+  phosphorHouse,
+  phosphorMapPinLine,
+  phosphorScroll,
+  phosphorUser
 } from '@ng-icons/phosphor-icons/regular'
+
+import { flagBr, flagUs } from '@ng-icons/flag-icons'
 
 @Component({
   selector: 'app-icon',
@@ -23,7 +30,15 @@ import {
       phosphorMapPinLine,
       phosphorDesktop,
       phosphorArrowDown,
-      phosphorFileArrowDown
+      phosphorFileArrowDown,
+      phosphorHouse,
+      phosphorUser,
+      phosphorScroll,
+      phosphorCode,
+      phosphorEnvelopeSimple,
+
+      flagBr,
+      flagUs
     })
   ],
   templateUrl: './icon.component.html',
