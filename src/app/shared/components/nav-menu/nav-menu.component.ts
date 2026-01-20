@@ -21,7 +21,10 @@ export class NavMenuComponent {
   navAtBottom = signal<boolean>(false)
 
   scroller$ = fromEvent(window, 'scroll').pipe(
-    throttleTime(50),
+    throttleTime(100, undefined, {
+      leading: true,
+      trailing: true
+    }),
     tap(() => this.handleScroll())
   )
 
