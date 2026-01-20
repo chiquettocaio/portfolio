@@ -13,7 +13,7 @@
   transition: transform 1s cubic-bezier(.4,-0.21,.49,.97);
 
   &--bottom {
-    transform: translate(-50%, calc(100vh - 70px));
+    transform: translate(-50%, calc(100dvh - 70px));
   }
 }
 
