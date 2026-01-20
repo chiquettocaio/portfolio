@@ -1,8 +1,9 @@
 @if (scroller$ | async) {}
 
+<!-- [style.transform]="`translateY(${navBottomPosition()}px)`" -->
 <nav
   class="nav-menu"
-  [style.transform]="`translateY(${navBottomPosition()}px)`"
+  [class.nav-menu--bottom]="!!navBottomPosition()"
 >
   <ul class="nav-menu-links">
     <li
