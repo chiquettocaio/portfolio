@@ -1,4 +1,5 @@
 import { Component } from '@angular/core'
+import { NavMenuComponent } from '../shared/components/nav-menu/nav-menu.component'
 import { AboutComponent } from './sections/about/about.component'
 import { ContactComponent } from './sections/contact/contact.component'
 import { HeroComponent } from './sections/hero/hero.component'
@@ -8,6 +9,7 @@ import { ResumeComponent } from './sections/resume/resume.component'
 @Component({
   selector: 'app-home',
   imports: [
+    NavMenuComponent,
     HeroComponent,
     AboutComponent,
     ResumeComponent,
