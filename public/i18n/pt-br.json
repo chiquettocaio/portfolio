@@ -1,0 +1,380 @@
+{
+  "home": {
+    "hero": {
+      "title": {
+        "hello": "Nunca ouviu falar de um",
+        "front": "Front-end",
+        "engineer": "Engineer",
+        "before": "antes? Vem comigo."
+      },
+
+      "presentation": {
+        "hey": "E aí, eu sou",
+        "caio": "Caio Chiquetto",
+        "and": "e eu sou um",
+        "front": "Front-end Engineer",
+        "passionate": "apaixonado por criar",
+        "clean": "experiências digitais claras, responsivas, escaláveis e performáticas."
+      },
+
+      "resumeCta": {
+        "title": "Ver currículo",
+        "content": "Ver currículo",
+        "ariaLabel": "Botão de download do currículo"
+      },
+
+      "meta": {
+        "ariaLabel": "Seção home"
+      }
+    },
+
+    "about": {
+      "title": "Sobre mim",
+
+      "summary": {
+        "p1": {
+          "hey": "E aí, eu sou",
+          "caio": "Caio Chiquetto",
+          "and": "e eu sou um",
+          "front": "Front-end Engineer",
+          "passionate": "apaixonado por criar",
+          "clean": "experiências digitais claras, responsivas, escaláveis e performáticas."
+        },
+
+        "p2": {
+          "asA": "Como um",
+          "engineer": "Front-end Engineer",
+          "iCan": "eu posso fazer bem mais do que só atualizar a cor de fundo de um botão, eu posso atualizar a cor da fonte e o tamanho também (te peguei, não?)."
+        },
+
+        "p3": {
+          "jokes": "Brincadeiras à parte, com",
+          "8Years": "mais de 8 anos de experiência profissional",
+          "strong": "e fortes habilidades de desenvolvimento,",
+          "proven": "tenho um histórico comprovado de entregas performáticas, responsivas, escaláveis e limpas,",
+          "respecting": "respeitando prazos e atendendo às necessidades dos clientes."
+        },
+
+        "p4": {
+          "weAll": "Todos adoramos ver",
+          "delightful": "sites encantadores e animados",
+          "causes": "que nos impressionam, mas isso é",
+          "tip": "apenas a ponta do iceberg.",
+          "under": "Por trás disso, há muitas coisas",
+          "happening": "acontecendo em uma ordem estritamente definida",
+          "toProvide": "para proporcionar essa sensação, e é aí que entro em cena,",
+          "worryAbout": "para me preocupar com coisas que você não precisa, e entregar o que realmente importa: uma aplicação funcional que pode aumentar o lucro do seu negócio ou promover a pessoa incrível que você é,",
+          "upToYou": "a decisão é sua."
+        },
+
+        "p5": {
+          "ifYouAre": "Se você é aquele tipo de cliente que se importa com código limpo e manutenção,",
+          "weAreGoingTo": "vamos gostar ainda mais um do outro. Eu sigo as melhores práticas do mercado",
+          "andKeep": "e me mantenho sempre atento à qualidade e organização do código, porque não construo algo que seja apenas visualmente incrível,",
+          "reliable": "eu construo soluções confiáveis, e para mim essa é a única forma possível de trabalhar."
+        },
+
+        "p6": {
+          "consequence": "Como consequência,",
+          "maintainability": "a manutenibilidade do projeto é consideravelmente melhorada,",
+          "whichMeans": "o que significa",
+          "lessChances": "menos chances de seus usuários enfrentarem bugs, menos dinheiro gasto com manutenção, mais conversão e uma audiência mais feliz."
+        },
+
+        "tellMeNow": {
+          "tellMe": "Então me diga, você já ouviu falar de um",
+          "haveYou": "Front-end",
+          "engineer": "Engineer",
+          "now": "agora?"
+        },
+
+        "notConvinced": {
+          "still": "Ainda não está convencido?",
+          "tough": "Você é difícil de agradar."
+        },
+
+        "resumeCta": {
+          "title": "Então vamos conferir meu currículo",
+          "content": "Então vamos conferir meu currículo",
+          "ariaLabel": "Botão para conferir currículo"
+        }
+      },
+
+      "meta": {
+        "ariaLabel": "Seção sobre mim"
+      }
+    },
+
+    "resume": {
+      "title": "Currículo",
+      "paragraph": "Minhas habilidades técnicas abrangem várias tecnologias e ferramentas como Angular, RxJS, NgRx, efeitos NgRx, React.js, Redux, Vue.js, Vuex, Nuxt, JavaScript (ES5, ES6), TypeScript, Sass, HTML5, CSS3, ElectronJS, Node.js, Ajax, Git, Jest, Jasmine e outras.",
+
+      "downloadResumeCta": {
+        "buttonTitle": "Baixar currículo",
+        "buttonAriaLabel": "Baixar currículo",
+        "iconAriaLabel": "Ícone de baixar currículo"
+      },
+
+      "capIcon": {
+        "ariaLabel": "Ícone de chapéu de formatura"
+      },
+
+      "education": {
+        "title": "Educação",
+        "universityName": "UNIP — Universidade Paulista",
+        "degree": "Bacharel em Ciência da Computação (B.Sc. CS)",
+        "period": "2016 — 2020",
+        "location": "São Paulo — Brasil",
+
+        "icons": {
+          "diplomaIconAriaLabel": "Ícone de certificado"
+        }
+      },
+
+      "career": {
+        "title": "Experiência Profissional",
+
+        "icons": {
+          "desktopIconAriaLabel": "Ícone de computador",
+          "buildingIconAriaLabel": "Ícone de prédio de escritório",
+          "blankCalendarAriaLabel": "Ícone de calendário em branco",
+          "mapLocationAriaLabel": "Ícone de localização no mapa"
+        },
+
+        "technologies": {
+          "spartacus": "SAP Spartacus",
+          "cdc": "CDC (antigo Gigya) para CIAM",
+          "angular": "Angular",
+          "typescript": "TypeScript",
+          "rxjs": "RxJS",
+          "ngrx": "NgRx",
+          "sass": "Sass",
+          "html": "HTML5",
+          "css": "CSS3",
+          "javascript": "JavaScript",
+          "nodejs": "Node.js",
+          "jasmine": "Jasmine",
+          "nuxt": "Nuxt.js",
+          "vue": "Vue.js",
+          "vuex": "VueX",
+          "jest": "Jest",
+          "electron": "Electron.js",
+          "adonis": "Adonis.js",
+          "react": "React",
+          "postgre": "PostgreSQL",
+          "webpack": "Webpack",
+          "docker": "Docker",
+          "redux": "Redux",
+          "java": "Java",
+          "mongo": "MongoDB",
+          "redis": "Redis",
+          "websocket": "WebSocket"
+        },
+
+        "concepts": {
+          "oop": "POO",
+          "commerce": "E-commerce",
+          "sapCX": "SAP CX"
+        },
+
+        "k2": {
+          "role": "SAP Commerce CX | Composable Storefront (Spartacus) Specialist",
+          "companyName": "K2 Partnering Solutions",
+          "period": "Nov, 2025 — Presente",
+          "location": "Brasil — Remoto",
+
+          "responsibilities": {
+            "development": "Desenvolvimento e manutenção de aplicações SAP Commerce Composable Storefront (aka Spartacus).",
+            "creation": "Criação de novos projetos SAP Composable Storefront (aka Spartacus).",
+            "architecture": "Elaboração do design arquitetural e configuração de ferramentas de produtividade (ESlint, Stylelint, entre outras).",
+            "scalable": "Implementação de soluções escaláveis.",
+            "implementation": "Implementação de código fácil de ler e manter, seguindo as melhores práticas de mercado.",
+            "optimization": "Otimização de código.",
+            "performative": "Criação de componentes altamente performáticos e reutilizáveis.",
+            "documentation": "Desenvolvimento e manutenção da documentação FED para completude (Style guide, débitos técnicos).",
+            "codeReview": "Revisão de código e aplicação de um guia de estilo.",
+            "englishOnly": "Comunicação apenas em inglês."
+          }
+        },
+
+        "wam": {
+          "role": "SAP Commerce CX | Composable Storefront (Spartacus) Specialist",
+          "companyName": "WAM Digital",
+          "period": "Jun, 2024 — Out, 2025",
+          "location": "Costa Rica, EUA — Remoto",
+
+          "responsibilities": {
+            "development": "Desenvolvimento e manutenção de aplicações SAP Commerce Composable Storefront (aka Spartacus) para clientes nos EUA.",
+            "creation": "Criação de novos projetos SAP Composable Storefront (aka Spartacus) (B2B, B2C, D2C).",
+            "cdc": "Uso do SAP CDC (Customer Data Cloud, antigo Gigya) para gerenciamento de identidade e acesso do cliente (CIAM) e manipulação de UI.",
+            "architecture": "Elaboração do design arquitetural e configuração de ferramentas de produtividade (ESlint, Stylelint, entre outras).",
+            "scalable": "Implementação de soluções escaláveis.",
+            "communication": "Comunicação com equipes de design e produto, para auxiliar na definição do produto e compreender melhor toda a solução.",
+            "implementation": "Implementação de código fácil de ler e manter, seguindo as melhores práticas de mercado.",
+            "optimization": "Otimização de código.",
+            "performative": "Criação de componentes altamente performáticos e reutilizáveis.",
+            "documentation": "Desenvolvimento e manutenção da documentação FED para completude (Style guide, débitos técnicos).",
+            "codeReview": "Revisão de código e aplicação de um guia de estilo.",
+            "englishOnly": "Comunicação apenas em inglês."
+          }
+        },
+
+        "discover": {
+          "role": "SAP Commerce CX | Composable Storefront (Spartacus) Developer",
+          "companyName": "Discover",
+          "period": "Jan, 2023 — Jun, 2024",
+          "location": "Brasil — Remoto",
+
+          "responsibilities": {
+            "development": "Desenvolvimento e manutenção de aplicações SAP Commerce Composable Storefront (aka Spartacus).",
+            "communication": "Comunicação com as equipes de design e produto para entregar algo que realmente atenda às necessidades do cliente.",
+            "collaboration": "Colaboração com a equipe de design para fornecer a perspectiva FED e ajudar na definição de uma solução completa.",
+            "assist": "Auxílio a equipes internacionais em soluções SAP Composable Storefront, resolvendo problemas específicos para desbloqueá-los (comunicação em inglês)."
+          }
+        },
+
+        "accenture-lead": {
+          "role": "Application Development Team Lead",
+          "companyName": "Accenture",
+          "period": "Out, 2021 — Jan, 2023",
+          "location": "Brasil — Remoto",
+
+          "responsibilities": {
+            "implementation": "Implementação da primeira aplicação SAP Spartacus & Telco Utilities do mundo, para um grande cliente do segmento de Telecom. Tecnologias: Angular, TypeScript, RxJS, NgRx, SAP Spartacus.",
+            "communication": "Comunicação com equipes de design e produto para fornecer soluções FE significativas e escaláveis.",
+            "creation": "Criação de componentes FE reutilizáveis e responsivos.",
+            "delivery": "Entrega de código de alta qualidade e fácil manutenção.",
+            "testing": "Testes unitários com Jasmine e Karma, com cobertura mínima de 80%.",
+            "guide": "Auxílio e orientação a desenvolvedores menos experientes.",
+            "studyProgram": "Criação de programa interno de estudos em Angular para aprimorar habilidades de outros desenvolvedores.",
+            "presentations": "Criação de apresentações sobre tendências de tecnologia, melhores práticas, ferramentas de código, Angular e SAP Spartacus."
+          }
+        },
+
+        "accenture-senior": {
+          "role": "Application Development Senior Analyst",
+          "companyName": "Accenture",
+          "period": "Nov, 2020 — Out, 2021",
+          "location": "Brasil — Remoto",
+
+          "responsibilities": {
+            "architect": "Arquitetar, implementar e manter aplicações web para um grande cliente do segmento de Telecom usando stack Vue.js (Nuxt, VueX).",
+            "communication": "Comunicação com equipes de design e produto para fornecer soluções FE significativas e escaláveis.",
+            "creation": "Criação de componentes FE reutilizáveis e responsivos.",
+            "delivery": "Entrega de código de alta qualidade e fácil manutenção.",
+            "testing": "Testes unitários com Jest, com cobertura mínima de 80%.",
+            "guide": "Auxílio e orientação a desenvolvedores menos experientes."
+          }
+        },
+
+        "amadre": {
+          "role": "Desenvolvedor Full Stack",
+          "companyName": "A Madre Estúdio Digital",
+          "period": "Ago, 2017 — Ago, 2020",
+          "location": "Brasil — Presencial",
+
+          "responsibilities": {
+            "development": "Desenvolvimento de software de animação focado na criação de campanhas digitais, utilizando Vue.js, VueX e Electron.js.",
+            "full-stack": "Desenvolvedor full-stack responsável pelo desenvolvimento de uma aplicação web de vendas, destinada a vender e gerenciar licenças do software de animação mencionado. Tecnologias: React.js, Node.js, AdonisJS, Redux, styled-components, Docker.",
+            "landing": "Desenvolvimento de landing pages para diversos clientes, utilizando HTML5, CSS3 e JavaScript puro.",
+            "communication": "Comunicação com a equipe de design para atender corretamente aos requisitos de UI/UX."
+          }
+        }
+      },
+
+      "meta": {
+        "ariaLabel": "Seção de currículo"
+      }
+    },
+
+    "projects": {
+      "title": "Projetos",
+      "subtitle": "Alguns projetos relevantes nos quais trabalhei nos últimos anos",
+      "role": "Função:",
+      "topTechs": "Principais tecnologias:",
+
+      "meta": {
+        "ariaLabel": "Seção projetos"
+      },
+
+      "footer": {
+        "convince": {
+          "arent": "Ainda não está convencido?",
+          "noWay": "Não tem jeito, agora é pessoal. Precisamos nos falar."
+        },
+
+        "sendMessageCTA": {
+          "title": "Envie-me uma mensagem",
+          "content": "Envie-me uma mensagem",
+          "ariaLabel": "Botão para enviar mensagem"
+        }
+      }
+    },
+
+    "contact": {
+      "title": {
+        "lets": "Vamos trabalhar",
+        "together": "juntos!"
+      },
+
+      "wantBringToLife": {
+        "doYou": "Quer saber mais sobre mim,",
+        "bring": "dar vida àquele projeto único com o qual você sonha há anos",
+        "youHad": "ou dar aquela",
+        "giveThat": "ideia maluca que você teve ontem à noite uma chance?"
+      },
+
+      "workTogether": {
+        "lets": "Vamos trabalhar juntos",
+        "andTurn": "e transformar tudo isso em realidade!"
+      },
+
+      "form": {
+        "fields": {
+          "firstName": {
+            "label": "Nome"
+          },
+
+          "lastName": {
+            "label": "Sobrenome"
+          },
+
+          "subject": {
+            "label": "Assunto"
+          },
+
+          "message": {
+            "label": "Mensagem"
+          }
+        },
+
+        "submitCta": {
+          "title": "Enviar formulário",
+          "content": "Enviar",
+          "ariaLabel": "Botão para enviar formulário"
+        },
+
+        "errors": {
+          "required": "{{field}} obrigatório.",
+          "pattern": "{{field}} só pode conter letras.",
+          "minlength": "{{field}} deve ter pelo menos {{length}} caracteres.",
+          "maxlength": "{{field}} não pode ter mais de {{length}} caracteres."
+        }
+      },
+
+      "meta": {
+        "ariaLabel": "Seção contato"
+      }
+    }
+  },
+
+  "navMenu": {
+    "linksAria": {
+      "hero": "Início",
+      "about": "Sobre",
+      "resume": "Currículo",
+      "projects": "Projetos",
+      "contact": "Contato"
+    }
+  }
+}

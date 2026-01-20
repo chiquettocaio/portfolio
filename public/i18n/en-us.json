@@ -416,5 +416,15 @@
         "ariaLabel": "Contact section"
       }
     }
+  },
+
+  "navMenu": {
+    "linksAria": {
+      "hero": "Home",
+      "about": "About",
+      "resume": "Resume",
+      "projects": "Projects",
+      "contact": "Contact"
+    }
   }
 }
