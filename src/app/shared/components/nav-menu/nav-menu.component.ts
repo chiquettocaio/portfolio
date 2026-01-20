@@ -19,7 +19,6 @@ export class NavMenuComponent {
 
   activeLink = signal<string>('hero')
   navBottom = signal<boolean>(false)
-  windowHeight = signal<number>(0)
 
   scroller$ = fromEvent(window, 'scroll').pipe(
     throttleTime(100, undefined, {
