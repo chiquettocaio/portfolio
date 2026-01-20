@@ -45,14 +45,12 @@ export class NavMenuComponent {
 
   private handleScroll (): void {
     const scrollTop = this.document.documentElement?.scrollTop ?? 0
-    this.windowHeight.set(this.document.documentElement.clientHeight ?? 0)
+    this.windowHeight.set(window.innerHeight ?? 0)
 
     this.navBottomPosition.set(
       scrollTop >= this.TOP_DISTANCE_TO_MOVE_DOWN
         ? this.windowHeight() - 100
         : 0
     )
-
-    console.log(this.navBottomPosition())
   }
 }
