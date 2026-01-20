@@ -19,6 +19,7 @@ export class NavMenuComponent {
 
   activeLink = signal<string>('hero')
   navBottomPosition = signal<number>(0)
+  windowHeight = signal<number>(0)
 
   scroller$ = fromEvent(window, 'scroll').pipe(
     throttleTime(100, undefined, {
@@ -44,11 +45,11 @@ export class NavMenuComponent {
 
   private handleScroll (): void {
     const scrollTop = this.document.documentElement?.scrollTop ?? 0
-    const windowHeight = this.document.documentElement.clientHeight ?? 0
+    this.windowHeight.set(this.document.documentElement.clientHeight ?? 0)
 
     this.navBottomPosition.set(
       scrollTop >= this.TOP_DISTANCE_TO_MOVE_DOWN
-        ? windowHeight - 100
+        ? this.windowHeight() - 100
         : 0
     )
 
