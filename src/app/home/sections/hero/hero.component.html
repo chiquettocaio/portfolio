@@ -31,9 +31,34 @@
     <strong> {{ 'home.hero.presentation.clean' | translate }} </strong>
   </p>
 
-  <app-button
-    [title]="'home.hero.resumeCta.title' | translate"
-    [content]="'home.hero.resumeCta.content' | translate"
-    [ariaLabel]="'home.hero.resumeCta.ariaLabel' | translate"
-  />
+  <div class="buttons">
+    <app-anchor
+      [title]="'home.hero.viewMyWorkCta.title' | translate"
+      [content]="'home.hero.viewMyWorkCta.content' | translate"
+      [ariaLabel]="'home.hero.viewMyWorkCta.ariaLabel' | translate"
+      variant="button-primary"
+      href="#projects-section"
+    >
+      <app-icon
+        AnchorTrailingIcon
+        name="phosphorArrowRight"
+        [ariaLabel]="'home.hero.viewMyWorkCta.iconAriaLabel' | translate"
+      />
+    </app-anchor>
+
+    <app-anchor
+      [title]="'home.hero.downloadResumeCta.title' | translate"
+      [content]="'home.hero.downloadResumeCta.content' | translate"
+      [ariaLabel]="'home.hero.downloadResumeCta.ariaLabel' | translate",
+      variant="button-secondary"
+      href="/docs/caio-chiquetto-resume.pdf"
+      download
+    >
+      <app-icon
+        AnchorTrailingIcon
+        name="phosphorDownloadSimple"
+        [ariaLabel]="'home.hero.downloadResumeCta.iconAriaLabel' | translate"
+      />
+    </app-anchor>
+  </div>
 </section>

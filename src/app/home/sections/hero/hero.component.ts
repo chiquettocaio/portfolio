@@ -1,11 +1,18 @@
 import { NgOptimizedImage } from '@angular/common'
 import { Component } from '@angular/core'
-import { ButtonComponent } from '@app/shared/components/button/button.component'
+import { AnchorComponent } from '@app/shared/components/anchor/anchor.component'
+import { IconComponent } from '@app/shared/components/icon/icon.component'
 import { TranslatePipe } from '@ngx-translate/core'
 
 @Component({
   selector: 'app-hero',
-  imports: [TranslatePipe, ButtonComponent, NgOptimizedImage],
+  imports: [
+    TranslatePipe,
+    NgOptimizedImage,
+
+    IconComponent,
+    AnchorComponent
+  ],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss'
 })
