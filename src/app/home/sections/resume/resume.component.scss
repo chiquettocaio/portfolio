@@ -1,8 +1,13 @@
+@import 'mixins/background-pattern';
+
 section {
   display: flex;
   flex-direction: column;
   width: 100%;
   padding: var(--space-section-sm);
+  background-color: var(--color-section-primary);
+
+  @include background-pattern-light;
 }
 
 .paragraph {

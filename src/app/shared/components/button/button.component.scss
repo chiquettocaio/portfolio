@@ -15,16 +15,24 @@
   transition: all .2s;
   cursor: pointer;
 
-  &:hover {
-    background-color: var(--color-button-hover);
+  &:active {
+    box-shadow: 0 0 0;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      background-color: var(--color-button-hover);
+    }
   }
 
   &--secondary {
     background-color: var(--color-button-secondary);
     color: var(--color-button);
 
-    &:hover {
-      background-color: var(--color-button-secondary-hover);
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        background-color: var(--color-button-secondary-hover);
+      }
     }
   }
 }

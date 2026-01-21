@@ -2,7 +2,14 @@
   id="hero-section"
   [aria-label]="'home.hero.meta.ariaLabel' | translate"
 >
-  <div class="image"></div>
+  <img
+    class="image"
+    ngSrc="images/me.png"
+    width="160"
+    height="160"
+    sizes="100vw"
+    alt="Me"
+  >
 
   <h1 class="title">
     {{ 'home.hero.title.hello' | translate }}
