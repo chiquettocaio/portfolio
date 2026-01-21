@@ -289,7 +289,7 @@
 
     "projects": {
       "title": "Projetos",
-      "subtitle": "Alguns projetos interessantes em que eu trabalhei",
+      "subtitle": "Alguns projetos interessantes em que eu trabalhei.",
       "role": "Cargo:",
       "topTechs": "Principais tecnologias:",
 
@@ -420,12 +420,15 @@
   },
 
   "navMenu": {
+    "aria": "Menu de navegação",
+
     "linksAria": {
       "hero": "Início",
       "about": "Sobre",
       "resume": "Currículo",
       "projects": "Projetos",
-      "contact": "Contato"
+      "contact": "Contato",
+      "language": "Alterar idioma"
     }
   }
 }

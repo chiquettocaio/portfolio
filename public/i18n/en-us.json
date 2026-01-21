@@ -289,7 +289,7 @@
 
     "projects": {
       "title": "Projects",
-      "subtitle": "Some interesting projects that I have worked on",
+      "subtitle": "Some interesting projects that I have worked on.",
       "role": "Role:",
       "topTechs": "Main techs:",
 
@@ -419,12 +419,15 @@
   },
 
   "navMenu": {
+    "aria": "Navigation menu",
+
     "linksAria": {
       "hero": "Home",
       "about": "About",
       "resume": "Resume",
       "projects": "Projects",
-      "contact": "Contact"
+      "contact": "Contact",
+      "language": "Switch language"
     }
   }
 }
