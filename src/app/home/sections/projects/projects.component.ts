@@ -1,8 +1,8 @@
 import { Component, effect, inject, signal } from '@angular/core'
+import { TranslationConfigService } from '@app/services/translation-config/translation-config.service'
+import { AnchorComponent } from '@app/shared/components/anchor/anchor.component'
 import { InterpolationParameters, TranslatePipe, TranslateService } from '@ngx-translate/core'
 import { Observable, take, tap } from 'rxjs'
-import { TranslationConfigService } from '../../../services/translation-config/translation-config.service'
-import { AnchorComponent } from '../../../shared/components/anchor/anchor.component'
 import { ProjectComponent } from './components/project/project.component'
 import { CareerProject } from './components/project/project.model'
 

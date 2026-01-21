@@ -1,5 +1,5 @@
 import { Component, input, output } from '@angular/core'
-import { IconComponent } from '../icon/icon.component'
+import { IconComponent } from '@app/shared/components/icon/icon.component'
 import { ClickableIconData } from './clickable-icon.model'
 
 @Component({

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core'
+import { AnchorComponent } from '@app/shared/components/anchor/anchor.component'
 import { TranslatePipe } from '@ngx-translate/core'
-import { AnchorComponent } from '../../../shared/components/anchor/anchor.component'
 
 @Component({
   selector: 'app-about',

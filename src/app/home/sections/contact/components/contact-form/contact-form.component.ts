@@ -1,9 +1,9 @@
 import { Component, ElementRef, inject } from '@angular/core'
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms'
+import { ButtonComponent } from '@app/shared/components/button/button.component'
+import { InputComponent } from '@app/shared/components/input/input.component'
+import { TextAreaComponent } from '@app/shared/components/textarea/textarea.component'
 import { TranslatePipe } from '@ngx-translate/core'
-import { ButtonComponent } from '../../../../../shared/components/button/button.component'
-import { InputComponent } from '../../../../../shared/components/input/input.component'
-import { TextAreaComponent } from '../../../../../shared/components/textarea/textarea.component'
 
 @Component({
   selector: 'app-contact-form',
@@ -75,12 +75,19 @@ export class ContactFormComponent {
   }
 
   private focusOnFirstInvalidInput (): void {
-    const firstInvalidInput = this.elementRef.nativeElement.querySelector('form .ng-invalid input') as HTMLInputElement
-    const focusedInput = this.elementRef.nativeElement.querySelector('form input:focus') as HTMLInputElement
+    const firstInvalidInput = this.elementRef.nativeElement.querySelector('form .ng-invalid input, form .ng-invalid textarea') as HTMLInputElement
+    const focusedInput = this.elementRef.nativeElement.querySelector('form input:focus, form textarea:focus') as HTMLInputElement
     const nextInvalidInput = this.elementRef.nativeElement
       .querySelector('form app-input:has(input:focus) ~ .ng-invalid input, form app-input:has(input:focus) ~ .ng-invalid textarea') as HTMLInputElement
 
     const isFocusedInputInvalid = focusedInput?.parentElement?.parentElement?.classList.contains('ng-invalid')
+
+    console.log({
+      firstInvalidInput,
+      focusedInput,
+      nextInvalidInput,
+      isFocusedInputInvalid
+    })
 
     const inputToFocus = focusedInput
       ? isFocusedInputInvalid

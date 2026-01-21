@@ -1,8 +1,8 @@
 import { Component, DOCUMENT, inject, OnInit, signal } from '@angular/core'
+import { TranslationConfigService } from '@app/services/translation-config/translation-config.service'
+import { IconComponent } from '@app/shared/components/icon/icon.component'
+import { KeyString } from '@app/shared/models/generic-types.model'
 import { TranslatePipe } from '@ngx-translate/core'
-import { TranslationConfigService } from '../../../services/translation-config/translation-config.service'
-import { KeyString } from '../../models/generic-types.model'
-import { IconComponent } from '../icon/icon.component'
 
 @Component({
   selector: 'app-nav-menu',
@@ -15,7 +15,7 @@ export class NavMenuComponent implements OnInit {
   private translationConfigService = inject(TranslationConfigService)
 
   TOP_DISTANCE_TO_MOVE_DOWN: number = 200
-  IS_MOBILE: boolean = this.document.documentElement.clientWidth >= 768
+  isMobile = signal<boolean>(this.document.documentElement.clientWidth <= 768)
 
   activeLink = signal<string>('hero')
   navBottom = signal<boolean>(false)
@@ -38,6 +38,14 @@ export class NavMenuComponent implements OnInit {
       : 'pt-br'
 
     this.translationConfigService.setLanguage(nextLang)
+  }
+
+  onSpace (e: Event, link: string): void {
+    e.preventDefault()
+    this.activateLink(link)
+
+    const target = (e.target) as HTMLAnchorElement
+    window.location.href = target.href
   }
 
   private initIntersectionObserver (): void {
@@ -70,7 +78,7 @@ export class NavMenuComponent implements OnInit {
           this.isImperativelyNavigating.set(link !== this.activeLink())
         }
       })
-    }, { rootMargin: '-40%' })
+    }, { rootMargin: '-50%' })
 
     if (heroSection) observer.observe(heroSection)
     if (aboutSection) observer.observe(aboutSection)

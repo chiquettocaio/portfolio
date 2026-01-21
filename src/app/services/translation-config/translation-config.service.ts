@@ -2,8 +2,8 @@ import { inject, Injectable, signal } from '@angular/core'
 import { TranslateService } from '@ngx-translate/core'
 import { AvailableLanguages } from './translation-config.model'
 
-import enTranslations from '../../../../public/i18n/en-us.json'
-import ptTranslations from '../../../../public/i18n/pt-br.json'
+import enTranslations from 'public/i18n/en-us.json'
+import ptTranslations from 'public/i18n/pt-br.json'
 
 @Injectable({ providedIn: 'root' })
 export class TranslationConfigService {

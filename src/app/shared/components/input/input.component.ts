@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, forwardRef, inject, Injector, input, OnInit, signal } from '@angular/core'
 import { AbstractControlOptions, ControlValueAccessor, NG_VALUE_ACCESSOR, NgControl, TouchedChangeEvent } from '@angular/forms'
+import { KeyString } from '@app/shared/models/generic-types.model'
 import { filter, take, tap } from 'rxjs'
-import { KeyString } from '../../models/generic-types.model'
 
 @Component({
   selector: 'app-input',

@@ -1,9 +1,9 @@
 import { Component, effect, inject, signal } from '@angular/core'
+import { TranslationConfigService } from '@app/services/translation-config/translation-config.service'
+import { ClickableIconComponent } from '@app/shared/components/clickable-icon/clickable-icon.component'
+import { ClickableIconData } from '@app/shared/components/clickable-icon/clickable-icon.model'
 import { InterpolationParameters, TranslatePipe, TranslateService } from '@ngx-translate/core'
 import { BehaviorSubject, filter, shareReplay, take, tap } from 'rxjs'
-import { TranslationConfigService } from '../../../services/translation-config/translation-config.service'
-import { ClickableIconComponent } from '../../../shared/components/clickable-icon/clickable-icon.component'
-import { ClickableIconData } from '../../../shared/components/clickable-icon/clickable-icon.model'
 import { ResumeSectionComponent } from './components/resume-section/resume-section.component'
 import { ResumeSectionCareerExperience, ResumeSectionEducationExperience, ResumeSectionIcon } from './components/resume-section/resume-section.model'
 
