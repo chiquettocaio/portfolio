@@ -21,8 +21,8 @@
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: var(--color-resume-icon-bg);
-    color: var(--color-resume-icon);
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
     border-radius: var(--border-radius);
     box-shadow: -4px 4px 4px rgba(0 0 0 / 0.20);
 
@@ -57,7 +57,7 @@
       display: block;
       width: 10px;
       height: 10px;
-      background: var(--color-resume-icon-bg);
+      background: var(--color-secondary);
       border-radius: 50%;
       border: 6px solid rgba(229 245 255 / 0.75);
     }
@@ -114,8 +114,8 @@
 
   &__tech {
     padding: 6px;
-    background-color: var(--color-resume-icon-bg);
-    color: var(--color-text-light);
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
     border-radius: 8px;
     font-size: 1.4rem;
   }

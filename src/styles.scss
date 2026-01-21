@@ -1,9 +1,9 @@
-@import url('./styles/index.scss');
+@use './styles/index';
 
 html, body, main {
   width: 100dvw;
   overflow-x: hidden;
   font-family: var(--font-family);
-  color: var(--color-text-dark);
+  color: var(--color-black);
   scroll-behavior: smooth;
 }

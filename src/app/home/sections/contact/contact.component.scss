@@ -1,11 +1,11 @@
-@import 'mixins/background-pattern';
+@use 'mixins/background-pattern' as *;
 
 section {
   display: flex;
   flex-direction: column;
   width: 100%;
   padding: 50px var(--space-section-sm) 100px;
-  background-color: var(--color-section-primary);
+  background-color: var(--color-primary);
 
    @include background-pattern-light;
 }

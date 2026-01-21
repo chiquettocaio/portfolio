@@ -8,7 +8,7 @@
     left: 9px;
     top: 21px;
     font-weight: var(--font-weight-regular);
-    background: #FFFFFF;
+    background: var(--color-gray);
     padding: 0px 6px;
     font-size: 1.6rem;
     transition: all .2s;
@@ -20,8 +20,8 @@
     height: 150px;
     min-height: 150px;
     padding: 16px;
-    background-color: var(--color-input-bg);
-    color: var(--color-text-dark);
+    background-color: var(--color-gray);
+    color: var(--color-black);
     font-family: var(--font-family);
     font-size: 1.6rem;
     font-weight: var(--font-weight-regular);
@@ -30,7 +30,7 @@
     resize: vertical;
 
     &:focus-visible {
-      outline-color: var(--color-input-focused);
+      outline-color: var(--color-secondary);
     }
   }
 
@@ -54,7 +54,7 @@
 
 :host {
   &.ng-valid .form-control__textarea {
-    border-color: var(--color-input-success);
+    border-color: var(--color-success);
   }
 
   &.ng-touched.ng-invalid {

@@ -1,11 +1,11 @@
-@import 'mixins/background-pattern';
+@use 'mixins/background-pattern' as *;
 
 section {
   display: flex;
   flex-direction: column;
   width: 100%;
   padding: var(--space-section-sm);
-  background-color: var(--color-section-primary);
+  background-color: var(--color-primary);
 
   @include background-pattern-light;
 }
@@ -14,7 +14,7 @@ section {
   margin-top: 28px;
   font-size: var(--font-size-paragraph);
   line-height: 26px;
-  color: var(--color-text-dark);
+  color: var(--color-black);
   margin-bottom: 20px;
 }
 
@@ -24,7 +24,7 @@ section {
   align-items: center;
 
   &__title {
-    color: var(--color-text-dark);
+    color: var(--color-black);
     font-size: var(--font-size-title);
     letter-spacing: 1px;
     line-height: 20px;

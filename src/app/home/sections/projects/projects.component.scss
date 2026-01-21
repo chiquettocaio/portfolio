@@ -1,9 +1,9 @@
-@import 'mixins/background-pattern';
+@use 'mixins/background-pattern' as *;
 
 section {
   padding: var(--space-section-sm);
-  background-color: var(--color-section-secondary);
-  color: var(--color-text-light);
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
 
   @include background-pattern-dark;
 }
