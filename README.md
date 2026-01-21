@@ -60,3 +60,6 @@ Seems like ESLint is still the go-to tool for linting, and it's the primary choi
 - ng-icons: https://github.com/ng-icons/ng-icons
 - npm install @ng-icons/core @ng-icons/phosphor-icons
   - phosphor-icons is the name of the lib of icons, but ng-icons make available a lot of other icon libs
+
+## Safe hover
+- To safely hover on desktop and avoid the mobile hover effect, use this combination of @media: @media (hover: hover) and (pointer: fine) {}. Together they check if the device can hover, and also if the device has cursor (not touchscreen only like some touchscreen laptops).
