@@ -1,1 +1,5 @@
-export type AnchorVariant = 'button-primary' | 'button-secondary' | 'simple'
+export type AnchorVariant
+  = | 'button-primary'
+    | 'button-secondary'
+    | 'icon'
+    | 'simple'

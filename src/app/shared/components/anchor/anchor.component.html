@@ -2,9 +2,13 @@
   class="app-anchor"
   [class.app-anchor--button-primary]="variant() === 'button-primary'"
   [class.app-anchor--button-secondary]="variant() === 'button-secondary'"
+  [class.app-anchor--icon]="variant() === 'icon'"
   [title]="title()"
   [href]="href()"
   [aria-label]="ariaLabel()"
+  [attr.download]="download() ? '' : null"
 >
-  {{ content() }}
+  <ng-content select="[AnchorLeadingIcon]" />
+  <span class="app-anchor__content"> {{ content() }} </span>
+  <ng-content select="[AnchorTrailingIcon]"/>
 </a>
