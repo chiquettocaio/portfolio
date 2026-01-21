@@ -2,14 +2,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 25px;
-  max-height: 50px;
+  gap: 0 8px;
+  padding: 15px;
+  height: 35px;
   width: 100%;
-  font-weight: bold;
+  font-weight: var(--font-weight-medium);
   font-size: var(--font-size-button);
   color: var(--color-text-light);
   background: var(--color-button);
-  box-shadow: 4px 6px 4px rgba(0 0 0 / .25);
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
   border: none;
   border-radius: var(--border-radius);
   transition: all .2s;
@@ -17,6 +18,7 @@
 
   &:active {
     box-shadow: 0 0 0;
+    transform: translateY(2px);
   }
 
   @media (hover: hover) and (pointer: fine) {
@@ -33,6 +35,18 @@
       &:hover {
         background-color: var(--color-button-secondary-hover);
       }
+    }
+  }
+
+  &__content {
+    line-height: 14px;
+  }
+
+  &::ng-deep {
+    [ButtonLeadingIcon],
+    [ButtonTrailingIcon] {
+      width: 20px;
+      height: 20px;
     }
   }
 }
