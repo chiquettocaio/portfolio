@@ -1,0 +1,19 @@
+@mixin background-pattern-light {
+  background:
+    linear-gradient(135deg,#0000 20.5%,#f8f9fa 0 29.5%,#0000 0) 0 16.5px,
+    linear-gradient( 45deg,#0000 8%,#f8f9fa 0 17%, #0000 0 58%) 33px 0,
+    linear-gradient(135deg,#0000 8%,#f8f9fa 0 17%, #0000 0 58%,#f8f9fa 0 67%,#0000 0),
+    linear-gradient( 45deg,#0000 8%,#f8f9fa 0 17%, #0000 0 58%,#f8f9fa 0 67%,#0000 0 83%,#f8f9fa 0 92%,#0000 0),
+    #f2f2f2;
+  background-size: 66px 66px;
+}
+
+@mixin background-pattern-dark {
+  background:
+    linear-gradient(135deg,#0000 20.5%,#05668d 0 29.5%,#0000 0) 0 16.5px,
+    linear-gradient( 45deg,#0000 8%,#05668d 0 17%, #0000 0 58%) 33px 0,
+    linear-gradient(135deg,#0000 8%,#05668d 0 17%, #0000 0 58%,#05668d 0 67%,#0000 0),
+    linear-gradient( 45deg,#0000 8%,#05668d 0 17%, #0000 0 58%,#05668d 0 67%,#0000 0 83%,#05668d 0 92%,#0000 0),
+    #006187;
+  background-size: 66px 66px;
+}
