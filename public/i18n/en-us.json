@@ -17,10 +17,18 @@
         "clean": "clean, responsive, scalable and performative digital experiences."
       },
 
-      "resumeCta": {
-        "title": "Check resume",
-        "content": "Check resume",
-        "ariaLabel": "Download resume button"
+      "viewMyWorkCta": {
+        "title": "View my work",
+        "content": "View my work",
+        "ariaLabel": "View my work CTA",
+        "iconAriaLabel": "View my work icon"
+      },
+
+      "downloadResumeCta": {
+        "title": "Download resume",
+        "content": "Resume",
+        "ariaLabel": "Download resume",
+        "iconAriaLabel": "Download resume icon"
       },
 
       "meta": {
@@ -33,21 +41,12 @@
 
       "summary": {
         "p1": {
-          "hey": "Hey, I'm",
-          "caio": "Caio Chiquetto",
-          "and": "and I'm a",
-          "front": "Front-end Engineer",
-          "passionate": "passionate about crafting",
-          "clean": "clean, responsive, scalable and performative digital experiences."
-        },
-
-        "p2": {
           "asA": "As a",
           "engineer": "Front-end Engineer",
           "iCan": "I can do way more than just update your CTA's background color, I can also update it's font color and size (got you, didn't I?)."
         },
 
-        "p3": {
+        "p2": {
           "jokes": "Jokes aside, with",
           "8Years": "more than 8 years of professional experience",
           "strong": "and strong development skills,",
@@ -55,7 +54,7 @@
           "respecting": "respecting deadlines and meeting customer needs."
         },
 
-        "p4": {
+        "p3": {
           "weAll": "We all love to see",
           "delightful": "delightful and animated websites",
           "causes": "that causes us to be impressed, but that's",
@@ -67,14 +66,14 @@
           "upToYou": "it's up to you."
         },
 
-        "p5": {
+        "p4": {
           "ifYouAre": "If you're that kind of client that cares about clean code and maintainability,",
           "weAreGoingTo": "we're going to like each other even more. I stick to the market's best practices",
-          "andKeep": "and keep myself always alert about the quality and organization of the code, because I don't build something that's only visually incredible,",
+          "andKeep": "and keep myself always alert about the quality and organization of the code, because I don't just build pleasant interfaces,",
           "reliable": "I build reliable solutions, and for me that's the only possible way to work."
         },
 
-        "p6": {
+        "p5": {
           "consequence": "As a consequence,",
           "maintainability": "the maintainability of the project is considerably improved,",
           "whichMeans": "which means",
@@ -110,8 +109,8 @@
       "paragraph": "My technical skills encompasses lots of technologies and tools like Angular, RxJS, NgRx, NgRx effects, React.js, Redux, Vue.js, Vuex, Nuxt, JavaScript (ES5, ES6), TypeScript, Sass, HTML5, CSS3, ElectronJS, Node.js, Ajax, Git, Jest, Jasmine and others.",
 
       "downloadResumeCta": {
-        "buttonTitle": "Download resume",
-        "buttonAriaLabel": "Download resume",
+        "title": "Download resume",
+        "ariaLabel": "Download resume",
         "iconAriaLabel": "Download resume icon"
       },
 
