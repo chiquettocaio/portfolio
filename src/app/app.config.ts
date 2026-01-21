@@ -10,7 +10,6 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes),
     provideTranslateService({
       fallbackLang: 'en',
-      defaultLanguage: 'en',
       lang: 'en'
     })
   ]
