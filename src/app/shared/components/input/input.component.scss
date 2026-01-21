@@ -5,11 +5,9 @@
 
   &__label {
     position: absolute;
-    left: 9px;
-    top: 21px;
+    left: 16px;
+    top: 20px;
     font-weight: var(--font-weight-regular);
-    background: var(--color-gray);
-    padding: 0px 6px;
     font-size: 1.6rem;
     transition: all .2s;
     line-height: 12px;
@@ -20,7 +18,7 @@
     width: 100%;
     height: 50px;
     padding: 0 16px;
-    background-color: var(--color-gray);
+    background-color: var(--color-white);
     color: var(--color-black);
     font-family: var(--font-family);
     font-size: 1.6rem;
@@ -44,8 +42,8 @@
 
   &:has(input:focus-visible) .form-control__label,
   &:has(input:not(:placeholder-shown)) .form-control__label {
-    left: 12px;
-    top: -6px;
+    left: 0px;
+    top: -15px;
     font-size: 1.4rem;
     font-weight: var(--font-weight-medium);
   }
