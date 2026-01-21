@@ -1,15 +1,21 @@
 <nav
   class="nav-menu"
+  [aria-label]="'navMenu.aria' | translate"
   [class.nav-menu--bottom]="navBottom()"
 >
-  <ul class="nav-menu-links">
+  <ul
+    class="nav-menu-links"
+    [class.nav-menu-links--is-mobile]="isMobile()"
+  >
     <li
-      class="nav-menu-links__link"
+      class="nav-menu-links__link tooltip"
       [class.nav-menu-links__link--active]="activeLink() === 'hero'"
+      [attr.data-tooltip]="'navMenu.linksAria.hero' | translate"
     >
       <a
         href="#hero-section"
         (click)="activateLink('hero')"
+        (keydown.space)="onSpace($event, 'hero')"
       >
         <app-icon
           name="phosphorHouse"
@@ -19,12 +25,14 @@
     </li>
 
     <li
-      class="nav-menu-links__link"
+      class="nav-menu-links__link tooltip"
       [class.nav-menu-links__link--active]="activeLink() === 'about'"
+      [attr.data-tooltip]="'navMenu.linksAria.about' | translate"
     >
       <a
         href="#about-section"
         (click)="activateLink('about')"
+        (keydown.space)="onSpace($event, 'about')"
       >
         <app-icon
           name="phosphorUser"
@@ -34,13 +42,15 @@
     </li>
 
     <li
-      class="nav-menu-links__link"
+      class="nav-menu-links__link tooltip"
       [class.nav-menu-links__link--active]="activeLink() === 'resume'"
+      [attr.data-tooltip]="'navMenu.linksAria.resume' | translate"
     >
       <a
         href="#resume-section"
         (click)="activateLink('resume')"
-      >
+        (keydown.space)="onSpace($event, 'resume')"
+        >
         <app-icon
           name="phosphorScroll"
           [ariaLabel]="'navMenu.linksAria.resume' | translate"
@@ -49,12 +59,14 @@
     </li>
 
     <li
-      class="nav-menu-links__link"
+      class="nav-menu-links__link tooltip"
       [class.nav-menu-links__link--active]="activeLink() === 'projects'"
+      [attr.data-tooltip]="'navMenu.linksAria.projects' | translate"
     >
       <a
         href="#projects-section"
         (click)="activateLink('projects')"
+        (keydown.space)="onSpace($event, 'projects')"
       >
         <app-icon
           name="phosphorCode"
@@ -64,12 +76,14 @@
     </li>
 
     <li
-      class="nav-menu-links__link"
+      class="nav-menu-links__link tooltip"
       [class.nav-menu-links__link--active]="activeLink() === 'contact'"
+      [attr.data-tooltip]="'navMenu.linksAria.contact' | translate"
     >
       <a
         href="#contact-section"
         (click)="activateLink('contact')"
+        (keydown.space)="onSpace($event, 'contact')"
       >
         <app-icon
           name="phosphorEnvelopeSimple"
@@ -78,16 +92,16 @@
       </a>
     </li>
 
-    <li class="nav-menu-links__button">
-      <button
-        (click)="switchLanguage()"
-      >
+    <li
+      class="nav-menu-links__button tooltip"
+      [attr.data-tooltip]="'navMenu.linksAria.language' | translate"
+    >
+      <button (click)="switchLanguage()">
         <app-icon
-          [name]="
-            currentLanguage() === 'pt-br'
-              ? 'flagBr'
-              : 'flagUs'"
-          [ariaLabel]="'navMenu.linksAria.contact' | translate"
+          [name]="currentLanguage() === 'pt-br'
+            ? 'flagBr'
+            : 'flagUs'"
+          [ariaLabel]="'navMenu.linksAria.language' | translate"
         />
     </button>
     </li>
