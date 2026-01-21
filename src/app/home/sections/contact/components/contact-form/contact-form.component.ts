@@ -82,13 +82,6 @@ export class ContactFormComponent {
 
     const isFocusedInputInvalid = focusedInput?.parentElement?.parentElement?.classList.contains('ng-invalid')
 
-    console.log({
-      firstInvalidInput,
-      focusedInput,
-      nextInvalidInput,
-      isFocusedInputInvalid
-    })
-
     const inputToFocus = focusedInput
       ? isFocusedInputInvalid
         ? focusedInput
