@@ -2,11 +2,13 @@ import { Component, input } from '@angular/core'
 import { NgIcon, provideIcons } from '@ng-icons/core'
 import {
   phosphorArrowDown,
+  phosphorArrowRight,
   phosphorBuildingOffice,
   phosphorCalendarBlank,
   phosphorCertificate,
   phosphorCode,
   phosphorDesktop,
+  phosphorDownloadSimple,
   phosphorEnvelopeSimple,
   phosphorFileArrowDown,
   phosphorGraduationCap,
@@ -36,6 +38,8 @@ import { flagBr, flagUs } from '@ng-icons/flag-icons'
       phosphorScroll,
       phosphorCode,
       phosphorEnvelopeSimple,
+      phosphorDownloadSimple,
+      phosphorArrowRight,
 
       flagBr,
       flagUs
