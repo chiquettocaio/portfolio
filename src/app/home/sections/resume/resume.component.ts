@@ -1,7 +1,7 @@
 import { Component, effect, inject, signal } from '@angular/core'
 import { TranslationConfigService } from '@app/services/translation-config/translation-config.service'
-import { ClickableIconComponent } from '@app/shared/components/clickable-icon/clickable-icon.component'
-import { ClickableIconData } from '@app/shared/components/clickable-icon/clickable-icon.model'
+import { AnchorComponent } from '@app/shared/components/anchor/anchor.component'
+import { IconComponent } from '@app/shared/components/icon/icon.component'
 import { InterpolationParameters, TranslatePipe, TranslateService } from '@ngx-translate/core'
 import { BehaviorSubject, filter, shareReplay, take, tap } from 'rxjs'
 import { ResumeSectionComponent } from './components/resume-section/resume-section.component'
@@ -9,7 +9,13 @@ import { ResumeSectionCareerExperience, ResumeSectionEducationExperience, Resume
 
 @Component({
   selector: 'app-resume',
-  imports: [TranslatePipe, ResumeSectionComponent, ClickableIconComponent],
+  imports: [
+    TranslatePipe,
+
+    ResumeSectionComponent,
+    AnchorComponent,
+    IconComponent
+  ],
   templateUrl: './resume.component.html',
   styleUrl: './resume.component.scss'
 })
@@ -31,8 +37,6 @@ export class ResumeComponent {
 
   careerSectionIcon = signal<ResumeSectionIcon | null>(null)
   careerSectionContent = signal<ResumeSectionCareerExperience[] | null>(null)
-
-  downloadResumeIconData = signal<ClickableIconData | null>(null)
 
   haveTranslationsBeenLoaded = signal<boolean>(false)
 
@@ -90,18 +94,6 @@ export class ResumeComponent {
     this.careerSectionIcon.set({
       name: 'phosphorDesktop',
       ariaLabel: translations[`${careerBasePath}.icons`].desktopIconAriaLabel
-    })
-
-    this.downloadResumeIconData.set({
-      button: {
-        title: translations[`${resumeBasePath}.downloadResumeCta`].buttonTitle,
-        ariaLabel: translations[`${resumeBasePath}.downloadResumeCta`].buttonAriaLabel
-      },
-
-      icon: {
-        name: 'phosphorFileArrowDown',
-        ariaLabel: translations[`${resumeBasePath}.downloadResumeCta`].iconAriaLabel
-      }
     })
   }
 
@@ -257,7 +249,6 @@ export class ResumeComponent {
 
     this.translateService.get([
       `${resumeBasePath}.capIcon.ariaLabel`,
-      `${resumeBasePath}.downloadResumeCta`,
 
       `${educationBasePath}.universityName`,
       `${educationBasePath}.degree`,

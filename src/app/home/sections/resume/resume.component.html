@@ -9,10 +9,21 @@
 
 
     @if (haveTranslationsBeenLoaded()) {
-      <app-clickable-icon
+      <app-anchor
         class="resume-header__cta"
-        [data]="downloadResumeIconData()!"
-      />
+        [title]="'home.resume.downloadResumeCta.title' | translate"
+        [ariaLabel]="'home.resume.downloadResumeCta.ariaLabel' | translate",
+        variant="icon"
+        href="/docs/caio-chiquetto-resume.pdf"
+        content=""
+        download
+      >
+        <app-icon
+          AnchorTrailingIcon
+          name="phosphorFileArrowDown"
+          [ariaLabel]="'home.resume.downloadResumeCta.iconAriaLabel' | translate"
+        />
+      </app-anchor>
     }
   </div>
 

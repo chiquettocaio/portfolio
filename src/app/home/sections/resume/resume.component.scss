@@ -15,17 +15,19 @@ section {
   font-size: var(--font-size-paragraph);
   line-height: 26px;
   color: var(--color-text-dark);
-  margin-bottom: 54px;
+  margin-bottom: 20px;
 }
 
 .resume-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   &__title {
     color: var(--color-text-dark);
     font-size: var(--font-size-title);
     letter-spacing: 1px;
+    line-height: 20px;
   }
 
   &__cta {
