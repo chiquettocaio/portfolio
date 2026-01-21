@@ -1,5 +1,5 @@
 import { Component, input, output } from '@angular/core'
-import { ButtonVariant } from './button.model'
+import { ButtonSize, ButtonVariant } from './button.model'
 
 @Component({
   selector: 'app-button',
@@ -11,6 +11,7 @@ export class ButtonComponent {
   ariaLabel = input.required<string>()
   title = input<string>('Button')
   variant = input<ButtonVariant>('primary')
+  size = input<ButtonSize>('regular')
 
   clicked = output()
 }
