@@ -9,7 +9,8 @@
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: var(--border-radius);
+    object-position: top;
+    aspect-ratio: 16 / 9;
   }
 
   &__content {
