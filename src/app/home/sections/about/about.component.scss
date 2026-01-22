@@ -1,4 +1,4 @@
-@use 'mixins/background-pattern' as *;
+@use 'mixins/background-pattern' as bgPatterns;
 
 section {
   display: flex;
@@ -8,7 +8,7 @@ section {
   background: var(--color-secondary);
   color: var(--color-primary);
 
-  @include background-pattern-dark;
+  @include bgPatterns.background-pattern-dark;
 }
 
 .title {

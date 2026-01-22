@@ -1,4 +1,4 @@
-@use 'mixins/background-pattern' as *;
+@use 'mixins/background-pattern' as bgPatterns;
 
 section {
   display: flex;
@@ -7,7 +7,7 @@ section {
   padding: var(--space-section-sm);
   background-color: var(--color-primary);
 
-  @include background-pattern-light;
+  @include bgPatterns.background-pattern-light;
 }
 
 .paragraph {

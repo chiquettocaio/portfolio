@@ -1,11 +1,11 @@
-@use 'mixins/background-pattern' as *;
+@use 'mixins/background-pattern' as bgPatterns;
 
 section {
   padding: var(--space-section-sm) var(--space-section-sm) 50px;
   background-color: var(--color-secondary);
   color: var(--color-primary);
 
-  @include background-pattern-dark;
+  @include bgPatterns.background-pattern-dark;
 }
 
 .title {
