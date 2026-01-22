@@ -3,7 +3,9 @@
 
   &--button-primary,
   &--button-secondary,
-  &--icon {
+  &--icon-as-button-primary,
+  &--icon-as-button-secondary,
+  &--icon-flat {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,7 +21,12 @@
     transition: all .2s;
     cursor: pointer;
     text-decoration: none;
+  }
 
+  &--button-primary,
+  &--button-secondary,
+  &--icon-as-button-primary,
+  &--icon-as-button-secondary {
     &:active {
       box-shadow: 0 0 0;
       transform: translateY(2px);
@@ -50,7 +57,9 @@
     }
   }
 
-  &--icon {
+  &--icon-as-button-primary,
+  &--icon-as-button-secondary,
+  &--icon-flat {
     width: 100%;
     height: 100%;
     padding: 0px;
@@ -59,11 +68,29 @@
     color: var(--color-primary);
   }
 
+  &--icon-as-button-secondary {
+    border: 1px solid;
+    background: var(--color-primary);
+    color: var(--color-secondary);
+  }
+
+  &--icon-flat {
+    flex-direction: column;
+    background: none;
+    color: var(--color-black);
+    box-shadow: none;
+  }
+
+  &--large {
+    padding: 30px 15px;
+    font-size: var(--font-size-button-large);
+  }
+
   &__content {
     line-height: 14px;
   }
 
-  &::ng-deep {
+  &:not(&--icon-flat)::ng-deep {
     [AnchorLeadingIcon],
     [AnchorTrailingIcon] {
       width: 22px;

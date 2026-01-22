@@ -1,2 +1,7 @@
-export type ButtonVariant = 'primary' | 'secondary'
-export type ButtonSize = 'regular' | 'large'
+export type ButtonVariant
+  = | 'primary'
+    | 'secondary'
+
+export type ButtonSize
+  = | 'regular'
+    | 'large'

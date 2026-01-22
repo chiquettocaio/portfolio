@@ -1,7 +1,7 @@
 @use 'mixins/background-pattern' as *;
 
 section {
-  padding: var(--space-section-sm);
+  padding: var(--space-section-sm) var(--space-section-sm) 50px;
   background-color: var(--color-secondary);
   color: var(--color-primary);
 

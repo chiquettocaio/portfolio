@@ -1,5 +1,5 @@
 import { booleanAttribute, Component, input } from '@angular/core'
-import { AnchorVariant } from './anchor.model'
+import { AnchorSize, AnchorVariant } from './anchor.model'
 
 @Component({
   selector: 'app-anchor',
@@ -12,5 +12,6 @@ export class AnchorComponent {
   href = input.required<string>()
   title = input<string>('Anchor')
   variant = input<AnchorVariant>('simple')
+  size = input<AnchorSize>('regular')
   download = input(null, { transform: booleanAttribute })
 }
