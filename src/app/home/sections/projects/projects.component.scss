@@ -1,11 +1,15 @@
 @use 'mixins/background-pattern' as bgPatterns;
 
-section {
-  padding: var(--space-section-sm) var(--space-section-sm) 50px;
-  background-color: var(--color-secondary);
-  color: var(--color-primary);
-
+:host {
+  display: block;
   @include bgPatterns.background-pattern-dark;
+}
+
+section {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  padding: var(--space-section-sm) var(--space-section-sm) 50px;
+  color: var(--color-primary);
 }
 
 .title {
@@ -25,11 +29,6 @@ section {
   flex-direction: column;
   gap: 32px 0;
   margin-bottom: 32px;
-
-  &::ng-deep {
-    app-project:last-child .project {
-    }
-  }
 }
 
 .projects-footer {

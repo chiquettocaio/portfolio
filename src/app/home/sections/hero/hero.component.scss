@@ -1,13 +1,19 @@
 @use 'mixins/background-pattern' as bgPatterns;
+@use 'tokens/breakpoints' as breakpoints;
+
+:host {
+  display: block;
+  @include bgPatterns.background-pattern-light;
+}
 
 section {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  max-width: var(--max-content-width);
+  margin: 0 auto;
   padding: 120px var(--space-section-sm) 50px;
-
-  @include bgPatterns.background-pattern-light;
 }
 
 .image {
@@ -70,5 +76,11 @@ section {
 
   app-button {
     flex-shrink: 0;
+  }
+}
+
+@media screen and (width > breakpoints.$bp-sm) {
+  .paragraph {
+    width: 450px;
   }
 }

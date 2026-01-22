@@ -1,13 +1,17 @@
 @use 'mixins/background-pattern' as bgPatterns;
 
+:host {
+  display: block;
+  @include bgPatterns.background-pattern-light;
+}
+
 section {
   display: flex;
   flex-direction: column;
   width: 100%;
+  max-width: var(--max-content-width);
+  margin: 0 auto;
   padding: 50px var(--space-section-sm) 100px;
-  background-color: var(--color-primary);
-
-   @include bgPatterns.background-pattern-light;
 }
 
 .title {
