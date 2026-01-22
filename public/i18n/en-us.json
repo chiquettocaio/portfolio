@@ -31,6 +31,12 @@
         "iconAriaLabel": "Download resume icon"
       },
 
+      "socialMedia": {
+        "linkedIn": "LinkedIn",
+        "codepen": "Codepen",
+        "git": "GitHub"
+      },
+
       "meta": {
         "ariaLabel": "Home section"
       }

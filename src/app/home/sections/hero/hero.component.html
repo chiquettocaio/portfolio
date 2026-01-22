@@ -11,6 +11,50 @@
     alt="Me"
   >
 
+  <div class="buttons buttons--social">
+    <app-anchor
+      [title]="'home.hero.socialMedia.linkedIn' | translate"
+      [ariaLabel]="'home.hero.socialMedia.linkedIn' | translate",
+      content=""
+      variant="icon-flat"
+      href="https://www.linkedin.com/in/chiquettocaio/"
+    >
+      <app-icon
+        AnchorLeadingIcon
+        name="ionLogoLinkedin"
+        [ariaLabel]="'home.hero.socialMedia.linkedIn' | translate"
+      />
+    </app-anchor>
+
+    <app-anchor
+      [title]="'home.hero.socialMedia.codepen' | translate"
+      [ariaLabel]="'home.hero.socialMedia.codepen' | translate",
+      content=""
+      variant="icon-flat"
+      href="https://codepen.io/chiquettocaio"
+    >
+      <app-icon
+        AnchorLeadingIcon
+        name="ionLogoCodepen"
+        [ariaLabel]="'home.hero.socialMedia.codepen' | translate"
+      />
+    </app-anchor>
+
+    <app-anchor
+      [title]="'home.hero.socialMedia.git' | translate"
+      [ariaLabel]="'home.hero.socialMedia.git' | translate",
+      content=""
+      variant="icon-flat"
+      href="https://github.com/chiquettocaio"
+    >
+      <app-icon
+        AnchorLeadingIcon
+        name="ionLogoGithub"
+        [ariaLabel]="'home.hero.socialMedia.git' | translate"
+      />
+    </app-anchor>
+  </div>
+
   <h1 class="title">
     {{ 'home.hero.title.hello' | translate }}
 
@@ -31,7 +75,7 @@
     <strong> {{ 'home.hero.presentation.clean' | translate }} </strong>
   </p>
 
-  <div class="buttons">
+  <div class="buttons buttons--navigate">
     <app-anchor
       [title]="'home.hero.viewMyWorkCta.title' | translate"
       [content]="'home.hero.viewMyWorkCta.content' | translate"

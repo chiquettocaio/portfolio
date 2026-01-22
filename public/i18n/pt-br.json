@@ -31,6 +31,12 @@
         "iconAriaLabel": "Download CV"
       },
 
+      "socialMedia": {
+        "linkedIn": "LinkedIn",
+        "codepen": "Codepen",
+        "git": "GitHub"
+      },
+
       "meta": {
         "ariaLabel": "Seção home"
       }
