@@ -15,7 +15,10 @@
     autocomplete="off"
   >
 
-  <span class="form-control__error">
+  <span
+    class="form-control__error"
+    [class.form-control__error--has-error]="control.errors && errorKey()"
+  >
     @if (control.errors && errorKey()) {
       {{ errorMessages()[errorKey() ]}}
     }

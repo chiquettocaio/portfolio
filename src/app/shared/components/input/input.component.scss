@@ -38,9 +38,16 @@
     margin-top: 2px;
     text-align: right;
     font-weight: var(--font-weight-medium);
+    opacity: 0;
+    transition: height .1s, opacity .1s;
+
+    &--has-error {
+      height: 22px;
+      opacity: 1;
+    }
   }
 
-  &:has(input:focus-visible) .form-control__label,
+  &:has(input:focus) .form-control__label,
   &:has(input:not(:placeholder-shown)) .form-control__label {
     left: 0px;
     top: -15px;
