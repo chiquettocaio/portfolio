@@ -19,6 +19,7 @@ import {
 } from '@ng-icons/phosphor-icons/regular'
 
 import { flagBr, flagUs } from '@ng-icons/flag-icons'
+import { ionLogoCodepen, ionLogoGithub, ionLogoLinkedin } from '@ng-icons/ionicons'
 
 @Component({
   selector: 'app-icon',
@@ -40,6 +41,10 @@ import { flagBr, flagUs } from '@ng-icons/flag-icons'
       phosphorEnvelopeSimple,
       phosphorDownloadSimple,
       phosphorArrowRight,
+
+      ionLogoLinkedin,
+      ionLogoCodepen,
+      ionLogoGithub,
 
       flagBr,
       flagUs
