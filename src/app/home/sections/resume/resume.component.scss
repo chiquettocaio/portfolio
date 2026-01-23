@@ -1,4 +1,5 @@
 @use 'mixins/background-pattern' as bgPatterns;
+@use 'tokens/breakpoints' as breakpoints;
 
 :host {
   display: block;
@@ -37,5 +38,11 @@ section {
     display: block;
     width: 30px;
     height: 30px;
+  }
+}
+
+@media screen and (width > breakpoints.$bp-md) {
+  section {
+    max-width: 920px;
   }
 }
