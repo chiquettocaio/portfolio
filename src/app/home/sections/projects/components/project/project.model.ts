@@ -3,7 +3,7 @@ export interface CareerProject {
   role: string
   description: string
   thumb: CareerProjectThumb
-  techs: string
+  techs: string[]
 }
 
 interface CareerProjectThumb {

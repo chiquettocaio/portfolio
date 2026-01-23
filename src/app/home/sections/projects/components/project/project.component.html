@@ -1,4 +1,14 @@
 <div class="project">
+  <h3 class="project__title">
+    {{ data().title }}
+  </h3>
+
+  <div class="project__content">
+    <p class="project__description">
+      {{ data().description }}
+    </p>
+  </div>
+
   <img
     class="project__thumb"
     [ngSrc]="data().thumb.src"
@@ -8,29 +18,9 @@
     [alt]="data().thumb.alt"
   >
 
-  <div class="project__content">
-    <h3 class="project__title">
-      {{ data().title }}
-    </h3>
-
-    <p class="project__role">
-      <strong>
-        {{ 'home.projects.role' | translate }}
-      </strong>
-
-      {{ data().role }}
-    </p>
-
-    <p class="project__techs">
-      <strong>
-        {{ 'home.projects.topTechs' | translate }}
-      </strong>
-
-      {{ data().techs }}
-    </p>
-
-    <p class="project__description">
-      {{ data().description }}
-    </p>
-  </div>
+  <ul class="project__techs">
+    @for (tech of data().techs; track $index) {
+      <li> {{ tech }} </li>
+    }
+  </ul>
 </div>
