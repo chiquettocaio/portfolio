@@ -10,6 +10,8 @@
   [href]="href()"
   [aria-label]="ariaLabel()"
   [attr.download]="download() ? '' : null"
+  [attr.target]="target()"
+  rel="noopener noreferrer"
 >
   <ng-content select="[AnchorLeadingIcon]" />
   <span class="app-anchor__content"> {{ content() }} </span>

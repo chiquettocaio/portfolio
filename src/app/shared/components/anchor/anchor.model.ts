@@ -9,3 +9,7 @@ export type AnchorVariant
 export type AnchorSize
   = | 'regular'
     | 'large'
+
+export type AnchorTarget
+  = | '_self'
+    | '_blank'
