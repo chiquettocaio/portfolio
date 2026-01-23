@@ -14,6 +14,7 @@ section {
   max-width: var(--max-content-width);
   margin: 0 auto;
   padding: 120px var(--space-section-sm) 50px;
+  color: var(--color-black);
 }
 
 .image {
@@ -23,7 +24,8 @@ section {
   max-height: 160px;
   border-radius: 50%;
   object-fit: contain;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px 0px hsl(from var(--color-black) h s l / 0.6);
 }
 
 .title {
@@ -31,7 +33,6 @@ section {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  color: var(--color-black);
   font-size: var(--font-size-title);
   font-weight: var(--font-weight-regular);
   line-height: 35px;
@@ -65,6 +66,7 @@ section {
       width: 28px;
       height: 28px;
       transition: transform .2s;
+      color: var(--color-black);
 
       @media (hover: hover) and (pointer: fine) {
         &:hover {
