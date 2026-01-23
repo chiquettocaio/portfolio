@@ -1,20 +1,21 @@
 {
   "home": {
     "hero": {
-      "title": {
-        "hello": "Nunca ouviu falar de um",
-        "front": "Front-end",
-        "engineer": "Engineer",
-        "before": "antes? Vem comigo."
+      "eyebrow": {
+        "hi": "Oi, sou Caio Chiquetto",
+        "front": "Front-end Engineer | Especialista Angular & SAP Composable Storefront"
       },
 
-      "presentation": {
-        "hey": "E aí, eu sou",
-        "caio": "Caio Chiquetto",
-        "and": "e eu sou um",
-        "front": "Front-end Engineer",
-        "passionate": "apaixonado por criar",
-        "clean": "experiências digitais claras, responsivas, escaláveis e performáticas."
+      "headline": {
+        "build": "Eu construo aplicações",
+        "fast": "rápidas, escaláveis, e manuteníveis",
+        "user": "."
+      },
+
+      "subheadline": {
+        "specialized": "Especialista Angular & SAP Composable Storefront focado em",
+        "performance": "performance, arquiteturas escaláveis, e experiência do usuário",
+        "for": "em aplicações de médio e grande porte."
       },
 
       "viewMyWorkCta": {

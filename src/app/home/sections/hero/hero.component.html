@@ -11,6 +11,11 @@
     alt="Me"
   >
 
+  <p class="paragraph paragraph--eyebrow">
+    <strong> {{ 'home.hero.eyebrow.hi' | translate }} </strong> <br>
+    {{ 'home.hero.eyebrow.front' | translate }}
+  </p>
+
   <div class="buttons buttons--social">
     <app-anchor
       [title]="'home.hero.socialMedia.linkedIn' | translate"
@@ -62,7 +67,7 @@
       [ariaLabel]="'home.hero.socialMedia.whatsapp' | translate",
       content=""
       variant="icon-flat"
-      href="https://wa.me/11959292853?text=Hey Caio, I just saw your portfolio and I got something for you."
+      href="https://wa.me/5511959292853?text=Hey Caio, I just saw your portfolio and I got something for you."
       target="_blank"
     >
       <app-icon
@@ -73,24 +78,15 @@
     </app-anchor>
   </div>
 
-  <h1 class="title">
-    {{ 'home.hero.title.hello' | translate }}
-
-    <strong>
-      {{ 'home.hero.title.front' | translate }}
-      <span> {{ 'home.hero.title.engineer' | translate }} </span>
-    </strong>
-
-    {{ 'home.hero.title.before' | translate }}
+  <h1 class="headline">
+    {{ 'home.hero.headline.build' | translate }}
+    <strong> {{ 'home.hero.headline.fast' | translate }}</strong>{{ 'home.hero.headline.user' | translate }}
   </h1>
 
-  <p class="paragraph">
-    {{ 'home.hero.presentation.hey' | translate }}
-    <strong> {{ 'home.hero.presentation.caio' | translate }} </strong>
-    {{ 'home.hero.presentation.and' | translate }}
-    <strong> {{ 'home.hero.presentation.front' | translate }} </strong>
-    {{ 'home.hero.presentation.passionate' | translate }}
-    <strong> {{ 'home.hero.presentation.clean' | translate }} </strong>
+  <p class="paragraph paragraph--subheadline">
+    {{ 'home.hero.subheadline.specialized' | translate }}
+    <strong> {{ 'home.hero.subheadline.performance' | translate }} </strong>
+    {{ 'home.hero.subheadline.for' | translate }}
   </p>
 
   <div class="buttons buttons--navigate">
