@@ -1,3 +1,10 @@
+@use 'tokens/breakpoints' as breakpoints;
+
 :root {
-  --space-section-sm: 3rem;
+  --space-section-vertical: 4rem;
+  --space-section-horizontal: 3rem;
+
+  @media screen and (width > breakpoints.$bp-sm) {
+    --space-section-horizontal: 6rem;
+  }
 }

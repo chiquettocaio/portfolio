@@ -11,7 +11,7 @@ section {
   width: 100%;
   max-width: var(--max-content-width);
   margin: 0 auto;
-  padding: 50px var(--space-section-sm) 100px;
+  padding: var(--space-section-vertical) var(--space-section-horizontal) 100px;
 }
 
 .title {
