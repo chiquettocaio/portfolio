@@ -45,6 +45,18 @@ section {
   }
 }
 
+.h2 {
+  margin: 20px 0 10px;
+  font-size: var(--font-size-title);
+  text-align: center;
+  max-width: 410px;
+  align-self: center;
+
+  span {
+    text-decoration: underline;
+  }
+}
+
 @media screen and (width > breakpoints.$bp-md) {
   section {
     max-width: 920px;
