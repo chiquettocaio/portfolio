@@ -1,9 +1,25 @@
+@use 'tokens/breakpoints' as breakpoints;
+
 .contact-form {
   display: flex;
-  flex-direction: column;
-  gap: 12px 0;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  app-input,
+  app-textarea {
+    flex: 1 1 100%;
+  }
 
   &__submit {
     margin-top: 20px;
+    flex: 1 1 100%;
+  }
+}
+
+@media screen and (width > breakpoints.$bp-md) {
+  .contact-form {
+    app-input {
+      flex-basis: 40%;
+    }
   }
 }
