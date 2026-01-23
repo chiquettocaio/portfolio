@@ -33,7 +33,6 @@ export class ProjectsComponent {
         this.projects.set([{
           title: translations[`${projectsBasePath}.carhartt`].title,
           description: translations[`${projectsBasePath}.carhartt`].description,
-          role: translations[`${projectsBasePath}.carhartt`].role,
           techs: [
             translations['common.technologies'].spartacus,
             translations['common.technologies'].angular,
@@ -56,11 +55,10 @@ export class ProjectsComponent {
         }, {
           title: translations[`${projectsBasePath}.vivo`].title,
           description: translations[`${projectsBasePath}.vivo`].description,
-          role: translations[`${projectsBasePath}.vivo`].role,
           techs: [
             translations['common.technologies'].spartacus,
-            translations['common.technologies'].angular,
             translations['common.technologies'].cdc,
+            translations['common.technologies'].angular,
             translations['common.technologies'].typescript,
             translations['common.technologies'].rxjs,
             translations['common.technologies'].ngrx,
@@ -68,10 +66,7 @@ export class ProjectsComponent {
             translations['common.technologies'].sass,
             translations['common.technologies'].html,
             translations['common.technologies'].css,
-            translations['common.technologies'].javascript,
-            translations['common.concepts'].oop,
-            translations['common.concepts'].commerce,
-            translations['common.concepts'].sapCX
+            translations['common.technologies'].javascript
           ],
           thumb: {
             src: 'images/vivo.png',
@@ -80,11 +75,9 @@ export class ProjectsComponent {
         }, {
           title: translations[`${projectsBasePath}.ml`].title,
           description: translations[`${projectsBasePath}.ml`].description,
-          role: translations[`${projectsBasePath}.ml`].role,
           techs: [
             translations['common.technologies'].spartacus,
             translations['common.technologies'].angular,
-            translations['common.technologies'].cdc,
             translations['common.technologies'].typescript,
             translations['common.technologies'].rxjs,
             translations['common.technologies'].ngrx,
@@ -104,21 +97,19 @@ export class ProjectsComponent {
         }, {
           title: translations[`${projectsBasePath}.teams`].title,
           description: translations[`${projectsBasePath}.teams`].description,
-          role: translations[`${projectsBasePath}.teams`].role,
           techs: [
-            translations['common.technologies'].spartacus,
             translations['common.technologies'].angular,
             translations['common.technologies'].typescript,
             translations['common.technologies'].rxjs,
             translations['common.technologies'].ngrx,
-            translations['common.technologies'].jasmine,
             translations['common.technologies'].sass,
+            translations['common.technologies'].jasmine,
+            translations['common.technologies'].karma,
             translations['common.technologies'].html,
             translations['common.technologies'].css,
             translations['common.technologies'].javascript,
             translations['common.concepts'].oop,
-            translations['common.concepts'].commerce,
-            translations['common.concepts'].sapCX
+            '+2'
           ],
           thumb: {
             src: 'images/teams.png',
@@ -127,17 +118,20 @@ export class ProjectsComponent {
         }, {
           title: translations[`${projectsBasePath}.finances`].title,
           description: translations[`${projectsBasePath}.finances`].description,
-          role: translations[`${projectsBasePath}.finances`].role,
           techs: [
-            translations['common.technologies'].vue,
-            translations['common.technologies'].nuxt,
-            translations['common.technologies'].vuex,
-            translations['common.technologies'].javascript,
+            translations['common.technologies'].react,
             translations['common.technologies'].nodejs,
-            translations['common.technologies'].jest,
+            translations['common.technologies'].docker,
+            translations['common.technologies'].mongo,
+            translations['common.technologies'].websocket,
+            translations['common.technologies'].redux,
+            translations['common.technologies'].javascript,
             translations['common.technologies'].css,
-            translations['common.technologies'].sass,
-            translations['common.concepts'].oop
+            translations['common.technologies'].html,
+            translations['common.concepts'].fullStack,
+            translations['common.concepts'].mern,
+            translations['common.concepts'].oop,
+            '+2'
           ],
           thumb: {
             src: 'images/finances-room.png',
@@ -146,27 +140,15 @@ export class ProjectsComponent {
         }, {
           title: translations[`${projectsBasePath}.elderly`].title,
           description: translations[`${projectsBasePath}.elderly`].description,
-          role: translations[`${projectsBasePath}.elderly`].role,
           techs: [
-            translations['common.technologies'].vue,
-            translations['common.technologies'].vuex,
             translations['common.technologies'].react,
-            translations['common.technologies'].redux,
-            translations['common.technologies'].electron,
-            translations['common.technologies'].javascript,
             translations['common.technologies'].nodejs,
-            translations['common.technologies'].adonis,
-            translations['common.technologies'].webpack,
-            translations['common.technologies'].postgre,
-            translations['common.technologies'].docker,
-            translations['common.technologies'].html,
+            translations['common.technologies'].redux,
+            translations['common.technologies'].javascript,
             translations['common.technologies'].css,
-            translations['common.technologies'].sass,
-            translations['common.technologies'].java,
-            translations['common.technologies'].websocket,
-            translations['common.technologies'].mongo,
-            translations['common.technologies'].redis,
-            translations['common.concepts'].oop
+            translations['common.technologies'].html,
+            translations['common.technologies'].figma,
+            translations['common.concepts'].prototyping
           ],
           thumb: {
             src: 'images/aprenda-elderly.png',

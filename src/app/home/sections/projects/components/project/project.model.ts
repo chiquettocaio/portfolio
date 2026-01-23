@@ -1,6 +1,5 @@
 export interface CareerProject {
   title: string
-  role: string
   description: string
   thumb: CareerProjectThumb
   techs: string[]

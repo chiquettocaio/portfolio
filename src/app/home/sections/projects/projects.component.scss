@@ -1,4 +1,5 @@
 @use 'mixins/background-pattern' as bgPatterns;
+@use 'tokens/breakpoints' as breakpoints;
 
 :host {
   display: block;
@@ -25,9 +26,9 @@ section {
 }
 
 .projects {
-  display: flex;
-  flex-direction: column;
-  gap: 35px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 316px), 1fr));
+  gap: 15px;
   margin-bottom: 32px;
 }
 
@@ -41,5 +42,11 @@ section {
     font-size: 1.8rem;
     text-align: center;
     line-height: 32px;
+  }
+}
+
+@media screen and (width > breakpoints.$bp-md) {
+  section {
+    max-width: 920px;
   }
 }
