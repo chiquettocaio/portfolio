@@ -111,12 +111,13 @@
   flex-wrap: wrap;
   gap: 4px;
   margin: 12px 0;
+  max-width: 300px;
 
   &__tech {
-    padding: 6px;
+    padding: 4px 8px;
     background-color: var(--color-secondary);
     color: var(--color-primary);
-    border-radius: 8px;
+    border-radius: var(--border-radius);
     font-size: 1.4rem;
   }
 }

@@ -12,13 +12,13 @@ section {
   max-width: var(--max-content-width);
   margin: 0 auto;
   padding: var(--space-section-sm);
+  color: var(--color-black);
 }
 
 .paragraph {
   margin-top: 28px;
   font-size: var(--font-size-paragraph);
   line-height: 26px;
-  color: var(--color-black);
   margin-bottom: 20px;
 }
 
@@ -28,7 +28,6 @@ section {
   align-items: center;
 
   &__title {
-    color: var(--color-black);
     font-size: var(--font-size-title);
     letter-spacing: 1px;
     line-height: 20px;
