@@ -18,6 +18,7 @@
       content=""
       variant="icon-flat"
       href="https://www.linkedin.com/in/chiquettocaio/"
+      target="_blank"
     >
       <app-icon
         AnchorLeadingIcon
@@ -32,6 +33,7 @@
       content=""
       variant="icon-flat"
       href="https://codepen.io/chiquettocaio"
+      target="_blank"
     >
       <app-icon
         AnchorLeadingIcon
@@ -46,11 +48,27 @@
       content=""
       variant="icon-flat"
       href="https://github.com/chiquettocaio"
+      target="_blank"
     >
       <app-icon
         AnchorLeadingIcon
         name="ionLogoGithub"
         [ariaLabel]="'home.hero.socialMedia.git' | translate"
+      />
+    </app-anchor>
+
+    <app-anchor
+      [title]="'home.hero.socialMedia.whatsapp' | translate"
+      [ariaLabel]="'home.hero.socialMedia.whatsapp' | translate",
+      content=""
+      variant="icon-flat"
+      href="https://wa.me/11959292853?text=Hey Caio, I just saw your portfolio and I got something for you."
+      target="_blank"
+    >
+      <app-icon
+        AnchorLeadingIcon
+        name="ionLogoWhatsapp"
+        [ariaLabel]="'home.hero.socialMedia.whatsapp' | translate"
       />
     </app-anchor>
   </div>
