@@ -34,7 +34,8 @@
       "socialMedia": {
         "linkedIn": "LinkedIn",
         "codepen": "Codepen",
-        "git": "GitHub"
+        "git": "GitHub",
+        "whatsapp": "WhatsApp"
       },
 
       "meta": {
@@ -259,7 +260,6 @@
     "projects": {
       "title": "Projetos",
       "subtitle": "Alguns projetos interessantes em que eu trabalhei.",
-      "role": "Cargo:",
       "topTechs": "Principais tecnologias:",
 
       "meta": {
@@ -270,7 +270,6 @@
 
         "carhartt": {
           "title": "Carhartt Company Gear",
-          "role": "SAP Commerce CX | Composable Storefront (Spartacus) Specialist",
           "description": "E-commerce criado para a Carhartt, uma marca de vestuário de trabalho tradicional dos EUA. A filial B2B da Carhartt se chama CCG (Carhartt Company Gear), e eu estive envolvido na criação do zero da nova geração do CCG. Lá, fui responsável por definir a arquitetura do projeto, aplicar um padrão de codificação, revisar códigos, orientar e ajudar outros desenvolvedores e programar como se não houvesse amanhã!",
           "techs": "SAP Spartacus, Angular, CDC (anteriormente Gigya), RxJs e TypeScript",
           "thumbAlt": "Página inicial do Carhartt Company Gear"
@@ -278,7 +277,6 @@
 
         "vivo": {
           "title": "Vivo Store",
-          "role": "Application Development Team Lead",
           "description": "E-commerce criado para a Vivo (Telefônica), a maior empresa de telecom do Brasil. O e-commerce foi desenvolvido utilizando a tecnologia SAP Spartacus (na época, nova), que é uma forma moderna de construir lojas SAP.",
           "techs": "SAP Spartacus, Angular, RxJs, NgRx e TypeScript",
           "thumbAlt": "Página inicial da loja Vivo"
@@ -286,7 +284,6 @@
 
         "ml": {
           "title": "Cópia Mercado Livre — SAP Spartacus",
-          "role": "Projeto pessoal",
           "description": "Projeto pessoal criado para aprimorar minhas habilidades em SAP Composable Storefront (Spartacus). Este projeto é uma cópia do e-commerce 'Mercado Libre' ('Mercado Livre' no Brasil), feito com SAP Spartacus/Angular. Para me dedicar aos projetos de clientes, nunca o finalizei, mas quem sabe um dia eu finalize.",
           "techs": "SAP Spartacus, Angular, RxJs, NgRx e TypeScript",
           "thumbAlt": "Página inicial do Mercado Livre no Spartacus"
@@ -294,7 +291,6 @@
 
         "teams": {
           "title": "Cópia Microsoft Teams",
-          "role": "Projeto pessoal",
           "description": "Projeto pessoal criado enquanto eu aprendia Angular. Nada melhor do que um projeto para nos ensinar coisas que vão além da documentação, certo? Meu primeiro projeto em Angular foi nada menos que uma cópia do Microsoft Teams, totalmente interativa. Você podia enviar mensagens, reagir a mensagens e outras funcionalidades que apps de mensagens geralmente permitem.",
           "techs": "Angular, RxJs, NgRx e Sass",
           "thumbAlt": "Cópia do Microsoft Teams"
@@ -302,7 +298,6 @@
 
         "finances": {
           "title": "Monopoly Banker",
-          "role": "Projeto pessoal",
           "description": "Projeto pessoal criado durante uma das minhas férias do trabalho. Em um momento, me vi jogando Monopoly com minha sobrinha e percebi como aquelas cédulas físicas eram irritantes, e essa é a história por trás do app. Monopoly Banker é um app para fazer transferências de dinheiro entre os jogadores em tempo real, utilizando React, NodeJS, Mongo e WebSockets. Se você quiser saber mais, há uma publicação no meu perfil do LinkedIn.",
           "techs": "React, Node.js, Docker, MongoDB e WebSockets",
           "thumbAlt": "Sala do Monopoly Banker"
@@ -310,7 +305,6 @@
 
         "elderly": {
           "title": "Aprenda Elderly — Plataforma de aprendizado",
-          "role": "Trabalho de Conclusão de Curso — Ciências da Computação",
           "description": "Criado para ser apresentado como a parte prática do meu TCC, o Aprenda Elderly é uma plataforma de aprendizado voltada para idosos que desejam aprender mais sobre dispositivos modernos, como computadores e smartphones.",
           "techs": "React, HTML5, CSS3 e JavaScript",
           "thumbAlt": "Plataforma Aprenda Elderly"
@@ -418,6 +412,7 @@
       "javascript": "JavaScript",
       "nodejs": "Node.js",
       "jasmine": "Jasmine",
+      "karma": "Karma",
       "nuxt": "Nuxt.js",
       "vue": "Vue.js",
       "vuex": "VueX",
@@ -432,13 +427,17 @@
       "java": "Java",
       "mongo": "MongoDB",
       "redis": "Redis",
-      "websocket": "WebSocket"
+      "websocket": "WebSocket",
+      "figma": "Figma"
     },
 
     "concepts": {
       "oop": "POO",
       "commerce": "E-commerce",
-      "sapCX": "SAP CX"
+      "sapCX": "SAP CX",
+      "fullStack": "Full-Stack Dev",
+      "mern": "MERN Dev",
+      "prototyping": "Prototyping"
     }
   }
 }

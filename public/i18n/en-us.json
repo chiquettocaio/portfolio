@@ -34,7 +34,8 @@
       "socialMedia": {
         "linkedIn": "LinkedIn",
         "codepen": "Codepen",
-        "git": "GitHub"
+        "git": "GitHub",
+        "whatsapp": "WhatsApp"
       },
 
       "meta": {
@@ -259,7 +260,6 @@
     "projects": {
       "title": "Projects",
       "subtitle": "Some interesting projects that I have worked on.",
-      "role": "Role:",
       "topTechs": "Main techs:",
 
       "meta": {
@@ -269,7 +269,6 @@
       "projects": {
         "carhartt": {
           "title": "Carhartt Company Gear",
-          "role": "SAP Commerce CX | Composable Storefront (Spartacus) Specialist",
           "description": "E-commerce created for Carhartt, a U.S. heritage workwear brand. Carhartt's B2B branch is called CCG (Carhartt Company Gear), and I've been involved in the creation from the ground up of their new generation of CCG. There I was responsible for defining the project architecture, enforcing a coding style, doing code reviews, guiding and helping other developers and coding like there was no tomorrow!",
           "techs": "SAP Spartacus, Angular, CDC (formerly Gygia), RxJs and TypeScript",
           "thumbAlt": "Carhartt Company Gear homepage"
@@ -277,7 +276,6 @@
 
         "vivo": {
           "title": "Vivo Store",
-          "role": "Application Development Team Lead",
           "description": "E-commerce created for Vivo (Telefonica), the biggest telecom company of Brazil. The e-commerce has been developed using the (at the moment) new SAP Spartacus technology, which is a modern way of building SAP commerces.",
           "techs": "SAP Spartacus, Angular, RxJs, NgRx and TypeScript",
           "thumbAlt": "Vivo store homepage"
@@ -285,7 +283,6 @@
 
         "ml": {
           "title": "Mercado Livre Copy — SAP Spartacus",
-          "role": "Side project",
           "description": "Personal project created to improve my SAP Composable Storefront (Spartacus) abilities. This project is a copy of the \"Mercado Libre\" E-commerce (\"Mercado Livre\" in Brazil), made with SAP Spartacus/Angular. To dedicate myself to client projects, I've never finished it, but who knows I do that someday.",
           "techs": "SAP Spartacus, Angular, RxJs, NgRx and TypeScript",
           "thumbAlt": "Mercado livre in Spartacus homepage"
@@ -293,7 +290,6 @@
 
         "teams": {
           "title": "Microsoft Teams Copy",
-          "role": "Side project",
           "description": "Personal project created when I was learning Angular. Nothing better than a project to teach us things that goes beyond the docs, right? My first project made with Angular was nothing but a Microsoft Teams copy, completely interactive. You could send messages, react to messages, and other cool stuff  messaging apps usually allows us to do.",
           "techs": "Angular, RxJs, NgRx and Sass",
           "thumbAlt": "Microsoft Teams Copy"
@@ -301,7 +297,6 @@
 
         "finances": {
           "title": "Monopoly Banker",
-          "role": "Side project",
           "description": "Personal project created during one of my job vacations. At some point I saw myself playing Monopoly with my niece and noticed how those physical bills were annoying, and that's the story behind the app. Monopoly Banker is an app for making money transfers between the players in real time, relying on the power of React, NodeJS, Mongo and Websockets. If you're interested about knowing more about it, there's a publication on my LinkedIn profile.",
           "techs": "React, Node.js, Docker, MongoDB and Websockets",
           "thumbAlt": "Monopoly Banker room"
@@ -309,7 +304,6 @@
 
         "elderly": {
           "title": "Aprenda Elderly — Learning plataform",
-          "role": "Capstone Project",
           "description": "Created to be presented as my Capstone Project, Aprenda Elderly is a learning platform focused on older adults that want to learn more about modern devices like computers and smartphones.",
           "techs": "React, HTML5, CSS3 and JavaScript",
           "thumbAlt": "Aprenda Elderly platform"
@@ -403,42 +397,6 @@
     }
   },
 
-  "technologies": {
-    "spartacus": "SAP Spartacus",
-    "cdc": "CDC (formerly Gigya) for CIAM",
-    "angular": "Angular",
-    "typescript": "TypeScript",
-    "rxjs": "RxJS",
-    "ngrx": "NgRx",
-    "sass": "Sass",
-    "html": "HTML5",
-    "css": "CSS3",
-    "javascript": "JavaScript",
-    "nodejs": "Node.js",
-    "jasmine": "Jasmine",
-    "nuxt": "Nuxt.js",
-    "vue": "Vue.js",
-    "vuex": "VueX",
-    "jest": "Jest",
-    "electron": "Electron.js",
-    "adonis": "Adonis.js",
-    "react": "React",
-    "postgre": "PostgreSQL",
-    "webpack": "Webpack",
-    "docker": "Docker",
-    "redux": "Redux",
-    "java": "Java",
-    "mongo": "MongoDB",
-    "redis": "Redis",
-    "websocket": "WebSocket"
-  },
-
-  "concepts": {
-    "oop": "OOP",
-    "commerce": "E-commerce",
-    "sapCX": "SAP CX"
-  },
-
   "common": {
     "technologies": {
       "spartacus": "SAP Spartacus",
@@ -453,6 +411,7 @@
       "javascript": "JavaScript",
       "nodejs": "Node.js",
       "jasmine": "Jasmine",
+      "karma": "Karma",
       "nuxt": "Nuxt.js",
       "vue": "Vue.js",
       "vuex": "VueX",
@@ -467,13 +426,17 @@
       "java": "Java",
       "mongo": "MongoDB",
       "redis": "Redis",
-      "websocket": "WebSocket"
+      "websocket": "WebSocket",
+      "figma": "Figma"
     },
 
     "concepts": {
       "oop": "OOP",
       "commerce": "E-commerce",
-      "sapCX": "SAP CX"
+      "sapCX": "SAP CX",
+      "fullStack": "Full-Stack Dev",
+      "mern": "MERN Dev",
+      "prototyping": "Prototyping"
     }
   }
 }
