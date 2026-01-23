@@ -49,61 +49,61 @@
 
       "summary": {
         "p1": {
-          "asA": "As a",
-          "engineer": "Front-end Engineer",
-          "iCan": "I can do way more than just update your CTA's background color, I can also update it's font color and size (got you, didn't I?)."
+          "front": "Front-end Engineer with",
+          "8Years": "8+ years",
+          "of": "of experience building",
+          "scalable": "scalable, high-performance, responsive, and maintainable",
+          "web": "web applications, specialized in",
+          "angular": "Angular and SAP Composable Storefront",
+          "for": "for enterprise environments."
         },
 
         "p2": {
-          "jokes": "Jokes aside, with",
-          "8Years": "more than 8 years of professional experience",
-          "strong": "and strong development skills,",
-          "proven": "I have a proven track of high performative, responsive, scalable and clean deliveries,",
-          "respecting": "respecting deadlines and meeting customer needs."
+          "whatIFocus": "What I focus on:",
+
+          "bullet1": {
+            "begin": "Clean and maintainable",
+            "end": "architecture"
+          },
+
+          "bullet2": {
+            "begin": "Performance optimization",
+            "end": "and Core Web Vitals"
+          },
+
+          "bullet3": {
+            "begin": "Scalable component design",
+            "end": "and design systems"
+          },
+
+          "bullet4": {
+            "begin": "Long-term code health,",
+            "end": "reducing rework and making teams faster over time"
+          }
         },
 
         "p3": {
-          "weAll": "We all love to see",
-          "delightful": "delightful and animated websites",
-          "causes": "that causes us to be impressed, but that's",
-          "tip": "only the tip of the iceberg.",
-          "under": "Under the hoods there are a lot of things",
-          "happening": "happening in a strictly defined order",
-          "toProvide": "to provide you that feeling, and that's where I enter in scene,",
-          "worryAbout": "to worry about things you don't need to, and give you what really matters: a functional application that can improve your business profit or promote the incredible person you are,",
-          "upToYou": "it's up to you."
+          "goal": "My goal is to",
+          "help": "help companies ship reliable products that scale over time,",
+          "reduce": "reduce maintenance cost, and",
+          "deliver": "deliver consistent user experience."
         },
 
         "p4": {
-          "ifYouAre": "If you're that kind of client that cares about clean code and maintainability,",
-          "weAreGoingTo": "we're going to like each other even more. I stick to the market's best practices",
-          "andKeep": "and keep myself always alert about the quality and organization of the code, because I don't just build pleasant interfaces,",
-          "reliable": "I build reliable solutions, and for me that's the only possible way to work."
+          "iCare": "I care about",
+          "code": "code quality and clear communication",
+          "like": "— I like leaving codebases better than I found them."
         },
 
-        "p5": {
-          "consequence": "As a consequence,",
-          "maintainability": "the maintainability of the project is considerably improved,",
-          "whichMeans": "which means",
-          "lessChances": "less chances of your users facing bugs, less money spent with maintenance, more convertion and a happier audience."
-        },
-
-        "tellMeNow": {
-          "tellMe": "So tell me, have you ever heard of a",
-          "haveYou": "Front-end",
-          "engineer": "Engineer",
-          "now": "now?"
-        },
-
-        "notConvinced": {
-          "still": "Still not convinced?",
-          "tough": "You're tough to please."
+        "sounds": {
+          "good": "Sounds good so far?",
+          "lets": "Let's take a look at my resume."
         },
 
         "resumeCta": {
-          "title": "Let's check my resume then",
-          "content": "Let's check my resume then",
-          "ariaLabel": "Check resume button"
+          "title": "View resume",
+          "content": "View resume",
+          "ariaLabel": "View resume button"
         }
       },
 

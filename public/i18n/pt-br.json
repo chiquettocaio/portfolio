@@ -49,63 +49,64 @@
 
       "summary": {
         "p1": {
-          "asA": "Como um",
-          "engineer": "Front-end Engineer",
-          "iCan": "eu posso fazer bem mais do que só atualizar a cor de fundo de um botão, eu posso atualizar a cor da fonte e o tamanho também (te peguei, não?)."
+          "front": "Front-end Engineer com",
+          "8Years": "mais de 8 anos",
+          "of": "de experiência construindo",
+          "scalable": "aplicações web escaláveis, de alta performance, responsivas e fáceis de manter,",
+          "web": "especializado em",
+          "angular": "Angular e SAP Composable Storefront",
+          "for": "para ambientes corporativos."
         },
 
         "p2": {
-          "jokes": "Brincadeiras à parte, com",
-          "8Years": "mais de 8 anos de experiência profissional",
-          "strong": "e fortes habilidades de desenvolvimento,",
-          "proven": "tenho um histórico comprovado de entregas performáticas, responsivas, escaláveis e limpas,",
-          "respecting": "respeitando prazos e atendendo às necessidades dos clientes."
+          "whatIFocus": "No que eu foco:",
+
+          "bullet1": {
+            "begin": "Arquitetura",
+            "end": "limpa e sustentável"
+          },
+
+          "bullet2": {
+            "begin": "Otimização de performance",
+            "end": "e Core Web Vitals"
+          },
+
+          "bullet3": {
+            "begin": "Design de componentes escaláveis",
+            "end": "e design systems"
+          },
+
+          "bullet4": {
+            "begin": "Saúde do código a longo prazo,",
+            "end": "reduzindo retrabalho e tornando os times mais rápidos ao longo do tempo"
+          }
         },
 
         "p3": {
-          "weAll": "Todos adoramos ver",
-          "delightful": "sites encantadores e animados",
-          "causes": "que nos impressionam, mas isso é",
-          "tip": "apenas a ponta do iceberg.",
-          "under": "Por trás disso, há muitas coisas",
-          "happening": "acontecendo em uma ordem estritamente definida",
-          "toProvide": "para proporcionar essa sensação, e é aí que entro em cena,",
-          "worryAbout": "para me preocupar com coisas que você não precisa, e entregar o que realmente importa: uma aplicação funcional que pode aumentar o lucro do seu negócio ou promover a pessoa incrível que você é,",
-          "upToYou": "a decisão é sua."
+          "goal": "Meu objetivo é",
+          "help": "ajudar empresas a entregar produtos confiáveis e escaláveis,",
+          "reduce": "reduzir custos de manutenção e",
+          "deliver": "oferecer uma experiência de usuário consistente."
         },
 
         "p4": {
-          "ifYouAre": "Se você é aquele tipo de cliente que se importa com código limpo e manutenção,",
-          "weAreGoingTo": "vamos gostar ainda mais um do outro. Eu sigo as melhores práticas do mercado",
-          "andKeep": "e me mantenho sempre atento à qualidade e organização do código, porque não apenas construo interfaces agradáveis,",
-          "reliable": "eu construo soluções confiáveis, e para mim essa é a única forma possível de trabalhar."
+          "iCare": "Me importo com",
+          "code": "qualidade de código e comunicação clara",
+          "like": "— gosto de deixar o código melhor do que encontrei."
         },
 
-        "p5": {
-          "consequence": "Como consequência,",
-          "maintainability": "a manutenibilidade do projeto é consideravelmente melhorada,",
-          "whichMeans": "o que significa",
-          "lessChances": "menos chances de seus usuários enfrentarem bugs, menos dinheiro gasto com manutenção, mais conversão e uma audiência mais feliz."
-        },
-
-        "tellMeNow": {
-          "tellMe": "Então me diga, você já ouviu falar de um",
-          "haveYou": "Front-end",
-          "engineer": "Engineer",
-          "now": "agora?"
-        },
-
-        "notConvinced": {
-          "still": "Ainda não está convencido?",
-          "tough": "Você é difícil de agradar."
+        "sounds": {
+          "good": "Pareceu bom?",
+          "lets": "Vamos dar uma olhada no meu currículo."
         },
 
         "resumeCta": {
-          "title": "Então vamos conferir meu currículo",
-          "content": "Então vamos conferir meu currículo",
-          "ariaLabel": "Botão para conferir currículo"
+          "title": "Ver currículo",
+          "content": "Ver currículo",
+          "ariaLabel": "Botão para ver currículo"
         }
       },
+
 
       "meta": {
         "ariaLabel": "Seção sobre mim"
@@ -322,8 +323,8 @@
         },
 
         "sendMessageCTA": {
-          "title": "Envie-me uma mensagem",
-          "content": "Envie-me uma mensagem",
+          "title": "Me mande uma mensagem",
+          "content": "Me mande uma mensagem",
           "ariaLabel": "Botão para enviar mensagem"
         }
       }

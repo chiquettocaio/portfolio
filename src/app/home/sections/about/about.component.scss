@@ -25,13 +25,22 @@ section {
   font-size: var(--font-size-paragraph);
   line-height: 30px;
   margin-bottom: 20px;
+
+  ul {
+    padding: 0 20px;
+    list-style-type: "→";
+
+    li {
+      padding: 0 10px;
+    }
+  }
 }
 
 .h2 {
-  margin: 20px 0 30px;
+  margin: 20px 0 10px;
   font-size: var(--font-size-title);
   text-align: center;
-  max-width: 300px;
+  max-width: 320px;
   align-self: center;
 
   span {
