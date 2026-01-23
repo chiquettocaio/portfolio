@@ -146,42 +146,6 @@
           "mapLocationAriaLabel": "Ícone de localização no mapa"
         },
 
-        "technologies": {
-          "spartacus": "SAP Spartacus",
-          "cdc": "CDC (antigo Gigya) para CIAM",
-          "angular": "Angular",
-          "typescript": "TypeScript",
-          "rxjs": "RxJS",
-          "ngrx": "NgRx",
-          "sass": "Sass",
-          "html": "HTML5",
-          "css": "CSS3",
-          "javascript": "JavaScript",
-          "nodejs": "Node.js",
-          "jasmine": "Jasmine",
-          "nuxt": "Nuxt.js",
-          "vue": "Vue.js",
-          "vuex": "VueX",
-          "jest": "Jest",
-          "electron": "Electron.js",
-          "adonis": "Adonis.js",
-          "react": "React",
-          "postgre": "PostgreSQL",
-          "webpack": "Webpack",
-          "docker": "Docker",
-          "redux": "Redux",
-          "java": "Java",
-          "mongo": "MongoDB",
-          "redis": "Redis",
-          "websocket": "WebSocket"
-        },
-
-        "concepts": {
-          "oop": "POO",
-          "commerce": "E-commerce",
-          "sapCX": "SAP CX"
-        },
-
         "k2": {
           "role": "SAP Commerce CX | Composable Storefront (Spartacus) Specialist",
           "companyName": "K2 Partnering Solutions",
@@ -356,7 +320,10 @@
       "footer": {
         "convince": {
           "arent": "Ainda não está convencido?",
-          "noWay": "Impossível, agora é pessoal. Precisamos entrar em contato."
+          "noWay": "Impossível, agora é pessoal.",
+          "we": "Nós",
+          "need": "precisamos",
+          "getInTouch": "entrar em contato."
         },
 
         "sendMessageCTA": {
@@ -434,6 +401,44 @@
       "projects": "Projetos",
       "contact": "Contato",
       "language": "Alterar idioma"
+    }
+  },
+
+  "common": {
+    "technologies": {
+      "spartacus": "SAP Spartacus",
+      "cdc": "CDC (antigo Gigya) para CIAM",
+      "angular": "Angular",
+      "typescript": "TypeScript",
+      "rxjs": "RxJS",
+      "ngrx": "NgRx",
+      "sass": "Sass",
+      "html": "HTML5",
+      "css": "CSS3",
+      "javascript": "JavaScript",
+      "nodejs": "Node.js",
+      "jasmine": "Jasmine",
+      "nuxt": "Nuxt.js",
+      "vue": "Vue.js",
+      "vuex": "VueX",
+      "jest": "Jest",
+      "electron": "Electron.js",
+      "adonis": "Adonis.js",
+      "react": "React",
+      "postgre": "PostgreSQL",
+      "webpack": "Webpack",
+      "docker": "Docker",
+      "redux": "Redux",
+      "java": "Java",
+      "mongo": "MongoDB",
+      "redis": "Redis",
+      "websocket": "WebSocket"
+    },
+
+    "concepts": {
+      "oop": "POO",
+      "commerce": "E-commerce",
+      "sapCX": "SAP CX"
     }
   }
 }
