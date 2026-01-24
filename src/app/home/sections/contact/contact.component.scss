@@ -51,6 +51,11 @@ app-contact-form {
       transition: transform .2s;
       color: var(--color-black);
 
+      &:has(a:focus) {
+        transform: scale(1.2);
+        color: var(--color-secondary);
+      }
+
       @media (hover: hover) and (pointer: fine) {
         &:hover {
           transform: scale(1.2);
