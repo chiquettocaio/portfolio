@@ -59,6 +59,14 @@
         },
 
         "p2": {
+          "proven": "Tenho um histórico comprovado de entrega de",
+          "high": "soluções de e-commerce de alta performance para clientes globais,",
+          "leading": "liderando times de desenvolvimento e",
+          "driving": "conduzindo migrações bem-sucedidas",
+          "from": "do Accelerator para o SAP Composable Storefront (Spartacus)."
+        },
+
+        "p3": {
           "whatIFocus": "No que eu foco:",
 
           "bullet1": {
@@ -82,14 +90,14 @@
           }
         },
 
-        "p3": {
+        "p4": {
           "goal": "Meu objetivo é",
           "help": "ajudar empresas a entregar produtos confiáveis e escaláveis,",
           "reduce": "reduzir custos de manutenção e",
           "deliver": "oferecer uma experiência de usuário consistente."
         },
 
-        "p4": {
+        "p5": {
           "iCare": "Me importo com",
           "code": "qualidade de código e comunicação clara",
           "like": "— gosto de deixar o código melhor do que encontrei."
@@ -314,12 +322,16 @@
       },
 
       "footer": {
-        "convince": {
-          "arent": "Ainda não está convencido?",
-          "noWay": "Impossível, agora é pessoal.",
-          "we": "Nós",
-          "need": "precisamos",
-          "getInTouch": "entrar em contato."
+        "knowMore": {
+          "more": {
+            "iHave": "Eu atuei em",
+            "several": "mais projetos do que isso."
+          },
+
+          "send": {
+            "want": "Quer saber",
+            "know": "mais?"
+          }
         },
 
         "sendMessageCTA": {

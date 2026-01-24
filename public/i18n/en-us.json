@@ -51,7 +51,7 @@
         "p1": {
           "front": "Front-end Engineer with",
           "8Years": "8+ years",
-          "of": "of experience building",
+          "of": "of pressional experience building",
           "scalable": "scalable, high-performance, responsive, and maintainable",
           "web": "web applications, specialized in",
           "angular": "Angular and SAP Composable Storefront",
@@ -59,6 +59,14 @@
         },
 
         "p2": {
+          "proven": "I have a proven track record of delivering",
+          "high": "high-performance ecommerce solutions for global clients,",
+          "leading": "leading develipment teams and",
+          "driving": "driving successful migrations",
+          "from": "from Accelerator to SAP Composable Storefront (Spartacus)."
+        },
+
+        "p3": {
           "whatIFocus": "What I focus on:",
 
           "bullet1": {
@@ -82,14 +90,14 @@
           }
         },
 
-        "p3": {
+        "p4": {
           "goal": "My goal is to",
           "help": "help companies ship reliable products that scale over time,",
           "reduce": "reduce maintenance cost, and",
           "deliver": "deliver consistent user experience."
         },
 
-        "p4": {
+        "p5": {
           "iCare": "I care about",
           "code": "code quality and clear communication",
           "like": "— I like leaving codebases better than I found them."
@@ -312,6 +320,18 @@
       },
 
       "footer": {
+        "knowMore": {
+          "more": {
+            "iHave": "I've worked in",
+            "several": "more projects than that."
+          },
+
+          "send": {
+            "want": "Want to",
+            "know": "know more?"
+          }
+        },
+
         "convince": {
           "arent": "Aren't you convinced yet?",
           "noWay": "No way, it's personal now.",
