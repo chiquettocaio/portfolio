@@ -30,7 +30,7 @@
   }
 
   &__description {
-    font-size: 1.4rem;
+    font-size: var(--text-sm);
     font-weight: 400;
     line-height: 24px;
     margin-bottom: auto;
@@ -42,7 +42,7 @@
     align-content: flex-end;
     flex-wrap: wrap;
     gap: 4px;
-    font-size: 1.4rem;
+    font-size: var(--text-sm);
 
     li {
       max-height: 28px;

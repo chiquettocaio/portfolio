@@ -1,15 +1,20 @@
 :root {
   --font-family: Roboto, sans-serif;
-  --font-size-paragraph: 1.8rem;
-  --font-size-title: 2.6rem;
-  --font-size-button: 1.4rem;
-  --font-size-button-large: 1.6rem;
-  --font-size-xxl: 5.2rem;
-  // TODO: check font sizing over the application
 
-  --font-weight-bold: 900;
-  --font-weight-semi-bold: 700;
-  --font-weight-medium: 500;
-  --font-weight-regular: 400;
+  --text-xs: 1.2rem;
+  --text-sm: 1.4rem;
+  --text-base: 1.6rem;
+  --text-lg: 1.8rem;
+  --text-xl: 2rem;
+  --text-2xl: 2.6rem;
+  --text-3xl: 3rem;
+  --text-4xl: 3.6rem;
+  --text-5xl: 5.2rem;
+  --text-6xl: 6rem;
+
   --font-weight-thin: 200;
+  --font-weight-regular: 400;
+  --font-weight-semi-bold: 700;
+  --font-weight-bold: 900;
+  --font-weight-medium: 500;
 }

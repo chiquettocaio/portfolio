@@ -18,7 +18,7 @@ section {
 
 .paragraph {
   margin-top: 28px;
-  font-size: var(--font-size-paragraph);
+  font-size: var(--text-lg);
   line-height: 26px;
   margin-bottom: 20px;
 }
@@ -29,7 +29,7 @@ section {
   align-items: center;
 
   &__title {
-    font-size: var(--font-size-title);
+    font-size: var(--text-3xl);
     letter-spacing: 1px;
     line-height: 20px;
   }
@@ -44,5 +44,11 @@ section {
 @media screen and (width > breakpoints.$bp-md) {
   section {
     max-width: 920px;
+  }
+
+  .resume-header {
+    &__title {
+      font-size: var(--text-4xl);
+    }
   }
 }

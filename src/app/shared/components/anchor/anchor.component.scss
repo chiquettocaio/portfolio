@@ -14,7 +14,7 @@
     height: 35px;
     width: 100%;
     font-weight: var(--font-weight-medium);
-    font-size: var(--font-size-button);
+    font-size: var(--text-sm);
     box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
     border: none;
     border-radius: var(--border-radius);
@@ -83,7 +83,7 @@
 
   &--large {
     padding: 25px 15px;
-    font-size: var(--font-size-button-large);
+    font-size: var(--text-base);
   }
 
   &__content {

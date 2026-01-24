@@ -14,13 +14,13 @@ section {
 }
 
 .title {
-  font-size: var(--font-size-title);
+  font-size: var(--text-3xl);
   letter-spacing: 1px;
 }
 
 .subtitle {
   margin-top: 8px;
-  font-size: var(--font-size-paragraph);
+  font-size: var(--text-lg);
   font-weight: var(--font-weight-regular);
   margin-bottom: 48px;
 }
@@ -39,17 +39,22 @@ section {
   gap: 32px;
 
   &__know-more {
-    font-size: 1.8rem;
+    font-size: var(--text-lg);
     text-align: center;
     line-height: 32px;
+  }
+
+  app-anchor {
+    width: 100%;
+    max-width: 300px;
   }
 }
 
 .h2 {
   margin: 20px 0 10px;
-  font-size: var(--font-size-title);
+  font-size: var(--text-2xl);
   text-align: center;
-  max-width: 410px;
+  max-width: 450px;
   align-self: center;
 
   span {
@@ -60,5 +65,9 @@ section {
 @media screen and (width > breakpoints.$bp-md) {
   section {
     max-width: 920px;
+  }
+
+  .title {
+    font-size: var(--text-4xl);
   }
 }

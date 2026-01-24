@@ -17,13 +17,13 @@ section {
 }
 
 .title {
-  font-size: var(--font-size-xxl);
+  font-size: var(--text-5xl);
   margin-bottom: 26px;
   text-align: center;
 }
 
 .paragraph {
-  font-size: 2rem;
+  font-size: var(--text-xl);
   margin-bottom: 20px;
   text-align: center;
   line-height: 30px;
@@ -54,6 +54,7 @@ app-contact-form {
       @media (hover: hover) and (pointer: fine) {
         &:hover {
           transform: scale(1.2);
+          color: var(--color-secondary);
         }
       }
     }

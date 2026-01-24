@@ -47,7 +47,7 @@
   margin-top: 20px;
 
   &__title {
-    font-size: var(--font-size-paragraph);
+    font-size: var(--text-lg);
 
     &::before {
       content: '';
@@ -78,7 +78,7 @@
     line-height: 20px;
 
     li {
-      font-size: 1.4rem;
+      font-size: var(--text-sm);
     }
   }
 }
@@ -86,7 +86,7 @@
 .item-row {
   display: flex;
   gap: 0 10px;
-  font-size: 1.4rem;
+  font-size: var(--text-sm);
 
   &__icon {
     flex-shrink: 0;
@@ -118,7 +118,7 @@
     background-color: var(--color-secondary);
     color: var(--color-primary);
     border-radius: var(--border-radius);
-    font-size: 1.4rem;
+    font-size: var(--text-sm);
   }
 }
 
