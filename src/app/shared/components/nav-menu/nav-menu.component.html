@@ -16,6 +16,7 @@
         href="#hero-section"
         (click)="activateLink('hero')"
         (keydown.space)="onSpace($event, 'hero')"
+        [aria-label]="'navMenu.linksAria.hero' | translate"
       >
         <app-icon
           name="phosphorHouse"
@@ -33,6 +34,7 @@
         href="#about-section"
         (click)="activateLink('about')"
         (keydown.space)="onSpace($event, 'about')"
+        [aria-label]="'navMenu.linksAria.about' | translate"
       >
         <app-icon
           name="phosphorUser"
@@ -50,6 +52,7 @@
         href="#resume-section"
         (click)="activateLink('resume')"
         (keydown.space)="onSpace($event, 'resume')"
+        [aria-label]="'navMenu.linksAria.resume' | translate"
         >
         <app-icon
           name="phosphorCertificate"
@@ -67,6 +70,7 @@
         href="#projects-section"
         (click)="activateLink('projects')"
         (keydown.space)="onSpace($event, 'projects')"
+        [aria-label]="'navMenu.linksAria.projects' | translate"
       >
         <app-icon
           name="phosphorCode"
@@ -84,6 +88,7 @@
         href="#contact-section"
         (click)="activateLink('contact')"
         (keydown.space)="onSpace($event, 'contact')"
+        [aria-label]="'navMenu.linksAria.contact' | translate"
       >
         <app-icon
           name="phosphorEnvelopeSimple"
@@ -100,7 +105,10 @@
           : 'common.others.enable' | translate
         }"
     >
-      <button (click)="switchTheme()">
+      <button
+        (click)="switchTheme()"
+        [aria-label]="'navMenu.linksAria.theme' | translate"
+      >
         <app-icon
           [name]="
             isDarkThemeActive()
@@ -116,7 +124,10 @@
       class="nav-menu-links__button tooltip"
       [attr.data-tooltip]="'navMenu.linksAria.language' | translate"
     >
-      <button (click)="switchLanguage()">
+      <button
+        (click)="switchLanguage()"
+        [aria-label]="'navMenu.linksAria.language' | translate"
+      >
         <app-icon
           [name]="currentLanguage() === 'pt-br'
             ? 'flagBr'
