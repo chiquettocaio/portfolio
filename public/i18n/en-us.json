@@ -60,8 +60,8 @@
 
         "p2": {
           "proven": "I have a proven track record of delivering",
-          "high": "high-performance ecommerce solutions for global clients,",
-          "leading": "leading develipment teams and",
+          "high": "high-performance e-commerce solutions for global clients,",
+          "leading": "leading development teams and",
           "driving": "driving successful migrations",
           "from": "from Accelerator to SAP Composable Storefront (Spartacus)."
         },
@@ -93,8 +93,8 @@
         "p4": {
           "goal": "My goal is to",
           "help": "help companies ship reliable products that scale over time,",
-          "reduce": "reduce maintenance cost, and",
-          "deliver": "deliver consistent user experience."
+          "reduce": "reduce maintenance costs, and",
+          "deliver": "deliver consistent user experiences."
         },
 
         "p5": {
@@ -122,7 +122,7 @@
 
     "resume": {
       "title": "Resume",
-      "paragraph": "My technical skills encompasses lots of technologies and tools like Angular, RxJS, NgRx, NgRx effects, React.js, Redux, Vue.js, Vuex, Nuxt, JavaScript (ES5, ES6), TypeScript, Sass, HTML5, CSS3, ElectronJS, Node.js, Ajax, Git, Jest, Jasmine and others.",
+      "paragraph": "My technical skills encompass lots of technologies and tools like Angular, RxJS, NgRx, NgRx effects, React.js, Redux, Vue.js, VueX, Nuxt, JavaScript (ES5, ES6), TypeScript, Sass, HTML5, CSS3, ElectronJS, Node.js, Ajax, Git, Jest, Jasmine, and others.",
 
       "downloadResumeCta": {
         "title": "Download resume",
@@ -165,12 +165,12 @@
           "responsibilities": {
             "development": "Development and maintenance of SAP Commerce Composable Storefront (aka Spartacus) applications.",
             "creation": "Creation of new SAP Composable Storefront (aka Spartacus) projects.",
-            "architecture": "Architecture design elaboration, productivity tooling configuration (ESlint, Stylelint, others).",
+            "architecture": "Architecture design elaboration, productivity tooling configuration (ESLint, Stylelint, others).",
             "scalable": "Implementation of scalable solutions.",
-            "implementation": "Implementation of easy-to-read and easy-to-maintain code, relying on the market best practices.",
+            "implementation": "Implementation of easy-to-read and easy-to-maintain code, relying on the industry's best practices.",
             "optimization": "Code optimization.",
-            "performative": "Creation of highly performative and reusable components.",
-            "documentation": "Development and maintenance of FED documentation for completeness (Style guide, Technical debits).",
+            "performative": "Creation of high-performance and reusable components.",
+            "documentation": "Development and maintenance of front-end documentation (style guide, technical debits).",
             "codeReview": "Code review and enforcement of a style guide.",
             "englishOnly": "English-only communication."
           }
@@ -186,13 +186,13 @@
             "development": "Development and maintenance of SAP Commerce Composable Storefront (aka Spartacus) applications for US-based clients.",
             "creation": "Creation of new SAP Composable Storefront (aka Spartacus) projects (B2B, B2C, D2C).",
             "cdc": " SAP CDC (Customer Data Cloud, formerly Gigya) usage for Customer Identity and Access Management (CIAM) and UI manipulation.",
-            "architecture": "Architecture design elaboration, productivity tooling configuration (ESlint, Stylelint, others).",
+            "architecture": "Architecture design elaboration, productivity tooling configuration (ESLint, Stylelint, others).",
             "scalable": "Implementation of scalable solutions.",
             "communication": "Communication with design and product teams, to assist in the product shaping and better understand the entire solution.",
             "implementation": "Implementation of easy-to-read and easy-to-maintain code, relying on the market best practices.",
             "optimization": "Code optimization.",
             "performative": "Creation of highly performative and reusable components.",
-            "documentation": "Development and maintenance of FED documentation for completeness (Style guide, Technical debits).",
+            "documentation": "Development and maintenance of FED documentation for completeness (Style guide, Technical debts).",
             "codeReview": "Code review and enforcement of a style guide.",
             "englishOnly": "English-only communication."
           }
@@ -206,9 +206,9 @@
 
           "responsibilities": {
             "development": "Development and maintenance of SAP Commerce Composable storefront (aka Spartacus) applications.",
-            "communication": "Communication with the design and product teams in order to properly deliver something that can actually attend the client's needs.",
+            "communication": "Communication with the design and product teams in order to properly deliver something that can actually meet the customer's needs.",
             "collaboration": "Collaboration with the design team in order to provide the FED POV and help in the shaping of a great solution from all the perspectives.",
-            "assist": "Assist abroad teams on their SAP Composable Storefront solutions, helping them solve specific issues so they could be unblocked (communication in English)."
+            "assist": "Assist overseas teams on their SAP Composable Storefront solutions, helping them solve specific issues so they could be unblocked (communication in English)."
           }
         },
 
@@ -254,8 +254,8 @@
 
           "responsibilities": {
             "development": "Development of an animation software focused on the creation of digital campaigns, using Vue.js, VueX and Electron.js.",
-            "full-stack": "Full-stack developer responsible for the development of a sales web application, meant to sell and manage licenses of the mentioned animation software. Techs: React.js, Node.js, AdonisJS, redux, styled-components, Docker.",
-            "landing": "Development of landing pages for various clients, using HTML5, CSS3 and Vanilla JavaScript.",
+            "full-stack": "Full-stack developer responsible for the development of a sales web application, meant to sell and manage licenses of the mentioned animation software. Techs: React.js, Node.js, AdonisJS, Redux, styled-components, Docker.",
+            "landing": "Development of landing pages for various clients, using HTML5, CSS3 and JavaScript.",
             "communication": "Communication with the design team in order to properly attend the UI/UX requirements."
           }
         }
@@ -276,15 +276,21 @@
       },
 
       "projects": {
-        "carhartt": {
+        "ccg": {
           "title": "Carhartt Company Gear",
           "description": "E-commerce platform developed for Carhartt, a U.S. heritage workwear brand. Contributed from inception to the new generation of Carhartt Company Gear (CCG), their B2B division. Responsibilities included defining the technical architecture, establishing coding standards, conducting code reviews, mentoring developers, and hands-on development.",
           "thumbAlt": "Carhartt Company Gear home page"
         },
 
+        "carhartt": {
+          "title": "Carhartt",
+          "description": "Maintained and enhanced Carhartt's B2C e-commerce platform, supporting a high-traffic consumer storefront for a U.S. heritage workwear brand. Resolved production and performance bugs, implemented new features, and refactored legacy code to improve stability, scalability, and overall codebase quality in collaboration with cross-functional teams.",
+          "thumbAlt": "Carhartt home page"
+        },
+
         "vivo": {
           "title": "Vivo Store",
-          "description": "E-commerce platform developed for Vivo (Telefónica), Brazil’s largest telecom company. In a multi-consultancy project, I led Accenture’s development team, delivering the world’s first SAP Commerce implementation using SAP Composable Storefront with the Telco & Utilities Accelerator. Responsibilities included technical leadership, Accenture team training, architecture alignment, and hands-on development.",
+          "description": "E-commerce platform developed for Vivo (Telefónica), Brazil's largest telecom company. In a multi-consultancy project, I led Accenture's development team, delivering the world's first SAP Commerce implementation using SAP Composable Storefront with the Telco & Utilities Accelerator. Responsibilities included technical leadership, Accenture team training, architecture alignment, and hands-on development.",
           "thumbAlt": "Vivo store home page"
         },
 
@@ -295,9 +301,9 @@
         },
 
         "alliage": {
-          "title": "Alliage Global — 3-in-1 E-Commerce Platform",
-          "description": "SAP Commerce Cloud solution built for Alliage Global, designed as a single scalable platform supporting Dabi Atlante, Saevo, and D700 brands, each with a distinct look and feel driven by unique product and content catalogs. As a front-end developer, I worked with JSP and Vanilla JavaScript, driving innovation by introducing a more client-driven approach inspired by modern front-end architectures.",
-          "thumbAlt": "Dabi Atlante, Saevo e D700 home pages"
+          "title": "Alliage Global — 3-in-1 E-commerce Platform",
+          "description": "SAP Commerce Cloud solution built for Alliage Global, designed as a single scalable platform supporting Dabi Atlante, Saevo, and D700 brands, each with a distinct look and feel driven by unique product and content catalogs. As a front-end developer, I worked with JSP and JavaScript, driving innovation by introducing a more client-driven approach inspired by modern front-end architectures.",
+          "thumbAlt": "Dabi Atlante, Saevo and D700 home pages"
         },
 
         "ml": {
@@ -308,19 +314,19 @@
 
         "teams": {
           "title": "Microsoft Teams Copy",
-          "description": "Personal project created when I was learning Angular. Nothing better than a project to teach us things that goes beyond the docs, right? My first project made with Angular was nothing but a Microsoft Teams copy, completely interactive. You could send messages, react to messages, and other cool stuff  messaging apps usually allows us to do.",
+          "description": "Personal project created when I was learning Angular. Nothing better than a project to teach us things that go beyond the docs, right? My first project made with Angular was nothing but a Microsoft Teams copy, completely interactive. You could send messages, react to messages, and other cool stuff messaging apps usually allow us to do.",
           "thumbAlt": "Microsoft Teams Copy"
         },
 
         "finances": {
           "title": "Monopoly Banker",
-          "description": "Personal project created during one of my job vacations. At some point I saw myself playing Monopoly with my niece and noticed how those physical bills were annoying, and that's the story behind the app. Monopoly Banker is an app for making money transfers between the players in real time, relying on the power of React, NodeJS, Mongo and Websockets. If you're interested about knowing more about it, there's a publication on my LinkedIn profile.",
+          "description": "Personal project created during one of my job vacations. At some point I saw myself playing Monopoly with my niece and noticed how those physical bills were annoying, and that's the story behind the app. Monopoly Banker is an app for making money transfers between the players in real time, relying on the power of React, Node.js, Mongo and WebSocket. If you're interested in knowing more about it, there's a publication on my LinkedIn profile.",
           "thumbAlt": "Monopoly Banker room"
         },
 
         "elderly": {
-          "title": "Aprenda Elderly — Learning plataform",
-          "description": "Created to be presented as my Capstone Project, Aprenda Elderly is a learning platform focused on older adults that want to learn more about modern devices like computers and smartphones.",
+          "title": "Aprenda Elderly — Learning platform",
+          "description": "Created to be presented as my Capstone Project, Aprenda Elderly is a learning platform focused on older adults who want to learn more about modern devices like computers and smartphones.",
           "thumbAlt": "Aprenda Elderly platform"
         }
       },

@@ -8,7 +8,7 @@
 
       "headline": {
         "build": "Eu construo aplicações",
-        "fast": "rápidas, escaláveis, e manuteníveis",
+        "fast": "rápidas, escaláveis e manuteníveis",
         "user": "."
       },
 
@@ -21,7 +21,7 @@
       "viewMyWorkCta": {
         "title": "Ver meus trabalhos",
         "content": "Ver meus trabalhos",
-        "ariaLabel": "Ver meus trabalhos ",
+        "ariaLabel": "Ver meus trabalhos",
         "iconAriaLabel": "Ver meus trabalhos"
       },
 
@@ -123,7 +123,7 @@
 
     "resume": {
       "title": "Currículo",
-      "paragraph": "Minhas habilidades técnicas abrangem várias tecnologias e ferramentas como Angular, RxJS, NgRx, efeitos NgRx, React.js, Redux, Vue.js, Vuex, Nuxt, JavaScript (ES5, ES6), TypeScript, Sass, HTML5, CSS3, ElectronJS, Node.js, Ajax, Git, Jest, Jasmine e outras.",
+      "paragraph": "Minhas habilidades técnicas abrangem várias tecnologias e ferramentas como Angular, RxJS, NgRx, NgRx effects, React.js, Redux, Vue.js, VueX, Nuxt, JavaScript (ES5, ES6), TypeScript, Sass, HTML5, CSS3, ElectronJS, Node.js, Ajax, Git, Jest, Jasmine e outras.",
 
       "downloadResumeCta": {
         "title": "Baixar currículo",
@@ -166,12 +166,12 @@
           "responsibilities": {
             "development": "Desenvolvimento e manutenção de aplicações SAP Commerce Composable Storefront (aka Spartacus).",
             "creation": "Criação de novos projetos SAP Composable Storefront (aka Spartacus).",
-            "architecture": "Elaboração do design arquitetural e configuração de ferramentas de produtividade (ESlint, Stylelint, entre outras).",
+            "architecture": "Elaboração do design arquitetural e configuração de ferramentas de produtividade (ESLint, Stylelint, entre outras).",
             "scalable": "Implementação de soluções escaláveis.",
             "implementation": "Implementação de código fácil de ler e manter, seguindo as melhores práticas de mercado.",
             "optimization": "Otimização de código.",
             "performative": "Criação de componentes altamente performáticos e reutilizáveis.",
-            "documentation": "Desenvolvimento e manutenção da documentação FED para completude (Style guide, débitos técnicos).",
+            "documentation": "Desenvolvimento e manutenção da documentação (style guide, débitos técnicos).",
             "codeReview": "Revisão de código e aplicação de um guia de estilo.",
             "englishOnly": "Comunicação apenas em inglês."
           }
@@ -187,7 +187,7 @@
             "development": "Desenvolvimento e manutenção de aplicações SAP Commerce Composable Storefront (aka Spartacus) para clientes nos EUA.",
             "creation": "Criação de novos projetos SAP Composable Storefront (aka Spartacus) (B2B, B2C, D2C).",
             "cdc": "Uso do SAP CDC (Customer Data Cloud, antigo Gigya) para gerenciamento de identidade e acesso do cliente (CIAM) e manipulação de UI.",
-            "architecture": "Elaboração do design arquitetural e configuração de ferramentas de produtividade (ESlint, Stylelint, entre outras).",
+            "architecture": "Elaboração do design arquitetural e configuração de ferramentas de produtividade (ESLint, Stylelint, entre outras).",
             "scalable": "Implementação de soluções escaláveis.",
             "communication": "Comunicação com equipes de design e produto, para auxiliar na definição do produto e compreender melhor toda a solução.",
             "implementation": "Implementação de código fácil de ler e manter, seguindo as melhores práticas de mercado.",
@@ -256,7 +256,7 @@
           "responsibilities": {
             "development": "Desenvolvimento de software de animação focado na criação de campanhas digitais, utilizando Vue.js, VueX e Electron.js.",
             "full-stack": "Desenvolvedor full-stack responsável pelo desenvolvimento de uma aplicação web de vendas, destinada a vender e gerenciar licenças do software de animação mencionado. Tecnologias: React.js, Node.js, AdonisJS, Redux, styled-components, Docker.",
-            "landing": "Desenvolvimento de landing pages para diversos clientes, utilizando HTML5, CSS3 e JavaScript puro.",
+            "landing": "Desenvolvimento de landing pages para diversos clientes, utilizando HTML5, CSS3 e JavaScript.",
             "communication": "Comunicação com a equipe de design para atender corretamente aos requisitos de UI/UX."
           }
         }
@@ -277,11 +277,16 @@
       },
 
       "projects": {
-
-        "carhartt": {
+        "ccg": {
           "title": "Carhartt Company Gear",
           "description": "Plataforma de e-commerce desenvolvida para a Carhartt, uma marca americana tradicional de workwear. Atuação desde a concepção da nova geração da Carhartt Company Gear (CCG), sua divisão B2B. Responsável pela definição da arquitetura técnica, padronização de código, code review, mentoria de desenvolvedores e desenvolvimento hands-on.",
-          "thumbAlt": "Página inicial do Carhartt Company Gear"
+          "thumbAlt": "Página inicial da Carhartt Company Gear"
+        },
+
+        "carhartt": {
+          "title": "Carhartt",
+          "description": "Manutenção e evolução da plataforma de e-commerce B2C da Carhartt, dando suporte a uma vitrine de alto tráfego para uma marca americana tradicional de workwear. Atuação na correção de bugs de produção e performance, implementação de novas funcionalidades e refatoração de código legado para melhorar a estabilidade, escalabilidade e a qualidade geral do código, em colaboração com times multidisciplinares.",
+          "thumbAlt": "Página inicial da Carhartt"
         },
 
         "vivo": {
@@ -297,8 +302,8 @@
         },
 
         "alliage": {
-          "title": "Alliage Global — Platforma de E-Commerce 3 em 1",
-          "description": "Solução SAP Commerce Cloud desenvolvida para a Alliage Global, projetada como uma plataforma escalável única, suportando as marcas Dabi Atlante, Saevo e D700, cada uma com identidade visual distinta, impulsionada por catálogos de produtos e conteúdo próprios. Atuei como desenvolvedor front-end utilizando JSP e JavaScript Vanilla, promovendo inovação ao introduzir uma abordagem mais orientada ao cliente, inspirada em arquiteturas modernas de front-end.",
+          "title": "Alliage Global — Plataforma de E-commerce 3 em 1",
+          "description": "Solução SAP Commerce Cloud desenvolvida para a Alliage Global, projetada como uma plataforma escalável única, suportando as marcas Dabi Atlante, Saevo e D700, cada uma com identidade visual distinta, impulsionada por catálogos de produtos e conteúdo próprios. Atuei como desenvolvedor front-end utilizando JSP e JavaScript, promovendo inovação ao introduzir uma abordagem mais orientada ao cliente, inspirada em arquiteturas modernas de front-end.",
           "thumbAlt": "Páginas iniciais de Dabi Atlante, Saevo e D700"
         },
 
@@ -316,7 +321,7 @@
 
         "finances": {
           "title": "Monopoly Banker",
-          "description": "Projeto pessoal criado durante uma das minhas férias do trabalho. Em um momento, me vi jogando Monopoly com minha sobrinha e percebi como aquelas cédulas físicas eram irritantes, e essa é a história por trás do app. Monopoly Banker é um app para fazer transferências de dinheiro entre os jogadores em tempo real, utilizando React, NodeJS, Mongo e WebSockets. Se você quiser saber mais, há uma publicação no meu perfil do LinkedIn.",
+          "description": "Projeto pessoal criado durante uma das minhas férias do trabalho. Em um momento, me vi jogando Monopoly com minha sobrinha e percebi como aquelas cédulas físicas eram irritantes, e essa é a história por trás do app. Monopoly Banker é um app para fazer transferências de dinheiro entre os jogadores em tempo real, utilizando React, Node.js, Mongo e WebSocket. Se você quiser saber mais, há uma publicação no meu perfil do LinkedIn.",
           "thumbAlt": "Sala do Monopoly Banker"
         },
 
