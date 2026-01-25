@@ -34,7 +34,9 @@ export class ProjectsComponent {
           title: translations[`${projectsBasePath}.carhartt`].title,
           description: translations[`${projectsBasePath}.carhartt`].description,
           techs: [
+            translations['common.technologies'].sapCommerce,
             translations['common.technologies'].spartacus,
+            translations['common.technologies'].cdc,
             translations['common.technologies'].angular,
             translations['common.technologies'].typescript,
             translations['common.technologies'].rxjs,
@@ -56,8 +58,8 @@ export class ProjectsComponent {
           title: translations[`${projectsBasePath}.vivo`].title,
           description: translations[`${projectsBasePath}.vivo`].description,
           techs: [
+            translations['common.technologies'].sapCommerce,
             translations['common.technologies'].spartacus,
-            translations['common.technologies'].cdc,
             translations['common.technologies'].angular,
             translations['common.technologies'].typescript,
             translations['common.technologies'].rxjs,
@@ -66,16 +68,61 @@ export class ProjectsComponent {
             translations['common.technologies'].sass,
             translations['common.technologies'].html,
             translations['common.technologies'].css,
-            translations['common.technologies'].javascript
+            translations['common.technologies'].javascript,
+            translations['common.concepts'].oop,
+            translations['common.concepts'].commerce,
+            translations['common.concepts'].sapCX
           ],
           thumb: {
             src: 'images/vivo.png',
             alt: translations[`${projectsBasePath}.vivo`].thumbAlt
           }
         }, {
+          title: translations[`${projectsBasePath}.leap`].title,
+          description: translations[`${projectsBasePath}.leap`].description,
+          techs: [
+            translations['common.technologies'].sapCommerce,
+            translations['common.technologies'].spartacus,
+            translations['common.technologies'].angular,
+            translations['common.technologies'].typescript,
+            translations['common.technologies'].rxjs,
+            translations['common.technologies'].ngrx,
+            translations['common.technologies'].jasmine,
+            translations['common.technologies'].sass,
+            translations['common.technologies'].html,
+            translations['common.technologies'].css,
+            translations['common.technologies'].javascript,
+            translations['common.concepts'].oop,
+            translations['common.concepts'].commerce,
+            translations['common.concepts'].sapCX
+          ],
+          thumb: {
+            src: 'images/leap.png',
+            alt: translations[`${projectsBasePath}.leap`].thumbAlt
+          }
+        }, {
+          title: translations[`${projectsBasePath}.alliage`].title,
+          description: translations[`${projectsBasePath}.alliage`].description,
+          techs: [
+            translations['common.technologies'].sapCommerce,
+            translations['common.technologies'].javascript,
+            translations['common.technologies'].jsp,
+            translations['common.technologies'].html,
+            translations['common.technologies'].less,
+            translations['common.technologies'].css,
+            translations['common.concepts'].oop,
+            translations['common.concepts'].commerce,
+            translations['common.concepts'].sapCX
+          ],
+          thumb: {
+            src: 'images/alliage.png',
+            alt: translations[`${projectsBasePath}.alliage`].thumbAlt
+          }
+        }, {
           title: translations[`${projectsBasePath}.ml`].title,
           description: translations[`${projectsBasePath}.ml`].description,
           techs: [
+            translations['common.technologies'].sapCommerce,
             translations['common.technologies'].spartacus,
             translations['common.technologies'].angular,
             translations['common.technologies'].typescript,
@@ -108,8 +155,7 @@ export class ProjectsComponent {
             translations['common.technologies'].html,
             translations['common.technologies'].css,
             translations['common.technologies'].javascript,
-            translations['common.concepts'].oop,
-            '+2'
+            translations['common.concepts'].oop
           ],
           thumb: {
             src: 'images/teams.png',
@@ -131,7 +177,8 @@ export class ProjectsComponent {
             translations['common.concepts'].fullStack,
             translations['common.concepts'].mern,
             translations['common.concepts'].oop,
-            '+2'
+            translations['common.technologies'].figma,
+            translations['common.concepts'].prototyping
           ],
           thumb: {
             src: 'images/finances-room.png',
@@ -166,9 +213,11 @@ export class ProjectsComponent {
     return this.translateService.get([
       'common.technologies',
       'common.concepts',
-      `${projectsBasePath}.vivo`,
-      `${projectsBasePath}.ml`,
       `${projectsBasePath}.carhartt`,
+      `${projectsBasePath}.vivo`,
+      `${projectsBasePath}.leap`,
+      `${projectsBasePath}.alliage`,
+      `${projectsBasePath}.ml`,
       `${projectsBasePath}.teams`,
       `${projectsBasePath}.finances`,
       `${projectsBasePath}.elderly`

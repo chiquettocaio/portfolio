@@ -278,43 +278,49 @@
       "projects": {
         "carhartt": {
           "title": "Carhartt Company Gear",
-          "description": "E-commerce created for Carhartt, a U.S. heritage workwear brand. Carhartt's B2B branch is called CCG (Carhartt Company Gear), and I've been involved in the creation from the ground up of their new generation of CCG. There I was responsible for defining the project architecture, enforcing a coding style, doing code reviews, guiding and helping other developers and coding like there was no tomorrow!",
-          "techs": "SAP Spartacus, Angular, CDC (formerly Gygia), RxJs and TypeScript",
-          "thumbAlt": "Carhartt Company Gear homepage"
+          "description": "E-commerce platform developed for Carhartt, a U.S. heritage workwear brand. Contributed from inception to the new generation of Carhartt Company Gear (CCG), their B2B division. Responsibilities included defining the technical architecture, establishing coding standards, conducting code reviews, mentoring developers, and hands-on development.",
+          "thumbAlt": "Carhartt Company Gear home page"
         },
 
         "vivo": {
           "title": "Vivo Store",
-          "description": "E-commerce created for Vivo (Telefonica), the biggest telecom company of Brazil. The e-commerce has been developed using the (at the moment) new SAP Spartacus technology, which is a modern way of building SAP commerces.",
-          "techs": "SAP Spartacus, Angular, RxJs, NgRx and TypeScript",
-          "thumbAlt": "Vivo store homepage"
+          "description": "E-commerce platform developed for Vivo (Telefónica), Brazil’s largest telecom company. In a multi-consultancy project, I led Accenture’s development team, delivering the world’s first SAP Commerce implementation using SAP Composable Storefront with the Telco & Utilities Accelerator. Responsibilities included technical leadership, Accenture team training, architecture alignment, and hands-on development.",
+          "thumbAlt": "Vivo store home page"
+        },
+
+        "leap": {
+          "title": "Boston Scientific — LEAP+",
+          "description": "LEAP+ is a healthcare financing platform by Boston Scientific that, despite its appearance and segment, is a complex e-commerce marketplace built with SAP Composable Storefront. The platform supports multiple user roles — doctors, hospitals, manufacturers, and distributors — enabling integrated healthcare transactions. I led the development of the checkout, enabling payments with up to three credit cards, tackling complex business rules and validation requirements.",
+          "thumbAlt": "LEAP+ home page"
+        },
+
+        "alliage": {
+          "title": "Alliage Global — 3-in-1 E-Commerce Platform",
+          "description": "SAP Commerce Cloud solution built for Alliage Global, designed as a single scalable platform supporting Dabi Atlante, Saevo, and D700 brands, each with a distinct look and feel driven by unique product and content catalogs. As a front-end developer, I worked with JSP and Vanilla JavaScript, driving innovation by introducing a more client-driven approach inspired by modern front-end architectures.",
+          "thumbAlt": "Dabi Atlante, Saevo e D700 home pages"
         },
 
         "ml": {
           "title": "Mercado Livre Copy — SAP Spartacus",
           "description": "Personal project created to improve my SAP Composable Storefront (Spartacus) abilities. This project is a copy of the \"Mercado Libre\" E-commerce (\"Mercado Livre\" in Brazil), made with SAP Spartacus/Angular. To dedicate myself to client projects, I've never finished it, but who knows I do that someday.",
-          "techs": "SAP Spartacus, Angular, RxJs, NgRx and TypeScript",
-          "thumbAlt": "Mercado livre in Spartacus homepage"
+          "thumbAlt": "Mercado livre in Spartacus home page"
         },
 
         "teams": {
           "title": "Microsoft Teams Copy",
           "description": "Personal project created when I was learning Angular. Nothing better than a project to teach us things that goes beyond the docs, right? My first project made with Angular was nothing but a Microsoft Teams copy, completely interactive. You could send messages, react to messages, and other cool stuff  messaging apps usually allows us to do.",
-          "techs": "Angular, RxJs, NgRx and Sass",
           "thumbAlt": "Microsoft Teams Copy"
         },
 
         "finances": {
           "title": "Monopoly Banker",
           "description": "Personal project created during one of my job vacations. At some point I saw myself playing Monopoly with my niece and noticed how those physical bills were annoying, and that's the story behind the app. Monopoly Banker is an app for making money transfers between the players in real time, relying on the power of React, NodeJS, Mongo and Websockets. If you're interested about knowing more about it, there's a publication on my LinkedIn profile.",
-          "techs": "React, Node.js, Docker, MongoDB and Websockets",
           "thumbAlt": "Monopoly Banker room"
         },
 
         "elderly": {
           "title": "Aprenda Elderly — Learning plataform",
           "description": "Created to be presented as my Capstone Project, Aprenda Elderly is a learning platform focused on older adults that want to learn more about modern devices like computers and smartphones.",
-          "techs": "React, HTML5, CSS3 and JavaScript",
           "thumbAlt": "Aprenda Elderly platform"
         }
       },
@@ -420,6 +426,7 @@
 
   "common": {
     "technologies": {
+      "sapCommerce": "SAP Commerce Cloud",
       "spartacus": "SAP Spartacus",
       "cdc": "CDC (formerly Gigya) for CIAM",
       "angular": "Angular",
@@ -448,6 +455,8 @@
       "mongo": "MongoDB",
       "redis": "Redis",
       "websocket": "WebSocket",
+      "jsp": "JSP",
+      "less": "LESS",
       "figma": "Figma"
     },
 
