@@ -1,8 +1,9 @@
 @use 'tokens/breakpoints' as breakpoints;
 
-.project {
-  display: flex;
-  flex-direction: column;
+:host {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 4;
   overflow: hidden;
   line-height: 2rem;
   padding: 20px;
@@ -13,19 +14,20 @@
   backdrop-filter: blur(3px);
   border: 1px solid hsl(from var(--color-secondary) h s 30% /0.4);
   height: 100%;
+}
 
+
+.project {
   &__thumb {
     width: 100%;
     height: auto;
     object-fit: cover;
     object-position: top;
     aspect-ratio: 16 / 9;
-    margin: 20px 0;
   }
 
   &__title {
     font-size: 2.2rem;
-    margin-bottom: 20px;
     line-height: 2.6rem;
   }
 
@@ -33,13 +35,12 @@
     font-size: var(--text-sm);
     font-weight: 400;
     line-height: 24px;
-    margin-bottom: auto;
   }
 
   &__techs {
+    place-content: flex-start;
     list-style: none;
     display: flex;
-    align-content: flex-end;
     flex-wrap: wrap;
     gap: 4px;
     font-size: var(--text-sm);

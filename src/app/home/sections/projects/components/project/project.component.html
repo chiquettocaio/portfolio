@@ -1,24 +1,22 @@
-<div class="project">
-  <h3 class="project__title">
-    {{ data().title }}
-  </h3>
+<h3 class="project__title">
+  {{ data().title }}
+</h3>
 
-  <p class="project__description">
-    {{ data().description }}
-  </p>
+<p class="project__description">
+  {{ data().description }}
+</p>
 
-  <img
-    class="project__thumb"
-    [ngSrc]="data().thumb.src"
-    width="352"
-    height="198"
-    sizes="100vw"
-    [alt]="data().thumb.alt"
-  >
+<img
+  class="project__thumb"
+  [ngSrc]="data().thumb.src"
+  width="352"
+  height="174"
+  sizes="100vw"
+  [alt]="data().thumb.alt"
+>
 
-  <ul class="project__techs">
-    @for (tech of data().techs; track $index) {
-      <li> {{ tech }} </li>
-    }
-  </ul>
-</div>
+<ul class="project__techs">
+  @for (tech of data().techs; track $index) {
+    <li> {{ tech }} </li>
+  }
+</ul>

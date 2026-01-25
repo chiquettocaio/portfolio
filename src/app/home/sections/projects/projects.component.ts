@@ -31,6 +31,30 @@ export class ProjectsComponent {
     this.translateProjects().pipe(
       tap(translations => {
         this.projects.set([{
+          title: translations[`${projectsBasePath}.ccg`].title,
+          description: translations[`${projectsBasePath}.ccg`].description,
+          techs: [
+            translations['common.technologies'].sapCommerce,
+            translations['common.technologies'].spartacus,
+            translations['common.technologies'].cdc,
+            translations['common.technologies'].angular,
+            translations['common.technologies'].typescript,
+            translations['common.technologies'].rxjs,
+            translations['common.technologies'].ngrx,
+            translations['common.technologies'].jasmine,
+            translations['common.technologies'].sass,
+            translations['common.technologies'].html,
+            translations['common.technologies'].css,
+            translations['common.technologies'].javascript,
+            translations['common.concepts'].oop,
+            translations['common.concepts'].commerce,
+            translations['common.concepts'].sapCX
+          ],
+          thumb: {
+            src: 'images/ccg-small.png',
+            alt: translations[`${projectsBasePath}.ccg`].thumbAlt
+          }
+        }, {
           title: translations[`${projectsBasePath}.carhartt`].title,
           description: translations[`${projectsBasePath}.carhartt`].description,
           techs: [
@@ -51,7 +75,7 @@ export class ProjectsComponent {
             translations['common.concepts'].sapCX
           ],
           thumb: {
-            src: 'images/carhartt.png',
+            src: 'images/carhartt-small.png',
             alt: translations[`${projectsBasePath}.carhartt`].thumbAlt
           }
         }, {
@@ -74,7 +98,7 @@ export class ProjectsComponent {
             translations['common.concepts'].sapCX
           ],
           thumb: {
-            src: 'images/vivo.png',
+            src: 'images/vivo-small.png',
             alt: translations[`${projectsBasePath}.vivo`].thumbAlt
           }
         }, {
@@ -97,7 +121,7 @@ export class ProjectsComponent {
             translations['common.concepts'].sapCX
           ],
           thumb: {
-            src: 'images/leap.png',
+            src: 'images/leap-small.png',
             alt: translations[`${projectsBasePath}.leap`].thumbAlt
           }
         }, {
@@ -115,7 +139,7 @@ export class ProjectsComponent {
             translations['common.concepts'].sapCX
           ],
           thumb: {
-            src: 'images/alliage.png',
+            src: 'images/alliage-small.png',
             alt: translations[`${projectsBasePath}.alliage`].thumbAlt
           }
         }, {
@@ -138,7 +162,7 @@ export class ProjectsComponent {
             translations['common.concepts'].sapCX
           ],
           thumb: {
-            src: 'images/mercadolivre.png',
+            src: 'images/mercadolivre-small.png',
             alt: translations[`${projectsBasePath}.ml`].thumbAlt
           }
         }, {
@@ -158,7 +182,7 @@ export class ProjectsComponent {
             translations['common.concepts'].oop
           ],
           thumb: {
-            src: 'images/teams.png',
+            src: 'images/teams-small.png',
             alt: translations[`${projectsBasePath}.teams`].thumbAlt
           }
         }, {
@@ -181,7 +205,7 @@ export class ProjectsComponent {
             translations['common.concepts'].prototyping
           ],
           thumb: {
-            src: 'images/finances-room.png',
+            src: 'images/finances-room-small.png',
             alt: translations[`${projectsBasePath}.finances`].thumbAlt
           }
         }, {
@@ -198,7 +222,7 @@ export class ProjectsComponent {
             translations['common.concepts'].prototyping
           ],
           thumb: {
-            src: 'images/aprenda-elderly.png',
+            src: 'images/aprenda-elderly-small.png',
             alt: translations[`${projectsBasePath}.elderly`].thumbAlt
           }
         }
@@ -213,6 +237,7 @@ export class ProjectsComponent {
     return this.translateService.get([
       'common.technologies',
       'common.concepts',
+      `${projectsBasePath}.ccg`,
       `${projectsBasePath}.carhartt`,
       `${projectsBasePath}.vivo`,
       `${projectsBasePath}.leap`,
