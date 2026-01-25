@@ -26,8 +26,8 @@ export class TextAreaComponent implements ControlValueAccessor, OnInit, AfterVie
   value = signal<string>('')
   errorKey = signal<string>('')
 
-  onChange!: (value: string) => void
-  onTouched!: () => void
+  onChange: (value: string) => void = () => { return }
+  onTouched: () => void = () => { return }
 
   ngOnInit (): void {
     this.control = this.injector.get(NgControl)
@@ -70,11 +70,11 @@ export class TextAreaComponent implements ControlValueAccessor, OnInit, AfterVie
     this.value.set(value)
   }
 
-  registerOnChange (fn: () => void): void {
+  registerOnChange (fn: () => unknown): void {
     this.onChange = fn
   }
 
-  registerOnTouched (fn: () => void): void {
+  registerOnTouched (fn: () => unknown): void {
     this.onTouched = fn
   }
 

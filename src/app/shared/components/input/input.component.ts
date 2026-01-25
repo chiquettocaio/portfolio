@@ -23,8 +23,8 @@ export class InputComponent implements ControlValueAccessor, OnInit, AfterViewIn
 
   control !: NgControl
   private updateOn: AbstractControlOptions['updateOn'] = 'change'
-  onChange!: (value: string) => void
-  onTouched!: () => void
+  onChange: (value: string) => void = () => { return }
+  onTouched: () => void = () => { return }
 
   value = signal<string>('')
   errorKey = signal<string>('')

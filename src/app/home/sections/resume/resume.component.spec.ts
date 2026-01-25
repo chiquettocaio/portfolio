@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing'
 
+import { MockTranslationProvider } from '@app/shared/tests/mocks/providers/translation'
 import { ResumeComponent } from './resume.component'
 
 describe('Resume', () => {
@@ -8,7 +9,8 @@ describe('Resume', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ResumeComponent]
+      imports: [ResumeComponent],
+      providers: [MockTranslationProvider]
     }).compileComponents()
 
     fixture = TestBed.createComponent(ResumeComponent)

@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing'
 
+import { MockTranslationProvider } from '@app/shared/tests/mocks/providers/translation'
 import { AboutComponent } from './about.component'
 
 describe('About', () => {
@@ -8,15 +9,23 @@ describe('About', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AboutComponent]
+      imports: [
+        AboutComponent
+      ],
+
+      // TEST: to provide translation
+      providers: [
+        MockTranslationProvider
+      ]
     }).compileComponents()
 
     fixture = TestBed.createComponent(AboutComponent)
     component = fixture.componentInstance
-    await fixture.whenStable()
   })
 
   it('should create', () => {
     expect(component).toBeTruthy()
   })
 })
+
+// TODO: test more

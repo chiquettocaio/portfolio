@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing'
 
+import { MockTranslationProvider } from '@app/shared/tests/mocks/providers/translation'
 import { ContactComponent } from './contact.component'
 
 describe('ContactComponent', () => {
@@ -8,7 +9,8 @@ describe('ContactComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ContactComponent]
+      imports: [ContactComponent],
+      providers: [MockTranslationProvider]
     })
       .compileComponents()
 
@@ -21,3 +23,5 @@ describe('ContactComponent', () => {
     expect(component).toBeTruthy()
   })
 })
+
+// TODO: test more

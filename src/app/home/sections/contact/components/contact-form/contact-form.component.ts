@@ -75,10 +75,10 @@ export class ContactFormComponent {
   }
 
   private focusOnFirstInvalidInput (): void {
-    const firstInvalidInput = this.elementRef.nativeElement.querySelector('form .ng-invalid input, form .ng-invalid textarea') as HTMLInputElement
-    const focusedInput = this.elementRef.nativeElement.querySelector('form input:focus, form textarea:focus') as HTMLInputElement
+    const firstInvalidInput = this.elementRef.nativeElement.querySelector('.contact-form .ng-invalid input, .contact-form .ng-invalid textarea') as HTMLInputElement
+    const focusedInput = this.elementRef.nativeElement.querySelector('.contact-form input:focus, .contact-form textarea:focus') as HTMLInputElement
     const nextInvalidInput = this.elementRef.nativeElement
-      .querySelector('form app-input:has(input:focus) ~ .ng-invalid input, form app-input:has(input:focus) ~ .ng-invalid textarea') as HTMLInputElement
+      .querySelector('.contact-form app-input:has(input:focus) ~ .ng-invalid input, .contact-form app-input:has(input:focus) ~ .ng-invalid textarea') as HTMLInputElement
 
     const isFocusedInputInvalid = focusedInput?.parentElement?.parentElement?.classList.contains('ng-invalid')
 
@@ -91,3 +91,6 @@ export class ContactFormComponent {
     inputToFocus?.focus()
   }
 }
+
+// TODO: some anymation after submit
+// TODO: adjust feedback colors

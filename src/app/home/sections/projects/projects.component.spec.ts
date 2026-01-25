@@ -1,5 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing'
 
+import { TranslationConfigService } from '@app/services/translation-config/translation-config.service'
+import { MockTranslationProvider } from '@app/shared/tests/mocks/providers/translation'
 import { ProjectsComponent } from './projects.component'
 
 describe('ProjectsComponent', () => {
@@ -8,7 +10,11 @@ describe('ProjectsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ProjectsComponent]
+      imports: [ProjectsComponent],
+      providers: [
+        MockTranslationProvider,
+        TranslationConfigService
+      ]
     }).compileComponents()
 
     fixture = TestBed.createComponent(ProjectsComponent)
@@ -20,3 +26,5 @@ describe('ProjectsComponent', () => {
     expect(component).toBeTruthy()
   })
 })
+
+// TODO: test more

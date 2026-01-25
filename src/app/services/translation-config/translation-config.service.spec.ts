@@ -1,11 +1,14 @@
 import { TestBed } from '@angular/core/testing'
+import { MockTranslationProvider } from '@app/shared/tests/mocks/providers/translation'
 import { TranslationConfigService } from './translation-config.service'
 
 describe('TranslationConfigService', () => {
   let service: TranslationConfigService
 
   beforeEach(() => {
-    TestBed.configureTestingModule({})
+    TestBed.configureTestingModule({
+      providers: [MockTranslationProvider]
+    })
     service = TestBed.inject(TranslationConfigService)
   })
 
@@ -13,3 +16,5 @@ describe('TranslationConfigService', () => {
     expect(service).toBeTruthy()
   })
 })
+
+// TODO: test more
