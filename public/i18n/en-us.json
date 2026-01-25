@@ -171,8 +171,7 @@
             "optimization": "Code optimization.",
             "performative": "Creation of high-performance and reusable components.",
             "documentation": "Development and maintenance of front-end documentation (style guide, technical debits).",
-            "codeReview": "Code review and enforcement of a style guide.",
-            "englishOnly": "English-only communication."
+            "codeReview": "Code review and enforcement of a style guide."
           }
         },
 

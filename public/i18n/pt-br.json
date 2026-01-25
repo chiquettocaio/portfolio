@@ -172,8 +172,7 @@
             "optimization": "Otimização de código.",
             "performative": "Criação de componentes altamente performáticos e reutilizáveis.",
             "documentation": "Desenvolvimento e manutenção da documentação (style guide, débitos técnicos).",
-            "codeReview": "Revisão de código e aplicação de um guia de estilo.",
-            "englishOnly": "Comunicação apenas em inglês."
+            "codeReview": "Revisão de código e aplicação de um guia de estilo."
           }
         },
 
