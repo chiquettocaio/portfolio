@@ -302,7 +302,7 @@
 
         "alliage": {
           "title": "Alliage Global — Plataforma de E-commerce 3 em 1",
-          "description": "Solução SAP Commerce Cloud desenvolvida para a Alliage Global, projetada como uma plataforma escalável única, suportando as marcas Dabi Atlante, Saevo e D700, cada uma com identidade visual distinta, impulsionada por catálogos de produtos e conteúdo próprios. Atuei como desenvolvedor front-end utilizando JSP e JavaScript, promovendo inovação ao introduzir uma abordagem mais orientada ao cliente, inspirada em arquiteturas modernas de front-end.",
+          "description": "Solução SAP Commerce Cloud desenvolvida para a Alliage Global, projetada como uma plataforma escalável única, suportando as marcas Dabi Atlante, Saevo e D700, cada uma com identidade visual distinta, impulsionada por catálogos de produtos e conteúdo próprios. Atuei como desenvolvedor front-end utilizando JSP e JavaScript, promovendo inovação ao introduzir uma abordagem mais orientada ao client-side, inspirada em arquiteturas modernas de front-end.",
           "thumbAlt": "Páginas iniciais de Dabi Atlante, Saevo e D700"
         },
 
