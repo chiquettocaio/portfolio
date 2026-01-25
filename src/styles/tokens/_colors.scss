@@ -1,13 +1,42 @@
 :root {
   --color-primary: #f8f9fa;
-  --color-primary-hover: hsl(from var(--color-primary) h s calc(l - 10) / 1);
   --color-secondary: hsl(134.37deg 8.79% 40.59%);
-  --color-secondary-lighter: hsl(134.37deg 8.79% 52%);
-  --color-secondary-hover: hsl(from var(--color-secondary) h s calc(l - 10) / 1);
+
+  --color-secondary-lighter: hsl(from var(--color-secondary) h s calc(l + 10));
   --color-white: #FFF;
   --color-danger: #FF3C3C;
   --color-success: #18a718;
   --color-black: #000;
   --color-gray: #ececec;
   --color-gray-medium: #CECECE;
+
+  --color-text-primary: var(--color-primary);
+  --color-text-secondary: var(--color-secondary);
+  --color-text-general: var(--color-black);
+
+  --color-cta-bg-primary: var(--color-secondary);
+  --color-cta-bg-secondary: var(--color-primary);
+
+  --color-details-bg: var(--color-secondary);
+  --color-details-text: var(--color-primary);
+
+  --color-input-text: var(--color-black);
+  --color-input-bg: var(--color-white);
+}
+
+:root.dark {
+  --color-primary: #414141;
+  --color-secondary: hsl(134 14% 20% / 1);
+  --color-text-primary: #e0e0e0;
+  --color-text-secondary: #e0e0e0;
+  --color-text-general: #e0e0e0;
+  --color-input-text: #000;
+  --color-input-bg: #e0e0e0;
+
+  --color-details-bg: #5c7661;
+  --color-details-text: #e0e0e0;
+  --color-cta-bg-primary: var(--color-details-bg);
+  --color-cta-bg-secondary: hsl(from var(--color-primary) h s calc(l + 10));
+
+  --color-danger: #ff0000;
 }

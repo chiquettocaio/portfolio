@@ -14,12 +14,12 @@ export class NavMenuComponent implements OnInit {
   private document = inject(DOCUMENT)
   private translationConfigService = inject(TranslationConfigService)
 
-  TOP_DISTANCE_TO_MOVE_DOWN: number = 200
   isMobile = signal<boolean>(this.document.documentElement.clientWidth <= 768)
 
   activeLink = signal<string>('hero')
   navBottom = signal<boolean>(false)
   isImperativelyNavigating = signal<boolean>(false)
+  isDarkThemeActive = signal<boolean>(false)
 
   currentLanguage = this.translationConfigService.currentLanguage
 
@@ -38,6 +38,11 @@ export class NavMenuComponent implements OnInit {
       : 'pt-br'
 
     this.translationConfigService.setLanguage(nextLang)
+  }
+
+  switchTheme (): void {
+    this.isDarkThemeActive.update(isActive => !isActive)
+    this.document.documentElement.classList.toggle('dark')
   }
 
   onSpace (e: Event, link: string): void {

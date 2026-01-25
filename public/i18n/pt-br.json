@@ -419,6 +419,7 @@
       "resume": "Currículo",
       "projects": "Projetos",
       "contact": "Contato",
+      "theme": "{{status}} tema escuro",
       "language": "Alterar idioma"
     }
   },
@@ -466,6 +467,11 @@
       "fullStack": "Full-Stack Dev",
       "mern": "MERN Dev",
       "prototyping": "Prototyping"
+    },
+
+    "others": {
+      "enable": "Ativar",
+      "disable": "Desativar"
     }
   }
 }

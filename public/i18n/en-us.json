@@ -426,6 +426,7 @@
       "resume": "Resume",
       "projects": "Projects",
       "contact": "Contact",
+      "theme": "Turn {{status}} dark theme",
       "language": "Switch language"
     }
   },
@@ -473,6 +474,11 @@
       "fullStack": "Full-Stack Dev",
       "mern": "MERN Dev",
       "prototyping": "Prototyping"
+    },
+
+    "others": {
+      "enable": "Ativar",
+      "disable": "Desativar"
     }
   }
 }

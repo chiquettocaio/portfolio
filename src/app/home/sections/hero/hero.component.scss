@@ -14,7 +14,7 @@ section {
   max-width: var(--max-content-width);
   margin: 0 auto;
   padding: 120px var(--space-section-horizontal) var(--space-section-vertical);
-  color: var(--color-black);
+  color: var(--color-text-general);
 }
 
 .image {
@@ -74,17 +74,17 @@ section {
       width: 28px;
       height: 28px;
       transition: transform .2s;
-      color: var(--color-black);
+      color: var(--color-text-general);
 
       &:has(a:focus) {
         transform: scale(1.2);
-        color: var(--color-secondary);
+        color: var(--color-details-bg);
       }
 
       @media (hover: hover) and (pointer: fine) {
         &:hover {
           transform: scale(1.2);
-          color: var(--color-secondary);
+          color: var(--color-details-bg);
         }
       }
     }

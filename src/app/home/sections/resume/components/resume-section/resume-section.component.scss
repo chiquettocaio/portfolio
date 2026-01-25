@@ -21,8 +21,8 @@
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: var(--color-secondary);
-    color: var(--color-primary);
+    background-color: var(--color-details-bg);
+    color: var(--color-details-text);
     border-radius: var(--border-radius);
     box-shadow: -4px 4px 4px rgba(0 0 0 / 0.20);
 
@@ -57,9 +57,9 @@
       display: block;
       width: 10px;
       height: 10px;
-      background: var(--color-secondary);
+      background-color: var(--color-details-bg);
       border-radius: 50%;
-      border: 6px solid rgba(229 245 255 / 0.75);
+      border: 6px solid hsl(from var(--color-details-bg) h s calc(l + 40));
     }
   }
 
@@ -115,8 +115,8 @@
 
   &__tech {
     padding: 4px 8px;
-    background-color: var(--color-secondary);
-    color: var(--color-primary);
+    background-color: var(--color-details-bg);
+    color: var(--color-details-text);
     border-radius: var(--border-radius);
     font-size: var(--text-sm);
   }

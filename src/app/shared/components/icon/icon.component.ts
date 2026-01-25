@@ -14,7 +14,9 @@ import {
   phosphorGraduationCap,
   phosphorHouse,
   phosphorMapPinLine,
+  phosphorMoonStars,
   phosphorScroll,
+  phosphorSunHorizon,
   phosphorUser
 } from '@ng-icons/phosphor-icons/regular'
 
@@ -50,6 +52,8 @@ import {
       phosphorEnvelopeSimple,
       phosphorDownloadSimple,
       phosphorArrowRight,
+      phosphorSunHorizon,
+      phosphorMoonStars,
 
       ionLogoLinkedin,
       ionLogoCodepen,

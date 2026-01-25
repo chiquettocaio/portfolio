@@ -94,6 +94,26 @@
 
     <li
       class="nav-menu-links__button tooltip"
+      [attr.data-tooltip]="'navMenu.linksAria.theme' | translate: {
+        status: isDarkThemeActive()
+          ? ('common.others.disable' | translate)
+          : 'common.others.enable' | translate
+        }"
+    >
+      <button (click)="switchTheme()">
+        <app-icon
+          [name]="
+            isDarkThemeActive()
+              ? 'phosphorMoonStars'
+              : 'phosphorSunHorizon'
+            "
+          [ariaLabel]="'navMenu.linksAria.theme' | translate"
+        />
+      </button>
+    </li>
+
+    <li
+      class="nav-menu-links__button tooltip"
       [attr.data-tooltip]="'navMenu.linksAria.language' | translate"
     >
       <button (click)="switchLanguage()">
@@ -103,7 +123,7 @@
             : 'flagUs'"
           [ariaLabel]="'navMenu.linksAria.language' | translate"
         />
-    </button>
+      </button>
     </li>
   </ul>
 </nav>

@@ -21,6 +21,12 @@
     transition: all .2s;
     cursor: pointer;
     text-decoration: none;
+
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        opacity: 0.8;
+      }
+    }
   }
 
   &--button-primary,
@@ -34,27 +40,15 @@
   }
 
   &--button-primary {
-    background: var(--color-secondary);
-    color: var(--color-primary);
-
-    @media (hover: hover) and (pointer: fine) {
-      &:hover {
-        background-color: var(--color-secondary-hover);
-      }
-    }
+    background-color: var(--color-cta-bg-primary);
+    color: var(--color-text-primary);
   }
 
 
   &--button-secondary {
     border: 1px solid;
-    background-color: var(--color-primary);
-    color: var(--color-secondary);
-
-    @media (hover: hover) and (pointer: fine) {
-      &:hover {
-        background-color: var(--color-primary-hover);
-      }
-    }
+    background-color: var(--color-cta-bg-secondary);
+    color: var(--color-text-secondary);
   }
 
   &--icon-as-button-primary,
@@ -64,14 +58,14 @@
     height: 100%;
     padding: 0px;
     gap: 0;
-    background: var(--color-secondary);
-    color: var(--color-primary);
+    background-color: var(--color-cta-bg-primary);
+    color: var(--color-text-primary);
   }
 
   &--icon-as-button-secondary {
     border: 1px solid;
-    background: var(--color-primary);
-    color: var(--color-secondary);
+    background: var(--color-cta-bg-secondary);
+    color: var(--color-text-secondary);
   }
 
   &--icon-flat {
