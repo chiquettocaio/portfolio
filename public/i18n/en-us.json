@@ -477,8 +477,8 @@
     },
 
     "others": {
-      "enable": "Ativar",
-      "disable": "Desativar"
+      "enable": "on",
+      "disable": "off"
     }
   }
 }
