@@ -20,5 +20,3 @@ describe('App', () => {
     expect(app).toBeTruthy()
   })
 })
-
-// TODO: test more
