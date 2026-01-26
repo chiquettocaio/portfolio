@@ -1,4 +1,4 @@
-import { Component, DOCUMENT, inject, OnInit, signal } from '@angular/core'
+import { ChangeDetectionStrategy, Component, DOCUMENT, inject, OnInit, signal } from '@angular/core'
 import { TranslationConfigService } from '@app/services/translation-config/translation-config.service'
 import { IconComponent } from '@app/shared/components/icon/icon.component'
 import { KeyString } from '@app/shared/models/generic-types.model'
@@ -6,6 +6,7 @@ import { TranslatePipe } from '@ngx-translate/core'
 
 @Component({
   selector: 'app-nav-menu',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [IconComponent, TranslatePipe],
   templateUrl: './nav-menu.component.html',
   styleUrl: './nav-menu.component.scss'

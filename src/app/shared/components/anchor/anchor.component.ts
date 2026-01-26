@@ -1,8 +1,9 @@
-import { booleanAttribute, Component, input } from '@angular/core'
+import { booleanAttribute, ChangeDetectionStrategy, Component, input } from '@angular/core'
 import { AnchorSize, AnchorTarget, AnchorVariant } from './anchor.model'
 
 @Component({
   selector: 'app-anchor',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './anchor.component.html',
   styleUrl: './anchor.component.scss'
 })
