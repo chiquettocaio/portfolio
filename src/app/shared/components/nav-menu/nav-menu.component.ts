@@ -51,7 +51,7 @@ export class NavMenuComponent implements OnInit {
     this.activateLink(link)
 
     const target = (e.target) as HTMLAnchorElement
-    window.location.href = target.href
+    window.location.assign(target.href)
   }
 
   private initIntersectionObserver (): void {
