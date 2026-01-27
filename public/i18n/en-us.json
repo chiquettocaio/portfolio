@@ -162,17 +162,14 @@
           "period": "Nov, 2025 — Present",
           "location": "Brazil — Remote",
 
-          "responsibilities": {
-            "development": "Development and maintenance of SAP Commerce Composable Storefront (aka Spartacus) applications.",
-            "creation": "Creation of new SAP Composable Storefront (aka Spartacus) projects.",
-            "architecture": "Architecture design elaboration, productivity tooling configuration (ESLint, Stylelint, others).",
-            "scalable": "Implementation of scalable solutions.",
-            "implementation": "Implementation of easy-to-read and easy-to-maintain code, relying on the industry's best practices.",
-            "optimization": "Code optimization.",
-            "performative": "Creation of high-performance and reusable components.",
-            "documentation": "Development and maintenance of front-end documentation (style guide, technical debits).",
-            "codeReview": "Code review and enforcement of a style guide."
-          }
+          "responsibilities": [
+            "Develop and maintain SAP Commerce Composable Storefront (Spartacus) applications.",
+            "Initialize, configure, and deliver SAP Commerce Composable Storefront (Spartacus) projects from the ground up.",
+            "Design and implement scalable front-end solutions.",
+            "Write clean, maintainable, and well-structured code following industry best practices.",
+            "Optimize codebases for performance and efficiency.",
+            "Build high-performance, reusable, and accessible UI components."
+          ]
         },
 
         "wam": {
@@ -181,20 +178,20 @@
           "period": "Jun, 2024 — Oct, 2025",
           "location": "Costa Rica, USA — Remote",
 
-          "responsibilities": {
-            "development": "Development and maintenance of SAP Commerce Composable Storefront (aka Spartacus) applications for US-based clients.",
-            "creation": "Creation of new SAP Composable Storefront (aka Spartacus) projects (B2B, B2C, D2C).",
-            "cdc": " SAP CDC (Customer Data Cloud, formerly Gigya) usage for Customer Identity and Access Management (CIAM) and UI manipulation.",
-            "architecture": "Architecture design elaboration, productivity tooling configuration (ESLint, Stylelint, others).",
-            "scalable": "Implementation of scalable solutions.",
-            "communication": "Communication with design and product teams, to assist in the product shaping and better understand the entire solution.",
-            "implementation": "Implementation of easy-to-read and easy-to-maintain code, relying on the market best practices.",
-            "optimization": "Code optimization.",
-            "performative": "Creation of highly performative and reusable components.",
-            "documentation": "Development and maintenance of FED documentation for completeness (Style guide, Technical debts).",
-            "codeReview": "Code review and enforcement of a style guide.",
-            "englishOnly": "English-only communication."
-          }
+          "responsibilities": [
+            "Develop and maintain SAP Commerce Composable Storefront (Spartacus) applications for US-based clients.",
+            "Implement and deliver SAP Commerce Composable Storefront (Spartacus) projects from the ground up (B2B, B2C, D2C).",
+            "Leverage SAP Customer Data Cloud (CDC, formerly Gigya) for Customer Identity and Access Management (CIAM) and front-end UI integration.",
+            "Define front-end architecture and configure productivity and quality tooling (ESLint, Stylelint, and related tools).",
+            "Design and implement scalable front-end solutions.",
+            "Collaborate with design and product teams to support product shaping and gain a holistic understanding of the solution.",
+            "Write clean, readable, and maintainable code following industry best practices.",
+            "Optimize front-end codebases for performance and efficiency.",
+            "Build high-performance, reusable UI components.",
+            "Create and maintain front-end documentation, including style guides and technical debt tracking.",
+            "Conduct code reviews and enforce coding standards and style guidelines.",
+            "Operate in an English-only communication environment."
+          ]
         },
 
         "discover": {
@@ -203,12 +200,18 @@
           "period": "Jan, 2023 — Jun, 2024",
           "location": "Brazil — Remote",
 
-          "responsibilities": {
-            "development": "Development and maintenance of SAP Commerce Composable storefront (aka Spartacus) applications.",
-            "communication": "Communication with the design and product teams in order to properly deliver something that can actually meet the customer's needs.",
-            "collaboration": "Collaboration with the design team in order to provide the FED POV and help in the shaping of a great solution from all the perspectives.",
-            "assist": "Assist overseas teams on their SAP Composable Storefront solutions, helping them solve specific issues so they could be unblocked (communication in English)."
-          }
+          "responsibilities": [
+            "Worked as a Front-end Developer on multiple enterprise projects using both SAP Spartacus and the legacy Hybris monolith architectures (JSP/JavaScript).",
+            "Joined a newly formed team and contributed to the stabilization of a critical Spartacus project, helping address existing issues, improve code quality, and deliver pending and new front-end functionalities.",
+            "Assisted in resolving a high volume of bugs and refactoring legacy code, contributing to improved platform stability and client satisfaction.",
+            "Implementated ASM (Assisted Service Module) and additional commerce features, including cart import/export and custom user flows.",
+            "Helped implement a multi-site, multi-catalog setup, enabling brand-specific look & feel while maintaining a unified platform.",
+            "Contributed to the development of the checkout experience for an enterprise healthcare e-commerce platform.",
+            "Assisted in implementing a complex multi-payment checkout flow, enabling the use of multiple credit cards with front-end–managed value distribution and installment logic.",
+            "Acted as a support point for other developers, assisting with programming questions and day-to-day technical challenges",
+            "Provided support for additional SAP Commerce monolith projects, contributing bug fixes, enhancements, and general technical assistance.",
+            "Collaborated with an international development team, supporting the delivery of a new store and communicating exclusively in English."
+          ]
         },
 
         "accenture-lead": {
@@ -217,16 +220,16 @@
           "period": "Oct, 2021 — Jan, 2023",
           "location": "Brazil — Remote",
 
-          "responsibilities": {
-            "implementation": "Implementation of the first SAP Spartacus & Telco Utilities application of the world, for a big client from the Telecom segment. Techs: Angular, TypeScript, RxJS, NgRx, SAP Spartacus.",
-            "communication": "Communication with the design and product teams in order to provide meaningful and scalable FE solutions.",
-            "creation": "Creation of reusable and responsive FE components.",
-            "delivery": "Delivery of high quality and easy to maintain code.",
-            "testing": "Unit testing with Jasmine and Karma, with a minimum code coverage of 80%.",
-            "guide": "Help and guide less experienced developers.",
-            "studyProgram": "Creation of an Angular internal study program to help other developers improve their skills.",
-            "presentations": "Creation of multiple presentations about tech tendencies, best practices, code tooling, Angular, and SAP Spartacus."
-          }
+          "responsibilities": [
+            "Implementation of the first SAP Spartacus & Telco Utilities Accelerator (TUA) application of the world, for a big client from the Telecom segment.",
+            "Collaborated closely with design and product teams to deliver meaningful, scalable front-end solutions.",
+            "Developed reusable, responsive, and maintainable front-end components.",
+            "Delivered high-quality, clean, and easy-to-maintain code following established best practices.",
+            "Implemented unit tests using Jasmine and Karma, maintaining a minimum code coverage of 80%.",
+            "Supported and guided less experienced developers through day-to-day technical assistance and knowledge sharing.",
+            "Designed and delivered an internal Angular study program to help team members strengthen their front-end skills.",
+            "Prepared and presented technical sessions on industry trends, best practices, development tooling, Angular, and SAP Spartacus."
+          ]
         },
 
         "accenture-senior": {
@@ -235,14 +238,15 @@
           "period": "Nov, 2020 — Oct, 2021",
           "location": "Brazil — Remote",
 
-          "responsibilities": {
-            "architect": "Architect, implement and maintain web applications for a big client from the Telecom segment using the Vue.js stack (Nuxt, VueX).",
-            "communication": "Communication with the design and product teams in order to provide meaningful and scalable FE solutions.",
-            "creation": "Creation of reusable and responsive FE components.",
-            "delivery": "Delivery of high quality and easy to maintain code.",
-            "testing": "Unit testing with Jest, with a minimum code coverage of 80%.",
-            "guide": "Help and guide less experienced developers."
-          }
+          "responsibilities": [
+            "Contributed to the architecture, implementation, and maintenance of web applications for a large telecom client using the Vue.js stack (Nuxt, Vuex).",
+            "Developed a front-end project from the ground up (MVNO) for a major telecom client, delivering a well-structured, fully tested codebase with a minimum of 80% code coverage, completing the project one week ahead of schedule.",
+            "Collaborated with design and product teams to deliver meaningful and scalable front-end solutions.",
+            "Developed reusable, responsive, and maintainable front-end components.",
+            "Delivered high-quality, clean, and easy-to-maintain code following established best practices.",
+            "Implemented unit tests using Jest, maintaining a minimum code coverage of 80%.",
+            "Supported and guided less experienced developers through technical assistance and knowledge sharing."
+          ]
         },
 
         "amadre": {
@@ -251,12 +255,12 @@
           "period": "Aug, 2017 — Aug, 2020",
           "location": "Brazil — On site",
 
-          "responsibilities": {
-            "development": "Development of an animation software focused on the creation of digital campaigns, using Vue.js, VueX and Electron.js.",
-            "full-stack": "Full-stack developer responsible for the development of a sales web application, meant to sell and manage licenses of the mentioned animation software. Techs: React.js, Node.js, AdonisJS, Redux, styled-components, Docker.",
-            "landing": "Development of landing pages for various clients, using HTML5, CSS3 and JavaScript.",
-            "communication": "Communication with the design team in order to properly attend the UI/UX requirements."
-          }
+          "responsibilities": [
+            "Developed an animation software for creating digital campaigns using Vue.js, Vuex, and Electron.js.",
+            "Acted as full-stack developer on a sales web application for managing and selling licenses of the animation software, using React.js, Node.js, AdonisJS, Redux, styled-components, and Docker.",
+            "Created landing pages for multiple clients using HTML5, CSS3, and JavaScript.",
+            "Collaborated closely with the design team to ensure accurate implementation of UI/UX requirements."
+          ]
         }
       },
 
