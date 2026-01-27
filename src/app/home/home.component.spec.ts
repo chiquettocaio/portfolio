@@ -1,8 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing'
 
 import { NavMenuComponent } from '@app/shared/components/nav-menu/nav-menu.component'
-import { MockTranslationProvider } from '@app/shared/tests/mocks/providers/translation'
-import { MockIntersectionObserver } from '@tests/mocks/global/intersection-observer'
+import { MockIntersectionObserver } from 'src/testing/mocks/global'
+import { MockTranslationProvider } from 'src/testing/mocks/helpers'
 import { HomeComponent } from './home.component'
 import { AboutComponent } from './sections/about/about.component'
 import { ContactComponent } from './sections/contact/contact.component'

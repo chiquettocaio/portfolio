@@ -3,7 +3,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing'
 import { DebugElement } from '@angular/core'
 import { NgControl, Validators } from '@angular/forms'
 import { By } from '@angular/platform-browser'
-import { MockNgControl } from '@app/shared/tests/mocks/providers/ng-control'
+import { MockNgControl } from 'src/testing/mocks/helpers'
 import { InputComponent } from './input.component'
 
 const inputId = 'test-input'

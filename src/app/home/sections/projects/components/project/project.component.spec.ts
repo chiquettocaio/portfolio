@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing'
 
 import { ProjectComponent } from './project.component'
 
-import { mockProjectData } from '@tests/mocks/data/project'
+import { mockProjectData } from 'src/testing/mocks/data/project'
 
 describe('ProjectComponent', () => {
   let component: ProjectComponent

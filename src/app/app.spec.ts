@@ -1,5 +1,5 @@
 import { TestBed } from '@angular/core/testing'
-import { MockTranslationProvider } from '@tests/mocks/providers/translation'
+import { MockTranslationProvider } from 'src/testing/mocks/helpers'
 import { App } from './app'
 import { TranslationConfigService } from './services/translation-config/translation-config.service'
 

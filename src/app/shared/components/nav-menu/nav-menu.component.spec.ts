@@ -1,8 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { MockIntersectionObserver } from '@app/shared/tests/mocks/global/intersection-observer'
-import { MockTranslationProvider } from '@app/shared/tests/mocks/providers/translation'
 import { TranslatePipe } from '@ngx-translate/core'
+import { MockIntersectionObserver } from 'src/testing/mocks/global'
+import { MockTranslationProvider } from 'src/testing/mocks/helpers'
 import { IconComponent } from '../icon/icon.component'
 import { NavMenuComponent } from './nav-menu.component'
 
@@ -33,4 +33,6 @@ describe('NavMenuComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy()
   })
+
+  // TODO: improve testing
 })
