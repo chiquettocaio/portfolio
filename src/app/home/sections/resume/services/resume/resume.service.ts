@@ -229,20 +229,30 @@ export class ResumeService {
 
   private getMadreTranslations (translations: InterpolationParameters): ResumeSectionCareerExperience {
     return {
-      company: translations[`${this.I18N_CAREER_PATH}.accenture-senior`].companyName,
-      title: translations[`${this.I18N_CAREER_PATH}.accenture-senior`].role,
-      period: translations[`${this.I18N_CAREER_PATH}.accenture-senior`].period,
-      location: translations[`${this.I18N_CAREER_PATH}.accenture-senior`].location,
-      responsibilities: Object.values(translations[`${this.I18N_CAREER_PATH}.accenture-senior`].responsibilities),
+      company: translations[`${this.I18N_CAREER_PATH}.amadre`].companyName,
+      title: translations[`${this.I18N_CAREER_PATH}.amadre`].role,
+      period: translations[`${this.I18N_CAREER_PATH}.amadre`].period,
+      location: translations[`${this.I18N_CAREER_PATH}.amadre`].location,
+      responsibilities: Object.values(translations[`${this.I18N_CAREER_PATH}.amadre`].responsibilities),
       technologies: [
         translations['common.technologies'].vue,
-        translations['common.technologies'].nuxt,
         translations['common.technologies'].vuex,
+        translations['common.technologies'].react,
+        translations['common.technologies'].redux,
+        translations['common.technologies'].electron,
         translations['common.technologies'].javascript,
         translations['common.technologies'].nodejs,
-        translations['common.technologies'].jest,
+        translations['common.technologies'].adonis,
+        translations['common.technologies'].webpack,
+        translations['common.technologies'].postgre,
+        translations['common.technologies'].docker,
+        translations['common.technologies'].html,
         translations['common.technologies'].css,
         translations['common.technologies'].sass,
+        translations['common.technologies'].java,
+        translations['common.technologies'].websocket,
+        translations['common.technologies'].mongo,
+        translations['common.technologies'].redis,
         translations['common.concepts'].oop
       ],
       isEducation: false
