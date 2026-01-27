@@ -69,7 +69,7 @@ export class NavMenuComponent implements OnInit {
       'contact-section': 'contact'
     }
 
-    const observer = new IntersectionObserver(entries => {
+    const observerCallback: IntersectionObserverCallback = entries => {
       entries.forEach(entry => {
         const targetId: string = entry.target.id
         const link: string = mapping[targetId]
@@ -84,7 +84,9 @@ export class NavMenuComponent implements OnInit {
           this.isImperativelyNavigating.set(link !== this.activeLink())
         }
       })
-    }, { rootMargin: '-50%' })
+    }
+
+    const observer = new IntersectionObserver(observerCallback, { rootMargin: '-50%' })
 
     if (heroSection) observer.observe(heroSection)
     if (aboutSection) observer.observe(aboutSection)

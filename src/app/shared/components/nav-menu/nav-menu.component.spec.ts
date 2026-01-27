@@ -27,7 +27,9 @@ describe('NavMenuComponent', () => {
     }).compileComponents()
 
     // TEST: override/add properties to the window object (it's necessary to call "vi.unstubAllGlobals()" to reset values)
+    // https://vitest.dev/guide/mocking/globals.html
     vi.stubGlobal('IntersectionObserver', MockIntersectionObserver)
+    MockIntersectionObserver.clearIntances()
 
     fixture = TestBed.createComponent(NavMenuComponent)
     component = fixture.componentInstance
@@ -44,83 +46,126 @@ describe('NavMenuComponent', () => {
     expect(component).toBeTruthy()
   })
 
-  it('should redirect to "hero"', async () => {
-    const homeBtnDebugEl = debugEl.query(By.css('a[href="#hero-section"]'))
-    expect(homeBtnDebugEl).toBeTruthy()
+  it('should run IntersectionObserver', () => {
+    fixture.detectChanges()
+    const intersectionObserver = MockIntersectionObserver.instances[0]
+    intersectionObserver.trigger()
+    expect(intersectionObserver.callback).toHaveBeenCalled()
+  })
+
+  it('should redirect to "hero"', () => {
+    const homeAnchorDebugEl = debugEl.query(By.css('a[href="#hero-section"]'))
+    expect(homeAnchorDebugEl).toBeTruthy()
 
     const activateLinkSpy = vi.spyOn(component, 'activateLink')
 
-    const homeBtn = homeBtnDebugEl.nativeElement as HTMLAnchorElement
-    homeBtn.click()
+    const homeAnchor = homeAnchorDebugEl.nativeElement as HTMLAnchorElement
+    homeAnchor.click()
 
     expect(activateLinkSpy).toBeCalledWith('hero')
     expect(component.activeLink()).toBe('hero')
   })
 
-  it('should redirect to "about"', async () => {
-    const aboutBtnDebugEl = debugEl.query(By.css('a[href="#about-section"]'))
-    expect(aboutBtnDebugEl).toBeTruthy()
+  it('should redirect to "about"', () => {
+    const aboutAnchorDebugEl = debugEl.query(By.css('a[href="#about-section"]'))
+    expect(aboutAnchorDebugEl).toBeTruthy()
 
     const activateLinkSpy = vi.spyOn(component, 'activateLink')
 
-    const aboutBtn = aboutBtnDebugEl.nativeElement as HTMLAnchorElement
-    aboutBtn.click()
+    const aboutAnchor = aboutAnchorDebugEl.nativeElement as HTMLAnchorElement
+    aboutAnchor.click()
 
     expect(activateLinkSpy).toBeCalledWith('about')
     expect(component.activeLink()).toBe('about')
   })
 
-  it('should redirect to "resume"', async () => {
-    const resumeBtnDebugEl = debugEl.query(By.css('a[href="#resume-section"]'))
-    expect(resumeBtnDebugEl).toBeTruthy()
+  it('should redirect to "resume"', () => {
+    const resumeAnchorDebugEl = debugEl.query(By.css('a[href="#resume-section"]'))
+    expect(resumeAnchorDebugEl).toBeTruthy()
 
     const activateLinkSpy = vi.spyOn(component, 'activateLink')
 
-    const resumeBtn = resumeBtnDebugEl.nativeElement as HTMLAnchorElement
-    resumeBtn.click()
+    const resumeAnchor = resumeAnchorDebugEl.nativeElement as HTMLAnchorElement
+    resumeAnchor.click()
 
     expect(activateLinkSpy).toBeCalledWith('resume')
     expect(component.activeLink()).toBe('resume')
   })
 
-  it('should redirect to "projects"', async () => {
-    const projectsBtnDebugEl = debugEl.query(By.css('a[href="#projects-section"]'))
-    expect(projectsBtnDebugEl).toBeTruthy()
+  it('should redirect to "projects"', () => {
+    const projectsAnchorDebugEl = debugEl.query(By.css('a[href="#projects-section"]'))
+    expect(projectsAnchorDebugEl).toBeTruthy()
 
     const activateLinkSpy = vi.spyOn(component, 'activateLink')
 
-    const projectsBtn = projectsBtnDebugEl.nativeElement as HTMLAnchorElement
-    projectsBtn.click()
+    const projectsAnchor = projectsAnchorDebugEl.nativeElement as HTMLAnchorElement
+    projectsAnchor.click()
 
     expect(activateLinkSpy).toBeCalledWith('projects')
     expect(component.activeLink()).toBe('projects')
   })
 
-  it('should redirect to "contact"', async () => {
-    const contactBtnDebugEl = debugEl.query(By.css('a[href="#contact-section"]'))
-    expect(contactBtnDebugEl).toBeTruthy()
+  it('should redirect to "contact"', () => {
+    const contactAnchorDebugEl = debugEl.query(By.css('a[href="#contact-section"]'))
+    expect(contactAnchorDebugEl).toBeTruthy()
 
     const activateLinkSpy = vi.spyOn(component, 'activateLink')
 
-    const contactBtn = contactBtnDebugEl.nativeElement as HTMLAnchorElement
-    contactBtn.click()
+    const contactAnchor = contactAnchorDebugEl.nativeElement as HTMLAnchorElement
+    contactAnchor.click()
 
     expect(activateLinkSpy).toBeCalledWith('contact')
     expect(component.activeLink()).toBe('contact')
   })
 
-  it('should redirect to "contact"', async () => {
-    const contactBtnDebugEl = debugEl.query(By.css('a[href="#contact-section"]'))
-    expect(contactBtnDebugEl).toBeTruthy()
+  it('should redirect to "projects" by pressing space bar', () => {
+    const projectsAnchorDebugEl = debugEl.query(By.css('a[href="#projects-section"]'))
+    expect(projectsAnchorDebugEl).toBeTruthy()
 
-    const activateLinkSpy = vi.spyOn(component, 'activateLink')
+    const onSpaceSpy = vi.spyOn(component, 'onSpace')
 
-    const contactBtn = contactBtnDebugEl.nativeElement as HTMLAnchorElement
-    contactBtn.click()
+    const projectsAnchor = projectsAnchorDebugEl.nativeElement as HTMLAnchorElement
+    projectsAnchor.focus()
+    expect(document.activeElement).toBe(projectsAnchor)
 
-    expect(activateLinkSpy).toBeCalledWith('contact')
-    expect(component.activeLink()).toBe('contact')
+    const event = new KeyboardEvent('keydown', {
+      key: 'Space',
+      code: 'Space',
+      keyCode: 32,
+      bubbles: true
+    })
+
+    projectsAnchor.dispatchEvent(event)
+
+    expect(onSpaceSpy).toBeCalledWith(event, 'projects')
+    expect(component.activeLink()).toBe('projects')
   })
 
-  // TODO: improve testing
+  it('should switch theme', () => {
+    const themeBtnDebugEl = debugEl.query(By.css('button#theme-switch'))
+    expect(themeBtnDebugEl).toBeTruthy()
+
+    const switchThemeSpy = vi.spyOn(component, 'switchTheme')
+
+    const themeBtn = themeBtnDebugEl.nativeElement as HTMLAnchorElement
+    themeBtn.click()
+    fixture.detectChanges()
+
+    expect(switchThemeSpy).toHaveBeenCalled()
+    expect(component.isDarkThemeActive()).toBe(true)
+  })
+
+  it('should switch language', () => {
+    const languageBtnDebugEl = debugEl.query(By.css('button#language-switch'))
+    expect(languageBtnDebugEl).toBeTruthy()
+
+    const switchLanguageSpy = vi.spyOn(component, 'switchLanguage')
+
+    const languageBtn = languageBtnDebugEl.nativeElement as HTMLAnchorElement
+    languageBtn.click()
+    fixture.detectChanges()
+
+    expect(switchLanguageSpy).toHaveBeenCalled()
+    expect(component.currentLanguage()).toBe('pt-br')
+  })
 })
