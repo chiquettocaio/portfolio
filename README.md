@@ -63,3 +63,9 @@ Seems like ESLint is still the go-to tool for linting, and it's the primary choi
 
 ## Safe hover
 - To safely hover on desktop and avoid the mobile hover effect, use this combination of @media: @media (hover: hover) and (pointer: fine) {}. Together they check if the device can hover, and also if the device has cursor (not touchscreen only like some touchscreen laptops).
+
+# Vitest Browser Mode
+By default, Vitest runs outside a browser, but we can use its UI if we want.
+- npm i -D @vitest/browser-playwright
+- npx playwright install 
+- in angular.json: test > options > "browsers": ["chromium"] 
