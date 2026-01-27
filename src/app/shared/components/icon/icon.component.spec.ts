@@ -41,7 +41,6 @@ describe('Icon', () => {
     expect(() => fixture.detectChanges()).toThrowError(/NG0950/)
   })
 
-  // TODO: testing if inner component has attributes and properties
   it('should check if NgIconComponent is properly being initiated', () => {
     fixture.componentRef.setInput('name', iconName)
     fixture.componentRef.setInput('ariaLabel', iconAriaLabel)
@@ -49,6 +48,7 @@ describe('Icon', () => {
     fixture.detectChanges()
 
     // Check if the component was found
+    // TEST: querying inner component
     const ngIconDebugElement = fixture.debugElement.query(By.directive(NgIconComponent))
     expect(ngIconDebugElement).toBeTruthy()
 

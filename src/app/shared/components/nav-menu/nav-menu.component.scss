@@ -104,6 +104,15 @@
     }
   }
 
+  &__divider {
+    width: 2px;
+    height: 35px;
+    align-self: center;
+    border-radius: 4px;
+    margin: 0 5px;
+    background: var(--color-details-bg);
+  }
+
   &--is-mobile {
     .tooltip {
       &::before {

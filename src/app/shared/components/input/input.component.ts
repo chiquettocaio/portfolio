@@ -1,10 +1,11 @@
-import { AfterViewInit, Component, forwardRef, inject, Injector, input, OnInit, signal } from '@angular/core'
+import { AfterViewInit, ChangeDetectionStrategy, Component, forwardRef, inject, Injector, input, OnInit, signal } from '@angular/core'
 import { AbstractControlOptions, ControlValueAccessor, NG_VALUE_ACCESSOR, NgControl, TouchedChangeEvent } from '@angular/forms'
 import { KeyString } from '@app/shared/models/generic-types.model'
 import { filter, take, tap } from 'rxjs'
 
 @Component({
   selector: 'app-input',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
   providers: [{
     provide: NG_VALUE_ACCESSOR,

@@ -1,4 +1,4 @@
-import { Component, ElementRef, inject } from '@angular/core'
+import { ChangeDetectionStrategy, Component, ElementRef, inject } from '@angular/core'
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms'
 import { ButtonComponent } from '@app/shared/components/button/button.component'
 import { InputComponent } from '@app/shared/components/input/input.component'
@@ -7,6 +7,7 @@ import { TranslatePipe } from '@ngx-translate/core'
 
 @Component({
   selector: 'app-contact-form',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     ReactiveFormsModule,
     InputComponent,

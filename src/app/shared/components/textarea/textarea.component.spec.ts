@@ -3,7 +3,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing'
 import { DebugElement } from '@angular/core'
 import { NgControl, ReactiveFormsModule, Validators } from '@angular/forms'
 import { By } from '@angular/platform-browser'
-import { MockNgControl } from '@tests/mocks/providers/ng-control'
+import { MockNgControl } from 'src/testing/mocks/helpers'
 import { TextAreaComponent } from './textarea.component'
 
 const textareaId = 'test-textarea'

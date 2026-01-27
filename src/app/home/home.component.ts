@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'
+import { ChangeDetectionStrategy, Component } from '@angular/core'
 import { NavMenuComponent } from '@app/shared/components/nav-menu/nav-menu.component'
 import { AboutComponent } from './sections/about/about.component'
 import { ContactComponent } from './sections/contact/contact.component'
@@ -8,6 +8,7 @@ import { ResumeComponent } from './sections/resume/resume.component'
 
 @Component({
   selector: 'app-home',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     NavMenuComponent,
     HeroComponent,

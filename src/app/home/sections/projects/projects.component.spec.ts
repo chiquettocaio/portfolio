@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing'
 
 import { TranslationConfigService } from '@app/services/translation-config/translation-config.service'
-import { MockTranslationProvider } from '@app/shared/tests/mocks/providers/translation'
+import { MockTranslationProvider } from 'src/testing/mocks/helpers'
 import { ProjectsComponent } from './projects.component'
 
 describe('ProjectsComponent', () => {

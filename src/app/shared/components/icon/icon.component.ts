@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core'
+import { ChangeDetectionStrategy, Component, input } from '@angular/core'
 import { NgIcon, provideIcons } from '@ng-icons/core'
 import {
   phosphorArrowDown,
@@ -34,6 +34,7 @@ import {
 
 @Component({
   selector: 'app-icon',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [NgIcon],
   providers: [
     provideIcons({
