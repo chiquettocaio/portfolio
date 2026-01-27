@@ -163,17 +163,14 @@
           "period": "Nov, 2025 — Presente",
           "location": "Brasil — Remoto",
 
-          "responsibilities": {
-            "development": "Desenvolvimento e manutenção de aplicações SAP Commerce Composable Storefront (aka Spartacus).",
-            "creation": "Criação de novos projetos SAP Composable Storefront (aka Spartacus).",
-            "architecture": "Elaboração do design arquitetural e configuração de ferramentas de produtividade (ESLint, Stylelint, entre outras).",
-            "scalable": "Implementação de soluções escaláveis.",
-            "implementation": "Implementação de código fácil de ler e manter, seguindo as melhores práticas de mercado.",
-            "optimization": "Otimização de código.",
-            "performative": "Criação de componentes altamente performáticos e reutilizáveis.",
-            "documentation": "Desenvolvimento e manutenção da documentação (style guide, débitos técnicos).",
-            "codeReview": "Revisão de código e aplicação de um guia de estilo."
-          }
+          "responsibilities": [
+            "Desenvolver e manter aplicações SAP Commerce Composable Storefront (Spartacus).",
+            "Inicializar, configurar e entregar projetos SAP Commerce Composable Storefront (Spartacus) do zero.",
+            "Planejar e implementar soluções front-end escaláveis.",
+            "Escrever código limpo, sustentável e bem estruturado, seguindo as melhores práticas do setor.",
+            "Otimizar bases de código para performance e eficiência.",
+            "Criar componentes de UI de alta performance, reutilizáveis e acessíveis."
+          ]
         },
 
         "wam": {
@@ -182,20 +179,20 @@
           "period": "Jun, 2024 — Out, 2025",
           "location": "Costa Rica, EUA — Remoto",
 
-          "responsibilities": {
-            "development": "Desenvolvimento e manutenção de aplicações SAP Commerce Composable Storefront (aka Spartacus) para clientes nos EUA.",
-            "creation": "Criação de novos projetos SAP Composable Storefront (aka Spartacus) (B2B, B2C, D2C).",
-            "cdc": "Uso do SAP CDC (Customer Data Cloud, antigo Gigya) para gerenciamento de identidade e acesso do cliente (CIAM) e manipulação de UI.",
-            "architecture": "Elaboração do design arquitetural e configuração de ferramentas de produtividade (ESLint, Stylelint, entre outras).",
-            "scalable": "Implementação de soluções escaláveis.",
-            "communication": "Comunicação com equipes de design e produto, para auxiliar na definição do produto e compreender melhor toda a solução.",
-            "implementation": "Implementação de código fácil de ler e manter, seguindo as melhores práticas de mercado.",
-            "optimization": "Otimização de código.",
-            "performative": "Criação de componentes altamente performáticos e reutilizáveis.",
-            "documentation": "Desenvolvimento e manutenção da documentação FED para completude (Style guide, débitos técnicos).",
-            "codeReview": "Revisão de código e aplicação de um guia de estilo.",
-            "englishOnly": "Comunicação apenas em inglês."
-          }
+          "responsibilities": [
+            "Desenvolver e manter aplicações SAP Commerce Composable Storefront (Spartacus) para clientes nos EUA.",
+            "Implementar e entregar projetos SAP Commerce Composable Storefront (Spartacus) do zero (B2B, B2C, D2C).",
+            "Utilizar o SAP Customer Data Cloud (CDC, antigo Gigya) para Customer Identity and Access Management (CIAM) e integração com o front-end.",
+            "Definir a arquitetura front-end e configurar ferramentas de produtividade e qualidade (ESLint, Stylelint e ferramentas relacionadas).",
+            "Planejar e implementar soluções front-end escaláveis.",
+            "Colaborar com as equipes de design e produto para apoiar o desenvolvimento do produto e compreender a solução de forma holística.",
+            "Escrever código limpo, legível e manutenível, seguindo as melhores práticas do setor.",
+            "Otimizar bases de código front-end para performance e eficiência.",
+            "Criar componentes UI de alta performance e reutilizáveis.",
+            "Criar e manter documentação front-end, incluindo style-guides e débitos técnicos.",
+            "Realizar code reviews e garantir a conformidade com padrões de codificação e style-guides.",
+            "Atuar em um ambiente de comunicação exclusivamente em inglês."
+          ]
         },
 
         "discover": {
@@ -204,12 +201,18 @@
           "period": "Jan, 2023 — Jun, 2024",
           "location": "Brasil — Remoto",
 
-          "responsibilities": {
-            "development": "Desenvolvimento e manutenção de aplicações SAP Commerce Composable Storefront (aka Spartacus).",
-            "communication": "Comunicação com as equipes de design e produto para entregar algo que realmente atenda às necessidades do cliente.",
-            "collaboration": "Colaboração com a equipe de design para fornecer a perspectiva FED e ajudar na definição de uma solução completa.",
-            "assist": "Auxílio a equipes internacionais em soluções SAP Composable Storefront, resolvendo problemas específicos para desbloqueá-los (comunicação em inglês)."
-          }
+          "responsibilities": [
+            "Atuação em múltiplos projetos corporativos, feitos tanto em SAP Spartacus quanto usando a arquitetura monolítica legada (JSP/JavaScript).",
+            "Integração em equipe recém-formada, contribuindo para a estabilização de um projeto crítico Spartacus, solucionando problemas existentes, melhorando a qualidade do código e entregando funcionalidades pendentes e novas.",
+            "Auxílio na resolução de grande volume de bugs e refatoração de código legado, contribuindo para maior estabilidade da plataforma e satisfação do cliente.",
+            "Implementação de ASM (Assisted Service Module) e funcionalidades adicionais de comércio, incluindo importação/exportação de carrinhos e fluxos de usuário customizados.",
+            "Apoio na implementação de projeto multi-site e multi-catalog, permitindo identidade visual específica para cada marca enquanto mantém uma plataforma unificada.",
+            "Contribuição no desenvolvimento do checkout de uma plataforma de e-commerce corporativa do ramo da saúde.",
+            "Auxílio na implementação de um fluxo complexo de multi-pagamento, permitindo o uso de múltiplos cartões de crédito com distribuição de valores e lógica de parcelas gerenciada no front-end.",
+            "Ponto focal para outros desenvolvedores, ajudando com dúvidas de programação e desafios técnicos do dia-a-dia.",
+            "Suporte a projetos adicionais de SAP Commerce (monolítico), contribuindo com correções de bugs, melhorias e assistência técnica geral.",
+            "Colaboração com equipe de desenvolvimento internacional, apoiando a entrega de uma nova loja e comunicando-se exclusivamente em inglês."
+          ]
         },
 
         "accenture-lead": {
@@ -218,16 +221,16 @@
           "period": "Out, 2021 — Jan, 2023",
           "location": "Brasil — Remoto",
 
-          "responsibilities": {
-            "implementation": "Implementação da primeira aplicação SAP Spartacus & Telco Utilities do mundo, para um grande cliente do segmento de Telecom. Tecnologias: Angular, TypeScript, RxJS, NgRx, SAP Spartacus.",
-            "communication": "Comunicação com equipes de design e produto para fornecer soluções FE significativas e escaláveis.",
-            "creation": "Criação de componentes FE reutilizáveis e responsivos.",
-            "delivery": "Entrega de código de alta qualidade e fácil manutenção.",
-            "testing": "Testes unitários com Jasmine e Karma, com cobertura mínima de 80%.",
-            "guide": "Auxílio e orientação a desenvolvedores menos experientes.",
-            "studyProgram": "Criação de programa interno de estudos em Angular para aprimorar habilidades de outros desenvolvedores.",
-            "presentations": "Criação de apresentações sobre tendências de tecnologia, melhores práticas, ferramentas de código, Angular e SAP Spartacus."
-          }
+          "responsibilities": [
+            "Implementação da primeira aplicação SAP Spartacus & Telco Utilities Accelerator (TUA) do mundo, para um grande cliente do setor de telecomunicações.",
+            "Colaboração próxima com as equipes de design e produto para entregar soluções front-end significativas e escaláveis.",
+            "Desenvolvimento de componentes front-end reutilizáveis, responsivos e de fácil manutenção.",
+            "Entrega de código limpo, de alta qualidade e fácil de manter, seguindo as melhores práticas do setor.",
+            "Implementação de testes unitários utilizando Jasmine e Karma, mantendo uma cobertura mínima de 80%.",
+            "Apoio e orientação a desenvolvedores menos experientes, oferecendo assistência técnica diária e compartilhamento de conhecimento.",
+            "Criação e entrega de um programa interno de estudo Angular para fortalecer as habilidades front-end da equipe.",
+            "Preparação e apresentação de sessões técnicas sobre tendências da indústria, melhores práticas, ferramentas de desenvolvimento, Angular e SAP Spartacus."
+          ]
         },
 
         "accenture-senior": {
@@ -236,14 +239,15 @@
           "period": "Nov, 2020 — Out, 2021",
           "location": "Brasil — Remoto",
 
-          "responsibilities": {
-            "architect": "Arquitetar, implementar e manter aplicações web para um grande cliente do segmento de Telecom usando stack Vue.js (Nuxt, VueX).",
-            "communication": "Comunicação com equipes de design e produto para fornecer soluções FE significativas e escaláveis.",
-            "creation": "Criação de componentes FE reutilizáveis e responsivos.",
-            "delivery": "Entrega de código de alta qualidade e fácil manutenção.",
-            "testing": "Testes unitários com Jest, com cobertura mínima de 80%.",
-            "guide": "Auxílio e orientação a desenvolvedores menos experientes."
-          }
+          "responsibilities": [
+            "Contribuição na arquitetura, implementação e manutenção de aplicações web para um grande cliente de telecomunicações utilizando a stack Vue.js (Nuxt, Vuex).",
+            "Desenvolvimento de um projeto front-end do zero (MVNO) para um importante cliente de telecomunicações, entregando uma base de código bem estruturada, totalmente testada, com cobertura mínima de 80% e concluída uma semana antes do prazo.",
+            "Colaboração com as equipes de design e produto para entregar soluções front-end significativas e escaláveis.",
+            "Desenvolvimento de componentes front-end reutilizáveis, responsivos e de fácil manutenção.",
+            "Entrega de código limpo, de alta qualidade e fácil de manter, seguindo as melhores práticas do setor.",
+            "Implementação de testes unitários utilizando Jest, mantendo cobertura mínima de 80%.",
+            "Apoio e orientação a desenvolvedores menos experientes, oferecendo assistência técnica e compartilhamento de conhecimento."
+          ]
         },
 
         "amadre": {
@@ -252,12 +256,12 @@
           "period": "Ago, 2017 — Ago, 2020",
           "location": "Brasil — Presencial",
 
-          "responsibilities": {
-            "development": "Desenvolvimento de software de animação focado na criação de campanhas digitais, utilizando Vue.js, VueX e Electron.js.",
-            "full-stack": "Desenvolvedor full-stack responsável pelo desenvolvimento de uma aplicação web de vendas, destinada a vender e gerenciar licenças do software de animação mencionado. Tecnologias: React.js, Node.js, AdonisJS, Redux, styled-components, Docker.",
-            "landing": "Desenvolvimento de landing pages para diversos clientes, utilizando HTML5, CSS3 e JavaScript.",
-            "communication": "Comunicação com a equipe de design para atender corretamente aos requisitos de UI/UX."
-          }
+          "responsibilities": [
+            "Desenvolvimento de um software de animação para criação de campanhas digitais utilizando Vue.js, Vuex e Electron.js.",
+            "Atuação como desenvolvedor full-stack em uma aplicação web de vendas para gerenciar e comercializar licenças do software de animação, utilizando React.js, Node.js, AdonisJS, Redux, styled-components e Docker.",
+            "Criação de landing pages para diversos clientes utilizando HTML5, CSS3 e JavaScript.",
+            "Colaboração próxima com a equipe de design para garantir a correta implementação dos requisitos de UI/UX."
+          ]
         }
       },
 

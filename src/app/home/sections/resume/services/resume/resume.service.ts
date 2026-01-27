@@ -105,7 +105,7 @@ export class ResumeService {
       title: translations[`${this.I18N_CAREER_PATH}.k2`].role,
       period: translations[`${this.I18N_CAREER_PATH}.k2`].period,
       location: translations[`${this.I18N_CAREER_PATH}.k2`].location,
-      responsibilities: Object.values(translations[`${this.I18N_CAREER_PATH}.k2`].responsibilities),
+      responsibilities: translations[`${this.I18N_CAREER_PATH}.k2`].responsibilities,
       technologies: [
         translations['common.technologies'].spartacus,
         translations['common.technologies'].angular,
@@ -131,7 +131,7 @@ export class ResumeService {
       title: translations[`${this.I18N_CAREER_PATH}.wam`].role,
       period: translations[`${this.I18N_CAREER_PATH}.wam`].period,
       location: translations[`${this.I18N_CAREER_PATH}.wam`].location,
-      responsibilities: Object.values(translations[`${this.I18N_CAREER_PATH}.wam`].responsibilities),
+      responsibilities: translations[`${this.I18N_CAREER_PATH}.wam`].responsibilities,
       technologies: [
         translations['common.technologies'].spartacus,
         translations['common.technologies'].angular,
@@ -158,7 +158,7 @@ export class ResumeService {
       title: translations[`${this.I18N_CAREER_PATH}.discover`].role,
       period: translations[`${this.I18N_CAREER_PATH}.discover`].period,
       location: translations[`${this.I18N_CAREER_PATH}.discover`].location,
-      responsibilities: Object.values(translations[`${this.I18N_CAREER_PATH}.discover`].responsibilities),
+      responsibilities: translations[`${this.I18N_CAREER_PATH}.discover`].responsibilities,
       technologies: [
         translations['common.technologies'].spartacus,
         translations['common.technologies'].angular,
@@ -185,7 +185,7 @@ export class ResumeService {
       title: translations[`${this.I18N_CAREER_PATH}.accenture-lead`].role,
       period: translations[`${this.I18N_CAREER_PATH}.accenture-lead`].period,
       location: translations[`${this.I18N_CAREER_PATH}.accenture-lead`].location,
-      responsibilities: Object.values(translations[`${this.I18N_CAREER_PATH}.accenture-lead`].responsibilities),
+      responsibilities: translations[`${this.I18N_CAREER_PATH}.accenture-lead`].responsibilities,
       technologies: [
         translations['common.technologies'].spartacus,
         translations['common.technologies'].angular,
@@ -211,7 +211,7 @@ export class ResumeService {
       title: translations[`${this.I18N_CAREER_PATH}.accenture-senior`].role,
       period: translations[`${this.I18N_CAREER_PATH}.accenture-senior`].period,
       location: translations[`${this.I18N_CAREER_PATH}.accenture-senior`].location,
-      responsibilities: Object.values(translations[`${this.I18N_CAREER_PATH}.accenture-senior`].responsibilities),
+      responsibilities: translations[`${this.I18N_CAREER_PATH}.accenture-senior`].responsibilities,
       technologies: [
         translations['common.technologies'].vue,
         translations['common.technologies'].nuxt,
@@ -233,7 +233,7 @@ export class ResumeService {
       title: translations[`${this.I18N_CAREER_PATH}.amadre`].role,
       period: translations[`${this.I18N_CAREER_PATH}.amadre`].period,
       location: translations[`${this.I18N_CAREER_PATH}.amadre`].location,
-      responsibilities: Object.values(translations[`${this.I18N_CAREER_PATH}.amadre`].responsibilities),
+      responsibilities: translations[`${this.I18N_CAREER_PATH}.amadre`].responsibilities,
       technologies: [
         translations['common.technologies'].vue,
         translations['common.technologies'].vuex,
