@@ -4,6 +4,9 @@ import { ButtonComponent } from '@app/shared/components/button/button.component'
 import { InputComponent } from '@app/shared/components/input/input.component'
 import { TextAreaComponent } from '@app/shared/components/textarea/textarea.component'
 import { TranslatePipe } from '@ngx-translate/core'
+import { take, tap } from 'rxjs'
+import { ContactFormService } from './services/contact-form/contact-form.service'
+import { ContactFormData } from './services/models/contact-form.model'
 
 @Component({
   selector: 'app-contact-form',
@@ -15,11 +18,13 @@ import { TranslatePipe } from '@ngx-translate/core'
     ButtonComponent,
     TranslatePipe
   ],
+  providers: [ContactFormService],
   templateUrl: './contact-form.component.html',
   styleUrl: './contact-form.component.scss'
 })
 export class ContactFormComponent {
   private fb = inject(FormBuilder)
+  private contactFormService = inject(ContactFormService)
   private elementRef: ElementRef<HTMLElement> = inject(ElementRef)
 
   NAME_MIN_LENGTH: number = 2
@@ -28,7 +33,7 @@ export class ContactFormComponent {
   SUBJECT_MAX_LENGTH: number = 40
   MESSAGE_MIN_LENGTH: number = 10
 
-  contactForm = this.fb.group({
+  contactForm = this.fb.nonNullable.group({
     firstName: ['', [
       Validators.required,
       Validators.minLength(this.NAME_MIN_LENGTH),
@@ -62,7 +67,16 @@ export class ContactFormComponent {
       return
     }
 
-    console.log('Submitting form', this.contactForm.value)
+    this.dispatchContactRequest()
+  }
+
+  private dispatchContactRequest (): void {
+    this.contactFormService
+      .post(this.contactForm.value as ContactFormData)
+      .pipe(
+        take(1),
+        tap(response => console.log({ response }))
+      ).subscribe()
   }
 
   private validateForm (): boolean {
