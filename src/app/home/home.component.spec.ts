@@ -1,6 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { NavMenuComponent } from '@app/shared/components/nav-menu/nav-menu.component'
 import { MockIntersectionObserver } from 'src/testing/mocks/global'
 import { MockTranslationProvider } from 'src/testing/mocks/helpers'
 import { HomeComponent } from './home.component'
@@ -18,7 +17,6 @@ describe('Home', () => {
     await TestBed.configureTestingModule({
       imports: [
         HomeComponent,
-        NavMenuComponent,
         HeroComponent,
         AboutComponent,
         ResumeComponent,
