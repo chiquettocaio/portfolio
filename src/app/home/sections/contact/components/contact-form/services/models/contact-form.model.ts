@@ -1,6 +1,11 @@
 export interface ContactFormData {
-  firstName: string
-  lastName: string
+  fullName: string
+  email: string
   subject: string
   message: string
+}
+
+export interface ContactFormResponse {
+  next: string
+  ok: boolean
 }

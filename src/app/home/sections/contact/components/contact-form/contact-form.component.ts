@@ -3,8 +3,9 @@ import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms'
 import { ButtonComponent } from '@app/shared/components/button/button.component'
 import { InputComponent } from '@app/shared/components/input/input.component'
 import { TextAreaComponent } from '@app/shared/components/textarea/textarea.component'
+import { ToastService } from '@app/shared/components/toast/services/toast-service/toast.service'
 import { TranslatePipe } from '@ngx-translate/core'
-import { take, tap } from 'rxjs'
+import { catchError, of, take, tap } from 'rxjs'
 import { ContactFormService } from './services/contact-form/contact-form.service'
 import { ContactFormData } from './services/models/contact-form.model'
 
@@ -25,27 +26,29 @@ import { ContactFormData } from './services/models/contact-form.model'
 export class ContactFormComponent {
   private fb = inject(FormBuilder)
   private contactFormService = inject(ContactFormService)
+  private toastService = inject(ToastService)
   private elementRef: ElementRef<HTMLElement> = inject(ElementRef)
 
   NAME_MIN_LENGTH: number = 2
-  NAME_MAX_LENGTH: number = 20
+  NAME_MAX_LENGTH: number = 40
   SUBJECT_MIN_LENGTH: number = 5
   SUBJECT_MAX_LENGTH: number = 40
   MESSAGE_MIN_LENGTH: number = 10
 
+  LAST_NAME_REGEXP: RegExp = /\s[a-zA-Z]{2,}/
+
   contactForm = this.fb.nonNullable.group({
-    firstName: ['', [
+    fullName: ['', [
       Validators.required,
       Validators.minLength(this.NAME_MIN_LENGTH),
       Validators.maxLength(this.NAME_MAX_LENGTH),
-      Validators.pattern('[a-zA-Z]*')
+      Validators.pattern('[a-zA-Z]{2,}(\\s[a-zA-Z]*)*'),
+      Validators.pattern(this.LAST_NAME_REGEXP)
     ]],
 
-    lastName: ['', [
+    email: ['', [
       Validators.required,
-      Validators.minLength(this.NAME_MIN_LENGTH),
-      Validators.maxLength(this.NAME_MAX_LENGTH),
-      Validators.pattern('[a-zA-Z]*')
+      Validators.pattern(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)
     ]],
 
     subject: ['', [
@@ -75,8 +78,31 @@ export class ContactFormComponent {
       .post(this.contactForm.value as ContactFormData)
       .pipe(
         take(1),
-        tap(response => console.log({ response }))
+        tap(() => {
+          this.displaySuccessToast()
+          this.contactForm.reset()
+        }),
+        catchError(() => {
+          this.displayErrorToast()
+          return of()
+        })
       ).subscribe()
+  }
+
+  private displaySuccessToast (): void {
+    this.toastService.add({
+      titleKey: 'home.contact.form.feedback.success.title',
+      messageKey: 'home.contact.form.feedback.success.message',
+      type: 'success'
+    })
+  }
+
+  private displayErrorToast (): void {
+    this.toastService.add({
+      titleKey: 'home.contact.form.feedback.fail.title',
+      messageKey: 'home.contact.form.feedback.fail.message',
+      type: 'error'
+    })
   }
 
   private validateForm (): boolean {
@@ -106,6 +132,3 @@ export class ContactFormComponent {
     inputToFocus?.focus()
   }
 }
-
-// TODO: some anymation after submit
-// TODO: adjust feedback colors

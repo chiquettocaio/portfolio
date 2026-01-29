@@ -376,12 +376,8 @@
 
       "form": {
         "fields": {
-          "firstName": {
-            "label": "Nome"
-          },
-
-          "lastName": {
-            "label": "Sobrenome"
+          "fullName": {
+            "label": "Nome completo"
           },
 
           "subject": {
@@ -401,9 +397,22 @@
 
         "errors": {
           "required": "{{field}} obrigatório.",
-          "pattern": "{{field}} só pode conter letras.",
+          "name": "{{field}} só pode ter letras e espaços",
+          "fullNamePattern": "Por favor, insira o seu sobrenome.",
           "minlength": "{{field}} deve ter pelo menos {{length}} caracteres.",
           "maxlength": "{{field}} não pode ter mais de {{length}} caracteres."
+        },
+
+        "feedback": {
+          "success": {
+            "title": "Sucesso",
+            "message": "Mensagem recebida! Entrarei em contato em breve."
+          },
+
+          "fail": {
+            "title": "Error",
+            "message": "Oops! Algo deu errado. Por favor, tente novamente mais tarde."
+          }
         }
       },
 

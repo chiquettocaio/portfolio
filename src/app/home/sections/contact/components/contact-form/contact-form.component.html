@@ -3,30 +3,29 @@
   [formGroup]="contactForm"
   (ngSubmit)="submit()"
 >
-  @let firstNameLabel = 'home.contact.form.fields.firstName.label' | translate;
-
+  @let fullNameLabel = 'home.contact.form.fields.fullName.label' | translate;
   <app-input
-    formControlName="firstName"
-    id="first-name"
-    [label]="'home.contact.form.fields.firstName.label' | translate"
+    formControlName="fullName"
+    id="full-name"
+    [label]="'home.contact.form.fields.fullName.label' | translate"
     [errorMessages]="{
-      required: 'home.contact.form.errors.required' | translate: { field: firstNameLabel },
-      pattern: 'home.contact.form.errors.pattern' | translate: { field: firstNameLabel },
-      minlength: 'home.contact.form.errors.minlength' | translate: { field: firstNameLabel, length: NAME_MIN_LENGTH },
-      maxlength: 'home.contact.form.errors.maxlength' | translate: { field: firstNameLabel, length: NAME_MAX_LENGTH },
+      required: 'home.contact.form.errors.required' | translate: { field: fullNameLabel },
+      pattern: LAST_NAME_REGEXP.test(contactForm.value.fullName ?? '')
+        ? ('home.contact.form.errors.name' | translate: { field: fullNameLabel })
+        : 'home.contact.form.errors.fullNamePattern' | translate: { field: fullNameLabel },
+      minlength: 'home.contact.form.errors.minlength' | translate: { field: fullNameLabel, length: NAME_MIN_LENGTH },
+      maxlength: 'home.contact.form.errors.maxlength' | translate: { field: fullNameLabel, length: NAME_MAX_LENGTH },
     }"
   />
 
-  @let lastNameLabel = 'home.contact.form.fields.lastName.label' | translate;
+  @let emailLabel = 'home.contact.form.fields.email.label' | translate;
   <app-input
-    formControlName="lastName"
-    id="last-name"
-    [label]="'home.contact.form.fields.lastName.label' | translate"
+    formControlName="email"
+    id="email"
+    [label]="'home.contact.form.fields.email.label' | translate"
     [errorMessages]="{
-      required: 'home.contact.form.errors.required' | translate: { field: lastNameLabel },
-      pattern: 'home.contact.form.errors.pattern' | translate: { field: lastNameLabel },
-      minlength: 'home.contact.form.errors.minlength' | translate: { field: lastNameLabel, length: NAME_MIN_LENGTH },
-      maxlength: 'home.contact.form.errors.maxlength' | translate: { field: lastNameLabel, length: NAME_MAX_LENGTH },
+      required: 'home.contact.form.errors.required' | translate: { field: emailLabel },
+      pattern: 'home.contact.form.errors.pattern' | translate: { field: emailLabel },
     }"
   />
 
