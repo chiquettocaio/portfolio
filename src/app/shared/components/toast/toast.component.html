@@ -1,0 +1,39 @@
+<button (click)="toggle()"> Click </button>
+
+
+@if (show()) {
+  <ng-container [ngTemplateOutlet]="toast" />
+}
+
+<ng-template #toast>
+  <div
+    class="toast"
+    animate.enter="enter-animation"
+    animate.leave="leave-animation"
+  >
+    <app-icon
+      class="toast__icon"
+      name="phosphorCheck"
+      ariaLabel="Test"
+    />
+
+    <div class="toast__content">
+      <strong> Success </strong>
+      <span> Form successfully submited </span>
+    </div>
+
+    <app-button
+      class="toast__close"
+      variant="icon-flat"
+      content=""
+      ariaLabel="Test"
+      (clicked)="toggle()"
+    >
+      <app-icon
+        ButtonLeadingIcon
+        name="phosphorX"
+        ariaLabel="Test"
+      />
+    </app-button>
+  </div>
+</ng-template>

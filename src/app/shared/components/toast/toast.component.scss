@@ -1,0 +1,80 @@
+@use 'mixins/animations' as animations;
+@use 'tokens/breakpoints' as breakpoints;
+
+@include animations.slide-in-top-fade-in;
+@include animations.slide-in-top-fade-out;
+
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toast {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  min-height: 70px;
+  max-width: 300px;
+  padding: 12px;
+  background: rgb(from var(--color-success) r g b / .8);
+  backdrop-filter: blur(3px);
+  z-index: 2;
+  border: 1px solid var(--color-primary);
+  border-radius: var(--border-radius);
+  transform: translateY(20px);
+
+  &__icon {
+    align-self: center;
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+  }
+
+  &__content {
+    flex-shrink: 0;
+    display: grid;
+    color: var(--color-text-primary);
+
+    strong {
+      font-size: var(--text-base);
+      align-self: center;
+    }
+
+    span {
+      font-size: var(--text-sm);
+      align-self: center;
+    }
+  }
+
+  &__close {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+  }
+
+  app-icon {
+    color: var(--color-text-primary);
+  }
+}
+
+.enter-animation {
+  animation: slide-in-top-fade-in .5s;
+}
+
+.leave-animation {
+  animation: slide-in-top-fade-out .5s;
+}
+
+@media screen and (width > breakpoints.$bp-lg) {
+  :host {
+    justify-content: flex-end;
+  }
+
+  .toast {
+    right: 20px;
+  }
+}
