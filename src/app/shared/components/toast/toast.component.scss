@@ -3,39 +3,51 @@
 
 @include animations.slide-in-top-fade-in;
 @include animations.slide-in-top-fade-out;
+@include animations.progress-bar-fill;
 
 :host {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  --timer-bg-color: var(--color-success);
 }
 
-.toast {
+.toasts {
   position: fixed;
   top: 0;
   display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 300px;
+  z-index: 2;
+}
+
+.toast {
+  display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 10px;
-  width: 100%;
-  min-height: 70px;
-  max-width: 300px;
-  padding: 12px;
+  transform: translateY(20px);
+  padding: 12px 0 0;
   background: rgb(from var(--color-success) r g b / .8);
   backdrop-filter: blur(3px);
-  z-index: 2;
   border: 1px solid var(--color-primary);
   border-radius: var(--border-radius);
-  transform: translateY(20px);
+  min-height: 70px;
+  overflow: hidden;
 
   &__icon {
     align-self: center;
     flex-shrink: 0;
     width: 22px;
     height: 22px;
+    margin-left: 12px;
   }
 
   &__content {
     flex-shrink: 0;
+    flex-basis: 70%;
     display: grid;
     color: var(--color-text-primary);
 
@@ -54,6 +66,24 @@
     flex-shrink: 0;
     width: 20px;
     height: 20px;
+    margin-right: 12px;
+  }
+
+  &__timer {
+    width: 100%;
+    background-color: hsl(from var(--color-success) h s calc(l - 20) / 1);
+
+    height: 5px;
+    transform-origin: left;
+    animation: progress-bar-fill 10s linear forwards;
+  }
+
+  &--error {
+    background-color: rgb(from var(--color-danger) r g b / .8);
+
+    .toast__timer {
+      background-color: hsl(from var(--color-danger) h s calc(l - 20) / 1);
+    }
   }
 
   app-icon {
@@ -74,7 +104,7 @@
     justify-content: flex-end;
   }
 
-  .toast {
+  .toasts {
     right: 20px;
   }
 }

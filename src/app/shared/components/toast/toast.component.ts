@@ -1,24 +1,28 @@
 import { NgTemplateOutlet } from '@angular/common'
-import { Component, signal } from '@angular/core'
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core'
+import { TranslatePipe } from '@ngx-translate/core'
 import { ButtonComponent } from '../button/button.component'
 import { IconComponent } from '../icon/icon.component'
+import { ToastService } from './services/toast-service/toast.service'
 
 @Component({
   selector: 'app-toast',
   imports: [
     IconComponent,
     ButtonComponent,
-    NgTemplateOutlet
+    NgTemplateOutlet,
+    TranslatePipe
   ],
   templateUrl: './toast.component.html',
-  styleUrl: './toast.component.scss'
+  styleUrl: './toast.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ToastComponent {
-  show = signal(false)
+  private toastService = inject(ToastService)
 
-  toggle (): void {
-    this.show.update(s => !s)
+  toasts = this.toastService.toasts
+
+  close (id: number): void {
+    this.toastService.remove(id)
   }
 }
-
-// TODO: integrate with service

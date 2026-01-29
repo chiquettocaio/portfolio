@@ -1,39 +1,49 @@
-<button (click)="toggle()"> Click </button>
-
-
-@if (show()) {
-  <ng-container [ngTemplateOutlet]="toast" />
-}
-
-<ng-template #toast>
-  <div
-    class="toast"
-    animate.enter="enter-animation"
-    animate.leave="leave-animation"
-  >
-    <app-icon
-      class="toast__icon"
-      name="phosphorCheck"
-      ariaLabel="Test"
+<div class="toasts">
+  @for (toast of toasts(); track toast.id) {
+    <ng-container
+      [ngTemplateOutlet]="toastTemplate"
+      [ngTemplateOutletContext]="{ toast }"
     />
+  }
+</div>
 
-    <div class="toast__content">
-      <strong> Success </strong>
-      <span> Form successfully submited </span>
-    </div>
-
-    <app-button
-      class="toast__close"
-      variant="icon-flat"
-      content=""
-      ariaLabel="Test"
-      (clicked)="toggle()"
+<ng-template
+  #toastTemplate
+  let-toast="toast"
+>
+    <div
+      class="toast"
+      [class.toast--error]="toast.type === 'error'"
+      animate.enter="enter-animation"
+      animate.leave="leave-animation"
     >
       <app-icon
-        ButtonLeadingIcon
-        name="phosphorX"
+        class="toast__icon"
+        [name]="toast.type === 'error'
+          ? 'phosphorXCircle'
+          : 'phosphorCheck'"
         ariaLabel="Test"
       />
-    </app-button>
-  </div>
+
+      <div class="toast__content">
+        <strong> {{ toast.titleKey | translate }} </strong>
+        <span> {{ toast.messageKey | translate }} </span>
+      </div>
+
+      <app-button
+        class="toast__close"
+        variant="icon-flat"
+        content=""
+        ariaLabel="Test"
+        (clicked)="close(toast.id)"
+      >
+        <app-icon
+          ButtonLeadingIcon
+          name="phosphorX"
+          ariaLabel="Test"
+        />
+      </app-button>
+
+      <div class="toast__timer"> </div>
+    </div>
 </ng-template>

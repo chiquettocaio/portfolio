@@ -19,7 +19,8 @@ import {
   phosphorScroll,
   phosphorSunHorizon,
   phosphorUser,
-  phosphorX
+  phosphorX,
+  phosphorXCircle
 } from '@ng-icons/phosphor-icons/regular'
 
 import {
@@ -59,6 +60,7 @@ import {
       phosphorMoonStars,
       phosphorX,
       phosphorCheck,
+      phosphorXCircle,
 
       ionLogoLinkedin,
       ionLogoCodepen,

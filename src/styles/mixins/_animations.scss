@@ -1,4 +1,4 @@
-@mixin slide-in-top-fade-in ($x: 0, $y: 0) {
+@mixin slide-in-top-fade-in () {
   @keyframes slide-in-top-fade-in {
     from {
       opacity: 0;
@@ -12,7 +12,7 @@
   }
 }
 
-@mixin slide-in-top-fade-out ($x: 0, $y: 0) {
+@mixin slide-in-top-fade-out () {
   @keyframes slide-in-top-fade-out {
     from {
       opacity: 1;
@@ -25,4 +25,17 @@
     }
   }
 }
+
+@mixin progress-bar-fill () {
+  @keyframes progress-bar-fill {
+    from {
+      transform: scaleX(0)
+    }
+
+    to {
+      transform: scaleX(1)
+    }
+  }
+}
+
 
