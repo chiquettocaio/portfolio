@@ -6,6 +6,7 @@ import {
   phosphorBuildingOffice,
   phosphorCalendarBlank,
   phosphorCertificate,
+  phosphorCheck,
   phosphorCode,
   phosphorDesktop,
   phosphorDownloadSimple,
@@ -17,7 +18,8 @@ import {
   phosphorMoonStars,
   phosphorScroll,
   phosphorSunHorizon,
-  phosphorUser
+  phosphorUser,
+  phosphorX
 } from '@ng-icons/phosphor-icons/regular'
 
 import {
@@ -55,6 +57,8 @@ import {
       phosphorArrowRight,
       phosphorSunHorizon,
       phosphorMoonStars,
+      phosphorX,
+      phosphorCheck,
 
       ionLogoLinkedin,
       ionLogoCodepen,
