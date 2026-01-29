@@ -12,9 +12,9 @@ import { ToastComponent } from './shared/components/toast/toast.component'
     NavMenuComponent,
     ToastComponent
   ],
-  templateUrl: './app.html'
+  templateUrl: './app.component.html'
 })
-export class App {
+export class AppComponent {
   private translationConfigService = inject(TranslationConfigService)
   private homeService = inject(HomeService)
 

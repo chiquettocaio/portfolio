@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing'
 import { MockTranslationProvider } from 'src/testing/mocks/helpers'
-import { App } from './app'
+import { AppComponent } from './app.component'
 import { TranslationConfigService } from './services/translation-config/translation-config.service'
 
 describe('App', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [App],
+      imports: [AppComponent],
       providers: [
         TranslationConfigService,
         MockTranslationProvider
@@ -15,7 +15,7 @@ describe('App', () => {
   })
 
   it('should create the app', () => {
-    const fixture = TestBed.createComponent(App)
+    const fixture = TestBed.createComponent(AppComponent)
     const app = fixture.componentInstance
     expect(app).toBeTruthy()
   })
