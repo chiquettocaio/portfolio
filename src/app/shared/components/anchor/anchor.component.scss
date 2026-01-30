@@ -15,7 +15,7 @@
     width: 100%;
     font-weight: var(--font-weight-medium);
     font-size: var(--text-sm);
-    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 6px 4px rgb(from var(--color-black) r g b / 0.25);
     border: none;
     border-radius: var(--border-radius);
     transition: all .2s;
@@ -34,7 +34,7 @@
   &--icon-as-button-primary,
   &--icon-as-button-secondary {
     &:active {
-      box-shadow: 0 0 0;
+      box-shadow: none;
       transform: translateY(2px);
     }
   }
