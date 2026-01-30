@@ -10,7 +10,6 @@ import { TranslatePipe } from '@ngx-translate/core'
   imports: [
     TranslatePipe,
     NgOptimizedImage,
-
     IconComponent,
     AnchorComponent
   ],

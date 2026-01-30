@@ -16,7 +16,6 @@ describe('Hero', () => {
     fixture = TestBed.createComponent(HeroComponent)
     component = fixture.componentInstance
 
-    // TEST: fixture.whenStable() runs fixture.detectChanges() under the hoods, be aware of it to avoid undesired change detections
     await fixture.whenStable()
   })
 
@@ -24,5 +23,3 @@ describe('Hero', () => {
     expect(component).toBeTruthy()
   })
 })
-
-// TODO: test more

@@ -1,0 +1,108 @@
+@use 'mixins/animations' as animations;
+@use 'tokens/breakpoints' as breakpoints;
+
+@include animations.slide-in-top-fade-in;
+@include animations.slide-in-top-fade-out;
+@include animations.progress-bar-fill;
+
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toasts {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 300px;
+  z-index: 2;
+}
+
+.toast {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  transform: translateY(20px);
+  padding: 12px 0 0;
+  background: rgb(from var(--color-success) r g b / .8);
+  backdrop-filter: blur(3px);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--border-radius);
+  min-height: 70px;
+  overflow: hidden;
+
+  &__icon {
+    align-self: center;
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    margin-left: 12px;
+  }
+
+  &__content {
+    flex-shrink: 0;
+    flex-basis: 70%;
+    display: grid;
+    color: var(--color-text-primary);
+
+    strong {
+      font-size: var(--text-base);
+      align-self: center;
+    }
+
+    span {
+      font-size: var(--text-sm);
+      align-self: center;
+    }
+  }
+
+  &__close {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+  }
+
+  &__progress-bar {
+    width: 100%;
+    background-color: hsl(from var(--color-success) h s calc(l - 20) / 1);
+
+    height: 5px;
+    transform-origin: left;
+    animation: progress-bar-fill 10s linear forwards;
+  }
+
+  &--error {
+    background-color: rgb(from var(--color-danger) r g b / .8);
+
+    .toast__progress-bar {
+      background-color: hsl(from var(--color-danger) h s calc(l - 35) / 1);
+    }
+  }
+
+  app-icon {
+    color: var(--color-text-primary);
+  }
+}
+
+.enter-animation {
+  animation: slide-in-top-fade-in .5s;
+}
+
+.leave-animation {
+  animation: slide-in-top-fade-out .5s;
+}
+
+@media screen and (width > breakpoints.$bp-lg) {
+  :host {
+    justify-content: flex-end;
+  }
+
+  .toasts {
+    right: 20px;
+  }
+}

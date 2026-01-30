@@ -17,7 +17,6 @@ describe('ProjectComponent', () => {
     component = fixture.componentInstance
   })
 
-  // TEST: providing required input and testing
   it('should create', () => {
     fixture.componentRef.setInput('data', mockProjectData)
     fixture.detectChanges()
@@ -25,7 +24,6 @@ describe('ProjectComponent', () => {
     expect(component).toBeTruthy()
   })
 
-  // TEST: Checking if a given error has occurred (missing required input in this case)
   it('should throw if required input is missing', () => {
     fixture = TestBed.createComponent(ProjectComponent)
     expect(() => fixture.detectChanges()).toThrowError(/NG0950/)

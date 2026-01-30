@@ -44,17 +44,12 @@ describe('Icon', () => {
   it('should check if NgIconComponent is properly being initiated', () => {
     fixture.componentRef.setInput('name', iconName)
     fixture.componentRef.setInput('ariaLabel', iconAriaLabel)
-
     fixture.detectChanges()
 
-    // Check if the component was found
-    // TEST: querying inner component
     const ngIconDebugElement = fixture.debugElement.query(By.directive(NgIconComponent))
     expect(ngIconDebugElement).toBeTruthy()
 
     const iconInstance = ngIconDebugElement.componentInstance as NgIconComponent
-
-    // Check attributes and properties existance
     expect(iconInstance.name()).toBe(component.name())
     expect(ngIconDebugElement.nativeElement.ariaLabel).toBe(component.ariaLabel())
 

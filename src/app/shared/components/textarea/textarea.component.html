@@ -16,7 +16,7 @@
 
   <span
     class="form-control__error"
-    [class.form-control__error--has-error]="control.errors && errorKey()"
+    [class.form-control__error--has-error]="control.touched && control.errors && errorKey()"
   >
     @if (control.errors && errorKey()) {
       {{ errorMessages()[errorKey() ]}}

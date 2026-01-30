@@ -13,7 +13,6 @@ describe('About', () => {
         AboutComponent
       ],
 
-      // TEST: to provide translation
       providers: [
         MockTranslationProvider
       ]
@@ -27,5 +26,3 @@ describe('About', () => {
     expect(component).toBeTruthy()
   })
 })
-
-// TODO: test more

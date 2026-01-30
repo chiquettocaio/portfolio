@@ -23,5 +23,3 @@ describe('ContactComponent', () => {
     expect(component).toBeTruthy()
   })
 })
-
-// TODO: test more

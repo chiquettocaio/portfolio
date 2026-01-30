@@ -26,8 +26,6 @@ describe('NavMenuComponent', () => {
       ]
     }).compileComponents()
 
-    // TEST: override/add properties to the window object (it's necessary to call "vi.unstubAllGlobals()" to reset values)
-    // https://vitest.dev/guide/mocking/globals.html
     vi.stubGlobal('IntersectionObserver', MockIntersectionObserver)
     MockIntersectionObserver.clearIntances()
 
@@ -169,3 +167,5 @@ describe('NavMenuComponent', () => {
     expect(component.currentLanguage()).toBe('pt-br')
   })
 })
+
+// TODO: test more

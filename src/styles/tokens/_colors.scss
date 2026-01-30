@@ -4,7 +4,7 @@
 
   --color-secondary-lighter: hsl(from var(--color-secondary) h s calc(l + 10));
   --color-white: #FFF;
-  --color-danger: #FF3C3C;
+  --color-danger: #ff5151;
   --color-success: #18a718;
   --color-black: #000;
   --color-gray: #ececec;
@@ -30,13 +30,11 @@
   --color-text-primary: #e0e0e0;
   --color-text-secondary: #e0e0e0;
   --color-text-general: #e0e0e0;
-  --color-input-text: #000;
-  --color-input-bg: #e0e0e0;
+  --color-input-text: #e0e0e0;
+  --color-input-bg: hsl(from var(--color-primary) h s calc(l + 10));
 
   --color-details-bg: #5c7661;
   --color-details-text: #e0e0e0;
   --color-cta-bg-primary: var(--color-details-bg);
   --color-cta-bg-secondary: hsl(from var(--color-primary) h s calc(l + 10));
-
-  --color-danger: #ff0000;
 }

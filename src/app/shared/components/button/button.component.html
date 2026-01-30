@@ -1,6 +1,7 @@
 <button
   class="app-button"
   [class.app-button--secondary]="variant() === 'secondary'"
+  [class.app-button--icon-flat]="variant() === 'icon-flat'"
   [class.app-button--large]="size() === 'large'"
   [title]="title()"
   (click)="clicked.emit()"

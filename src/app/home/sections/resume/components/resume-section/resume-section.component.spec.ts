@@ -39,5 +39,3 @@ describe('ResumeBlock', () => {
     expect(component).toBeTruthy()
   })
 })
-
-// TODO: test more

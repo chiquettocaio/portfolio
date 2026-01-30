@@ -23,5 +23,3 @@ describe('TranslationConfigService', () => {
     expect(service.currentLanguage()).toBe('en-us')
   })
 })
-
-// TODO: test more

@@ -383,12 +383,12 @@
 
       "form": {
         "fields": {
-          "firstName": {
-            "label": "First name"
+          "fullName": {
+            "label": "Full name"
           },
 
-          "lastName": {
-            "label": "Last name"
+          "email": {
+            "label": "E-mail"
           },
 
           "subject": {
@@ -408,9 +408,23 @@
 
         "errors": {
           "required": "{{field}} is required.",
-          "pattern": "{{field}} can only contain letters.",
+          "pattern": "{{field}} is not valid",
+          "name": "{{field}} can only contain letters and spaces",
+          "fullNamePattern": "Please, provide your last name.",
           "minlength": "{{field}} must be at least {{length}} characters long.",
           "maxlength": "{{field}} can't be longer than {{length}} characters."
+        },
+
+        "feedback": {
+          "success": {
+            "title": "Success",
+            "message": "Message received! I'll get back to you soon."
+          },
+
+          "fail": {
+            "title": "Error",
+            "message": "Oops! Something went wrong. Please try again later."
+          }
         }
       },
 

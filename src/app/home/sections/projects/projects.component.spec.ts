@@ -26,5 +26,3 @@ describe('ProjectsComponent', () => {
     expect(component).toBeTruthy()
   })
 })
-
-// TODO: test more
