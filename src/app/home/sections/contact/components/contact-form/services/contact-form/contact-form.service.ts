@@ -14,7 +14,7 @@ export class ContactFormService {
     return this.http
       .post<ContactFormResponse>(environment.formApiUrl, data)
       .pipe(
-        retry(2),
+        retry({ count: 2, delay: 2000 }),
         catchError(err => throwError(() => err))
       )
   }
