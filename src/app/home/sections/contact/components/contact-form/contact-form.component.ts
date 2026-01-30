@@ -1,11 +1,12 @@
-import { ChangeDetectionStrategy, Component, ElementRef, inject } from '@angular/core'
+import { ChangeDetectionStrategy, Component, DOCUMENT, ElementRef, inject } from '@angular/core'
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms'
 import { ButtonComponent } from '@app/shared/components/button/button.component'
 import { InputComponent } from '@app/shared/components/input/input.component'
+import { LoaderService } from '@app/shared/components/loader/services/loader.service'
 import { TextAreaComponent } from '@app/shared/components/textarea/textarea.component'
 import { ToastService } from '@app/shared/components/toast/services/toast-service/toast.service'
 import { TranslatePipe } from '@ngx-translate/core'
-import { catchError, of, take, tap } from 'rxjs'
+import { catchError, finalize, of, take, tap } from 'rxjs'
 import { ContactFormService } from './services/contact-form/contact-form.service'
 import { ContactFormData } from './services/models/contact-form.model'
 
@@ -27,6 +28,8 @@ export class ContactFormComponent {
   private fb = inject(FormBuilder)
   private contactFormService = inject(ContactFormService)
   private toastService = inject(ToastService)
+  private loaderService = inject(LoaderService)
+  private document = inject(DOCUMENT)
   private elementRef: ElementRef<HTMLElement> = inject(ElementRef)
 
   NAME_MIN_LENGTH: number = 2
@@ -74,18 +77,24 @@ export class ContactFormComponent {
   }
 
   private dispatchContactRequest (): void {
+    this.loaderService.show()
+    this.toggleBlockScroll()
+
     this.contactFormService
       .post(this.contactForm.value as ContactFormData)
       .pipe(
         take(1),
         tap(() => {
+          this.loaderService.hide()
           this.displaySuccessToast()
           this.contactForm.reset()
         }),
         catchError(() => {
+          this.loaderService.hide()
           this.displayErrorToast()
           return of()
-        })
+        }),
+        finalize(() => this.toggleBlockScroll())
       ).subscribe()
   }
 
@@ -130,5 +139,9 @@ export class ContactFormComponent {
       : firstInvalidInput
 
     inputToFocus?.focus()
+  }
+
+  private toggleBlockScroll (): void {
+    this.document.documentElement.classList.toggle('no-scroll')
   }
 }

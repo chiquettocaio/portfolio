@@ -7,3 +7,7 @@ html, body, main {
   color: var(--color-black);
   scroll-behavior: smooth;
 }
+
+.no-scroll {
+  overflow: hidden;
+}

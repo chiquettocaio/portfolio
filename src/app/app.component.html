@@ -2,6 +2,10 @@
 
 @if (haveSectionsBeenLoaded()) {
   <app-nav-menu />
-  <app-toast />
 }
 
+<app-toast />
+
+@if (isLoaderVisible()) {
+  <app-loader />
+}
