@@ -22,7 +22,7 @@ export class ToastComponent {
 
   toasts = this.toastService.toasts
 
-  close (id: number): void {
+  close (id: string): void {
     this.toastService.remove(id)
   }
 }
