@@ -46,8 +46,8 @@ module.exports = defineConfig([
       "@typescript-eslint/explicit-function-return-type": "error",
       "@typescript-eslint/no-inferrable-types": "off",
 
+      "@stylistic/object-property-newline": ["error", { "allowAllPropertiesOnSameLine": true }],
       "@stylistic/space-before-function-paren": ["error", "always"],
-      "@stylistic/object-property-newline": "error",
       "@stylistic/comma-dangle": ['error', 'never'],
       "@stylistic/arrow-parens": "off"
     }
