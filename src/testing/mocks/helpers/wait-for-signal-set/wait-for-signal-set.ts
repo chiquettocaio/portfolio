@@ -6,10 +6,7 @@ export async function waitForSignalSet<T> (signal: WritableSignal<T>): Promise<v
 
     signal.set = (args): void => {
       originalSet(args)
-
-      // Restoring to avoid unpredictable errors
       signal.set = originalSet
-
       resolve(null)
     }
   })

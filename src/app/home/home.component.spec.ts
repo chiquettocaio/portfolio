@@ -26,8 +26,7 @@ describe('Home', () => {
       providers: [MockTranslationProvider]
     }).compileComponents()
 
-    // TEST: mocking IntersectionObserver
-    window.IntersectionObserver = MockIntersectionObserver as any
+    vi.stubGlobal('IntersectionObserver', MockIntersectionObserver)
 
     fixture = TestBed.createComponent(HomeComponent)
     component = fixture.componentInstance
@@ -37,6 +36,8 @@ describe('Home', () => {
   it('should create', () => {
     expect(component).toBeTruthy()
   })
-})
 
-// TODO: test more
+  afterEach(() => {
+    vi.unstubAllGlobals()
+  })
+})

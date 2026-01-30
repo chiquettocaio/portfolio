@@ -67,7 +67,6 @@ describe('TextAreaComponent', () => {
     expect(() => fixture.detectChanges()).toThrowError(/NG0950: .* "label"/)
   })
 
-  // TEST: spying on a component method
   it('should call "blurField" on blur', () => {
     fixture.componentRef.setInput('id', textareaId)
     fixture.componentRef.setInput('label', textareaLabel)
@@ -75,7 +74,6 @@ describe('TextAreaComponent', () => {
     fixture.detectChanges()
 
     const blurSpy = vi.spyOn(component, 'blurField')
-    // .mockImplementation(() => { return }) TEST: in case we want to change the method behavior right here
 
     const textAreaDebugEl = debugEl.query(By.css('textarea'))
     expect(textAreaDebugEl).toBeTruthy()
@@ -86,7 +84,6 @@ describe('TextAreaComponent', () => {
     expect(blurSpy).toHaveBeenCalled()
   })
 
-  // TEST: check if spyon was called with event
   it('should call "setValue" on input', () => {
     fixture.componentRef.setInput('id', textareaId)
     fixture.componentRef.setInput('label', textareaLabel)
@@ -106,44 +103,33 @@ describe('TextAreaComponent', () => {
     expect(setValueSpy).toHaveBeenCalledWith(event)
   })
 
-  // TEST: testing all the textarea execution flow, from input to error
   it('should display "required" error message on textarea input', () => {
-    // set inputs
     fixture.componentRef.setInput('id', textareaId)
     fixture.componentRef.setInput('label', textareaLabel)
     fixture.componentRef.setInput('errorMessages', errorMessages)
 
-    // add validation to control similar of the production one
     component.ngOnInit()
     component.control.control?.setValidators([Validators.required])
     fixture.detectChanges()
 
-    // create spies
     const setValueSpy = vi.spyOn(component, 'setValue')
     const onChangeSpy = vi.spyOn(component, 'onChange')
 
-    // check if textarea is rendered
     const textAreaDebugEl = debugEl.query(By.css('textarea'))
     expect(textAreaDebugEl).toBeTruthy()
 
-    // dispatch event
     const textArea = textAreaDebugEl.nativeElement as HTMLTextAreaElement
     const event = new Event('input')
     textArea.dispatchEvent(event)
 
-    // update control and acheck if methods were called
     component.control.control?.updateValueAndValidity()
     expect(setValueSpy).toHaveBeenCalled()
     expect(onChangeSpy).toHaveBeenCalled()
-
-    // check if error matches the expected
     expect(component.control.control?.errors).toMatchObject({ required: true })
 
-    // update property to allow error span to be rendered (@if)
     component.errorKey.set('required')
     fixture.detectChanges()
 
-    // check over span existance and content
     const errorDebugEl = debugEl.query(By.css('span.form-control__error'))
     expect(errorDebugEl).toBeTruthy()
 
@@ -151,3 +137,5 @@ describe('TextAreaComponent', () => {
     expect(errorElement.textContent.trim()).toBe(errorMessages.required)
   })
 })
+
+// TODO: test more

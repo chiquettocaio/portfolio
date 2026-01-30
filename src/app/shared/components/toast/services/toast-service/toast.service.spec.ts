@@ -13,5 +13,3 @@ describe('ToastService', () => {
     expect(service).toBeTruthy()
   })
 })
-
-// TODO: test

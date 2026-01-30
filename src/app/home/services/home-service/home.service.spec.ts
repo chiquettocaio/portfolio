@@ -14,5 +14,3 @@ describe('HomeService', () => {
     expect(service).toBeTruthy()
   })
 })
-
-// TODO: test

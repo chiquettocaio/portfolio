@@ -106,48 +106,35 @@ describe('InputComponent', () => {
   })
 
   it('should display "required" error message on textarea input', () => {
-    // set inputs
     fixture.componentRef.setInput('id', inputId)
     fixture.componentRef.setInput('label', inputLabel)
     fixture.componentRef.setInput('errorMessages', errorMessages)
-
-    // TEST: do not call ngOnInit directly, it smells like a weak test. Call fixture.detectChanges instead and let Angular take care of the lifecycle.
-    // component.ngOnInit()
     fixture.detectChanges()
 
-    // add validation to control similar of the production one
     component.control.control?.setValidators([Validators.required])
     fixture.detectChanges()
 
-    // create spies
     const setValueSpy = vi.spyOn(component, 'setValue')
     const onChangeSpy = vi.spyOn(component, 'onChange')
 
-    // check if textarea is rendered
     const inputDebugEl = debugEl.query(By.css('input'))
     expect(inputDebugEl).toBeTruthy()
 
-    // dispatch event
     const input = inputDebugEl.nativeElement as HTMLTextAreaElement
     const event = new Event('input')
     input.dispatchEvent(event)
 
-    // update control and acheck if methods were called
     component.control.control?.updateValueAndValidity()
     expect(setValueSpy).toHaveBeenCalled()
     expect(onChangeSpy).toHaveBeenCalled()
 
-    // check if error matches the expected
     expect(component.control.control?.errors).toMatchObject({ required: true })
 
-    // update property to allow error span to be rendered (@if)
     component.control.control?.markAsTouched()
     component.control.control?.setValue('')
     component.control.control?.updateValueAndValidity()
-
     fixture.detectChanges()
 
-    // check over span existance and content
     const errorDebugEl = debugEl.query(By.css('span.form-control__error'))
     expect(errorDebugEl).toBeTruthy()
 
@@ -155,3 +142,5 @@ describe('InputComponent', () => {
     expect(errorElement.textContent.trim()).toBe(errorMessages.required)
   })
 })
+
+// TODO: test more

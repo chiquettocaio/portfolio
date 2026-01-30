@@ -22,7 +22,7 @@
         [name]="toast.type === 'error'
           ? 'phosphorXCircle'
           : 'phosphorCheck'"
-        ariaLabel="Test"
+        [ariaLabel]="toast.messageKey | translate"
       />
 
       <div class="toast__content">
@@ -34,13 +34,13 @@
         class="toast__close"
         variant="icon-flat"
         content=""
-        ariaLabel="Test"
+        [ariaLabel]="toast.messageKey | translate"
         (clicked)="close(toast.id)"
       >
         <app-icon
           ButtonLeadingIcon
           name="phosphorX"
-          ariaLabel="Test"
+          [ariaLabel]="toast.messageKey | translate"
         />
       </app-button>
 
