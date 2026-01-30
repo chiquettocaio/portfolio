@@ -105,6 +105,29 @@ describe('InputComponent', () => {
     expect(setValueSpy).toHaveBeenCalledWith('mock')
   })
 
+  it('should call "onChange" on blur', () => {
+    fixture.componentRef.setInput('id', inputId)
+    fixture.componentRef.setInput('label', inputLabel)
+    fixture.detectChanges()
+
+    component['updateOn'] = 'blur'
+
+    const onChangeSpy = vi.spyOn(component, 'onChange')
+    const setValueSpy = vi.spyOn(component, 'setValue')
+
+    const inputDebugEl = debugEl.query(By.css('input'))
+    expect(inputDebugEl).toBeTruthy()
+
+    const input = inputDebugEl.nativeElement as HTMLInputElement
+    input.value = 'mock'
+    input.dispatchEvent(new Event('input'))
+    expect(setValueSpy).toHaveBeenCalledWith('mock')
+
+    input.dispatchEvent(new Event('blur'))
+    fixture.detectChanges()
+    expect(onChangeSpy).toHaveBeenCalled()
+  })
+
   it('should display "required" error message on textarea input', () => {
     fixture.componentRef.setInput('id', inputId)
     fixture.componentRef.setInput('label', inputLabel)
@@ -142,5 +165,3 @@ describe('InputComponent', () => {
     expect(errorElement.textContent.trim()).toBe(errorMessages.required)
   })
 })
-
-// TODO: test more
