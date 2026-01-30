@@ -140,6 +140,8 @@ describe('ContactFormComponent', () => {
   })
 
   it('should submit the form and return an error', async () => {
+    vi.useFakeTimers()
+
     const fullNameDebugEl = debugEl.query(By.css('#full-name input'))
     const emailDebugEl = debugEl.query(By.css('#email input'))
     const subjectDebugEl = debugEl.query(By.css('#subject input'))
@@ -186,18 +188,23 @@ describe('ContactFormComponent', () => {
 
     // TESTING REQUESTS
     const req1 = httpTesting.expectOne(endpointUrl)
-    req1.flush('Error', { status: 500,
-      statusText: 'Server Error' })
+    req1.flush('Error', { status: 500, statusText: 'Server Error' })
 
     // Retry #1 (triggered by the first failure)
+    vi.advanceTimersByTime(2000)
     const req2 = httpTesting.expectOne(endpointUrl)
     req2.flush('Error', { status: 500, statusText: 'Server Error' })
 
     // Retry #2 (Final attempt)
+    vi.advanceTimersByTime(2000)
     const req3 = httpTesting.expectOne(endpointUrl)
     req3.flush('Error', { status: 500, statusText: 'Server Error' })
 
     httpTesting.verify()
+
+    vi.runAllTimers()
+    vi.useRealTimers()
+    vi.clearAllMocks()
   })
 
   it('should not submit the form', () => {

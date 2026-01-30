@@ -103,6 +103,30 @@ describe('TextAreaComponent', () => {
     expect(setValueSpy).toHaveBeenCalledWith(event)
   })
 
+  it('should call "onChange" on blur', () => {
+    fixture.componentRef.setInput('id', textareaId)
+    fixture.componentRef.setInput('label', textareaLabel)
+    fixture.detectChanges()
+
+    component['updateOn'] = 'blur'
+
+    const onChangeSpy = vi.spyOn(component, 'onChange')
+    const setValueSpy = vi.spyOn(component, 'setValue')
+
+    const textAreaDebugEl = debugEl.query(By.css('textarea'))
+    expect(textAreaDebugEl).toBeTruthy()
+
+    const inputEvent = new Event('input')
+    const textArea = textAreaDebugEl.nativeElement as HTMLTextAreaElement
+    textArea.value = 'mock'
+    textArea.dispatchEvent(inputEvent)
+    expect(setValueSpy).toHaveBeenCalledWith(inputEvent)
+
+    textArea.dispatchEvent(new Event('blur'))
+    fixture.detectChanges()
+    expect(onChangeSpy).toHaveBeenCalled()
+  })
+
   it('should display "required" error message on textarea input', () => {
     fixture.componentRef.setInput('id', textareaId)
     fixture.componentRef.setInput('label', textareaLabel)
@@ -137,5 +161,3 @@ describe('TextAreaComponent', () => {
     expect(errorElement.textContent.trim()).toBe(errorMessages.required)
   })
 })
-
-// TODO: test more
