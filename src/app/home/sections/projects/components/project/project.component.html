@@ -6,14 +6,20 @@
   {{ data().description }}
 </p>
 
-<img
-  class="project__thumb"
-  [ngSrc]="data().thumb.src"
-  width="352"
-  height="174"
-  sizes="100vw"
-  [alt]="data().thumb.alt"
->
+<div class="project__thumb">
+  <img
+    [ngSrc]="data().thumb.src"
+    width="352"
+    height="174"
+    sizes="100vw"
+    [alt]="data().thumb.alt"
+  />
+
+  <app-icon
+    name="phosphorFrameCorners"
+    [ariaLabel]="'home.projects.icons.expandIconAriaLabel' | translate"
+  ></app-icon>
+</div>
 
 <ul class="project__techs">
   @for (tech of data().techs; track $index) {

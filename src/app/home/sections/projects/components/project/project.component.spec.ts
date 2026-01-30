@@ -2,7 +2,9 @@ import { ComponentFixture, TestBed } from '@angular/core/testing'
 
 import { ProjectComponent } from './project.component'
 
+import { IconComponent } from '@app/shared/components/icon/icon.component'
 import { mockProjectData } from 'src/testing/mocks/data/project'
+import { MockTranslationProvider } from 'src/testing/mocks/helpers'
 
 describe('ProjectComponent', () => {
   let component: ProjectComponent
@@ -10,7 +12,14 @@ describe('ProjectComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ProjectComponent]
+      imports: [
+        ProjectComponent,
+        IconComponent
+      ],
+
+      providers: [
+        MockTranslationProvider
+      ]
     }).compileComponents()
 
     fixture = TestBed.createComponent(ProjectComponent)

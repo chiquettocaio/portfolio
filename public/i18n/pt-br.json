@@ -279,6 +279,10 @@
         "ariaLabel": "Seção de projetos"
       },
 
+      "icons": {
+        "expandIconAriaLabel": "Expandir imagem"
+      },
+
       "projects": {
         "ccg": {
           "title": "Carhartt Company Gear",
