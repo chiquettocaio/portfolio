@@ -50,6 +50,11 @@
       padding: 4px 8px;
       background: hsl(from var(--color-secondary-lighter) h s l / 0.7);
       border-radius: var(--border-radius);
+
+      &:hover {
+        background: hsl(from var(--color-secondary-lighter) h s calc(l + 10) / 0.7);
+        cursor: pointer;
+      }
     }
   }
 }
