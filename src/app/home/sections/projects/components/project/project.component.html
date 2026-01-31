@@ -13,7 +13,7 @@
     height="174"
     sizes="100vw"
     [alt]="data().thumb.alt"
-    (click)="imageClicked.emit(data())"
+    (click)="handleImageKeypress($event, data())"
     (keydown.enter)="handleImageKeypress($event, data())"
     (keydown.space)="handleImageKeypress($event, data())"
     tabindex="0"
