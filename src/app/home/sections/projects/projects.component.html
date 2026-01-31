@@ -15,6 +15,7 @@
       <app-project
         [class.is-odd]="$odd"
         [data]="project"
+        (imageClicked)="showGallery($event)"
       />
     }
   </div>
@@ -37,3 +38,7 @@
     />
   </div>
 </section>
+
+@if (image()) {
+  <app-image-gallery />
+}

@@ -26,6 +26,30 @@
   }
 }
 
+@mixin fade-in () {
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+@mixin fade-out () {
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+    }
+  }
+}
+
 @mixin progress-bar-fill () {
   @keyframes progress-bar-fill {
     from {

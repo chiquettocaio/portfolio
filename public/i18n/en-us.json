@@ -499,7 +499,8 @@
 
     "others": {
       "enable": "on",
-      "disable": "off"
+      "disable": "off",
+      "close": "Close"
     }
   }
 }

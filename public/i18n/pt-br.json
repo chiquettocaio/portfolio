@@ -487,7 +487,8 @@
 
     "others": {
       "enable": "Ativar",
-      "disable": "Desativar"
+      "disable": "Desativar",
+      "close": "Fechar"
     }
   }
 }
