@@ -11,3 +11,9 @@ html, body, main {
 .no-scroll {
   overflow: hidden;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  html, body, main {
+    scroll-behavior: initial;
+  }
+}

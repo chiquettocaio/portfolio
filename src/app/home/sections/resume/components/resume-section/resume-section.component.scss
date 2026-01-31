@@ -119,6 +119,11 @@
     color: var(--color-details-text);
     border-radius: var(--border-radius);
     font-size: var(--text-sm);
+    cursor: pointer;
+
+    &:hover {
+      background-color: hsl(from var(--color-details-bg) h s calc(l - 10));
+    }
   }
 }
 

@@ -1,0 +1,41 @@
+@if (click$ | async) {}
+@if (escape$ | async) {}
+
+@defer {
+  @if(imageVisible()) {
+    <div
+      class="gallery-wrapper"
+      animate.enter="fade-in"
+      animate.leave="fade-out"
+    >
+      <div class="gallery">
+        <app-button
+          class="gallery__close"
+          variant="icon-flat"
+          content=""
+          [ariaLabel]="'common.others.close' | translate"
+          (clicked)="close()"
+        >
+          <app-icon
+            ButtonLeadingIcon
+            name="phosphorX"
+            [ariaLabel]="'common.others.close' | translate"
+          />
+        </app-button>
+
+        <img
+          priority
+          class="gallery__image"
+          [ngSrc]="image()?.src!"
+          width="300"
+          height="300"
+          [alt]="image()?.title"
+        >
+      </div>
+    </div>
+  }
+} @placeholder (minimum 500ms) {
+  <app-loader />
+} @loading (after 100ms; minimum 1s) {
+  <app-loader />
+}

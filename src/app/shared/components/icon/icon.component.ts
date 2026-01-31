@@ -12,6 +12,7 @@ import {
   phosphorDownloadSimple,
   phosphorEnvelopeSimple,
   phosphorFileArrowDown,
+  phosphorFrameCorners,
   phosphorGraduationCap,
   phosphorHouse,
   phosphorMapPinLine,
@@ -61,6 +62,7 @@ import {
       phosphorX,
       phosphorCheck,
       phosphorXCircle,
+      phosphorFrameCorners,
 
       ionLogoLinkedin,
       ionLogoCodepen,
