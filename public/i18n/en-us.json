@@ -130,6 +130,11 @@
         "iconAriaLabel": "Download resume icon"
       },
 
+      "downloadResumeSuccess": {
+        "title": "Success",
+        "message": "Thanks for your interest! The resume has been downloaded."
+      },
+
       "capIcon": {
         "ariaLabel": "Graduation cap icon"
       },

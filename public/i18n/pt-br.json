@@ -131,6 +131,11 @@
         "iconAriaLabel": "Ícone de baixar currículo"
       },
 
+      "downloadResumeSuccess": {
+        "title": "Success",
+        "message": "Obrigado pelo interesse! O currículo já foi baixado."
+      },
+
       "capIcon": {
         "ariaLabel": "Ícone de chapéu de formatura"
       },

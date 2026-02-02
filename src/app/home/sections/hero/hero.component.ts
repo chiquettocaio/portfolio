@@ -24,34 +24,36 @@ export class HeroComponent implements AfterViewInit {
 
   private startAnimation (): void {
     gsap.timeline()
-      .from('.paragraph--eyebrow', {
+      .from('#hero-section .paragraph--eyebrow', {
         opacity: 0,
         x: 200,
         ease: 'power1.inOut',
         duration: 0.5
       })
 
-      .from('.buttons--social', {
+      .from('#hero-section .buttons--social', {
         opacity: 0,
         x: -200,
         ease: 'power1.inOut'
       }, '<')
 
-      .from('.headline', {
+      .from('#hero-section .headline', {
         opacity: 0,
         scale: 0,
-        ease: 'bounce.out'
+        ease: 'back.out(4)',
+        duration: 0.8
       }, '+=0.2')
 
-      .from('.paragraph--subheadline', {
+      .from('#hero-section .paragraph--subheadline', {
         opacity: 0,
         y: 50,
         ease: 'power1.out'
       }, '+=0.2')
 
-      .from('.buttons--navigate', {
-        x: '100vw',
-        ease: 'back.out',
+      .from('#hero-section .buttons--navigate', {
+        y: 50,
+        opacity: 0,
+        ease: 'back.out(2)',
         duration: 1
       }, '+=0.2')
   }

@@ -1,4 +1,4 @@
-import { booleanAttribute, ChangeDetectionStrategy, Component, input } from '@angular/core'
+import { booleanAttribute, ChangeDetectionStrategy, Component, input, output } from '@angular/core'
 import { AnchorSize, AnchorTarget, AnchorVariant } from './anchor.model'
 
 @Component({
@@ -16,4 +16,10 @@ export class AnchorComponent {
   size = input<AnchorSize>('regular')
   target = input<AnchorTarget>('_self')
   download = input(null, { transform: booleanAttribute })
+
+  clicked = output<void>()
+
+  dispatchClickedEvent (): void {
+    this.clicked.emit()
+  }
 }
