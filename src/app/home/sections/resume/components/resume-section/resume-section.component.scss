@@ -47,16 +47,15 @@
   margin-top: 20px;
 
   &__title {
+    position: relative;
     font-size: var(--text-lg);
 
-    &::before {
-      content: '';
+    &-marker {
       position: absolute;
-      left: 10px;
-      margin-top: -2px;
-      display: block;
-      width: 10px;
-      height: 10px;
+      top: 0;
+      left: -43px;
+      width: 20px;
+      height: 20px;
       background-color: var(--color-details-bg);
       border-radius: 50%;
       border: 6px solid hsl(from var(--color-details-bg) h s calc(l + 40));

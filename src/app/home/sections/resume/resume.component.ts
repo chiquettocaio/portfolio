@@ -54,8 +54,8 @@ export class ResumeComponent implements AfterViewInit {
       scrollTrigger: {
         trigger: '#resume-section',
         start: 'top 70%',
-        end: 'bottom 70%'
-        // markers: true
+        end: 'top 0',
+        scrub: 1
       }
     })
       .from(split.lines, {
@@ -71,9 +71,37 @@ export class ResumeComponent implements AfterViewInit {
         opacity: 0,
         y: 20
       })
-      .from('#resume-section app-resume-section:nth-child(4)', {
-        opacity: 0,
-        y: 20
+      .to('#resume-section app-resume-section:nth-child(3) .item__title-marker', {
+        scale: 2,
+        ease: 'power1.out',
+        yoyo: true,
+        repeat: 1
       })
+      .from('#resume-section app-resume-section:nth-child(4)', {
+        opacity: 0
+      })
+
+    gsap.utils.toArray('#resume-section app-resume-section:nth-child(4) .item').forEach(item => {
+      const elm = item as HTMLElement
+
+      gsap.timeline({
+        scrollTrigger: {
+          trigger: elm,
+          start: 'top 70%',
+          end: 'top 50%',
+          scrub: 1.5
+        }
+      })
+        .from(elm, {
+          y: 40,
+          opacity: 0
+        })
+        .to(elm.querySelector('.item__title-marker'), {
+          scale: 2,
+          ease: 'power1.out',
+          yoyo: true,
+          repeat: 1
+        }, '+=1')
+    })
   }
 }
