@@ -4,7 +4,7 @@ import { ImageGalleryComponent } from '@app/shared/components/image-gallery/imag
 import { ImageGalleryData } from '@app/shared/components/image-gallery/models/image-gallery.model'
 import { ImageGalleryService } from '@app/shared/components/image-gallery/services/image-gallery/image-gallery.service'
 import { TranslatePipe } from '@ngx-translate/core'
-import gsap from 'gsap'
+import { gsap } from 'gsap'
 import { ProjectComponent } from './components/project/project.component'
 import { CareerProject } from './components/project/project.model'
 import { ProjectsService } from './services/projects/projects.service'

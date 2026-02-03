@@ -3,8 +3,8 @@ import { AnchorComponent } from '@app/shared/components/anchor/anchor.component'
 import { IconComponent } from '@app/shared/components/icon/icon.component'
 import { ToastService } from '@app/shared/components/toast/services/toast-service/toast.service'
 import { TranslatePipe } from '@ngx-translate/core'
-import gsap from 'gsap'
-import SplitText from 'gsap/SplitText'
+import { gsap } from 'gsap'
+import { SplitText } from 'gsap/SplitText'
 import { ResumeSectionComponent } from './components/resume-section/resume-section.component'
 import { ResumeService } from './services/resume/resume.service'
 
@@ -43,7 +43,8 @@ export class ResumeComponent implements AfterViewInit {
 
   private startAnimation (): void {
     const split = new SplitText('#resume-section .paragraph', {
-      type: 'lines'
+      type: 'lines',
+      autoSplit: true
     })
 
     gsap.timeline({
