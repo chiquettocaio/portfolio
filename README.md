@@ -30,7 +30,7 @@
   ...
 }
 ```
-Notice that the styling rules must be customized from **@stylistic**. **@/<rule>: <value>** seems to behave as just **<rule>**: <value>, but I'll stick to this pattern.
+Notice that the styling rules must be customized from **@stylistic**. **@/<rule>: <value>** seems to behave as just **<rule>**: <value>, but I'll stick to this pattern. 
 
 Even that VSCode complains about errors on the config file, it's fine. Test it in some .ts file and if things are working as expected, just ignre the errors.
 
