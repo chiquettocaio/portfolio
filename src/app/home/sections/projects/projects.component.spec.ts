@@ -5,6 +5,8 @@ import { By } from '@angular/platform-browser'
 import { TranslationConfigService } from '@app/services/translation-config/translation-config.service'
 import { AnchorComponent } from '@app/shared/components/anchor/anchor.component'
 import { ImageGalleryComponent } from '@app/shared/components/image-gallery/image-gallery.component'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { mockProjectData } from 'src/testing/mocks/data/project'
 import { MockTranslationProvider } from 'src/testing/mocks/helpers'
 import { CareerProject } from './components/project/project.model'
@@ -21,6 +23,8 @@ export class MockProjectsService {
 }
 
 describe('ProjectsComponent', () => {
+  gsap.registerPlugin(ScrollTrigger)
+
   let component: ProjectsComponent
   let fixture: ComponentFixture<ProjectsComponent>
 
