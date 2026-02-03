@@ -31,18 +31,18 @@ export class HeroComponent implements AfterViewInit {
         duration: 0.5
       })
 
-      .from('#hero-section .buttons--social', {
+      .from('#hero-section .buttons--social app-anchor', {
         opacity: 0,
-        x: -200,
-        ease: 'power1.inOut'
-      }, '<')
+        ease: 'power1.inOut',
+        stagger: 0.2
+      })
 
       .from('#hero-section .headline', {
         opacity: 0,
         scale: 0,
         ease: 'back.out(4)',
         duration: 0.8
-      }, '+=0.2')
+      })
 
       .from('#hero-section .paragraph--subheadline', {
         opacity: 0,

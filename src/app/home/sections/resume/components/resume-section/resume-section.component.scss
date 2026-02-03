@@ -49,13 +49,14 @@
   &__title {
     position: relative;
     font-size: var(--text-lg);
+    display: block;
 
     &-marker {
       position: absolute;
-      top: 0;
+      top: 0px;
       left: -43px;
-      width: 20px;
-      height: 20px;
+      width: 22px;
+      height: 22px;
       background-color: var(--color-details-bg);
       border-radius: 50%;
       border: 6px solid hsl(from var(--color-details-bg) h s calc(l + 40));

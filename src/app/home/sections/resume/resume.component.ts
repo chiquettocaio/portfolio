@@ -4,7 +4,6 @@ import { IconComponent } from '@app/shared/components/icon/icon.component'
 import { ToastService } from '@app/shared/components/toast/services/toast-service/toast.service'
 import { TranslatePipe } from '@ngx-translate/core'
 import gsap from 'gsap'
-import ScrollTrigger from 'gsap/ScrollTrigger'
 import SplitText from 'gsap/SplitText'
 import { ResumeSectionComponent } from './components/resume-section/resume-section.component'
 import { ResumeService } from './services/resume/resume.service'
@@ -43,9 +42,6 @@ export class ResumeComponent implements AfterViewInit {
   }
 
   private startAnimation (): void {
-    gsap.registerPlugin(ScrollTrigger)
-    gsap.registerPlugin(SplitText)
-
     const split = new SplitText('#resume-section .paragraph', {
       type: 'lines'
     })
@@ -53,7 +49,7 @@ export class ResumeComponent implements AfterViewInit {
     gsap.timeline({
       scrollTrigger: {
         trigger: '#resume-section',
-        start: 'top 70%',
+        start: 'top 60%',
         end: 'top 0',
         scrub: 1
       }
@@ -71,37 +67,8 @@ export class ResumeComponent implements AfterViewInit {
         opacity: 0,
         y: 20
       })
-      .to('#resume-section app-resume-section:nth-child(3) .item__title-marker', {
-        scale: 2,
-        ease: 'power1.out',
-        yoyo: true,
-        repeat: 1
-      })
       .from('#resume-section app-resume-section:nth-child(4)', {
         opacity: 0
       })
-
-    gsap.utils.toArray('#resume-section app-resume-section:nth-child(4) .item').forEach(item => {
-      const elm = item as HTMLElement
-
-      gsap.timeline({
-        scrollTrigger: {
-          trigger: elm,
-          start: 'top 70%',
-          end: 'top 50%',
-          scrub: 1.5
-        }
-      })
-        .from(elm, {
-          y: 40,
-          opacity: 0
-        })
-        .to(elm.querySelector('.item__title-marker'), {
-          scale: 2,
-          ease: 'power1.out',
-          yoyo: true,
-          repeat: 1
-        }, '+=1')
-    })
   }
 }

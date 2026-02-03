@@ -2,7 +2,6 @@ import { AfterViewInit, ChangeDetectionStrategy, Component } from '@angular/core
 import { AnchorComponent } from '@app/shared/components/anchor/anchor.component'
 import { TranslatePipe } from '@ngx-translate/core'
 import gsap from 'gsap'
-import ScrollTrigger from 'gsap/ScrollTrigger'
 
 @Component({
   selector: 'app-about',
@@ -17,8 +16,6 @@ export class AboutComponent implements AfterViewInit {
   }
 
   private startAnimation (): void {
-    gsap.registerPlugin(ScrollTrigger)
-
     gsap
       .timeline({
         scrollTrigger: {
