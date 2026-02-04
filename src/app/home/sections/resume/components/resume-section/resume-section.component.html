@@ -12,11 +12,12 @@
   </div>
 
   <div class="resume-section__content">
-    <div class="path"></div>
-
     <div class="items">
       @for (item of items(); track $index) {
         <div class="item">
+          <div class="item__untook-path"></div>
+          <div class="item__path"></div>
+
           <strong class="item__title">
             {{ item.title }}
             <div class="item__title-marker"></div>

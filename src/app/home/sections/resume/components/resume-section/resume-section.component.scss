@@ -12,7 +12,7 @@
     position: relative;
     display: flex;
     gap: 0 32px;
-    padding-left: 20px;
+    padding-left: 54px;
   }
 
   &__icon {
@@ -44,7 +44,24 @@
 }
 
 .item {
+  position: relative;
   margin-top: 20px;
+  left: 0;
+
+  &__path,
+  &__untook-path {
+    position: absolute;
+    top: 0;
+    left: -42px;
+    width: 10px;
+    height: calc(100% + 28px);
+    border-right: 2px solid var(--color-details-bg);
+    transform-origin: top center;
+  }
+
+  &__untook-path {
+    border-right: 2px dashed var(--color-gray-medium);
+  }
 
   &__title {
     position: relative;
@@ -53,13 +70,20 @@
 
     &-marker {
       position: absolute;
-      top: 0px;
+      top: -1px;
       left: -44px;
       width: 22px;
       height: 22px;
-      background-color: var(--color-details-bg);
+      background-color: hsl(from var(--color-gray-medium) h s calc(l - 20));
       border-radius: 50%;
-      border: 6px solid hsl(from var(--color-details-bg) h s calc(l + 40));
+      border: 6px solid;
+      border-color: var(--color-gray-medium);
+      transition: border-color .2s, background-color .2s;
+
+      &--colorful {
+        border-color: hsl(from var(--color-details-bg) h s calc(l + 40));
+        background-color: var(--color-details-bg)
+      }
     }
   }
 
@@ -125,10 +149,4 @@
       background-color: hsl(from var(--color-details-bg) h s calc(l - 10));
     }
   }
-}
-
-.path {
-  transform-origin: top center;
-  flex-shrink: 0;
-  border-right: 2px dashed var(--color-gray-medium);
 }
