@@ -87,7 +87,6 @@ export class ResumeComponent implements AfterViewInit {
         ease: 'back.out(4)',
         scrollTrigger: {
           trigger: elm,
-          markers: true,
           start: 'top 60%',
           end: 'top 0',
           toggleActions: 'play none none reverse'
