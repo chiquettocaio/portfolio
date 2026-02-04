@@ -60,16 +60,39 @@ export class ResumeComponent implements AfterViewInit {
         x: -100,
         stagger: 0.2
       })
+
       .from('#resume-section .resume-header__cta', {
         opacity: 0,
         y: 20
       }, '<')
+
       .from('#resume-section app-resume-section:nth-child(3)', {
         opacity: 0,
         y: 20
       })
-      .from('#resume-section app-resume-section:nth-child(4)', {
-        opacity: 0
+      .from('#resume-section app-resume-section:nth-child(3) .item .item__title-marker', {
+        scale: 0,
+        ease: 'back.out(4)'
       })
+      .from('#resume-section app-resume-section:nth-child(4)', {
+        opacity: 0,
+        y: 20
+      })
+
+    gsap.utils.toArray('#resume-section app-resume-section:nth-child(4) .item .item__title-marker').forEach(item => {
+      const elm = item as HTMLElement
+
+      gsap.from(elm, {
+        scale: 0,
+        ease: 'back.out(4)',
+        scrollTrigger: {
+          trigger: elm,
+          markers: true,
+          start: 'top 60%',
+          end: 'top 0',
+          toggleActions: 'play none none reverse'
+        }
+      })
+    })
   }
 }

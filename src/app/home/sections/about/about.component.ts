@@ -19,9 +19,10 @@ export class AboutComponent implements AfterViewInit {
     gsap
       .timeline({
         scrollTrigger: {
-          trigger: '#about-section',
-          start: 'top 70%',
-          end: 'top 0',
+          trigger: '#about-section .title',
+          endTrigger: '#about-section .paragraph:nth-child(6)',
+          start: 'top 80%',
+          end: 'top 20%',
           scrub: 1
         }
       })
@@ -65,13 +66,13 @@ export class AboutComponent implements AfterViewInit {
       .from('#about-section .h2', {
         opacity: 0,
         scale: 0,
-        duration: 0.75,
+        duration: 2,
         ease: 'back.out(4)'
       })
       .from('#about-section .check-resume-cta', {
         opacity: 0,
-        duration: 0.8,
-        y: 100,
+        duration: 2,
+        y: 50,
         ease: 'power1.out'
       }, '<')
   }
