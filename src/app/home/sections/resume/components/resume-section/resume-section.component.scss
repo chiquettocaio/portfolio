@@ -47,16 +47,16 @@
   margin-top: 20px;
 
   &__title {
+    position: relative;
     font-size: var(--text-lg);
+    display: block;
 
-    &::before {
-      content: '';
+    &-marker {
       position: absolute;
-      left: 10px;
-      margin-top: -2px;
-      display: block;
-      width: 10px;
-      height: 10px;
+      top: 0px;
+      left: -44px;
+      width: 22px;
+      height: 22px;
       background-color: var(--color-details-bg);
       border-radius: 50%;
       border: 6px solid hsl(from var(--color-details-bg) h s calc(l + 40));
@@ -128,6 +128,7 @@
 }
 
 .path {
+  transform-origin: top center;
   flex-shrink: 0;
   border-right: 2px dashed var(--color-gray-medium);
 }

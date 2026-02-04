@@ -123,12 +123,17 @@
 
     "resume": {
       "title": "Currículo",
-      "paragraph": "Minhas habilidades técnicas abrangem várias tecnologias e ferramentas como Angular, RxJS, NgRx, NgRx effects, React.js, Redux, Vue.js, VueX, Nuxt, JavaScript (ES5, ES6), TypeScript, Sass, HTML5, CSS3, ElectronJS, Node.js, Ajax, Git, Jest, Jasmine e outras.",
+      "paragraph": "Desenvolvedor front-end bastante experiente, com forte domínio das tecnologias web e JavaScript, capaz de criar soluções robustas e escaláveis, com ou sem frameworks. Especializado em SAP Composable Storefront (Spartacus) e Angular e seu ecossistema (RxJS, NgRx, NgRx Effects), mas também possuo sólida experiência na entrega de aplicações complexas com React e Vue. Minha expertise abrange JavaScript e TypeScript modernos, arquiteturas CSS escaláveis, Node.js, Electron, testes automatizados (Vitest, Jest, Jasmine) e fluxos de trabalho profissionais baseados em Git.",
 
       "downloadResumeCta": {
         "title": "Baixar currículo",
         "ariaLabel": "Baixar currículo",
         "iconAriaLabel": "Ícone de baixar currículo"
+      },
+
+      "downloadResumeSuccess": {
+        "title": "Success",
+        "message": "Obrigado pelo interesse! O currículo já foi baixado."
       },
 
       "capIcon": {
