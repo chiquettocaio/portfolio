@@ -118,7 +118,7 @@ export class ProjectsService {
 
   private getVivoTranslations (translations: InterpolationParameters): CareerProject {
     return {
-      title: translations[`${this.I18N_PROJECTS_PATH}.leap`].title,
+      title: translations[`${this.I18N_PROJECTS_PATH}.vivo`].title,
       description: translations[`${this.I18N_PROJECTS_PATH}.vivo`].description,
       techs: [
         translations['common.technologies'].sapCommerce,
