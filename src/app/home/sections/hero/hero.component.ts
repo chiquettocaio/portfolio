@@ -40,7 +40,7 @@ export class HeroComponent implements AfterViewInit {
       .from('#hero-section .headline', {
         opacity: 0,
         scale: 0,
-        ease: 'back.out(4)',
+        ease: 'back.out(3)',
         duration: 0.6
       })
 
