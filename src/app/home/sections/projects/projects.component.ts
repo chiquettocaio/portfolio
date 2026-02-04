@@ -81,12 +81,12 @@ export class ProjectsComponent implements AfterViewInit {
         opacity: 0,
         scale: 0,
         duration: 0.75,
-        ease: 'back.out(2)'
+        ease: 'power1.out'
       })
       .from('#projects-section app-anchor', {
         opacity: 0,
         duration: 0.8,
-        y: 100,
+        y: 50,
         ease: 'power1.out'
       }, '<')
   }
