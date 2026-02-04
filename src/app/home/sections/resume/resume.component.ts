@@ -70,7 +70,7 @@ export class ResumeComponent implements AfterViewInit {
       })
       .from('#resume-section app-resume-section:nth-child(3) .item .item__title-marker', {
         scale: 0,
-        ease: 'back.out(3)',
+        ease: 'back.out(2)',
         onStart () {
           const selector = gsap.utils.selector('#resume-section app-resume-section:nth-child(3) .item')
           selector('.item__title-marker')[0].classList.add('item__title-marker--colorful')
