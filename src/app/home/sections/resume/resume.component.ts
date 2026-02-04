@@ -70,7 +70,7 @@ export class ResumeComponent implements AfterViewInit {
       })
       .from('#resume-section app-resume-section:nth-child(3) .item .item__title-marker', {
         scale: 0,
-        ease: 'back.out(2)',
+        ease: 'back.out(1)',
         onStart () {
           const selector = gsap.utils.selector('#resume-section app-resume-section:nth-child(3) .item')
           const marker = selector('.item__title-marker')?.[0]
@@ -94,10 +94,10 @@ export class ResumeComponent implements AfterViewInit {
       const nextTitleEl = nextEl?.querySelector('.item__title') as HTMLElement
       const nextMarkerEl = nextEl?.querySelector('.item__title-marker') as HTMLElement
 
-      gsap.timeline({
+      const tl = gsap.timeline({
         scrollTrigger: {
           trigger: currTitleEl,
-          endTrigger: nextTitleEl,
+          endTrigger: nextTitleEl || currTitleEl,
           start: 'top 40%',
           toggleActions: 'play none none reverse',
           scrub: 5
@@ -110,7 +110,9 @@ export class ResumeComponent implements AfterViewInit {
             currMarkerEl.classList.add('item__title-marker--colorful')
           }
         })
-        .to(nextMarkerEl, {
+
+      if (nextMarkerEl) {
+        tl.to(nextMarkerEl, {
           scale: 1.8,
           onStart () {
             if (nextMarkerEl) {
@@ -124,10 +126,11 @@ export class ResumeComponent implements AfterViewInit {
             }
           }
         })
-        .to(nextMarkerEl, {
-          scale: 1
-        })
-        .to({}, { duration: 2 })
+          .to(nextMarkerEl, {
+            scale: 1
+          })
+          .to({}, { duration: 2 })
+      }
     })
   }
 }

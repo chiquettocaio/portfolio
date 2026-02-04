@@ -67,7 +67,7 @@ export class AboutComponent implements AfterViewInit {
         opacity: 0,
         scale: 0,
         duration: 2,
-        ease: 'back.out(2)'
+        ease: 'power1.out'
       })
       .from('#about-section .check-resume-cta', {
         opacity: 0,

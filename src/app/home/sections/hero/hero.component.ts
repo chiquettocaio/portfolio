@@ -40,7 +40,7 @@ export class HeroComponent implements AfterViewInit {
       .from('#hero-section .headline', {
         opacity: 0,
         scale: 0,
-        ease: 'back.out(2)',
+        ease: 'power4.out',
         duration: 0.6
       })
 
@@ -48,7 +48,7 @@ export class HeroComponent implements AfterViewInit {
         opacity: 0,
         y: 50,
         ease: 'power1.out'
-      }, '+=0.2')
+      })
 
       .from('#hero-section .buttons--navigate', {
         y: 50,
