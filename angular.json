@@ -32,13 +32,19 @@
                 "input": "public"
               }
             ],
-
             "styles": [
               "src/styles.scss"
             ],
-
             "stylePreprocessorOptions": {
-              "includePaths": ["src/styles"]
+              "includePaths": [
+                "src/styles"
+              ]
+            },
+
+            "server": "src/main.server.ts",
+            "outputMode": "server",
+            "ssr": {
+              "entry": "src/server.ts"
             }
           },
 
@@ -109,6 +115,7 @@
             "browsers": ["chromium"]
           }
         },
+
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
