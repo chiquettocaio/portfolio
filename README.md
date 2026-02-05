@@ -1,71 +1,54 @@
-# Portfolio
+# Caio Chiquetto — Front-End Engineer Portfolio
+Welcome! I’m **Caio Chiquetto**, a Front-End Engineer specializing in **Angular** and **SAP Composable Storefront (Spartacus)**. I build fast, scalable, and maintainable web applications with a focus on performance, architecture, and user experience.
 
-## ESLint config
-- **ng add @angular-eslint/schematics**: creates eslint.config.js file with base configuration (doesn't lint like we want so far)
-- ESLint doesn't enforce styleguide anymore, [Stylistic](https://eslint.style/) does (they're very connected). It's required then to install the Stylistic plugin: **npm install --save-dev @stylistic/eslint-plugin**
-- After that, add theses lines to the code:
-```js
-{
-  ...,
+👉 Live portfolio: [https://chiquettoca.io](https://chiquettoca.io)
 
-  plugins: {
-    '@stylistic': stylistic,
-  },
 
-  extends: [
-    ...,
-    stylistic.configs['recommended'], // Equivalent to standard eslint rules. Since eslint doesn't provide styling rules anymore, this is the up to date of achieving the same result
-  ],
+## 🚀 About Me
 
-  rules: {
-    ...,
-     
-    "@stylistic/space-before-function-paren": ["error", "always"],
-    "@typescript-eslint/explicit-function-return-type": "error",
-    "@stylistic/object-property-newline": "error",
-    "@/eqeqeq": ["error", "always"],
-    '@stylistic/comma-dangle': ['error', 'never'],
-  }
+I am a Front-End Engineer with **8+ years of experience** in enterprise-level projects and e-commerce platforms.  
+I am passionate about **clean architecture, scalable code, and user-centric solutions**.
 
-  ...
-}
-```
-Notice that the styling rules must be customized from **@stylistic**. **@/<rule>: <value>** seems to behave as just **<rule>**: <value>, but I'll stick to this pattern. 
 
-Even that VSCode complains about errors on the config file, it's fine. Test it in some .ts file and if things are working as expected, just ignre the errors.
+## 🛠 Technologies & Skills
 
-## About ESLint
-Since ESLint v9 (used by Angular 21):
-- ESLint core only provides correctness rules
-- All stylistic rules were removed from core
-- eslint:recommended is the maximum ESLint-core config
+### Technologies and methodologies used in this project
+- Angular 21 (Zoneless)
+- RxJS
+- NgRx
+- TypeScript
+- GSAP
+- Vercel (CI/CD)
+- HTML
+- CSS / SCSS
+- SSG
+- Angular MCP Server
+- Open Graph
+- ESLint
+- Vitest (Unit testing)
+- Instanbul (Code coverage)
+- i18n
+- Mobile-first development
+- Responsive web design & accessibility
 
-Seems like ESLint is still the go-to tool for linting, and it's the primary choice of the market apps.
 
-## Localization (i18n)
-- ng add @angular/localize
-  - Seems like this solution isn't what we want. This solution is build-based, which means it's not prepared for real time language update.
-  - Updates main.ts, tsconfig.app.json and angular.json
-  - We're not using that
-- npm i @ngx-translate/core @ngx-translate/http-loader
-  - @ngx-translate/http-loader: optional and used to download translations on demand from server
-  - https://ngx-translate.org/
-  - https://ngx-translate.org/getting-started/installation/ fow instructions
-- On the .ts file:
-  - this.translateService.instant('<path>'): use only when translation is already loaded
-  - this.translateService.get('<path>').subscribe(translation => ....): use to asynchronously load the translations
-    - You can pass an array to .get: this.translateService.get(['home.resume.title', 'home.resume.paragraph']).subscribe(b => console.log({ b }))
+## 📁 Featured Projects
 
-## Icons
-- ng-icons: https://github.com/ng-icons/ng-icons
-- npm install @ng-icons/core @ng-icons/phosphor-icons
-  - phosphor-icons is the name of the lib of icons, but ng-icons make available a lot of other icon libs
+| Project | Description | Technologies |
+|---------|-------------|-------------|
+| Enterprise E-Commerce (Carhartt, Vivo Store) | Large-scale SAP Commerce CX projects using Spartacus | Spartacus, Angular, TypeScript, RxJs, NgRx, SSR |
+| Microsoft Teams Clone | Front-end web application clone | Angular, TypeScript, RxJS |
+| Monopoly Banker App | Monopoly money transfer app | React, Node.js, MongoDB, WebSocket, Redux, JavaScript, Docker, HTML |
+| Aprenda Elderly Platform | Educational platform for older adults | React, Redux, JavaScript, CSS, HTML, Node.js |
 
-## Safe hover
-- To safely hover on desktop and avoid the mobile hover effect, use this combination of @media: @media (hover: hover) and (pointer: fine) {}. Together they check if the device can hover, and also if the device has cursor (not touchscreen only like some touchscreen laptops).
+*(More projects are available on my live portfolio.)*
 
-# Vitest Browser Mode
-By default, Vitest runs outside a browser, but we can use its UI if we want.
-- npm i -D @vitest/browser-playwright
-- npx playwright install 
-- in angular.json: test > options > "browsers": ["chromium"] 
+
+
+## 📬 Contact
+
+I’m open to collaborations, opportunities, or a friendly tech chat. Reach me at:  
+
+- GitHub: [chiquettocaio](https://github.com/chiquettocaio)  
+- LinkedIn: [Caio Chiquetto](https://linkedin.com/in/chiquettocaio)  
+- Email: chiquettocaio@gmail.com
