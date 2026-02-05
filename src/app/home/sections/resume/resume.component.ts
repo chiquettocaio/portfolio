@@ -48,7 +48,8 @@ export class ResumeComponent implements AfterViewInit {
   private startAnimation (): void {
     const split = new SplitText('#resume-section .paragraph', {
       type: 'lines',
-      autoSplit: true
+      autoSplit: true,
+      aria: 'none'
     })
 
     gsap.timeline({
