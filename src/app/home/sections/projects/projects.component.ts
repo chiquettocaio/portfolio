@@ -1,4 +1,5 @@
-import { AfterViewInit, Component, inject, Signal } from '@angular/core'
+import { isPlatformBrowser } from '@angular/common'
+import { AfterViewInit, Component, inject, PLATFORM_ID, Signal } from '@angular/core'
 import { AnchorComponent } from '@app/shared/components/anchor/anchor.component'
 import { ImageGalleryComponent } from '@app/shared/components/image-gallery/image-gallery.component'
 import { ImageGalleryData } from '@app/shared/components/image-gallery/models/image-gallery.model'
@@ -21,6 +22,7 @@ import { ProjectsService } from './services/projects/projects.service'
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent implements AfterViewInit {
+  private platformId = inject(PLATFORM_ID)
   private projectsService = inject(ProjectsService)
   private imageGalleryService = inject(ImageGalleryService)
 
@@ -28,7 +30,9 @@ export class ProjectsComponent implements AfterViewInit {
   image: Signal<ImageGalleryData | null> = this.imageGalleryService.image
 
   ngAfterViewInit (): void {
-    this.startAnimation()
+    if (isPlatformBrowser(this.platformId)) {
+      this.startAnimation()
+    }
   }
 
   showGallery (project: CareerProject): void {

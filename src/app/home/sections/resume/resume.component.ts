@@ -1,4 +1,5 @@
-import { AfterViewInit, Component, inject } from '@angular/core'
+import { isPlatformBrowser } from '@angular/common'
+import { AfterViewInit, Component, inject, PLATFORM_ID } from '@angular/core'
 import { AnchorComponent } from '@app/shared/components/anchor/anchor.component'
 import { IconComponent } from '@app/shared/components/icon/icon.component'
 import { ToastService } from '@app/shared/components/toast/services/toast-service/toast.service'
@@ -20,6 +21,7 @@ import { ResumeService } from './services/resume/resume.service'
   styleUrl: './resume.component.scss'
 })
 export class ResumeComponent implements AfterViewInit {
+  private platformId = inject(PLATFORM_ID)
   private resumeService = inject(ResumeService)
   private toastService = inject(ToastService)
 
@@ -30,7 +32,9 @@ export class ResumeComponent implements AfterViewInit {
   haveTranslationsBeenLoaded = this.resumeService.haveTranslationsBeenLoaded
 
   ngAfterViewInit (): void {
-    this.startAnimation()
+    if (isPlatformBrowser(this.platformId)) {
+      this.startAnimation()
+    }
   }
 
   showToast (): void {

@@ -1,4 +1,5 @@
-import { AfterViewInit, ChangeDetectionStrategy, Component } from '@angular/core'
+import { isPlatformBrowser } from '@angular/common'
+import { AfterViewInit, ChangeDetectionStrategy, Component, inject, PLATFORM_ID } from '@angular/core'
 import { AnchorComponent } from '@app/shared/components/anchor/anchor.component'
 import { TranslatePipe } from '@ngx-translate/core'
 import gsap from 'gsap'
@@ -11,8 +12,12 @@ import gsap from 'gsap'
   styleUrl: './about.component.scss'
 })
 export class AboutComponent implements AfterViewInit {
+  private platformId = inject(PLATFORM_ID)
+
   ngAfterViewInit (): void {
-    this.startAnimation()
+    if (isPlatformBrowser(this.platformId)) {
+      this.startAnimation()
+    }
   }
 
   private startAnimation (): void {
