@@ -2,13 +2,13 @@ import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/
 import { provideRouter } from '@angular/router'
 import { provideTranslateService } from '@ngx-translate/core'
 
-import { provideHttpClient } from '@angular/common/http'
+import { provideHttpClient, withFetch } from '@angular/common/http'
 import { provideClientHydration, withEventReplay } from '@angular/platform-browser'
 import { routes } from './app.routes'
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideHttpClient(),
+    provideHttpClient(withFetch()),
     provideBrowserGlobalErrorListeners(),
     provideRouter(routes),
     provideTranslateService({
