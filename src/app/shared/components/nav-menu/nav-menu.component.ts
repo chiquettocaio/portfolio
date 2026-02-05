@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component, DOCUMENT, inject, OnInit, signal } from '@angular/core'
+import { isPlatformBrowser } from '@angular/common'
+import { ChangeDetectionStrategy, Component, DOCUMENT, inject, OnInit, PLATFORM_ID, signal } from '@angular/core'
 import { TranslationConfigService } from '@app/services/translation-config/translation-config.service'
 import { IconComponent } from '@app/shared/components/icon/icon.component'
 import { KeyString } from '@app/shared/models/generic-types.model'
@@ -13,6 +14,7 @@ import { TranslatePipe } from '@ngx-translate/core'
 })
 export class NavMenuComponent implements OnInit {
   private document = inject(DOCUMENT)
+  private platformId = inject(PLATFORM_ID)
   private translationConfigService = inject(TranslationConfigService)
 
   isMobile = signal<boolean>(this.document.documentElement.clientWidth <= 768)
@@ -25,7 +27,9 @@ export class NavMenuComponent implements OnInit {
   currentLanguage = this.translationConfigService.currentLanguage
 
   ngOnInit (): void {
-    this.initIntersectionObserver()
+    if (isPlatformBrowser(this.platformId)) {
+      this.initIntersectionObserver()
+    }
   }
 
   activateLink (link: string, viaIntersectionObserver: boolean = false): void {
