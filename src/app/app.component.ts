@@ -2,7 +2,6 @@ import { AfterViewInit, Component, inject } from '@angular/core'
 import { RouterOutlet } from '@angular/router'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { SplitText } from 'gsap/SplitText'
 import { HomeService } from './home/services/home-service/home.service'
 import { TranslationConfigService } from './services/translation-config/translation-config.service'
 import { LoaderComponent } from './shared/components/loader/loader.component'
@@ -34,6 +33,5 @@ export class AppComponent implements AfterViewInit {
 
   private registerGsapPlugins (): void {
     gsap.registerPlugin(ScrollTrigger)
-    gsap.registerPlugin(SplitText)
   }
 }

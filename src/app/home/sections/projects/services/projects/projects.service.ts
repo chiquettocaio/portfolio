@@ -31,7 +31,7 @@ export class ProjectsService {
       `${this.I18N_PROJECTS_PATH}.alliage`,
       `${this.I18N_PROJECTS_PATH}.ml`,
       `${this.I18N_PROJECTS_PATH}.teams`,
-      `${this.I18N_PROJECTS_PATH}.finances`,
+      `${this.I18N_PROJECTS_PATH}.monopoly`,
       `${this.I18N_PROJECTS_PATH}.elderly`
     ]).pipe(
       take(1),
@@ -248,8 +248,8 @@ export class ProjectsService {
 
   private getFinanceTranslations (translations: InterpolationParameters): CareerProject {
     return {
-      title: translations[`${this.I18N_PROJECTS_PATH}.finances`].title,
-      description: translations[`${this.I18N_PROJECTS_PATH}.finances`].description,
+      title: translations[`${this.I18N_PROJECTS_PATH}.monopoly`].title,
+      description: translations[`${this.I18N_PROJECTS_PATH}.monopoly`].description,
       techs: [
         translations['common.technologies'].react,
         translations['common.technologies'].nodejs,
@@ -268,8 +268,8 @@ export class ProjectsService {
       ],
 
       thumb: {
-        src: 'images/finances-room-small.png',
-        alt: translations[`${this.I18N_PROJECTS_PATH}.finances`].thumbAlt
+        src: 'images/monopoly-small.png',
+        alt: translations[`${this.I18N_PROJECTS_PATH}.monopoly`].thumbAlt
       }
     }
   }
