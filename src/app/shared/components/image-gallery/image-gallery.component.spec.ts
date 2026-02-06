@@ -42,7 +42,7 @@ describe('ImageGalleryComponent', () => {
     const closeSpy = vi.spyOn(component, 'close')
 
     component.image.set({
-      src: 'images/ccg-small.png',
+      src: 'images/ccg-small.webp',
       title: 'Test title',
       subtitle: 'Test subtitle'
     })
@@ -72,7 +72,7 @@ describe('ImageGalleryComponent', () => {
     const closeSpy = vi.spyOn(component, 'close')
 
     component.image.set({
-      src: 'images/ccg-small.png',
+      src: 'images/ccg-small.webp',
       title: 'Test title',
       subtitle: 'Test subtitle'
     })
@@ -110,7 +110,7 @@ describe('ImageGalleryComponent', () => {
     const closeSpy = vi.spyOn(component, 'close')
 
     component.image.set({
-      src: 'images/ccg-small.png',
+      src: 'images/ccg-small.webp',
       title: 'Test title',
       subtitle: 'Test subtitle'
     })
