@@ -330,7 +330,7 @@
           "thumbAlt": "Microsoft Teams Copy"
         },
 
-        "finances": {
+        "monopoly": {
           "title": "Monopoly Banker",
           "description": "Personal project created during one of my job vacations. At some point I saw myself playing Monopoly with my niece and noticed how those physical bills were annoying, and that's the story behind the app. Monopoly Banker is an app for making money transfers between the players in real time, relying on the power of React, Node.js, Mongo and WebSocket. If you're interested in knowing more about it, there's a publication on my LinkedIn profile.",
           "thumbAlt": "Monopoly Banker room"
