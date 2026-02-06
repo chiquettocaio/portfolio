@@ -4,13 +4,11 @@ import { By } from '@angular/platform-browser'
 import { ToastService } from '@app/shared/components/toast/services/toast-service/toast.service'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { SplitText } from 'gsap/SplitText'
 import { MockTranslationProvider } from 'src/testing/mocks/helpers'
 import { ResumeComponent } from './resume.component'
 
 describe('Resume', () => {
   gsap.registerPlugin(ScrollTrigger)
-  gsap.registerPlugin(SplitText)
 
   let component: ResumeComponent
   let fixture: ComponentFixture<ResumeComponent>

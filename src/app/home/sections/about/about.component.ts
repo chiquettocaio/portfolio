@@ -2,7 +2,7 @@ import { isPlatformBrowser } from '@angular/common'
 import { AfterViewInit, ChangeDetectionStrategy, Component, inject, PLATFORM_ID } from '@angular/core'
 import { AnchorComponent } from '@app/shared/components/anchor/anchor.component'
 import { TranslatePipe } from '@ngx-translate/core'
-import gsap from 'gsap'
+import { gsap } from 'gsap'
 
 @Component({
   selector: 'app-about',
