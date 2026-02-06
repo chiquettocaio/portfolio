@@ -81,7 +81,7 @@ export class ProjectsService {
       ],
 
       thumb: {
-        src: 'images/ccg-small.png',
+        src: 'images/ccg-small.webp',
         alt: translations[`${this.I18N_PROJECTS_PATH}.ccg`].thumbAlt
       }
     }
@@ -110,7 +110,7 @@ export class ProjectsService {
       ],
 
       thumb: {
-        src: 'images/carhartt-small.png',
+        src: 'images/carhartt-small.webp',
         alt: translations[`${this.I18N_PROJECTS_PATH}.carhartt`].thumbAlt
       }
     }
@@ -137,7 +137,7 @@ export class ProjectsService {
         translations['common.concepts'].sapCX
       ],
       thumb: {
-        src: 'images/vivo-small.png',
+        src: 'images/vivo-small.webp',
         alt: translations[`${this.I18N_PROJECTS_PATH}.vivo`].thumbAlt
       }
     }
@@ -164,7 +164,7 @@ export class ProjectsService {
         translations['common.concepts'].sapCX
       ],
       thumb: {
-        src: 'images/leap-small.png',
+        src: 'images/leap-small.webp',
         alt: translations[`${this.I18N_PROJECTS_PATH}.leap`].thumbAlt
       }
     }
@@ -187,7 +187,7 @@ export class ProjectsService {
       ],
 
       thumb: {
-        src: 'images/alliage-small.png',
+        src: 'images/alliage-small.webp',
         alt: translations[`${this.I18N_PROJECTS_PATH}.alliage`].thumbAlt
       }
     }
@@ -215,7 +215,7 @@ export class ProjectsService {
       ],
 
       thumb: {
-        src: 'images/mercadolivre-small.png',
+        src: 'images/mercadolivre-small.webp',
         alt: translations[`${this.I18N_PROJECTS_PATH}.ml`].thumbAlt
       }
     }
@@ -240,7 +240,7 @@ export class ProjectsService {
       ],
 
       thumb: {
-        src: 'images/teams-small.png',
+        src: 'images/teams-small.webp',
         alt: translations[`${this.I18N_PROJECTS_PATH}.teams`].thumbAlt
       }
     }
@@ -268,7 +268,7 @@ export class ProjectsService {
       ],
 
       thumb: {
-        src: 'images/monopoly-small.png',
+        src: 'images/monopoly-small.webp',
         alt: translations[`${this.I18N_PROJECTS_PATH}.monopoly`].thumbAlt
       }
     }
@@ -290,7 +290,7 @@ export class ProjectsService {
       ],
 
       thumb: {
-        src: 'images/aprenda-elderly-small.png',
+        src: 'images/aprenda-elderly-small.webp',
         alt: translations[`${this.I18N_PROJECTS_PATH}.elderly`].thumbAlt
       }
     }

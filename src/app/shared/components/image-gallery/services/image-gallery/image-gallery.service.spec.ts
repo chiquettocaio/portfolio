@@ -16,13 +16,13 @@ describe('ImageGalleryService', () => {
 
   it('should set "image" value', () => {
     service.show({
-      src: 'images/ccg-small.png',
+      src: 'images/ccg-small.webp',
       title: 'Test title',
       subtitle: 'Test subtitle'
     })
 
     expect(service.image()).toMatchObject({
-      src: 'images/ccg-small.png',
+      src: 'images/ccg-small.webp',
       title: 'Test title',
       subtitle: 'Test subtitle'
     })
@@ -30,13 +30,13 @@ describe('ImageGalleryService', () => {
 
   it('should set and remove "image" value', () => {
     service.show({
-      src: 'images/ccg-small.png',
+      src: 'images/ccg-small.webp',
       title: 'Test title',
       subtitle: 'Test subtitle'
     })
 
     expect(service.image()).toMatchObject({
-      src: 'images/ccg-small.png',
+      src: 'images/ccg-small.webp',
       title: 'Test title',
       subtitle: 'Test subtitle'
     })

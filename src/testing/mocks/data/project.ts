@@ -5,7 +5,7 @@ export const mockProjectData: CareerProject = {
   description: 'Mocked description',
   techs: ['vitest', 'jasmine'],
   thumb: {
-    src: 'mocked.png',
+    src: 'mocked.webp',
     alt: 'Mocked image'
   }
 }
