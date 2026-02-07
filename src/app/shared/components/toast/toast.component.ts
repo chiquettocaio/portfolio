@@ -7,6 +7,7 @@ import { ToastService } from './services/toast-service/toast.service'
 
 @Component({
   selector: 'app-toast',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     IconComponent,
     ButtonComponent,
@@ -14,8 +15,7 @@ import { ToastService } from './services/toast-service/toast.service'
     TranslatePipe
   ],
   templateUrl: './toast.component.html',
-  styleUrl: './toast.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  styleUrl: './toast.component.scss'
 })
 export class ToastComponent {
   private toastService = inject(ToastService)
