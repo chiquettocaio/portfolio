@@ -1,5 +1,5 @@
 import { isPlatformBrowser } from '@angular/common'
-import { AfterViewInit, Component, inject, PLATFORM_ID, Signal } from '@angular/core'
+import { AfterViewInit, ChangeDetectionStrategy, Component, inject, PLATFORM_ID, Signal } from '@angular/core'
 import { AnchorComponent } from '@app/shared/components/anchor/anchor.component'
 import { ImageGalleryComponent } from '@app/shared/components/image-gallery/image-gallery.component'
 import { ImageGalleryData } from '@app/shared/components/image-gallery/models/image-gallery.model'
@@ -12,6 +12,7 @@ import { ProjectsService } from './services/projects/projects.service'
 
 @Component({
   selector: 'app-projects',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     TranslatePipe,
     ProjectComponent,

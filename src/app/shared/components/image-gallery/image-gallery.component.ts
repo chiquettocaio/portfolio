@@ -1,5 +1,5 @@
 import { AsyncPipe, NgOptimizedImage } from '@angular/common'
-import { Component, inject, signal, WritableSignal } from '@angular/core'
+import { ChangeDetectionStrategy, Component, inject, signal, WritableSignal } from '@angular/core'
 import { TranslatePipe } from '@ngx-translate/core'
 import { filter, fromEvent, map, take, tap, timer } from 'rxjs'
 import { ButtonComponent } from '../button/button.component'
@@ -10,6 +10,7 @@ import { ImageGalleryService } from './services/image-gallery/image-gallery.serv
 
 @Component({
   selector: 'app-image-gallery',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     ButtonComponent,
     IconComponent,

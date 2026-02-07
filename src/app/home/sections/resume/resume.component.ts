@@ -1,5 +1,5 @@
 import { isPlatformBrowser } from '@angular/common'
-import { AfterViewInit, Component, inject, PLATFORM_ID } from '@angular/core'
+import { AfterViewInit, ChangeDetectionStrategy, Component, inject, PLATFORM_ID } from '@angular/core'
 import { AnchorComponent } from '@app/shared/components/anchor/anchor.component'
 import { IconComponent } from '@app/shared/components/icon/icon.component'
 import { ToastService } from '@app/shared/components/toast/services/toast-service/toast.service'
@@ -10,6 +10,7 @@ import { ResumeService } from './services/resume/resume.service'
 
 @Component({
   selector: 'app-resume',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     TranslatePipe,
     ResumeSectionComponent,
