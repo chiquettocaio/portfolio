@@ -2,6 +2,7 @@ import { isPlatformBrowser, NgOptimizedImage } from '@angular/common'
 import { AfterViewInit, ChangeDetectionStrategy, Component, inject, PLATFORM_ID } from '@angular/core'
 import { AnchorComponent } from '@app/shared/components/anchor/anchor.component'
 import { IconComponent } from '@app/shared/components/icon/icon.component'
+import { ToastService } from '@app/shared/components/toast/services/toast-service/toast.service'
 import { TranslatePipe } from '@ngx-translate/core'
 import { gsap } from 'gsap'
 
@@ -19,11 +20,20 @@ import { gsap } from 'gsap'
 })
 export class HeroComponent implements AfterViewInit {
   private platformId = inject(PLATFORM_ID)
+  private toastService = inject(ToastService)
 
   ngAfterViewInit (): void {
     if (isPlatformBrowser(this.platformId)) {
       this.startAnimation()
     }
+  }
+
+  showToast (): void {
+    this.toastService.add({
+      type: 'success',
+      titleKey: 'home.resume.downloadResumeSuccess.title',
+      messageKey: 'home.resume.downloadResumeSuccess.message'
+    })
   }
 
   private startAnimation (): void {

@@ -105,12 +105,14 @@
     </app-anchor>
 
     <app-anchor
+      id="download-resume-cta"
       [title]="'home.hero.downloadResumeCta.title' | translate"
       [content]="'home.hero.downloadResumeCta.content' | translate"
       [ariaLabel]="'home.hero.downloadResumeCta.ariaLabel' | translate"
       variant="button-secondary"
       href="/docs/caio-chiquetto-resume.pdf"
       download
+      (clicked)="showToast()"
     >
       <app-icon
         AnchorTrailingIcon
