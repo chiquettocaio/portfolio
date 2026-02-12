@@ -1,0 +1,68 @@
+<footer>
+  <div class="buttons buttons--social">
+    <app-anchor
+      [title]="'home.hero.socialMedia.linkedIn' | translate"
+      [ariaLabel]="'home.hero.socialMedia.linkedIn' | translate"
+      content=""
+      variant="icon-flat"
+      href="https://www.linkedin.com/in/chiquettocaio/"
+      target="_blank"
+    >
+      <app-icon
+        AnchorLeadingIcon
+        name="ionLogoLinkedin"
+        [ariaLabel]="'home.hero.socialMedia.linkedIn' | translate"
+      />
+    </app-anchor>
+
+    <app-anchor
+      [title]="'home.hero.socialMedia.codepen' | translate"
+      [ariaLabel]="'home.hero.socialMedia.codepen' | translate"
+      content=""
+      variant="icon-flat"
+      href="https://codepen.io/chiquettocaio"
+      target="_blank"
+    >
+      <app-icon
+        AnchorLeadingIcon
+        name="ionLogoCodepen"
+        [ariaLabel]="'home.hero.socialMedia.codepen' | translate"
+      />
+    </app-anchor>
+
+    <app-anchor
+      [title]="'home.hero.socialMedia.git' | translate"
+      [ariaLabel]="'home.hero.socialMedia.git' | translate"
+      content=""
+      variant="icon-flat"
+      href="https://github.com/chiquettocaio"
+      target="_blank"
+    >
+      <app-icon
+        AnchorLeadingIcon
+        name="ionLogoGithub"
+        [ariaLabel]="'home.hero.socialMedia.git' | translate"
+      />
+    </app-anchor>
+
+    <app-anchor
+      [title]="'home.hero.socialMedia.whatsapp' | translate"
+      [ariaLabel]="'home.hero.socialMedia.whatsapp' | translate"
+      content=""
+      variant="icon-flat"
+      href="https://wa.me/11959292853"
+      target="_blank"
+    >
+      <app-icon
+        AnchorLeadingIcon
+        name="ionLogoWhatsapp"
+        [ariaLabel]="'home.hero.socialMedia.whatsapp' | translate"
+      />
+    </app-anchor>
+  </div>
+
+  <p class="footer-copyright">
+    {{ 'common.others.copyright' | translate: { year: currDate() | date: 'yyyy' } }}
+  </p>
+
+</footer>

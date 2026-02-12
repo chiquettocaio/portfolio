@@ -1,0 +1,51 @@
+@use 'mixins/background-patterns' as bgPatterns;
+@use 'tokens/breakpoints' as breakpoints;
+
+:host {
+  display: block;
+  @include bgPatterns.background-pattern-dark;
+}
+
+footer {
+  display: grid;
+  place-items: center;
+  gap: 24px;
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  padding: var(--space-section-vertical) var(--space-section-horizontal) 100px;
+  color: var(--color-text-primary);
+
+  .footer-copyright {
+    text-align: center;
+    font-size: var(--text-lg);
+    font-weight: var(--font-weight-regular);
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+
+  &--social {
+    gap: 12px;
+
+    app-anchor {
+      width: 32px;
+      height: 32px;
+      transition: transform .2s;
+      color: var(--color-details-text);
+
+      &:has(a:focus) {
+        transform: scale(1.2);
+      }
+
+      @media (hover: hover) and (pointer: fine) {
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
