@@ -1,20 +1,16 @@
 import { isPlatformBrowser } from '@angular/common'
 import { AfterViewInit, ChangeDetectionStrategy, Component, inject, PLATFORM_ID } from '@angular/core'
-import { AnchorComponent } from '@app/shared/components/anchor/anchor.component'
-import { IconComponent } from '@app/shared/components/icon/icon.component'
 import { TranslatePipe } from '@ngx-translate/core'
 import { gsap } from 'gsap'
 import { ContactFormComponent } from './components/contact-form/contact-form.component'
 
 @Component({
   selector: 'app-contact',
-  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     TranslatePipe,
-    ContactFormComponent,
-    AnchorComponent,
-    IconComponent
+    ContactFormComponent
   ],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
@@ -51,10 +47,6 @@ export class ContactComponent implements AfterViewInit {
       .from('#contact-section app-contact-form', {
         y: 20,
         opacity: 0
-      })
-      .from('#contact-section .buttons--social', {
-        opacity: 0,
-        y: 20
       })
   }
 }

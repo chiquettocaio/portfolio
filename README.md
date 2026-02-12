@@ -22,7 +22,7 @@ I am passionate about **clean architecture, scalable code, and user-centric solu
 - HTML
 - CSS / SCSS
 - SSG
-- Angular MCP Server
+- Angular MCP Server & Gemini
 - Open Graph
 - ESLint
 - Vitest (Unit testing)
@@ -49,6 +49,6 @@ I am passionate about **clean architecture, scalable code, and user-centric solu
 
 I’m open to collaborations, opportunities, or a friendly tech chat. Reach me at:  
 
-- GitHub: [chiquettocaio](https://github.com/chiquettocaio)  
-- LinkedIn: [Caio Chiquetto](https://linkedin.com/in/chiquettocaio)  
+- GitHub: https://github.com/chiquettocaio
+- LinkedIn: https://linkedin.com/in/chiquettocaio
 - Email: chiquettocaio@gmail.com
