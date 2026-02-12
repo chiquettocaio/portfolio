@@ -169,11 +169,12 @@
 
           "responsibilities": [
             "Develop and maintain SAP Commerce Composable Storefront (Spartacus) applications.",
-            "Initialize, configure, and deliver SAP Commerce Composable Storefront (Spartacus) projects from the ground up.",
             "Design and implement scalable front-end solutions.",
             "Write clean, maintainable, and well-structured code following industry best practices.",
             "Optimize codebases for performance and efficiency.",
-            "Build high-performance, reusable, and accessible UI components."
+            "Build high-performance, reusable, and accessible UI components.",
+            "Act as a front-end authority in solution design, collaborating with Tech Leads to deliver robust, scalable architectures aligned with business and technical requirements.",
+            "Estimate front-end implementation effort and timelines, supporting accurate planning and reliable delivery commitments."
           ]
         },
 
@@ -184,18 +185,19 @@
           "location": "Costa Rica, USA — Remote",
 
           "responsibilities": [
-            "Develop and maintain SAP Commerce Composable Storefront (Spartacus) applications for US-based clients.",
-            "Implement and deliver SAP Commerce Composable Storefront (Spartacus) projects from the ground up (B2B, B2C, D2C).",
-            "Leverage SAP Customer Data Cloud (CDC, formerly Gigya) for Customer Identity and Access Management (CIAM) and front-end UI integration.",
-            "Define front-end architecture and configure productivity and quality tooling (ESLint, Stylelint, and related tools).",
-            "Design and implement scalable front-end solutions.",
-            "Collaborate with design and product teams to support product shaping and gain a holistic understanding of the solution.",
-            "Write clean, readable, and maintainable code following industry best practices.",
-            "Optimize front-end codebases for performance and efficiency.",
-            "Build high-performance, reusable UI components.",
-            "Create and maintain front-end documentation, including style guides and technical debt tracking.",
-            "Conduct code reviews and enforce coding standards and style guidelines.",
-            "Operate in an English-only communication environment."
+            "Development and maintenance of enterprise-scale SAP Commerce Composable Storefront (Spartacus) applications for US-based clients (B2B, B2C, D2C).",
+            "Greenfield creation of SAP Composable Storefront projects, from architecture definition to production rollout.",
+            "Implementation and customization of SAP CDC (Customer Data Cloud / Gigya) for CIAM, including authentication flows and UI integration.",
+            "Implementation of a Tag Management System (TMS) using Tealium iQ Tag Management.",
+            "Front-end architecture design, including tooling and standards definition (ESLint, Stylelint, and custom productivity tooling).",
+            "Design and delivery of scalable, high-performance front-end solutions aligned with enterprise requirements.",
+            "Close collaboration with design and product teams to support product shaping and ensure technical feasibility and UX quality.",
+            "Development of clean, readable, and maintainable code, following industry best practices and Angular/Spartacus guidelines.",
+            "Performance optimization and continuous improvement of existing codebases.",
+            "Creation of reusable, high-performance components to accelerate development and ensure consistency.",
+            "Ownership of front-end documentation (style guides, architectural decisions, and technical debt tracking).",
+            "Code reviews and enforcement of front-end standards and best practices across the team.",
+            "Daily communication in English-only, international environments."
           ]
         },
 
@@ -206,16 +208,17 @@
           "location": "Brazil — Remote",
 
           "responsibilities": [
-            "Worked as a Front-end Developer on multiple enterprise projects using both SAP Spartacus and the legacy Hybris monolith architectures (JSP/JavaScript).",
-            "Joined a newly formed team and contributed to the stabilization of a critical Spartacus project, helping address existing issues, improve code quality, and deliver pending and new front-end functionalities.",
-            "Assisted in resolving a high volume of bugs and refactoring legacy code, contributing to improved platform stability and client satisfaction.",
-            "Implementated ASM (Assisted Service Module) and additional commerce features, including cart import/export and custom user flows.",
-            "Helped implement a multi-site, multi-catalog setup, enabling brand-specific look & feel while maintaining a unified platform.",
+            "Worked as a Front-end Developer on enterprise-scale SAP Commerce projects, using both SAP Spartacus and the legacy Hybris monolith (JSP/JavaScript) architectures.",
+            "Joined a newly formed team and contributed to the stabilization of a critical Spartacus project, addressing existing issues, improving code quality, and delivering both pending and new front-end features.",
+            "Played a key role in resolving a high volume of bugs and refactoring legacy code, significantly improving platform stability and client satisfaction.",
+            "Implemented ASM (Assisted Service Module) and additional commerce features, including cart import/export and custom user flows.",
+            "Implementation of a Tag Management System (TMS) using Google Tag Manager (GTM), including tag configuration, event tracking strategy definition, and seamless integration with analytics platforms.",
+            "Contributed to the implementation of a multi-site, multi-catalog architecture, enabling brand-specific look & feel while maintaining a unified commerce platform.",
             "Contributed to the development of the checkout experience for an enterprise healthcare e-commerce platform.",
-            "Assisted in implementing a complex multi-payment checkout flow, enabling the use of multiple credit cards with front-end–managed value distribution and installment logic.",
-            "Acted as a support point for other developers, assisting with programming questions and day-to-day technical challenges",
-            "Provided support for additional SAP Commerce monolith projects, contributing bug fixes, enhancements, and general technical assistance.",
-            "Collaborated with an international development team, supporting the delivery of a new store and communicating exclusively in English."
+            "Assisted in implementing a complex multi-payment checkout flow, enabling the use of multiple credit cards with front-end-managed value distribution and installment logic.",
+            "Acted as a technical support point for other developers, assisting with programming questions and day-to-day technical challenges.",
+            "Provided ongoing support for additional SAP Commerce monolith projects, delivering bug fixes, enhancements, and general technical assistance.",
+            "Collaborated with an international development team, supporting the delivery of a new storefront and working in an English-only environment."
           ]
         },
 
@@ -226,14 +229,15 @@
           "location": "Brazil — Remote",
 
           "responsibilities": [
-            "Implementation of the first SAP Spartacus & Telco Utilities Accelerator (TUA) application of the world, for a big client from the Telecom segment.",
+            "Led the Accenture developers in the implementation of the world's first SAP Spartacus & Telco Utilities Accelerator (TUA) application for a major telecom client.",
             "Collaborated closely with design and product teams to deliver meaningful, scalable front-end solutions.",
-            "Developed reusable, responsive, and maintainable front-end components.",
-            "Delivered high-quality, clean, and easy-to-maintain code following established best practices.",
-            "Implemented unit tests using Jasmine and Karma, maintaining a minimum code coverage of 80%.",
-            "Supported and guided less experienced developers through day-to-day technical assistance and knowledge sharing.",
-            "Designed and delivered an internal Angular study program to help team members strengthen their front-end skills.",
-            "Prepared and presented technical sessions on industry trends, best practices, development tooling, Angular, and SAP Spartacus."
+            "Developed reusable, responsive, and maintainable front-end components following modern Angular and Spartacus patterns.",
+            "Delivered high-quality, clean, and maintainable code, adhering to established best practices and front-end standards.",
+            "Implemented unit tests using Jasmine and Karma, consistently maintaining a minimum code coverage of 80%.",
+            "Implementation of a Tag Management System (TMS) using Google Tag Manager (GTM).",
+            "Supported and mentored less experienced developers through daily technical guidance and knowledge sharing.",
+            "Designed and delivered an internal Angular training program to strengthen the team's front-end expertise.",
+            "Prepared and presented technical talks and knowledge-sharing sessions covering industry trends, best practices, development tooling, Angular, and SAP Spartacus."
           ]
         },
 
@@ -244,13 +248,14 @@
           "location": "Brazil — Remote",
 
           "responsibilities": [
-            "Contributed to the architecture, implementation, and maintenance of web applications for a large telecom client using the Vue.js stack (Nuxt, Vuex).",
-            "Developed a front-end project from the ground up (MVNO) for a major telecom client, delivering a well-structured, fully tested codebase with a minimum of 80% code coverage, completing the project one week ahead of schedule.",
-            "Collaborated with design and product teams to deliver meaningful and scalable front-end solutions.",
-            "Developed reusable, responsive, and maintainable front-end components.",
-            "Delivered high-quality, clean, and easy-to-maintain code following established best practices.",
-            "Implemented unit tests using Jest, maintaining a minimum code coverage of 80%.",
-            "Supported and guided less experienced developers through technical assistance and knowledge sharing."
+            "Contributed to the architecture, implementation, and maintenance of web applications for a large telecom client using the Vue.js ecosystem (Nuxt, Vuex).",
+            "Led and delivered a front-end project from the ground up as the sole front-end developer for an MVNO platform, producing a well-structured, fully tested codebase with 80%+ test coverage and completing the project one week ahead of schedule.",
+            "Collaborated closely with design and product teams to deliver meaningful and scalable front-end solutions.",
+            "Developed reusable, responsive, and maintainable front-end components following front-end best practices.",
+            "Delivered clean, high-quality, and maintainable code, aligned with established standards.",
+            "Implemented unit tests using Jest, consistently maintaining minimum 80% code coverage.",
+            "Supported and mentored less experienced developers through technical guidance and knowledge sharing.",
+            "Ownership of front-end documentation, (style guide, tooling configuration)."
           ]
         },
 
@@ -261,10 +266,10 @@
           "location": "Brazil — On site",
 
           "responsibilities": [
-            "Developed an animation software for creating digital campaigns using Vue.js, Vuex, and Electron.js.",
-            "Acted as full-stack developer on a sales web application for managing and selling licenses of the animation software, using React.js, Node.js, AdonisJS, Redux, styled-components, and Docker.",
-            "Created landing pages for multiple clients using HTML5, CSS3, and JavaScript.",
-            "Collaborated closely with the design team to ensure accurate implementation of UI/UX requirements."
+            "Developed a desktop animation software for creating digital marketing campaigns using Vue.js, Vuex, and Electron.js.",
+            "Acted as a full-stack developer on a sales and license management web application for the animation platform, using React.js, Node.js, AdonisJS, Redux, styled-components, and Docker.",
+            "Designed and implemented responsive landing pages for multiple clients using HTML5, CSS3, and JavaScript.",
+            "Collaborated closely with the design team to ensure accurate translation of UI/UX requirements into high-quality front-end implementations."
           ]
         }
       },
@@ -505,7 +510,8 @@
     "others": {
       "enable": "on",
       "disable": "off",
-      "close": "Close"
+      "close": "Close",
+      "copyright": "© 2026 Caio Chiquetto | All rights reserved."
     }
   }
 }
